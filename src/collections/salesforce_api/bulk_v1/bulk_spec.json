@@ -1,0 +1,43 @@
+{
+  "id": "b42301ba-a988-4726-a968-945678f507f9",
+  "name": "Bulk Spec",
+  "url": "{{endpoint}}/services/async/{{version}}/job/{{jobid}}/spec",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "X-SFDC-Session",
+      "value": "{{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "text/csv"
+    },
+    {
+      "key": "charset",
+      "value": "UTF-8"
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip"
+    },
+    {
+      "key": "Content-Encoding",
+      "value": "gzip"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "3a82ee07-553f-45dd-81c1-37547849b3d3",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "Salesforce Field,Csv Header,Value,Hint\nName,Full Name,,\nTitle,Job Title,,\nLeadSource,Lead Source,Import,\nDescription,,Imported from XYZ.csv,\nBirthdate,Date of Birth,,dd MM yy",
+  "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: text/csv\ncharset: UTF-8\nAccept-Encoding: gzip\nContent-Encoding: gzip\n",
+  "pathVariables": {}
+}

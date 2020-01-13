@@ -1,0 +1,56 @@
+{
+  "id": "59ff7ea2-94be-4b63-b9ee-ff930f571963",
+  "name": "SOAP DescribeMetadata",
+  "url": "{{endpoint}}/services/Soap/m/46.0",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "name": "Content-Type",
+      "value": "text/xml",
+      "type": "text"
+    },
+    {
+      "key": "charset",
+      "value": "UTF-8"
+    },
+    {
+      "key": "SOAPAction",
+      "value": "login"
+    },
+    {
+      "key": "Accept",
+      "value": "application/json",
+      "type": "text",
+      "enabled": false
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "8ea3256a-fb89-4eec-85de-2172c63fd5e9",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "5a32a539-04ef-4ae3-a4b4-647d0de1eb3f",
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tns=\"http://soap.sforce.com/2006/04/metadata\">\n\t<soapenv:Header>\n\t<tns:SessionHeader>\n\t\t<tns:sessionId>{{access_token}}</tns:sessionId>\n\t</tns:SessionHeader>\n\t</soapenv:Header>\n\t<soapenv:Body>\n\t\t<tns:describeMetadata>\n\t\t\t<asOfVersion>{{version}}</asOfVersion>\n\t\t</tns:describeMetadata>\n\t</soapenv:Body>\n</soapenv:Envelope>",
+  "headers": "Content-Type: text/xml\ncharset: UTF-8\nSOAPAction: login\n//Accept: application/json\n",
+  "pathVariables": {}
+}

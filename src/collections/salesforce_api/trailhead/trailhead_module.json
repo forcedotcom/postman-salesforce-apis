@@ -1,0 +1,38 @@
+{
+  "id": "74fb946c-2c69-41f4-9f52-886753b6579c",
+  "name": "Trailhead Module",
+  "url": "{{endpoint}}/{{version}}/modules",
+  "description": null,
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "X-Api-Key",
+      "value": "{{key}}"
+    },
+    {
+      "key": "X-Environment-Url",
+      "value": "{{env}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "031fd55a-ee99-4a11-8037-3b3bf9bd3473",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Content-Type: application/json\nAuthorization: Bearer {{access_token}}\nX-Api-Key: {{key}}\nX-Environment-Url: {{env}}\n",
+  "pathVariables": {}
+}

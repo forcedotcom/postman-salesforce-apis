@@ -1,0 +1,61 @@
+{
+  "id": "1c9f373f-ea40-41bc-b721-0edb94a9e939",
+  "name": "User Agent Flow",
+  "url": "{{url}}{{site}}/services/oauth2/authorize?response_type=token token_id&client_id={{clientId}}&redirect_uri={{redirectUrl}}&display=touch&login_hint&nonce=awesome",
+  "description": null,
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "response_type",
+      "value": "token token_id"
+    },
+    {
+      "key": "client_id",
+      "value": "{{clientId}}"
+    },
+    {
+      "key": "redirect_uri",
+      "value": "{{redirectUrl}}"
+    },
+    {
+      "key": "display",
+      "value": "touch"
+    },
+    {
+      "key": "login_hint",
+      "value": null
+    },
+    {
+      "key": "nonce",
+      "value": "awesome"
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "0a0dc544-c18f-4a6b-86e4-df3cccf8ab2d",
+        "exec": [
+          "var jsonData = JSON.parse(responseBody);",
+          "postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);",
+          "postman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);"
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "preRequestScript": null,
+  "tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"access_token\", jsonData.access_token);\npostman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "",
+  "pathVariables": {}
+}

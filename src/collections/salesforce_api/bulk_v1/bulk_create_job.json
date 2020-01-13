@@ -1,0 +1,85 @@
+{
+  "id": "320ff188-2832-47d2-9d79-72bcc9eb5bc5",
+  "name": "Bulk Create Job",
+  "url": "{{endpoint}}/services/async/{{version}}/job",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "X-SFDC-Session",
+      "value": "{{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "name": "Content-Type",
+      "value": "application/json",
+      "type": "text"
+    },
+    {
+      "key": "charset",
+      "value": "UTF-8"
+    },
+    {
+      "key": "Sforce-Disable-Batch-Retry",
+      "value": "FALSE",
+      "enabled": false
+    },
+    {
+      "key": "Sforce-Line-Ending",
+      "value": "CRLF",
+      "enabled": false
+    },
+    {
+      "key": "Sforce-Enable-PKChunking",
+      "value": "FALSE",
+      "enabled": false
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip",
+      "enabled": false
+    },
+    {
+      "key": "Content-Encoding",
+      "value": "gzip",
+      "enabled": false
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "3a4d4b27-e558-45cb-90b1-0bcfdf006cec",
+        "exec": [
+          "if(postman.getResponseHeader(\"Content-Type\").indexOf(\"xml\") !== -1) {",
+          "    var jsonData = xml2Json(responseBody);",
+          "    postman.setGlobalVariable(\"jobId\", jsonData['jobInfo']['id']);    ",
+          "}",
+          "",
+          "if(postman.getResponseHeader(\"Content-Type\").indexOf(\"json\") !== -1) {",
+          "    var jsonData = JSON.parse(responseBody);",
+          "    postman.setGlobalVariable(\"jobId\", jsonData.id);",
+          "}",
+          "",
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "3a82ee07-553f-45dd-81c1-37547849b3d3",
+  "preRequestScript": null,
+  "tests": "if(postman.getResponseHeader(\"Content-Type\").indexOf(\"xml\") !== -1) {\n    var jsonData = xml2Json(responseBody);\n    postman.setGlobalVariable(\"jobId\", jsonData['jobInfo']['id']);    \n}\n\nif(postman.getResponseHeader(\"Content-Type\").indexOf(\"json\") !== -1) {\n    var jsonData = JSON.parse(responseBody);\n    postman.setGlobalVariable(\"jobId\", jsonData.id);\n}\n\n",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n  \"operation\" : \"insert\",\n  \"object\" : \"Account\",\n  \"contentType\" : \"CSV\"\n}",
+  "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: application/json\ncharset: UTF-8\n//Sforce-Disable-Batch-Retry: FALSE\n//Sforce-Line-Ending: CRLF\n//Sforce-Enable-PKChunking: FALSE\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
+  "pathVariables": {}
+}

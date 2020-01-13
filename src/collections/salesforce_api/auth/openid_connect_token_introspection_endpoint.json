@@ -1,0 +1,54 @@
+{
+  "id": "0f788478-8707-48f4-b85d-7964a05f2005",
+  "name": "OpenID Connect Token Introspection Endpoint",
+  "url": "{{url}}{{site}}/services/oauth2/introspect",
+  "description": null,
+  "data": [
+    {
+      "key": "token",
+      "value": "{{access_token}}",
+      "type": "text"
+    },
+    {
+      "key": "token_type_hint",
+      "value": "access_token",
+      "type": "text"
+    },
+    {
+      "key": "client_id",
+      "value": "{{clientId}}",
+      "type": "text"
+    },
+    {
+      "key": "client_secret",
+      "value": "{{clientSecret}}",
+      "type": "text"
+    }
+  ],
+  "dataOptions": null,
+  "dataMode": "urlencoded",
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded",
+      "type": "text"
+    },
+    {
+      "key": "Accept",
+      "value": "application/json",
+      "type": "text"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Content-Type: application/x-www-form-urlencoded\nAccept: application/json\n",
+  "pathVariables": {}
+}

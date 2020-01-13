@@ -1,0 +1,33 @@
+{
+  "id": "5980bf6e-db69-451f-af21-7e0aac5c06b7",
+  "name": "Composite REST",
+  "url": "{{endpoint}}/services/data/v{{version}}/composite/",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "type": "text",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "type": "text",
+      "value": "application/json"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "37217ed6-6fdf-4f2e-b493-a107397a783c",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n  \"compositeRequest\" : [ {\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v40.0/query?q=select+id+from+Account+limit+1\",\n    \"referenceId\" : \"test\"\n  }, {\n  },{\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v40.0/query?q=select+id,name+from+Account+where+Id='@{test.Id}'\",\n    \"referenceId\" : \"retest\"\n  } ]\n}",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

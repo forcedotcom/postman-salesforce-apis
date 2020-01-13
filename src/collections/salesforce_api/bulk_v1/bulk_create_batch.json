@@ -1,0 +1,65 @@
+{
+  "id": "dc9958d2-0254-468d-85a9-632cf3b31eee",
+  "name": "Bulk Create Batch",
+  "url": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}/batch",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "binary",
+  "headerData": [
+    {
+      "key": "X-SFDC-Session",
+      "value": "{{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "text/csv"
+    },
+    {
+      "key": "Content-Type",
+      "value": "zip/csv",
+      "enabled": false
+    },
+    {
+      "key": "charset",
+      "value": "UTF-8"
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip",
+      "enabled": false
+    },
+    {
+      "key": "Content-Encoding",
+      "value": "gzip",
+      "enabled": false
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "3823484e-282d-406a-b718-c3622539fd11",
+        "exec": [
+          "var xmlTree = xml2Json(responseBody);",
+          "console.log(xmlTree);",
+          "postman.setGlobalVariable(\"batchId\", xmlTree['batchInfo']['id']);"
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "3a82ee07-553f-45dd-81c1-37547849b3d3",
+  "preRequestScript": null,
+  "tests": "var xmlTree = xml2Json(responseBody);\nconsole.log(xmlTree);\npostman.setGlobalVariable(\"batchId\", xmlTree['batchInfo']['id']);",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: text/csv\n//Content-Type: zip/csv\ncharset: UTF-8\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
+  "pathVariables": {}
+}

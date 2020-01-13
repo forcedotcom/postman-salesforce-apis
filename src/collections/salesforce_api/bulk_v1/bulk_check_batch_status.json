@@ -1,0 +1,34 @@
+{
+  "id": "0c13bfe8-5d11-4fa2-9c7f-297626766671",
+  "name": "Bulk Check Batch Status",
+  "url": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}/batch",
+  "description": null,
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "X-SFDC-Session",
+      "value": "{{access_token}}"
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip"
+    },
+    {
+      "key": "Content-Encoding",
+      "value": "gzip"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "3a82ee07-553f-45dd-81c1-37547849b3d3",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "X-SFDC-Session: {{access_token}}\nAccept-Encoding: gzip\nContent-Encoding: gzip\n",
+  "pathVariables": {}
+}

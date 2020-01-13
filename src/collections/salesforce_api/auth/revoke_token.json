@@ -1,0 +1,45 @@
+{
+  "id": "22c3687e-1aa4-4dc8-8240-b79da096fd08",
+  "name": "Revoke Token",
+  "url": "{{url}}{{site}}/services/oauth2/revoke",
+  "description": null,
+  "data": [
+    {
+      "key": "token",
+      "value": "",
+      "type": "text"
+    }
+  ],
+  "dataOptions": null,
+  "dataMode": "urlencoded",
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "4c88977a-e2b4-47bd-91db-cd57d1b07daf",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Content-Type: application/x-www-form-urlencoded\n",
+  "pathVariables": {}
+}

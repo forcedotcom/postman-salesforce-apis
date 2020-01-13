@@ -1,0 +1,31 @@
+{
+  "id": "16b9d4bb-4ad0-4ee1-bf59-0640039564c4",
+  "name": "Close or Abort a Job",
+  "url": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "95304fc2-fbf8-49ba-a94d-f9357c64c2ce",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n\t\"state\":\"UploadComplete\"\n}",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

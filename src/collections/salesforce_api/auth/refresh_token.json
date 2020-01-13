@@ -1,0 +1,62 @@
+{
+  "id": "7c2f3d73-e908-4107-8fd1-53ec65a73a87",
+  "name": "Refresh Token",
+  "url": "{{url}}{{site}}/services/oauth2/token",
+  "description": null,
+  "data": [
+    {
+      "key": "grant_type",
+      "value": "refresh_token",
+      "type": "text"
+    },
+    {
+      "key": "client_id",
+      "value": "{{clientId}}",
+      "type": "text"
+    },
+    {
+      "key": "client_secret",
+      "value": "{{clientSecret}}",
+      "type": "text"
+    },
+    {
+      "key": "refresh_token",
+      "value": "{{refresh_token}}",
+      "type": "text"
+    }
+  ],
+  "dataOptions": null,
+  "dataMode": "urlencoded",
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "4c88977a-e2b4-47bd-91db-cd57d1b07daf",
+        "exec": [
+          "var jsonData = JSON.parse(responseBody);",
+          "postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);",
+          "postman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);"
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "preRequestScript": null,
+  "tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"access_token\", jsonData.access_token);\npostman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Content-Type: application/x-www-form-urlencoded\n",
+  "pathVariables": {}
+}

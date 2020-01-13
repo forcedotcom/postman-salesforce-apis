@@ -1,0 +1,39 @@
+{
+  "id": "dce2a3b2-e27d-491a-af4a-246a1e666deb",
+  "name": "OpenID Connect Dynamic Client Registration Endpoint",
+  "url": "{{url}}{{site}}/services/oauth2/register",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "name": "Content-Type",
+      "value": "application/json",
+      "type": "text"
+    },
+    {
+      "key": "Accept",
+      "value": "application/json",
+      "type": "text"
+    },
+    {
+      "key": "Authorization",
+      "value": "Bearer {{init_access_token}}",
+      "type": "text"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n    \"redirect_uris\": [\n        \"http://localhost\"\n    ],\n    \"response_types\": [\n        \"code\",\n        \"token\",\n        \"id_token\"\n    ],\n    \"grant_types\": [\n        \"authorization_code\",\n        \"implicit\",\n        \"refresh_token\"\n    ],\n    \"application_type\": \"web\",\n    \"contacts\": [\n        \"abc@sf.com\",\n        \"ve7jtb@example.org\"\n    ],\n    \"client_name\": \"Example Olivier\"\n}",
+  "headers": "Content-Type: application/json\nAccept: application/json\nAuthorization: Bearer {{init_access_token}}\n",
+  "pathVariables": {}
+}

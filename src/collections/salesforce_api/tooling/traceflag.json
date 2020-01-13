@@ -1,0 +1,52 @@
+{
+  "id": "7726821b-7317-47b6-be55-1a2d2c1e88e4",
+  "name": "TraceFlag",
+  "url": "{{endpoint}}/services/data/{{version}}/tooling/sobjects/TraceFlag/7tf580000034tPY",
+  "description": "7tf580000034tPY\n7tf580000034stG\n7tf580000034stB\n7tf580000034tPd\n7tf580000034tPi\n7tf580000034tSN\n7tf580000034tPn",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "var startDateTime = new Date();",
+          "startDateTime.setHours(12);",
+          "startDateTime.setMinutes(0);",
+          "startDateTime.setSeconds(0);",
+          "startDateTime.setMilliseconds(0);",
+          "",
+          "",
+          "postman.setGlobalVariable(\"startDateTime\", startDateTime.toISOString());",
+          "startDateTime.setDate(startDateTime.getDate() + 1);",
+          "postman.setGlobalVariable(\"expirationDateTime\", startDateTime.toISOString());"
+        ]
+      }
+    }
+  ],
+  "folder": "c799fa65-7caa-462f-bcc3-88ba3e674b79",
+  "preRequestScript": "var startDateTime = new Date();\nstartDateTime.setHours(12);\nstartDateTime.setMinutes(0);\nstartDateTime.setSeconds(0);\nstartDateTime.setMilliseconds(0);\n\n\npostman.setGlobalVariable(\"startDateTime\", startDateTime.toISOString());\nstartDateTime.setDate(startDateTime.getDate() + 1);\npostman.setGlobalVariable(\"expirationDateTime\", startDateTime.toISOString());",
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n\"ExpirationDate\":\"{{expirationDateTime}}\",\n\"StartDate\":\"{{startDateTime}}\"\n}",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

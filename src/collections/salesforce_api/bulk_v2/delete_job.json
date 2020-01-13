@@ -1,0 +1,32 @@
+{
+  "id": "a57291de-7ed0-4a76-802a-64e28547bd2d",
+  "name": "Delete Job",
+  "url": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json",
+      "enabled": false
+    }
+  ],
+  "method": "DELETE",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "95304fc2-fbf8-49ba-a94d-f9357c64c2ce",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{access_token}}\n//Content-Type: application/json\n",
+  "pathVariables": {}
+}

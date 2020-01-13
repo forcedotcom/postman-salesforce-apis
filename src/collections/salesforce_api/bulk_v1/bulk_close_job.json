@@ -1,0 +1,45 @@
+{
+  "id": "57f7f2b8-5c8e-42e5-8d8b-6ec8b9877014",
+  "name": "Bulk Close Job",
+  "url": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "X-SFDC-Session",
+      "value": "{{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "charset",
+      "value": "UTF-8"
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip",
+      "enabled": false
+    },
+    {
+      "key": "Content-Encoding",
+      "value": "gzip",
+      "enabled": false
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "3a82ee07-553f-45dd-81c1-37547849b3d3",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n   \"state\" : \"UploadComplete\"\n}",
+  "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: application/json\ncharset: UTF-8\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
+  "pathVariables": {}
+}

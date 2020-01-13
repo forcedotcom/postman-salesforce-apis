@@ -1,0 +1,33 @@
+{
+  "id": "0e5768be-a5b4-45cf-854d-2fc9f150efa5",
+  "name": "INT53",
+  "url": "{{url}}/services/data/v{{version}}/composite/",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}",
+      "type": "text"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json",
+      "type": "text"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "1bdfde65-3f7b-4360-bad0-2633cba618ed",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "28ebda8c-e8ae-402b-80d6-00f73811aa5a",
+  "rawModeData": "{\n  \"compositeRequest\" : [ {\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v40.0/sobjects/Account/0010D00000Ll0VuQAJ?fields=NationalId__pc,PersonEmail,FirstName,MobileProfessionalTelephone__pc,MaritalStatus__pc,NationalId2__pc,NationalId2Type__pc,NationalIdType__pc,Profession__pc,PersonBirthdate,ClientLanguage__pc,PSAWorker__pc,ProfessionalEmail__pc,MaidenName__pc,Patronym__pc,SingleName__pc,Salutation,Title__pc,PersonMailingStreet,MailingAddressComplement__pc,PersonMailingPostalCode,PersonMailingCity,PersonMailingState,PersonMailingCountry,NationalId2ProviderCity__pc,NationalId2ValidityEndDate__pc,Id,SalesChannel__c,RecordTypeId, RecordType.Name,LastName,Name,MobilePersonalTelephone__pc,LandlinePersonalTelephone__pc,LandlineProfessionalTelephone__pc,CompanyActivityType__c, VNContractNumber__c\",\n    \"referenceId\" : \"refAccount\"\n  }, {\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v40.0/sobjects/Account/0010D00000Ll0VuQAJ/AccountContactRelations?fields=Id,AccountId,ContactId,Roles,Contact.FirstName,Contact.LastName,Contact.Birthdate,Contact.NationalId__c,Contact.NationalIdType__c\",\n    \"referenceId\" : \"refContactRel\"\n  }, {\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v40.0/sobjects/Account/0010D00000Ll0VuQAJ/Account_External_References__r?fields=Id,Account__c,System__c,Brand__c,ExternalId__c\",\n    \"referenceId\" : \"refAccExtRef\"\n  }, {\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v40.0/query?q=select+id,Customer__c,Dealer__c+from+AccountKnowledge__c+where+Customer__c='@{refAccount.Id}'+AND+Dealer__c='DealerId'\",\n    \"referenceId\" : \"refAccKnow\"\n  },{\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v40.0/query?q=select+id,entityid__r.ShortVNContractNumber__c,Channel__c,contactabilitystatus__c,country__c,brand__c,purpose__c,calculationdate__c+from+contactability__c+where+Contact__r.Accountid='@{refAccount.Id}'+AND+entity__C='POS'+AND+entityid__r.VNContractNumber__c='999990A'\",\n    \"referenceId\" : \"refGDPR\"\n  } ]\n}",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

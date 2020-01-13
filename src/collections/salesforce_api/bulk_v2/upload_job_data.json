@@ -1,0 +1,31 @@
+{
+  "id": "38158203-c167-4399-a696-01760dfe6a28",
+  "name": "Upload Job Data",
+  "url": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}/batches",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "binary",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "text/csv"
+    }
+  ],
+  "method": "PUT",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "95304fc2-fbf8-49ba-a94d-f9357c64c2ce",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: text/csv\n",
+  "pathVariables": {}
+}

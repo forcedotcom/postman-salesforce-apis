@@ -1,0 +1,21 @@
+{
+  "id": "f7b8594f-0f61-46b8-ad97-1b23dc37f0f5",
+  "name": "OpenID Connect Discovery Endpoint",
+  "url": "{{url}}{{site}}/.well-known/openid-configuration",
+  "description": null,
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "",
+  "pathVariables": {}
+}

@@ -1,0 +1,20 @@
+{
+  "id": "8abb480b-fdb4-4a2d-b2ad-15ce690f28e6",
+  "name": "Salesforce",
+  "headers": [
+    {
+      "key": "Authorization",
+      "value": "{{access_token}}",
+      "type": "text",
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json",
+      "type": "text",
+      "description": "",
+      "enabled": true
+    }
+  ]
+}

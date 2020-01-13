@@ -1,0 +1,68 @@
+{
+  "id": "b31a4553-7c60-42c2-a384-6747fd2ab033",
+  "name": "Web Server Flow 2",
+  "url": "{{url}}{{site}}/services/oauth2/token",
+  "description": null,
+  "data": [
+    {
+      "key": "code",
+      "value": "aPrxJCZZ9LWwfrB8wH83kBQsU1SFji_cF3IZTFrkN2UrVpXQ46dkwbtuSWcG6l.esY03XKU1SQ==",
+      "type": "text"
+    },
+    {
+      "key": "grant_type",
+      "value": "authorization_code",
+      "type": "text"
+    },
+    {
+      "key": "client_id",
+      "value": "{{clientId}}",
+      "type": "text"
+    },
+    {
+      "key": "client_secret",
+      "value": "{{clientSecret}}",
+      "type": "text"
+    },
+    {
+      "key": "redirect_uri",
+      "value": "{{redirectUrl}}",
+      "type": "text"
+    },
+    {
+      "key": "format",
+      "value": "json",
+      "type": "text"
+    }
+  ],
+  "dataOptions": null,
+  "dataMode": "params",
+  "headerData": [],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "42af4a8f-87e2-47d9-94fc-7025cb052f12",
+        "exec": [
+          "var jsonData = JSON.parse(responseBody);",
+          "postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);",
+          "postman.setEnvironmentVariable(\"refresh_token\", jsonData.refresh_token);",
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "preRequestScript": null,
+  "tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"access_token\", jsonData.access_token);\npostman.setEnvironmentVariable(\"refresh_token\", jsonData.refresh_token);\n",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "",
+  "pathVariables": {}
+}

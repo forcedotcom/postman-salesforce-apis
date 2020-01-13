@@ -1,0 +1,54 @@
+{
+  "id": "715644cc-2058-4604-9d9d-e4199651f86d",
+  "name": "Asset Token Flow",
+  "url": "{{url}}{{site}}/services/oauth2/token",
+  "description": null,
+  "data": [
+    {
+      "key": "grant_type",
+      "value": "urn:ietf:params:oauth:grant-type:token-exchange",
+      "type": "text"
+    },
+    {
+      "key": "subject_token_type",
+      "value": "urn:ietf:params:oauth:token-type:access_token",
+      "type": "text"
+    },
+    {
+      "key": "subject_token",
+      "value": "{{access_token}}",
+      "type": "text"
+    },
+    {
+      "key": "actor_token_type",
+      "value": "urn:ietf:params:oauth:token-type:jwt",
+      "type": "text"
+    },
+    {
+      "key": "actor_token",
+      "value": "",
+      "type": "text"
+    }
+  ],
+  "dataOptions": null,
+  "dataMode": "urlencoded",
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded",
+      "type": "text"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Content-Type: application/x-www-form-urlencoded\n",
+  "pathVariables": {}
+}

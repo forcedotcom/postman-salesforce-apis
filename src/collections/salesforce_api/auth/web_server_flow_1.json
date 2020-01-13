@@ -1,0 +1,38 @@
+{
+  "id": "0b062947-351e-420b-afe0-b9ff55b89454",
+  "name": "Web Server Flow 1",
+  "url": "{{url}}{{site}}/services/oauth2/authorize?response_type=code&client_id={{clientId}}&redirect_uri={{redirectUrl}}&scope=full refresh_token",
+  "description": null,
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "response_type",
+      "value": "code"
+    },
+    {
+      "key": "client_id",
+      "value": "{{clientId}}"
+    },
+    {
+      "key": "redirect_uri",
+      "value": "{{redirectUrl}}"
+    },
+    {
+      "key": "scope",
+      "value": "full refresh_token"
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "",
+  "pathVariables": {}
+}

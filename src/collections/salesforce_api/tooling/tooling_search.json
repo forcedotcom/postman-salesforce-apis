@@ -1,0 +1,31 @@
+{
+  "id": "906a73f2-b7d6-4910-82d1-c196c3d76e5e",
+  "name": "Tooling Search",
+  "url": "{{endpoint}}/services/data/{{version}}/tooling/query?q=Select id from TraceFlag",
+  "description": "Search",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "q",
+      "value": "Select id from TraceFlag"
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "c799fa65-7caa-462f-bcc3-88ba3e674b79",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\n",
+  "pathVariables": {}
+}
