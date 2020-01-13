@@ -1,0 +1,1948 @@
+{
+	"info": {
+		"_postman_id": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+		"name": "Salesforce API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "JWT Bearer Token Flow",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c645730b-b613-4b82-a238-be0b27389707",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);",
+									"postman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "urn:ietf:params:oauth:grant-type:jwt-bearer",
+									"type": "text"
+								},
+								{
+									"key": "assertion",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}{{site}}/services/oauth2/token",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"token"
+							]
+						},
+						"description": "JWT Auth"
+					},
+					"response": []
+				},
+				{
+					"name": "User Agent Flow",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0a0dc544-c18f-4a6b-86e4-df3cccf8ab2d",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);",
+									"postman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}{{site}}/services/oauth2/authorize?response_type=token token_id&client_id={{clientId}}&redirect_uri={{redirectUrl}}&display=touch&login_hint&nonce=awesome",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "response_type",
+									"value": "token token_id"
+								},
+								{
+									"key": "client_id",
+									"value": "{{clientId}}"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirectUrl}}"
+								},
+								{
+									"key": "display",
+									"value": "touch"
+								},
+								{
+									"key": "login_hint",
+									"value": null
+								},
+								{
+									"key": "nonce",
+									"value": "awesome"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Web Server Flow 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}{{site}}/services/oauth2/authorize?response_type=code&client_id={{clientId}}&redirect_uri={{redirectUrl}}&scope=full refresh_token",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "response_type",
+									"value": "code"
+								},
+								{
+									"key": "client_id",
+									"value": "{{clientId}}"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirectUrl}}"
+								},
+								{
+									"key": "scope",
+									"value": "full refresh_token"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Web Server Flow 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "42af4a8f-87e2-47d9-94fc-7025cb052f12",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);",
+									"postman.setEnvironmentVariable(\"refresh_token\", jsonData.refresh_token);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "code",
+									"value": "aPrxJCZZ9LWwfrB8wH83kBQsU1SFji_cF3IZTFrkN2UrVpXQ46dkwbtuSWcG6l.esY03XKU1SQ==",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{clientId}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{clientSecret}}",
+									"type": "text"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirectUrl}}",
+									"type": "text"
+								},
+								{
+									"key": "format",
+									"value": "json",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}{{site}}/services/oauth2/token",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OAuth Username Password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3813454f-4eb9-4c8a-8c4a-aa1a942d1dd8",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);",
+									"postman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{clientId}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{clientSecret}}",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{password}}{{secret_token}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}{{url}}{{site}}/services/oauth2/token",
+							"host": [
+								"{{url}}{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Asset Token Flow",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "urn:ietf:params:oauth:grant-type:token-exchange",
+									"type": "text"
+								},
+								{
+									"key": "subject_token_type",
+									"value": "urn:ietf:params:oauth:token-type:access_token",
+									"type": "text"
+								},
+								{
+									"key": "subject_token",
+									"value": "{{access_token}}",
+									"type": "text"
+								},
+								{
+									"key": "actor_token_type",
+									"value": "urn:ietf:params:oauth:token-type:jwt",
+									"type": "text"
+								},
+								{
+									"key": "actor_token",
+									"value": "eyJraWQiOiJkZXZpY2VrZXkiLCJhbGciOiJSUzI1NiJ9.eyJkaWQiOiJhNTMxNzk4ZC0wYjIwLWMwOTktYTA1My1mODU5MjgwMTE2ZjQiLCJOYW1lIjoiQXNzZXQgVG9rZW46IGE1MzE3OThkLTBiMjAtYzA5OS1hMDUzLWY4NTkyODAxMTZmNCIsIkFzc2V0Ijp7IkFjY291bnRJZCI6IjAwMTFpMDAwMDA2a2lUYyIsIlNlcmlhbE51bWJlciI6ImE1MzE3OThkLTBiMjAtYzA5OS1hMDUzLWY4NTkyODAxMTZmNCIsIkNvbnRhY3RJZCI6IjAwMzFpMDAwMDA2WmRrYyIsIk5hbWUiOiJBc3NldDogYTUzMTc5OGQtMGIyMC1jMDk5LWEwNTMtZjg1OTI4MDExNmY0In0sImNuZiI6eyJqd2siOnsia3R5IjoiUlNBIiwia2lkIjoiZGV2aWNla2V5IiwibiI6ImwtODc0YllDY3RMdUdNNmg3a3VGYlVjaUhyYW9UcFdEd2c2Y1FBdF90dVZ6VkZVUWdWZVN0STBEeF9DSzhkWGlvSllxcFAzeUpIdlR5YjNSSnVZbzI3X0JoNTBkVzNkcTJ4N0hheERyWFNwUGo2OV84UGVmc295eXBnb3Z1UjlfOWFLQWd3bGYtbThoR1YtUWpLdllYSzFSdHBxdmJLY3VDUzduWFBZdmV5TGtFTm04SjFVTkNRU2pncjZ1Z2ZKSWh3LXRhOGJXa1dtX3hPOU1xZkdHVjY2dlNXVi16dGVaQng1VkJLSnFpaFNvSi1OdHJFalJNdEYxWkJ2S3BSYjlmMld3REs4YUUzYzJVdU1xeUJaNFRrVXFRRXFWNEpYNDJrMEhNTXNGRzFGSnBtS3ZMRHdXWDBFZVRaT2lKbHFNSWp0SU00cXpJdEZTcEN6WVRLN2t3dyIsImUiOiJBUUFCIn19fQ.bn-yTLOpHdNVpR1IalyWp7mWac0ggCnLH9M8FcdAIyR0fE3aA8oPYAlNcBo-hX7WSuwuDhLlnYt800Mkthd_iM_IYRI3l9K-uE0n3movv8sw7CDcpuxWr1W8XG7Q3K7ycQqgaTx8rhItRzOvVAYQ0Q0J9QF8BVx5lWyBWyqqbRMfMUluWkjqW5Mo81HpCAKHvR1hVJor-SNY0fdPkXZ3CYDLDM1w1Q5cFr0EfJ-FsrfN2GKuw8fPKaW0qjdsBuswqvZ7xoGoiNZm2OT5gsCNH6RIT3BZnNxEIZ3weJ2LcwhFPiH8IrvP3e9AnJLchtCOYno4obvrdtydqVsDpACP9A",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}{{site}}/services/oauth2/token",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4c88977a-e2b4-47bd-91db-cd57d1b07daf",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);",
+									"postman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{clientId}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{clientSecret}}",
+									"type": "text"
+								},
+								{
+									"key": "refresh_token",
+									"value": "{{refresh_token}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}{{site}}/services/oauth2/token",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Revoke Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4c88977a-e2b4-47bd-91db-cd57d1b07daf",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}{{site}}/services/oauth2/revoke",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"revoke"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenID Connect Discovery Endpoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}{{site}}/.well-known/openid-configuration",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								".well-known",
+								"openid-configuration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authentication Configuration Endpoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}{{site}}/.well-known/auth-configuration",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								".well-known",
+								"auth-configuration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Info",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}{{site}}/services/oauth2/userinfo",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"userinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenID Connect Token Introspection Endpoint",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "text"
+								},
+								{
+									"key": "token_type_hint",
+									"value": "access_token",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{clientId}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{clientSecret}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}{{site}}/services/oauth2/introspect",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"introspect"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenID Connect Dynamic Client Registration Endpoint",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{init_access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"redirect_uris\": [\n        \"http://localhost\"\n    ],\n    \"response_types\": [\n        \"code\",\n        \"token\",\n        \"id_token\"\n    ],\n    \"grant_types\": [\n        \"authorization_code\",\n        \"implicit\",\n        \"refresh_token\"\n    ],\n    \"application_type\": \"web\",\n    \"contacts\": [\n        \"abc@sf.com\",\n        \"ve7jtb@example.org\"\n    ],\n    \"client_name\": \"Example Olivier\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}{{site}}/services/oauth2/register",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SOAP Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7fff925d-9787-45e6-9e08-23d0f8886eb4",
+								"exec": [
+									"var xmlTree = xml2Json(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.sessionId);",
+									"var url = xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.serverUrl.split(\"/\");",
+									"postman.setEnvironmentVariable(\"endpoint\", url[0] + \"//\" + url[2]);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "login",
+								"type": "text"
+							},
+							{
+								"key": "charset",
+								"value": "UTF-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<env:Envelope xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <env:Body>\n    <n1:login xmlns:n1=\"urn:partner.soap.sforce.com\">\n      <n1:username>{{username}}</n1:username>\n      <n1:password>{{password}}{{secret_token}}</n1:password>\n    </n1:login>\n  </env:Body>\n</env:Envelope>"
+						},
+						"url": {
+							"raw": "{{url}}{{site}}/services/Soap/u/47.0",
+							"host": [
+								"{{url}}{{site}}"
+							],
+							"path": [
+								"services",
+								"Soap",
+								"u",
+								"47.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Salesforce Keys",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/id/keys",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"id",
+								"keys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ID Token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/id/{{orgId}}/{{userId}}",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"id",
+								"{{orgId}}",
+								"{{userId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Bulk V1",
+			"item": [
+				{
+					"name": "Bulk Create Job",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a4d4b27-e558-45cb-90b1-0bcfdf006cec",
+								"exec": [
+									"if(postman.getResponseHeader(\"Content-Type\").indexOf(\"xml\") !== -1) {",
+									"    var jsonData = xml2Json(responseBody);",
+									"    postman.setGlobalVariable(\"jobId\", jsonData['jobInfo']['id']);    ",
+									"}",
+									"",
+									"if(postman.getResponseHeader(\"Content-Type\").indexOf(\"json\") !== -1) {",
+									"    var jsonData = JSON.parse(responseBody);",
+									"    postman.setGlobalVariable(\"jobId\", jsonData.id);",
+									"}",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-SFDC-Session",
+								"value": "{{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "charset",
+								"value": "UTF-8"
+							},
+							{
+								"key": "Sforce-Disable-Batch-Retry",
+								"value": "FALSE",
+								"disabled": true
+							},
+							{
+								"key": "Sforce-Line-Ending",
+								"value": "CRLF",
+								"disabled": true
+							},
+							{
+								"key": "Sforce-Enable-PKChunking",
+								"value": "FALSE",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip",
+								"disabled": true
+							},
+							{
+								"key": "Content-Encoding",
+								"value": "gzip",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"operation\" : \"insert\",\n  \"object\" : \"Account\",\n  \"contentType\" : \"CSV\"\n}"
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/async/{{version}}/job",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"async",
+								"{{version}}",
+								"job"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Spec",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-SFDC-Session",
+								"value": "{{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "text/csv"
+							},
+							{
+								"key": "charset",
+								"value": "UTF-8"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "Content-Encoding",
+								"value": "gzip"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "Salesforce Field,Csv Header,Value,Hint\nName,Full Name,,\nTitle,Job Title,,\nLeadSource,Lead Source,Import,\nDescription,,Imported from XYZ.csv,\nBirthdate,Date of Birth,,dd MM yy"
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/async/{{version}}/job/{{jobid}}/spec",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"async",
+								"{{version}}",
+								"job",
+								"{{jobid}}",
+								"spec"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Create Batch",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3823484e-282d-406a-b718-c3622539fd11",
+								"exec": [
+									"var xmlTree = xml2Json(responseBody);",
+									"console.log(xmlTree);",
+									"postman.setGlobalVariable(\"batchId\", xmlTree['batchInfo']['id']);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-SFDC-Session",
+								"value": "{{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "text/csv"
+							},
+							{
+								"key": "Content-Type",
+								"value": "zip/csv",
+								"disabled": true
+							},
+							{
+								"key": "charset",
+								"value": "UTF-8"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip",
+								"disabled": true
+							},
+							{
+								"key": "Content-Encoding",
+								"value": "gzip",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {
+								"src": ""
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}/batch",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"async",
+								"{{version}}",
+								"job",
+								"{{jobId}}",
+								"batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Close Job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-SFDC-Session",
+								"value": "{{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "charset",
+								"value": "UTF-8"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip",
+								"disabled": true
+							},
+							{
+								"key": "Content-Encoding",
+								"value": "gzip",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"state\" : \"UploadComplete\"\n}"
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"async",
+								"{{version}}",
+								"job",
+								"{{jobId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Check Batch Status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-SFDC-Session",
+								"value": "{{access_token}}"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "Content-Encoding",
+								"value": "gzip"
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}/batch",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"async",
+								"{{version}}",
+								"job",
+								"{{jobId}}",
+								"batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Retrieve Batch Result",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-SFDC-Session",
+								"value": "{{access_token}}"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "Content-Encoding",
+								"value": "gzip"
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}/batch/{{batchId}}/result",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"async",
+								"{{version}}",
+								"job",
+								"{{jobId}}",
+								"batch",
+								"{{batchId}}",
+								"result"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Bulk V2",
+			"item": [
+				{
+					"name": "Create job",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b438d4fa-1275-4c48-ad33-20b679018754",
+								"exec": [
+									"var response = JSON.parse(responseBody)",
+									"postman.setGlobalVariable(\"jobId\", response.id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"object\":\"Asset\",\n\"operation\":\"update\"\n}"
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/jobs/ingest",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"jobs",
+								"ingest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Job Data",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "text/csv"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {
+								"src": ""
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}/batches",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"jobs",
+								"ingest",
+								"{{jobId}}",
+								"batches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Close or Abort a Job",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"state\":\"UploadComplete\"\n}"
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"jobs",
+								"ingest",
+								"{{jobId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Job",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"jobs",
+								"ingest",
+								"{{jobId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Job Info",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"jobs",
+								"ingest",
+								"{{jobId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/jobs/ingest",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"jobs",
+								"ingest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Job Successful Record Results",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}/successfulResults",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"jobs",
+								"ingest",
+								"{{jobId}}",
+								"successfulResults"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Job Failed Record Results",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}/failedResults",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"jobs",
+								"ingest",
+								"{{jobId}}",
+								"failedResults"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Job Unprocessed Record Results",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}/unprocessedrecords",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"jobs",
+								"ingest",
+								"{{jobId}}",
+								"unprocessedrecords"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "REST",
+			"item": [
+				{
+					"name": "REST Create",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "18f8ee9f-81e2-46ba-9d88-fc0090afe065",
+								"exec": [
+									"{",
+									"    \"FirstName\" : \"test\",",
+									"    \"LastName\" : \"test\"",
+									"}",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"FirstName\":\"Test\",\n\"LastName\":\"API\"\n}\n"
+						},
+						"url": {
+							"raw": "{{url}}/services/data/v{{version}}/sobjects/Lead",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"sobjects",
+								"Lead"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "REST Create Lead",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"FirstName\":\"Test\",\n\"LastName\":\"API\"\n}\n"
+								},
+								"url": {
+									"raw": "{{url}}/services/data/v{{version}}/sobjects/Lead",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"services",
+										"data",
+										"v{{version}}",
+										"sobjects",
+										"Lead"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Describe",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/sobjects/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"sobjects",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Attachment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Name\" : \"demo.csv\",\n  \"Body\": \"base64 content\",\n  \"parentId\": \"i\"\n}"
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/data/v40.0/sobjects/Attachment",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v40.0",
+								"sobjects",
+								"Attachment"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Chatter",
+			"item": [
+				{
+					"name": "Upload Photo Chatter",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"disabled": true
+							},
+							{
+								"key": "Content-Disposition",
+								"value": "form-data; name=\"photo\"",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "json",
+									"value": "{\"cropY\":\"0\",\"cropX\":\"0\",\"cropSize\":\"200\"}",
+									"type": "text"
+								},
+								{
+									"key": "fileUpload",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/services/data/v40.0/connect/user-profiles/me/photo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v40.0",
+								"connect",
+								"user-profiles",
+								"me",
+								"photo"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Tooling",
+			"item": [
+				{
+					"name": "ApexCodeCoverageAggregate",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/services/data/{{version}}/tooling/sobjects/ApexCodeCoverageAggregate",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"{{version}}",
+								"tooling",
+								"sobjects",
+								"ApexCodeCoverageAggregate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tooling Search",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/services/data/{{version}}/tooling/query?q=Select id from TraceFlag",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"{{version}}",
+								"tooling",
+								"query"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Select id from TraceFlag"
+								}
+							]
+						},
+						"description": "Search"
+					},
+					"response": []
+				},
+				{
+					"name": "TraceFlag",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var startDateTime = new Date();",
+									"startDateTime.setHours(12);",
+									"startDateTime.setMinutes(0);",
+									"startDateTime.setSeconds(0);",
+									"startDateTime.setMilliseconds(0);",
+									"",
+									"",
+									"postman.setGlobalVariable(\"startDateTime\", startDateTime.toISOString());",
+									"startDateTime.setDate(startDateTime.getDate() + 1);",
+									"postman.setGlobalVariable(\"expirationDateTime\", startDateTime.toISOString());"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"ExpirationDate\":\"{{expirationDateTime}}\",\n\"StartDate\":\"{{startDateTime}}\"\n}"
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/data/{{version}}/tooling/sobjects/TraceFlag/7tf580000034tPY",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"{{version}}",
+								"tooling",
+								"sobjects",
+								"TraceFlag",
+								"7tf580000034tPY"
+							]
+						},
+						"description": "7tf580000034tPY\n7tf580000034stG\n7tf580000034stB\n7tf580000034tPd\n7tf580000034tPi\n7tf580000034tSN\n7tf580000034tPn"
+					},
+					"response": []
+				},
+				{
+					"name": "ExecuteAnonymous",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/tooling/executeAnonymous/?anonymousBody=System.Debug('awesome');",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"tooling",
+								"executeAnonymous",
+								""
+							],
+							"query": [
+								{
+									"key": "anonymousBody",
+									"value": "System.Debug('awesome');"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Trailhead",
+			"item": [
+				{
+					"name": "Trailhead Module",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "X-Api-Key",
+								"value": "{{key}}"
+							},
+							{
+								"key": "X-Environment-Url",
+								"value": "{{env}}"
+							}
+						],
+						"url": {
+							"raw": "{{endpoint}}/{{version}}/modules",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"{{version}}",
+								"modules"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Metadata",
+			"item": [
+				{
+					"name": "SOAP DescribeMetadata",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8ea3256a-fb89-4eec-85de-2172c63fd5e9",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							},
+							{
+								"key": "charset",
+								"value": "UTF-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "login"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tns=\"http://soap.sforce.com/2006/04/metadata\">\n\t<soapenv:Header>\n\t<tns:SessionHeader>\n\t\t<tns:sessionId>{{access_token}}</tns:sessionId>\n\t</tns:SessionHeader>\n\t</soapenv:Header>\n\t<soapenv:Body>\n\t\t<tns:describeMetadata>\n\t\t\t<asOfVersion>{{version}}</asOfVersion>\n\t\t</tns:describeMetadata>\n\t</soapenv:Body>\n</soapenv:Envelope>"
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/Soap/m/46.0",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"Soap",
+								"m",
+								"46.0"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Composite",
+			"item": [
+				{
+					"name": "Composite REST",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"compositeRequest\" : [ {\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v40.0/query?q=select+id+from+Account+limit+1\",\n    \"referenceId\" : \"test\"\n  }, {\n  },{\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v40.0/query?q=select+id,name+from+Account+where+Id='@{test.Id}'\",\n    \"referenceId\" : \"retest\"\n  } ]\n}"
+						},
+						"url": {
+							"raw": "{{endpoint}}/services/data/v{{version}}/composite/",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"composite",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Limit",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					}
+				],
+				"url": {
+					"raw": "{{endpoint}}/services/data/v{{version}}/limits",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"services",
+						"data",
+						"v{{version}}",
+						"limits"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
