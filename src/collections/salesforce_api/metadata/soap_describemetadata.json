@@ -1,7 +1,7 @@
 {
   "id": "59ff7ea2-94be-4b63-b9ee-ff930f571963",
   "name": "SOAP DescribeMetadata",
-  "url": "{{endpoint}}/services/Soap/m/46.0",
+  "url": "{{endpoint}}/services/Soap/m/{{version}}",
   "description": null,
   "data": [],
   "dataOptions": null,
