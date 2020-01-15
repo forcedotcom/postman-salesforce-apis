@@ -1,7 +1,7 @@
 {
   "id": "9ac82c8a-f567-4202-b09a-619af333d0a2",
   "name": "Post Attachment",
-  "url": "{{endpoint}}/services/data/v40.0/sobjects/Attachment",
+  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/Attachment",
   "description": null,
   "data": [],
   "dataOptions": null,

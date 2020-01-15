@@ -1,7 +1,7 @@
 {
   "id": "1c8ef5b8-bc0a-4d2a-995b-e96a60817036",
-  "name": "{{url}}/services/data/v40.0/sobjects/Attachment",
-  "url": "{{url}}/services/data/v40.0/sobjects/Attachment",
+  "name": "Create Attachment",
+  "url": "{{url}}/services/data/v{{version}}/sobjects/Attachment",
   "description": null,
   "data": [],
   "dataOptions": null,
