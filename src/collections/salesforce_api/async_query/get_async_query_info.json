@@ -1,0 +1,92 @@
+{
+  "id": "2ada4d70-f0f9-483a-9da3-362b2dadbb15",
+  "name": "Get Async Query Info",
+  "url": "{{endpoint}}/services/data/v{{version}}/async-queries/{{jobId}}",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "18f8ee9f-81e2-46ba-9d88-fc0090afe065",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "d52d0f63-6e82-41e0-a3c4-77e6f53b768d",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "f7f0b2ce-95ac-473c-bafd-3210a262257f",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "responses": [
+    {
+      "id": "1dcab4a4-8e3c-497c-b025-f7578f01c6d1",
+      "name": "REST Create Lead",
+      "status": null,
+      "mime": null,
+      "language": null,
+      "text": null,
+      "responseCode": null,
+      "requestObject": {
+        "data": [],
+        "dataMode": "raw",
+        "dataOptions": null,
+        "headerData": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{access_token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "pathVariableData": [],
+        "queryParams": [],
+        "url": "{{url}}/services/data/v{{version}}/sobjects/Lead",
+        "rawModeData": "{\n\"FirstName\":\"Test\",\n\"LastName\":\"API\"\n}\n"
+      },
+      "headers": null,
+      "cookies": null,
+      "request": "2ada4d70-f0f9-483a-9da3-362b2dadbb15",
+      "collection": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21"
+    }
+  ],
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

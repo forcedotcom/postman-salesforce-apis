@@ -1,0 +1,77 @@
+{
+  "id": "9064a228-227d-44f7-90e8-cf9225fd401e",
+  "name": "Get Lookup Field Suggestions for a Specified Object",
+  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/lookups/{objectApiName}/{fieldApiName}/{targetApiName}",
+  "description": "When a user edits a lookup field, use this resource to search for and display suggestions for a specified object. You can search for most recently used matches, for matching names, or for any match in a searchable field. You can also specify lookup filter bindings for dependent lookups.",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "{{access_token}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "dependentFieldBindings",
+      "value": "",
+      "description": "The dependent field bindings for dependent lookups. These field bindings represent the lookup filter that restricts the valid values for the field.\nSpecify field bindings in a comma-separated list in the format dependentFieldBindings={fieldApiName}​={fieldValue},{field2ApiName}={field2Value}.\n\nTo know whether a field is a dependent lookup, check the Object Info response body for a non-null filteredLookupInfo property. Specify the name and a value for each field in the controllingFields property. Get the field values from the Record response body. Both responses are returned from the /ui-api/record-ui/{recordIds} resource.",
+      "enabled": false
+    },
+    {
+      "key": "page",
+      "value": "",
+      "description": "The page number. The default value is 1.",
+      "enabled": false
+    },
+    {
+      "key": "pageSize",
+      "value": "",
+      "description": "The number of items per page. The default value is 25.\n",
+      "enabled": false
+    },
+    {
+      "key": "q",
+      "value": "",
+      "description": "The term the user is searching for.\nWhen searchType=Search, specify at least 2 characters. A wildcard at the end of the search term is implied. For example, q=ca returns Cat and Cats.\n\nWhen searchType=TypeAhead, specify at least 3 characters. A wildcard at the end of the search term is implied. You can’t use a ?.",
+      "enabled": false
+    },
+    {
+      "key": "searchType",
+      "value": "",
+      "description": "The type of search to perform. One of these values:\nRecent—Return most recently used matches.\nSearch—Search for records with searchable fields that match the query term.\nTypeAhead—Search for records whose names start with the query term.\nThe default value is Recent.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: {{access_token}}\n",
+  "pathVariables": {}
+}

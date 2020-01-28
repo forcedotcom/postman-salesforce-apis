@@ -1,0 +1,46 @@
+{
+  "id": "8de2e8e1-0643-4bc5-a4fb-8a083425467b",
+  "name": "Get Record Edit Page Actions",
+  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/actions/record/{recordIds}/record-edit",
+  "description": "Get the actions on record detail pages.",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "{{access_token}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "1e76f3df-37a1-470e-af23-8123a244a00c",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: {{access_token}}\n",
+  "pathVariables": {}
+}

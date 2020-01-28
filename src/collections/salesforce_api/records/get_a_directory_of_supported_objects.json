@@ -1,0 +1,29 @@
+{
+  "id": "1357ab00-e2b0-485b-b4c4-0da0b0d5e288",
+  "name": "Get a Directory of Supported Objects",
+  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/object-info",
+  "description": "Get a Salesforce org’s active theme. A theme uses colors, images, and banners to change the overall appearance of Salesforce. Administrators can define themes and switch themes to provide a different look. The User Interface API response matches the Admin’s selection.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "{{access_token}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [],
+  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: {{access_token}}\n",
+  "pathVariables": {}
+}

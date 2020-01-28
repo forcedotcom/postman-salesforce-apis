@@ -1,0 +1,26 @@
+{
+  "id": "4bf0b4e0-e805-443e-b927-f7a7802b13f1",
+  "name": "Get Tooling Describe SObject",
+  "url": "{{endpoint}}/services/data/{{version}}/tooling/sobjects/{sobjectName}/describe",
+  "description": "",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "c799fa65-7caa-462f-bcc3-88ba3e674b79",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\n",
+  "pathVariables": {}
+}

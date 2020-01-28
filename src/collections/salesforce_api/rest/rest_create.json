@@ -1,7 +1,7 @@
 {
   "id": "24f854ce-3f31-4cce-9953-28b9b65517de",
   "name": "REST Create",
-  "url": "{{url}}/services/data/v{{version}}/sobjects/Lead",
+  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/Lead",
   "description": null,
   "data": [],
   "dataOptions": null,

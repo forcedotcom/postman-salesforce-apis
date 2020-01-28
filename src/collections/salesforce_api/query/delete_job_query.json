@@ -1,0 +1,32 @@
+{
+  "id": "af4c7dc1-ee86-47b3-9635-194150e6bc72",
+  "name": "Delete Job Query",
+  "url": "{{endpoint}}/services/data/v{{version}}/jobs/query/{{jobId}}",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json",
+      "enabled": false
+    }
+  ],
+  "method": "DELETE",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "56ad4146-858d-4ef6-9736-9a42e5ba575a",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{access_token}}\n//Content-Type: application/json\n",
+  "pathVariables": {}
+}

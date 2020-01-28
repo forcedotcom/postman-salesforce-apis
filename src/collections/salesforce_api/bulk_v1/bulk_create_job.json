@@ -37,6 +37,13 @@
       "enabled": false
     },
     {
+      "key": "chunkSize",
+      "value": "10000",
+      "description": "",
+      "type": "text",
+      "enabled": false
+    },
+    {
       "key": "Accept-Encoding",
       "value": "gzip",
       "enabled": false
@@ -80,6 +87,6 @@
   "helperAttributes": null,
   "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
   "rawModeData": "{\n  \"operation\" : \"insert\",\n  \"object\" : \"Account\",\n  \"contentType\" : \"CSV\"\n}",
-  "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: application/json\ncharset: UTF-8\n//Sforce-Disable-Batch-Retry: FALSE\n//Sforce-Line-Ending: CRLF\n//Sforce-Enable-PKChunking: FALSE\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
+  "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: application/json\ncharset: UTF-8\n//Sforce-Disable-Batch-Retry: FALSE\n//Sforce-Line-Ending: CRLF\n//Sforce-Enable-PKChunking: FALSE\n//chunkSize: 10000\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
   "pathVariables": {}
 }

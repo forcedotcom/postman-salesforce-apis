@@ -1,0 +1,54 @@
+{
+  "id": "021fca21-791c-4229-955b-ffc9aa406df4",
+  "name": "Get Record Layout Metadata",
+  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/layout/{objectApiName}",
+  "description": "Get metadata about page layouts for the specified object type.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "{{access_token}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "formFactor",
+      "value": "",
+      "description": "The layout display size for the record. One of these values:\nLarge—(Default) Use this value to get a layout for desktop display size.\nMedium—Use this value to get a layout for tablet display size.\nSmall—Use this value to get a layout for phone display size.",
+      "enabled": false
+    },
+    {
+      "key": "layoutTypes",
+      "value": "",
+      "description": "The layout type for the record. A collection of any of these values:\nCompact—Use this value to get a layout that contains a record’s key fields.\nFull—(Default) Use this value to get a full layout.",
+      "enabled": false
+    },
+    {
+      "key": "modes",
+      "value": "",
+      "description": "The access mode for the record. This value determines which fields to get from a layout. Layouts have different fields for create, edit, and view modes. For example, formula fields are rendered in view mode, but not in create mode because they’re calculated at run time, like formulas in a spreadsheet. A collection of any of these values:\nCreate—Use this mode if you intend to build UI that lets a user create a record. This mode is used by the /ui-api/record-defaults/create/{apiName} resource.\nEdit—Use this mode if you intend to build UI that lets a user edit a record. This mode is used by the /ui-api/record-defaults/clone/{recordId} resource.\nView—(Default) Use this mode if you intend to build UI that displays a record.",
+      "enabled": false
+    },
+    {
+      "key": "recordTypeId",
+      "value": "",
+      "description": "The ID of the record type (RecordType object) for the new record. If not provided, the default record type is used.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": [],
+  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: {{access_token}}\n",
+  "pathVariables": {}
+}

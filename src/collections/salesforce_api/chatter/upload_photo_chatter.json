@@ -1,7 +1,7 @@
 {
   "id": "a7774dc7-8678-4f4c-95c5-46ac2b72b836",
   "name": "Upload Photo Chatter",
-  "url": "{{url}}/services/data/v{{version}}/connect/user-profiles/me/photo",
+  "url": "{{endpoint}}/services/data/v{{version}}/connect/user-profiles/me/photo",
   "description": null,
   "data": [
     {

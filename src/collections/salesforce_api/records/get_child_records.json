@@ -1,0 +1,60 @@
+{
+  "id": "de848109-a4a5-494a-a0bf-82098e9536e2",
+  "name": "Get Child Records",
+  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/records/{recordId}/child-relationships/{relationshipName}\n",
+  "description": "Get child records for a specified record and child relationship name. Relationships are connections between records. On a record detail page, each record in a related list has a child relationship to the parent record.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "{{access_token}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "fields",
+      "value": "",
+      "description": "Specifies the fields to return. If this property is specified, the response is a union of fields and optionalFields.\nIf the context user doesn’t have access to a field, an error is returned.\n\nIf you’re not sure whether the context user has access to a field and you don’t want the request to fail if they don’t, use the optionalFields parameter.\n\nSpecify names in the format ObjectApiName.FieldName. You can get any field that has a named relationship to this record. There is no limit to the number of fields you can specify.",
+      "enabled": false
+    },
+    {
+      "key": "optionalFields",
+      "value": "",
+      "description": "A collection of optional field names. If a field is accessible to the context user, it’s included in the response. If a field isn’t accessible to the context user, it isn’t included in the response, but it doesn’t cause an error.\nSpecify names in the format ObjectApiName.FieldName. You can get any field that has a named relationship to this record. There is no limit to the number of fields you can specify.",
+      "enabled": false
+    },
+    {
+      "key": "page",
+      "value": "",
+      "description": "The page offset from which to begin returning records. The default value is 0, which returns records from the first page. For example, for page=2 and pageSize=10, the first record returned is the 21st record in the list.",
+      "enabled": false
+    },
+    {
+      "key": "pageSize",
+      "value": "",
+      "description": "The maximum number of child records to return on a page. The default value is 5.",
+      "enabled": false
+    },
+    {
+      "key": "pageToken",
+      "value": "",
+      "description": "A token that represents the page offset.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": [],
+  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: {{access_token}}\n",
+  "pathVariables": {}
+}

@@ -1,0 +1,39 @@
+{
+  "id": "638c1109-48c9-42cd-bd99-b9c14f8fcfad",
+  "name": "Tooling Run Tests Async",
+  "url": "{{endpoint}}/services/data/v{{version}}/tooling/runTestsAsynchronous",
+  "description": "Runs one or more methods within one or more Apex classes, using the asynchronous test execution mechanism. In the request body, you can specify test class names and IDs, suite names and IDs, the maximum number of failed tests to allow, and the test level, as comma-separated lists or as an array. You can also indicate whether to opt out of collecting code coverage information during the test run (available in API version 43.0 and later).",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "type": "text",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "name": "Content-Type",
+      "value": "application/json",
+      "description": "",
+      "type": "text"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "c799fa65-7caa-462f-bcc3-88ba3e674b79",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n    \"classNames\": \"comma-separated list of class names\",\n    \"classids\": \"comma-separated list of class IDs\",\n    \"suiteNames\": \"comma-separated list of test suite names\",\n    \"suiteids\": \"comma-separated list of test suite IDs\",\n    \"maxFailedTests\": \"integer value\",\n    \"testLevel\": \"TestLevel enum value\",\n    \"skipCodeCoverage\": \"boolean value\"\n}\n\nor \n\n[\n    {\n        \"className\": \"YourClassName\",\n        \"testMethods\": [\n            \"testMethod1\",\n            \"testMethod2\",\n            \"testMethod3\"\n        ]\n    },\n    {\n        \"className\": \"ManagedPackageNamespace.ManagedClassName\",\n        \"testMethods\": [\n            \"testMethod1\",\n            \"testMethod2\",\n            \"testMethod3\"\n        ]\n    },\n    {\n        \"classId\": \"01pD0000000FhyEIAS\",\n        \"testMethods\": [\n            \"testMethod1\",\n            \"testMethod2\",\n            \"testMethod3\"\n        ]\n    },\n    {\n        \"maxFailedTests\": \"2\"\n    },\n    {\n        \"testLevel\": \"RunSpecifiedTests\"\n    }\n]",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

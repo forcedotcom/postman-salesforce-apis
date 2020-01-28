@@ -1,0 +1,47 @@
+{
+  "id": "d5e22a55-3764-4aa5-8035-f9517918bfd8",
+  "name": "Update Usage of a Favorite",
+  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/favorites/{favoriteId}",
+  "description": "Update the usage of an individual favorite, for example, the last time and number of times the favorite was clicked.",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "{{access_token}}"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "0bcda5e4-8aaa-4d95-ae67-378325650997",
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: {{access_token}}\n",
+  "pathVariables": {}
+}

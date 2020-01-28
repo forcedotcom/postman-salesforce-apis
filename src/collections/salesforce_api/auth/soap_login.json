@@ -1,7 +1,7 @@
 {
   "id": "6f042d72-486a-40ed-954b-40036fb97c6f",
   "name": "SOAP Login",
-  "url": "{{url}}{{site}}/services/Soap/u/{{version}}",
+  "url": "{{url}}{{site}}/services/Soap/u/47.0",
   "description": null,
   "data": [],
   "dataOptions": null,

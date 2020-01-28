@@ -1,0 +1,38 @@
+{
+  "id": "62075977-fe32-4812-a24d-38a5f57837fd",
+  "name": "Post Tooling SObject",
+  "url": "{{endpoint}}/services/data/{{version}}/tooling/sobjects/{sobjectName}",
+  "description": "",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "name": "Content-Type",
+      "value": "application/json",
+      "description": "",
+      "type": "text"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "c799fa65-7caa-462f-bcc3-88ba3e674b79",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n\t\"Name\":\"test\"\n}",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

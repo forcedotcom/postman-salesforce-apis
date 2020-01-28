@@ -27,7 +27,7 @@
   "currentHelper": null,
   "helperAttributes": null,
   "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
-  "rawModeData": "{\n  \"compositeRequest\" : [ {\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v{{version}}/query?q=select+id+from+Account+limit+1\",\n    \"referenceId\" : \"test\"\n  }, {\n  },{\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v{{version}}/query?q=select+id,name+from+Account+where+Id='@{test.Id}'\",\n    \"referenceId\" : \"retest\"\n  } ]\n}",
+  "rawModeData": "{\n  \"compositeRequest\" : [ {\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v40.0/query?q=select+id+from+Account+limit+1\",\n    \"referenceId\" : \"test\"\n  }, {\n  },{\n    \"method\" : \"GET\",\n    \"url\" : \"/services/data/v40.0/query?q=select+id,name+from+Account+where+Id='@{test.Id}'\",\n    \"referenceId\" : \"retest\"\n  } ]\n}",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

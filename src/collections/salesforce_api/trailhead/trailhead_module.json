@@ -1,7 +1,7 @@
 {
-  "id": "74fb946c-2c69-41f4-9f52-886753b6579c",
+  "id": "95f46618-4faf-45ee-b9ae-567226e96d49",
   "name": "Trailhead Module",
-  "url": "{{endpoint}}/{{version}}/modules",
+  "url": "{{url}}/{{version}}/modules",
   "description": null,
   "data": null,
   "dataOptions": null,
@@ -29,10 +29,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "031fd55a-ee99-4a11-8037-3b3bf9bd3473",
+  "folder": "12bc1d31-c469-45ad-a7a7-5e9d9b0897ba",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "28ebda8c-e8ae-402b-80d6-00f73811aa5a",
   "headers": "Content-Type: application/json\nAuthorization: Bearer {{access_token}}\nX-Api-Key: {{key}}\nX-Environment-Url: {{env}}\n",
   "pathVariables": {}
 }

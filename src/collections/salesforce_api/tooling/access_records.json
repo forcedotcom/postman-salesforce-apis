@@ -1,0 +1,30 @@
+{
+  "id": "2db4b67a-ec62-496e-bdfb-30ea8ec93835",
+  "name": "Access Records",
+  "url": "{{endpoint}}/services/data/{{version}}/tooling/sobjects/{id}",
+  "description": "",
+  "data": null,
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "c799fa65-7caa-462f-bcc3-88ba3e674b79",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\n",
+  "pathVariables": {}
+}

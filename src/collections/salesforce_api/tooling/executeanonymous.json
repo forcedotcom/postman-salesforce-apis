@@ -1,7 +1,7 @@
 {
-  "id": "32a3e992-c095-48b9-90ae-2bb72daa8d8e",
+  "id": "bd4386b4-5304-4e66-8f50-1707df21a60d",
   "name": "ExecuteAnonymous",
-  "url": "{{endpoint}}/services/data/v{{version}}/tooling/executeAnonymous/?anonymousBody=System.Debug('awesome');",
+  "url": "{{endpoint}}/services/data/v{{version}}/tooling/executeAnonymous/?anonymousBody=\nDatabase.executeBatch(new ChangeAccountStatusSBBQQuoteBatch(Userinfo.getUserId(),Datetime.now().addHours(-12)),2000);",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -24,7 +24,7 @@
   "queryParams": [
     {
       "key": "anonymousBody",
-      "value": "System.Debug('awesome');",
+      "value": "\nDatabase.executeBatch(new ChangeAccountStatusSBBQQuoteBatch(Userinfo.getUserId(),Datetime.now().addHours(-12)),2000);",
       "equals": true,
       "description": "",
       "enabled": true
@@ -32,13 +32,13 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "c799fa65-7caa-462f-bcc3-88ba3e674b79",
+  "folder": "a5846a58-c278-4de4-b5f4-375e49863208",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "28ebda8c-e8ae-402b-80d6-00f73811aa5a",
   "rawModeData": "",
   "headers": "Authorization: Bearer {{access_token}}\n//Content-Type: application/json\n",
   "pathVariables": {}

@@ -1,0 +1,54 @@
+{
+  "id": "1d2e5120-6a9c-4da3-b448-a68cc1d9e4c9",
+  "name": "Create a Favorite",
+  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/favorites",
+  "description": "Create a Favorite",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "{{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "name": "Content-Type",
+      "value": "application/json",
+      "description": "",
+      "type": "text"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "0bcda5e4-8aaa-4d95-ae67-378325650997",
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n    \"name\": \"Favorite Name\",\n    \"sortOrder\": \"integer\",\n    \"target\": \"API Name or ID\",\n    \"targetType\": \"ListView | ObjectHome | Record | Tab\"\n}",
+  "headers": "Authorization: {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

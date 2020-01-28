@@ -1,0 +1,50 @@
+{
+  "id": "257928b4-04f6-4a32-926d-46b3c92f3846",
+  "name": "Update a Record",
+  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/records/{recordId}",
+  "description": "Update a record's data.\nUser Interface API enforces Salesforce validation rules. If a validation rule fails, the response is an Error with Output.\n\nWhen you make a PATCH request to update a record, make sure that the record hasn’t changed since the user started editing it. To find out whether it’s safe to save a record, pass the If-Modified-Since HTTP header in the request.\n\nAs of API version 43.0, if you pass read-only fields in a request body, the response is an Error with Output.",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "{{access_token}}"
+    },
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Content-Type",
+      "type": "text",
+      "value": "application/json"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n    \"allowSaveOnDuplicate\": false,\n    \"apiName\": \"Object\",\n    \"fields\": {\n        \"FieldAPIName\": \"FieldValue\"\n    }\n}",
+  "headers": "Authorization: {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

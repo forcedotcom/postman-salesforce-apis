@@ -1,0 +1,65 @@
+{
+  "id": "de0281dd-8b71-4f05-8b0c-cac763c76bf5",
+  "name": "Get Default Values to Clone a Record",
+  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/record-defaults/clone/{recordId}",
+  "description": "Get the default layout information, object information, and data for cloning a record. After getting the default values, make a request to POST /ui-api/records to create the record.\nThe response contains the default field values for a record cloned from the record specified in {recordId}, optionally of the specified recordTypeId.\n\nIt also contains the corresponding layout information for edit mode. In the Salesforce user interface, an admin with “Customize Application” permission can mark a field as required in a layout. When you’re building UI, to determine which fields to mark as required in a layout for edit mode, use the RecordLayoutItem.required property.\n\nThe response contains object metadata for the object type of the record specified in {recordId} and for any nested objects. For example, /ui-api/record-defaults/clone/001d000000AtfRIAAZ is a request to clone an Account record. It returns object metadata for Account and User, because the OwnerId field on the Account object contains a reference to the User object.",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "{{access_token}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "formFactor",
+      "value": "",
+      "description": "The layout display size for the record. One of these values:\nLarge—(Default) Use this value to get a layout for desktop display size.\nMedium—Use this value to get a layout for tablet display size.\nSmall—Use this value to get a layout for phone display size.",
+      "enabled": false
+    },
+    {
+      "key": "optionalFields",
+      "value": "",
+      "description": "A collection of optional field names. If a field is accessible to the context user, it’s included in the response. If a field isn’t accessible to the context user, it isn’t included in the response, but it doesn’t cause an error.\nSpecify names in the format ObjectApiName.FieldName. You can get any field that has a named relationship to this record. There is no limit to the number of fields you can specify.",
+      "enabled": false
+    },
+    {
+      "key": "recordTypeId",
+      "value": "",
+      "description": "The ID of the record type (RecordType object) for the new record. If not provided, the default record type is used.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: {{access_token}}\n",
+  "pathVariables": {}
+}

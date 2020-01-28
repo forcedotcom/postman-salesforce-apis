@@ -1,0 +1,51 @@
+{
+  "id": "cd418c37-725b-4e91-8e96-67daee34e1b6",
+  "name": "Get Job Query Result",
+  "url": "{{endpoint}}/services/data/v{{version}}/jobs/query/{{jobId}}/results",
+  "description": null,
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "enabled": true,
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Accept",
+      "type": "text",
+      "value": "test/csv"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "locator",
+      "value": "",
+      "description": "",
+      "enabled": false
+    },
+    {
+      "key": "maxRecords",
+      "value": "",
+      "description": "",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "56ad4146-858d-4ef6-9736-9a42e5ba575a",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\nAccept: test/csv\n",
+  "pathVariables": {}
+}

@@ -1,0 +1,45 @@
+{
+  "id": "a9a9ccfe-b020-48ec-8fd6-051616771f41",
+  "name": "Create job Query",
+  "url": "{{endpoint}}/services/data/v{{version}}/jobs/query",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "b438d4fa-1275-4c48-ad33-20b679018754",
+        "exec": [
+          "var response = JSON.parse(responseBody)",
+          "postman.setGlobalVariable(\"id\", response.id);"
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "56ad4146-858d-4ef6-9736-9a42e5ba575a",
+  "preRequestScript": null,
+  "tests": "var response = JSON.parse(responseBody)\npostman.setGlobalVariable(\"id\", response.id);",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n  \"operation\" : \"query\",\n  \"query\" : \"SELECT fields FROM object WHERE filter\",\n  \"contentType\" : \"CSV\",\n  \"columnDelimiter\" : \"BACKQUOTE | CARET | COMMA | PIPE | SEMICOLON | TAB\",\n  \"lineEnding\" : \"CRLF | LF\"\n} ",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

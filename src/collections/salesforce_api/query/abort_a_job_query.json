@@ -1,0 +1,31 @@
+{
+  "id": "435b1232-4093-48b4-af10-829c2d47eb89",
+  "name": "Abort a Job Query",
+  "url": "{{endpoint}}/services/data/v{{version}}/jobs/query/{{jobId}}",
+  "description": null,
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "56ad4146-858d-4ef6-9736-9a42e5ba575a",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n\t\"state\":\"Aborted\"\n}",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

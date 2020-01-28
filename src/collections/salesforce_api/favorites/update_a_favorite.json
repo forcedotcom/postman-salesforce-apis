@@ -1,0 +1,47 @@
+{
+  "id": "16d966c1-4f96-4c79-9151-89a00265399f",
+  "name": "Update a Favorite",
+  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/favorites/{favoriteId}",
+  "description": "Update a Favorite",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "{{access_token}}"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "0bcda5e4-8aaa-4d95-ae67-378325650997",
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n  \"name\": \"Red Accounts\",\n  \"sortOrder\": 1\n}\n",
+  "headers": "Authorization: {{access_token}}\n",
+  "pathVariables": {}
+}
