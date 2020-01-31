@@ -14,11 +14,8 @@ jobs:
             - name: 'Checkout source code'
               uses: actions/checkout@v2
 
-            - name: Install Postman Extractor (PMX)
-              run: sudo npm install -g postman-extractor
-
-            - name: 'Run extractor to compact files'
-              run: pmx -o salesforce-apis.postman_export.json
+            - name: 'Run Postman Extractor (PMX) to compact files'
+              run: npx postman-extractor export -o salesforce-apis.postman_export.json
 
             - name: 'log release info'
               run: echo ${{ github.event.release }}
