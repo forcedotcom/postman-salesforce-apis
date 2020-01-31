@@ -17,9 +17,6 @@ jobs:
             - name: 'Run Postman Extractor (PMX) to compact files'
               run: npx postman-extractor export -o salesforce-apis.postman_export.json
 
-            - name: 'log url info '
-              run: echo ${{ github.event.release.upload_url }}
-
             - name: Upload asset to release
               uses: actions/upload-release-asset@v1.0.1
               env:
