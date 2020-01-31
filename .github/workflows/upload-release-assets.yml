@@ -20,11 +20,11 @@ jobs:
             - name: 'Run extractor to compact files'
               run: pmx export -o salesforce-apis.postman_export.json
 
-- name: 'log release info '
-echo ${{ github.event.release }}
+            - name: 'log release info'
+              run: echo ${{ github.event.release }}
 
-- name: 'log url info '
-echo ${{ github.event.release.upload_url }}
+            - name: 'log url info '
+              run: echo ${{ github.event.release.upload_url }}
 
             - name: Upload asset to release
               uses: actions/upload-release-asset@v1.0.1
