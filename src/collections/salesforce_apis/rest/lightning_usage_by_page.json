@@ -1,0 +1,30 @@
+{
+  "id": "1364e07a-0695-4cc8-8fd7-6df277bdb7a3",
+  "name": "Lightning Usage by Page",
+  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/LightningUsageByBrowserMetrics",
+  "description": "Represents standard pages users viewed most frequently in Lightning Experience.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_lightning_usagebypagemetrics.htm",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

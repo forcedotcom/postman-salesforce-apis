@@ -1,0 +1,45 @@
+{
+  "id": "54d26440-a0be-48c8-9bc2-a5cf4f6ca92b",
+  "name": "SObject Get Updated",
+  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/updated/?start=&end=",
+  "description": "Retrieves the list of individual records that have been updated (added or changed) within the given timespan for the specified object. SObject Get Updated is available in API version 29.0 and later.\n\nThis resource is commonly used in data replication applications. Note the following considerations:\nResults are returned for no more than 30 days previous to the day the call is executed.\nYour client application can replicate any objects to which it has sufficient permissions. For example, to replicate all data for your organization, your client application must be logged in with “View All Data” access rights to the specified object. Similarly, the objects must be within your sharing rules.\nThere is a limit of 600,000 IDs returned from this resource. If more than 600,000 IDs would be returned, EXCEEDED_ID_LIMIT is returned. You can correct the error by choosing start and end dates that are closer together.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "start",
+      "value": "",
+      "equals": true,
+      "description": "Starting date/time (Coordinated Universal Time (UTC)—not local— timezone) of the timespan for which to retrieve the data. The API ignores the seconds portion of the specified dateTime value (for example, 12:30:15 is interpreted as 12:30:00 UTC). The date and time should be provided in ISO 8601 format: YYYY-MM-DDThh:mm:ss+hh:mm. The date/time value for start must chronologically precede end. This parameter should be URL-encoded.",
+      "enabled": true
+    },
+    {
+      "key": "end",
+      "value": "",
+      "equals": true,
+      "description": "Ending date/time (Coordinated Universal Time (UTC)—not local— timezone) of the timespan for which to retrieve the data. The API ignores the seconds portion of the specified dateTime value (for example, 12:35:15 is interpreted as 12:35:00 UTC). The date and time should be provided in ISO 8601 format: YYYY-MM-DDThh:mm:ss+hh:mm. This parameter should be URL-encoded",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

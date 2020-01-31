@@ -1,0 +1,31 @@
+{
+  "id": "d7fbe9c0-5d6e-4444-a380-d2c6ca7b7d32",
+  "name": "SObject Rows Update",
+  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/{id}",
+  "description": "Accesses records based on the specified object ID. Retrieves, updates, or deletes records. This resource can also be used to retrieve field values. Use the GET method to retrieve records or fields, the DELETE method to delete records, and the PATCH method to update records.",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n\t\"field API name\": \"value\"\n}",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

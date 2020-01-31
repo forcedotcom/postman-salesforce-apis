@@ -1,0 +1,30 @@
+{
+  "id": "a9b2da81-e69f-470d-bec3-30a3730e373e",
+  "name": "Standard Invocable Actions",
+  "url": "{{endpoint}}/services/data/v{{version}}/actions/standard",
+  "description": "Returns the list of actions that can be statically invoked. You can also get basic information for each type of action.\nThis resource is available in REST API version 32.0 and later.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

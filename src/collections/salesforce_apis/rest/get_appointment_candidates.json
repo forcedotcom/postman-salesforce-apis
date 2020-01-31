@@ -1,0 +1,31 @@
+{
+  "id": "e262337f-3d03-4596-99db-622400bc61e9",
+  "name": "Get Appointment Candidates",
+  "url": "{{endpoint}}/services/data/v{{version}}/scheduling/getAppointmentCandidates",
+  "description": "Returns a list of available service resources (appointment candidates) based on work type group and service territories.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/requests_ls_getappointmentcandidates.htm",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "{\n\t\"startTime\": \"string\",\n\t\"endTime\": \"string\",\n\t\"workTypeGroupId\": \"string\",\n\t\"workType\": \"Work Type\",\n\t\"accountId\": \"string\",\n\t\"territoryIds\": \"string[]\",\n\t\"requiredResourceIds\": \"string[]\",\n\t\"schedulingPolicyId\": \"string\",\n\t\"allowConcurrentScheduling\": \"boolean\",\n}",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

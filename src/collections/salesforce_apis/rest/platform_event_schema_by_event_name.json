@@ -1,0 +1,37 @@
+{
+  "id": "5ac5af42-e7f7-48a8-b99e-aeac39894da6",
+  "name": "Platform Event Schema by Event Name",
+  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{Event_Name}/eventSchema",
+  "description": "Set, reset, or get information about a user password. This resource is available in REST API version 24.0 and later.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "payloadFormat",
+      "value": "",
+      "description": "(Optional query parameter. Available in API version 43.0 and later.) The format of the returned event schema. This parameter can take one of the following values.\nEXPANDED—The JSON representation of the event schema, which is the default format when payloadFormat is not specified in API version 43.0 and later.\nCOMPACT—A format that adheres to the open-source Apache Avro specification for the record complex type (see Apache Avro Format). Subscribers use the compact schema format to deserialize compact events received in binary form.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

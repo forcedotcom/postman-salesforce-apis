@@ -1,0 +1,88 @@
+{
+  "id": "21453308-89f8-4e63-a7f8-c43cfa636586",
+  "name": "SObject Suggested Articles",
+  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObject}/suggestedArticles?description=&language=&subject=",
+  "description": "Returns a list of suggested Salesforce Knowledge articles for a case, work order, or work order line item.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "articleTypes",
+      "value": "",
+      "description": "Optional. Three-character ID prefixes indicating the desired article types. You can specify multiple values for this parameter in a single REST call, by repeating the parameter name for each value. For example, articleTypes=ka0&articleTypes=ka1.",
+      "enabled": false
+    },
+    {
+      "key": "categories",
+      "value": "",
+      "description": "Optional. The name of the data category group and the data category API name (not category title) for desired articles. The syntax is categories={\"Group\":\"Category\"}. Characters in the URL might need to be encoded. For example:\ncategories=%7B%22Regions%22%3A%22Asia%22%2C%22\nProducts%22%3A%22Laptops%22%7D\nThe same data category group can’t be specified more than once. However, you can specify multiple data category group and data category pairs. For example, categories={\"Regions\":\"Asia\",\"Products\":\"Laptops\"}.",
+      "enabled": false
+    },
+    {
+      "key": "description",
+      "value": "",
+      "equals": true,
+      "description": "Text of the description. Valid only for new records without an existing ID and required if subject is null. Article suggestions are based on common keywords in the subject, description, or both.",
+      "enabled": true
+    },
+    {
+      "key": "language",
+      "value": "",
+      "equals": true,
+      "description": "Required. Language that the article is written in.",
+      "enabled": true
+    },
+    {
+      "key": "limit",
+      "value": "",
+      "description": "Optional. Specifies the maximum number of suggested articles to return.",
+      "enabled": false
+    },
+    {
+      "key": "publishStatus",
+      "value": "",
+      "description": "Optional. The article’s publication status. Valid values:\nDraft–Not published\nOnline–Published in Salesforce Knowledge\nArchived",
+      "enabled": false
+    },
+    {
+      "key": "subject",
+      "value": "",
+      "equals": true,
+      "description": "Text of the subject. Valid only for new records without an existing ID and required if description is null. Article suggestions are based on common keywords in the subject, description, or both.",
+      "enabled": true
+    },
+    {
+      "key": "topics",
+      "value": "",
+      "description": "Optional. The topic of returned articles. For example: topics=outlook&topics=email.",
+      "enabled": false
+    },
+    {
+      "key": "validationStatus",
+      "value": "",
+      "description": "Optional. The validation status of returned articles.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

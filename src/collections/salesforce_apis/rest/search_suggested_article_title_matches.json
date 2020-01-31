@@ -1,0 +1,90 @@
+{
+  "id": "3749b055-1f0c-4644-8f3a-0c5f3cb77084",
+  "name": "Search Suggested Article Title Matches",
+  "url": "{{endpoint}}/services/data/v{{version}}/search/suggestions?q&publishStatus&language",
+  "description": "Returns a list of Salesforce Knowledge article titles that match the user’s search query string. Provides a shortcut to navigate directly to likely relevant articles before the user performs a search.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_search_suggest_title_matches.htm",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "q",
+      "value": "",
+      "equals": false,
+      "description": "Required. The user’s search query string, properly URL-encoded. Suggestions are returned only if the user’s query string meets the minimum length requirements: one character for queries in Chinese, Japanese, and Korean, and three characters for all other languages. Query strings exceeding the maximum length of 250 characters return an error.",
+      "enabled": true
+    },
+    {
+      "key": "publishStatus",
+      "value": "",
+      "description": "Required. The article’s publication status. Valid values:\nDraft–Articles aren’t published in Salesforce Knowledge.\nOnline–Articles are published in Salesforce Knowledge.\nArchived–Articles aren’t published and are available in Archived Articles view.",
+      "enabled": true
+    },
+    {
+      "key": "language",
+      "value": "",
+      "description": "Required. The language of the user’s query. Specifies the language that matching articles are written in.",
+      "enabled": true
+    },
+    {
+      "key": "articleTypes",
+      "value": "",
+      "description": "Optional. Three-character ID prefixes indicating the desired article types. You can specify multiple values for this parameter in a single REST call, by repeating the parameter name for each value. For example, articleTypes=ka0&articleTypes=ka1.",
+      "enabled": false
+    },
+    {
+      "key": "categories",
+      "value": "",
+      "description": "Optional. The name of the data category group and name of the data category for desired articles, expressed as a JSON mapping. You can specify multiple data category group and data category pairs in this parameter. For example, categories={\"Regions\":\"Asia\",\"Products\":\"Laptops\"}. Characters in the URL might need to be encoded. For this example, categories=%7B%22Regions%22%3A%22Asia​%22%2C%22Products%22%3A%22Laptops%22%7D.\n",
+      "enabled": false
+    },
+    {
+      "key": "channel",
+      "value": "",
+      "description": "Optional. The channel where the matching articles are visible. Valid values:\nAllChannels–Visible in all channels the user has access to\nApp–Visible in the internal Salesforce Knowledge application\nPkb–Visible in the public knowledge base\nCsp–Visible in the Customer Portal\nPrm–Visible in the Partner Portal\nIf channel isn’t specified, the default value is determined by the type of user.\nPkb for a guest user\nCsp for a Customer Portal user\nPrm for a Partner Portal user\nApp for any other type of user\nIf channel is specified, the specified value may not be the actual value requested, because of certain requirements.\nFor guest, Customer Portal, and Partner Portal users, the specified value must match the default value for each user type. If the values don’t match or AllChannels is specified, then App replaces the specified value.\nFor all users other than guest, Customer Portal, and Partner Portal users:\nIf Pkb, Csp, Prm, or App are specified, then the specified value is used.\nIf AllChannels is specified, then App replaces the specified value.",
+      "enabled": false
+    },
+    {
+      "key": "limit",
+      "value": "",
+      "description": "Optional. Specifies the maximum number of articles to return. If there are more suggested articles than the limit specified, the response body’s hasMoreResults property is true.",
+      "enabled": false
+    },
+    {
+      "key": "topics",
+      "value": "",
+      "description": "Optional. The topic of the returned articles. For example: topics=outlook&topics=email.",
+      "enabled": false
+    },
+    {
+      "key": "validationStatus",
+      "value": "",
+      "description": "Optional. The validation status of returned articles.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

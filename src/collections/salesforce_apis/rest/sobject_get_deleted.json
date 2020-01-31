@@ -1,0 +1,45 @@
+{
+  "id": "694405f1-366d-4fe5-acdb-edc89bcb1031",
+  "name": "SObject Get Deleted",
+  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/deleted/?start=&end=",
+  "description": "Retrieves the list of individual records that have been deleted within the given timespan for the specified object. SObject Get Deleted is available in API version 29.0 and later.\n\nThis resource is commonly used in data replication applications. Note the following considerations:\nDeleted records are written to a delete log which this resource accesses. A background process that runs every two hours purges records that have been in an organization's delete log for more than two hours if the number of records is above a certain limit. Starting with the oldest records, the process purges delete log entries until the delete log is back below the limit. This is done to protect Salesforce from performance issues related to massive delete logs\nInformation on deleted records are returned only if the current session user has access to them.\nResults are returned for no more than 15 days previous to the day the call is executed (or earlier if an administrator has purged the Recycle Bin).",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "start",
+      "value": "",
+      "equals": true,
+      "description": "Starting date/time (Coordinated Universal Time (UTC)—not local— timezone) of the timespan for which to retrieve the data. The API ignores the seconds portion of the specified dateTime value (for example, 12:30:15 is interpreted as 12:30:00 UTC). The date and time should be provided in ISO 8601 format: YYYY-MM-DDThh:mm:ss+hh:mm. The date/time value for start must chronologically precede end. This parameter should be URL-encoded.",
+      "enabled": true
+    },
+    {
+      "key": "end",
+      "value": "",
+      "equals": true,
+      "description": "Ending date/time (Coordinated Universal Time (UTC)—not local— timezone) of the timespan for which to retrieve the data. The API ignores the seconds portion of the specified dateTime value (for example, 12:35:15 is interpreted as 12:35:00 UTC). The date and time should be provided in ISO 8601 format: YYYY-MM-DDThh:mm:ss+hh:mm. This parameter should be URL-encoded",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

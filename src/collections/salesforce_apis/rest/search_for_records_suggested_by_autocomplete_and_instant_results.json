@@ -1,0 +1,115 @@
+{
+  "id": "8200c750-d836-4e9d-9c8e-3ebedc2c516c",
+  "name": "Search for Records Suggested by Autocomplete and Instant Results",
+  "url": "{{endpoint}}/services/data/v{{version}}/search/suggestions?q&sobject",
+  "description": "Returns a list of suggested records whose names match the user’s search string. The suggestions resource provides autocomplete results and instant results for users to navigate directly to likely relevant records, before performing a full search.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_search_suggest_records.htm",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "q",
+      "value": "",
+      "equals": false,
+      "description": "Required. The user’s search query string, properly URL-encoded. Suggestions are returned only if the user’s query string meets the minimum length requirements: one character for queries in Chinese, Japanese, Korean, and Thai; three characters for all other languages. Query strings that exceed the maximum length of 255 characters (or 200 consecutive characters without a space break) return an error.",
+      "enabled": true
+    },
+    {
+      "key": "sobject",
+      "value": "",
+      "equals": false,
+      "description": "Required. The objects that the search is scoped to, such as Account or offer__c.\nIf the sobject value is feedItem, it is required to have the type parameter with a value of question.\n\nSpecify up to 10 objects with a comma-separated list. For example: sobject=Account,Contact,Lead. To take advantage of this feature, activate the CrossObjectTypeahead permission.\n\nTo specify the specific fields to return by object, use the following syntax with multiple fields in a comma-separated list. The sobject is lowercase.",
+      "enabled": true
+    },
+    {
+      "key": "type",
+      "value": "",
+      "description": "Required when the sobject value is feedItem. Including this parameter for all other sobject values doesn’t affect the query. Specifies that the type of Feed is questions. Valid value: question.",
+      "enabled": false
+    },
+    {
+      "key": "fields",
+      "value": "",
+      "description": "Optional. Used for creating lookup queries. Specify multiple fields using a comma-separated list. Specifies which lookup fields to be returned in the response.",
+      "enabled": false
+    },
+    {
+      "key": "dynamicFields",
+      "value": "",
+      "description": "Optional. Available in API version 48.0 and later. Used to return additional dynamic fields. Specify multiple options using a comma-separated list. For example, if dynamicFields=secondaryField then each suggested record in the results contains an additional field besides Id and Name (or Title) based on the next eligible field in the search layout.",
+      "enabled": false
+    },
+    {
+      "key": "groupId",
+      "value": "",
+      "description": "Optional. Specifies one or more unique identifiers of one or more groups that the question to return was posted to. Specify multiple groups using a comma-separated list. This parameter is only applicable when the parameter type equals question. Don’t use with the userId.",
+      "enabled": false
+    },
+    {
+      "key": "ignoreUnsupportedSObjects",
+      "value": "",
+      "description": "Optional. Specifies what to do if unsupported objects are included in the request. If false and an unsupported object is included, an error is returned. If true and an unsupported object is included, the object is ignored and no error is returned. See the Unsupported Objects section for reference. The default is false.",
+      "enabled": false
+    },
+    {
+      "key": "limit",
+      "value": "",
+      "description": "Optional. Specifies the maximum number of suggested records to return. If a limit isn’t specified, 5 records are returned by default. If there are more suggested records than the limit specified, the response body’s hasMoreResults property is true.",
+      "enabled": false
+    },
+    {
+      "key": "networkId",
+      "value": "",
+      "description": "Optional. Specifies one or more unique identifiers for the community(ies) that the question to return is associated to. Specify multiple communities using a comma-separated list. This parameter is only applicable when the parameter type equals question or parameter sobject equals user.",
+      "enabled": false
+    },
+    {
+      "key": "topicId",
+      "value": "",
+      "description": "Optional. Specifies the unique identifier of the single topic that the question to return was tagged as. This parameter is only applicable when the parameter type equals question.",
+      "enabled": false
+    },
+    {
+      "key": "userId",
+      "value": "",
+      "description": "Optional. Specifies one or more unique identifiers of one or more users who authored the question to return. Specify multiple users using a comma-separated list. This parameter is only applicable when the parameter type equals question. Don’t use with the groupId.",
+      "enabled": false
+    },
+    {
+      "key": "useSearchScope",
+      "value": "",
+      "description": "Optional. Available in API version 40.0 and later. The default value is false. If false, the objects specified in the request are used to suggest records. If true, in addition to the objects specified in the request, the user's search scope is used to suggest records. The search scope is the list of objects a user uses most frequently.\nIf the request doesn’t specify an object, use useSearchScope=true.\nIf useSearchScope=true and the user's search scope is empty, the default search scope is used to suggest records.\nOnly the first 10 objects are used to suggest records.\nObjects specified in the sobject parameter are prioritized over objects in the user's search scope.\nValues for the ignoreUnsupportedSObjects parameter aren’t applied to the objects in the search scope.",
+      "enabled": false
+    },
+    {
+      "key": "where",
+      "value": "",
+      "description": "Optional. A filter that follows the same syntax as the SOQL WHERE clause. URLs encode the expression.\nUse the clause for an object, or globally for all compatible objects. An example of an object-specific clause is: account.where=name%20LIKE%20%27Smith%25%27. An example of a global clause is: where=name%20LIKE%20%27Smith%25%27. The parameter must be lower case. Any object-specific where clauses override the global where clause. You can’t use this parameter for the Question object.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

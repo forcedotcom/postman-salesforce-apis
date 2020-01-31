@@ -1,0 +1,34 @@
+{
+  "id": "02da65fd-274c-4754-89cf-72304c744dd4",
+  "name": "Themes",
+  "url": "{{endpoint}}/services/data/v{{version}}/theme",
+  "description": "Gets the list of icons and colors used by themes in the Salesforce application. Theme information is provided for objects in your organization that use icons and colors in the Salesforce UI.\n\nThe If-Modified-Since header can be used with this resource, with a date format of EEE, dd MMM yyyy HH:mm:ss z. When this header is used, if the object metadata has not changed since the provided date, a 304 Not Modified status code is returned, with no response body.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_themes.htm",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

@@ -1,0 +1,37 @@
+{
+  "id": "805dc971-ae61-4632-8ee3-822e9b371bfe",
+  "name": "Data Category Detail",
+  "url": "{{endpoint}}/services/data/v{{version}}/support/dataCategoryGroups/{group}/dataCategories/{category}",
+  "description": "Get data category details and the child categories by a given category.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "sObjectName",
+      "value": "",
+      "description": "",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

@@ -1,0 +1,43 @@
+{
+  "id": "caae3466-3261-4e75-a6f4-b58e430ce1ae",
+  "name": "List Views",
+  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObject}/listviews/",
+  "description": "Returns the list of list views for the specified sObject, including the ID and other basic information about each list view. You can also get basic information for a specific list view by ID.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "limit",
+      "value": "",
+      "description": "The maximum number of records to return, between 1-2000. The default value is 25.",
+      "enabled": false
+    },
+    {
+      "key": "offset",
+      "value": "",
+      "description": "The first record to return. Use this parameter to paginate the results. The default value is 1.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

@@ -1,0 +1,48 @@
+{
+  "id": "1f44a607-b140-4c9a-8cf4-a303b3ac3a2b",
+  "name": "SObject Collections Delete",
+  "url": "{{endpoint}}/services/data/v{{version}}/composite/sobjects/{SObject}?ids&allOrNone",
+  "description": "Executes actions on multiple records in one request. Use SObject Collections to reduce the number of round-trips between the client and server. This resource is available in API version 42.0 and later.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_sobjects_collections.htm",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "type": "text",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "type": "text",
+      "value": "application/json"
+    }
+  ],
+  "method": "DELETE",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "ids",
+      "value": "",
+      "equals": false,
+      "description": "Required. A list of up to 200 IDs of objects to be deleted. The IDs can belong to different object types, including custom objects.",
+      "enabled": true
+    },
+    {
+      "key": "allOrNone",
+      "value": "",
+      "equals": false,
+      "description": "Optional. Indicates whether to roll back the entire request when the deletion of any object fails (true) or to continue with the independent deletion of other objects in the request. The default is false.",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "37217ed6-6fdf-4f2e-b493-a107397a783c",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

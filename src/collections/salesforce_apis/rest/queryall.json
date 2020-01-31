@@ -1,0 +1,44 @@
+{
+  "id": "d07421eb-d343-440f-8e72-ab0d01e791b5",
+  "name": "QueryAll",
+  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/OpportunityLineItem/{OpportunityLineItemId}/OpportunityLineItemSchedules?q",
+  "description": "Executes the specified SOQL query. Unlike the Query resource, QueryAll will return records that have been deleted because of a merge or delete. QueryAll will also return information about archived Task and Event records. QueryAll is available in API version 29.0 and later.\n\nIf the query results are too large, the response contains the first batch of results and a query identifier in the nextRecordsUrl field of the response. The identifier can be used in an additional request to retrieve the next batch. Note that even though nextRecordsUrl has query in the URL, it will still provide remaining results from the initial QueryAll request. The remaining results will include deleted records that matched the initial query.\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_queryall.htm",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "q",
+      "value": "",
+      "equals": false,
+      "description": "A SOQL query. Note that you will need to replace spaces with “+” characters in your query string to create a valid URI. An example query parameter string might look like: “SELECT+Name+FROM+MyObject”. If the SOQL query string is invalid, a MALFORMED_QUERY response is returned.",
+      "enabled": true
+    },
+    {
+      "key": "explain",
+      "value": "",
+      "description": "A SOQL query to get performance feedback on. Use explain instead of q to get a response that details how Salesforce will process your query. You can use this feedback to further optimize your queries. You can also use a report or list view ID in place of the query string to get feedback on how Salesforce will process your report or list view.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

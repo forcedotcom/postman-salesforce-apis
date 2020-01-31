@@ -1,0 +1,49 @@
+{
+  "id": "29878c81-1550-4ceb-bf46-37b29cb8e9b6",
+  "name": "Relevant Items",
+  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/relevantItems",
+  "description": "Gets the current user’s most relevant items. Relevant items include records for objects in the user’s global search scope and also most recently used (MRU) objects.\nRelevant items include up to 50 of the most recently viewed or updated records for each object in the user’s global search scope.\nNote\nThe user’s global search scope includes the objects the user interacted with most in the last 30 days, including objects the user pinned from the search results page in the Salesforce Classic.\n\nThen, the resource finds more recent records for each most recently used (MRU) object until the maximum number of records, which is 2,000, is returned.\nThis resource only accesses the relevant item information. Modifying the list of relevant items is not currently supported\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_relevant_items.htm",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "lastUpdatedId",
+      "value": "",
+      "description": "Optional. Compares the entire current list of relevant items to a previous version, if available. Specify the lastUpdatedId value returned in a previous response.",
+      "enabled": false
+    },
+    {
+      "key": "sobjects",
+      "value": "",
+      "description": "Optional. To scope the results to a particular object or set of objects, specify the name for one or more sObjects.",
+      "enabled": false
+    },
+    {
+      "key": "sobject.lastUpdatedId",
+      "value": "",
+      "description": "Optional. Compares the current list of relevant items for this particular object to a previous version, if available. Specify the lastUpdatedId value returned in a previous response.\nNote\nYou can only specify this parameter for the sObjects specified in the sobjects parameter.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

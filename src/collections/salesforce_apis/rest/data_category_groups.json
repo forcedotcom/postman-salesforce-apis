@@ -1,0 +1,44 @@
+{
+  "id": "1d134fb1-6c76-4483-ba82-7643e28bba10",
+  "name": "Data Category Groups",
+  "url": "{{endpoint}}/services/data/v{{version}}/support/dataCategoryGroups?sObjectName",
+  "description": "Returns the list of list views for the specified sObject, including the ID and other basic information about each list view. You can also get basic information for a specific list view by ID.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "sObjectName",
+      "value": "",
+      "equals": false,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "topCategoriesOnly",
+      "value": "",
+      "description": "",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

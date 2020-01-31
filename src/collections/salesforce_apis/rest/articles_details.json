@@ -1,0 +1,49 @@
+{
+  "id": "efb75257-9fc8-4939-ab9b-764263a15395",
+  "name": "Articles Details",
+  "url": "{{endpoint}}/services/data/v{{version}}/support/knowledgeArticles/{articleId}",
+  "description": "Get all online article fields, accessible to the user.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "channel",
+      "value": "",
+      "description": "Optional, defaults to user’s context. For information on channel values, see Valid channel Values.\nApp: Visible in the internal Salesforce Knowledge application\nPkb: Visible in the public knowledge base\nCsp: Visible in the Customer Portal\nPrm: Visible in the Partner Portal",
+      "enabled": false
+    },
+    {
+      "key": "updateViewStat",
+      "value": "",
+      "description": "Optional, defaults to true. If true, API updates the view count in the given channel as well as the total view count.",
+      "enabled": false
+    },
+    {
+      "key": "isUrlName",
+      "value": "",
+      "description": "Optional, defaults to false. If true, indicates that the last portion of the endpoint is a URL name instead of an article ID. Available in API v44.0 and later",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

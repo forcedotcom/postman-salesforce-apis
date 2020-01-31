@@ -1,0 +1,30 @@
+{
+  "id": "fd2af9d4-fe58-48b2-a7ed-4f8cd8bee076",
+  "name": "Embedded Service Configuration Describe",
+  "url": "{{endpoint}}/services/data/v{{version}}/support/embeddedservice/configuration/{EmbeddedServiceConfigDeveloperName}",
+  "description": "Retrieves the values for your Embedded Service deployment configuration, including the branding colors, font, and site URL.\n\nYou must be logged in to the account that owns the EmbeddedServiceConfigDeveloperName you are querying.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}
