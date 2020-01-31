@@ -17,9 +17,6 @@ jobs:
             - name: 'Run Postman Extractor (PMX) to compact files'
               run: npx postman-extractor export -o salesforce-apis.postman_export.json
 
-            - name: 'log release info'
-              run: echo ${{ github.event.release }}
-
             - name: 'log url info '
               run: echo ${{ github.event.release.upload_url }}
 
@@ -28,7 +25,7 @@ jobs:
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+                upload_url: ${{ github.event.release.upload_url }}
                 asset_path: ./salesforce-apis.postman_export.json
                 asset_name: salesforce-apis.postman_export.json
                 asset_content_type: application/json
