@@ -1,4 +1,4 @@
-# Salesforce-Postman
+# Salesforce Postman Collection
 A collection of [Postman](https://www.postman.com/) resources for the Salesforce APIs:
 - Auth
 - Bulk (V1 & V2)
@@ -10,73 +10,83 @@ A collection of [Postman](https://www.postman.com/) resources for the Salesforce
 - Composite
 - Chatter
 
-# How to install it
+# Installation
 
-Latest salesforce-apis.postman_export.json [here](https://github.com/scolladon/Salesforce-Postman/releases/latest/download/salesforce-apis.postman_export.json).
-Or go to the [release section](https://github.com/scolladon/Salesforce-Postman/releases) to download the salesforce-apis.postman_export.json from the release you want.
+1. Download the [latest Postman collection](https://github.com/scolladon/Salesforce-Postman/releases/latest/download/salesforce-apis.postman_export.json) or go to [previous releases](https://github.com/scolladon/Salesforce-Postman/releases). The collection comes as a `salesforce-apis.postman_export.json` file.
 
-[Import](https://learning.postman.com/docs/postman/collections/data-formats/#importing-postman-data) it into postman
+1. [Import it in Postman](https://learning.postman.com/docs/postman/collections/data-formats/#importing-postman-data).
 
-# How to use it
-## Configuring the environment
-Clone the "Salesforce Template" environment. Never customize the template !! Always clone to link the environment created to the target sandbox/trailhead playground/developer org/production
-Fill the url (login, test, mydomain), username, password (+ security token if required) variable for this new environment
-## Authenticating
-Use your preferred authentication method (SOAP login is very convenient) to get endpoint url and access token environment variable filled for you
-## Calling an API endpoint
-Use the API you need from the collection.
-Some APIs are just boilerplate preconfigured (ex : UI API), you will need to copy it and customize it (uri + get parameters) according to your need.
+# Usage
 
-# How to contribute
-## Prerequisite
+1. Clone the "Salesforce Template" Postman environment. Never customize the template directly! Always clone it and link the environment created to the target Sandbox, Trailhead Playground (TP), Developer Edition (DE) or production org.
+1. Edit the environment and fill in these variables:
+    - url (login, test or mydomain)
+    - username
+    - password (+ security token if required)
+1. Use your preferred authentication method (SOAP login is very convenient). This automatically fills the endpoint url and access token environment variables for subsequent API calls.
+1. Use any of the API endpoints from the collection.<br/>
+  **Note:** some APIs are just boilerplates (ex : UI API), you need to copy them and customize them (uri + get parameters) according to your need.
 
+# Contributions
+
+## Prerequisites
+
+Install the following apps:
 - [Postman](https://learning.postman.com/docs/postman/launching-postman/installation-and-updates/) installed on your laptop.
 - [Postman Extractor](https://github.com/pozil/postman-extractor).
 
 ## Development Lifecycle
 
-First of all install the library in your postman in a new workspace dedicated to it.
+1. Install the library in your Postman in a new dedicated workspace.
 
-Develop new API directly in your Postman
+1. Develop new APIs directly in Postman.
 
-Export the development using the [export data feature](https://learning.postman.com/docs/postman/collections/data-formats/#data-dumps)
+1. Export the collection using the [export data feature](https://learning.postman.com/docs/postman/collections/data-formats/#data-dumps).
 
-Use [Postman Extractor](https://github.com/pozil/postman-extractor) to create metadata :
-```bash
-$ pmx import -f Backup.postman_dump.json
-```
-Commit **only** the result of the import command
-/!\ never commit credential !
+1. Use [Postman Extractor](https://github.com/pozil/postman-extractor) to format the collection for easier versioning:
+    ```bash
+    $ pmx import -f Backup.postman_dump.json
+    ```
+1. Commit **only** the result of the import command.
+    
+    **/!\ Never commit credentials!**
 
-In order to verify the packaging is correct export it to json
-```bash
-$ pmx export -o export.salesforce-postman.json
-```
-and [reimport](https://learning.postman.com/docs/postman/collections/data-formats/#importing-postman-data) it in Postman.
-If everything goes well and the API you've developed are there and other APIs are not missing you're probably good.
+1. Verify that the packaging is correct by exporting it to JSON:
+    ```bash
+    $ pmx export -o export.salesforce-postman.json
+    ```
+    and [reimporting](https://learning.postman.com/docs/postman/collections/data-formats/#importing-postman-data) it in Postman.
+    If everything goes well and the API you've developed are there and other APIs are not missing you're probably good.
 
-## Coding Convention
+## Coding Conventions
 
 Stage only what is relevant to what you've done
 
-### Branch naming convention
-For the repository and create feature branch per feature/fix you want to implement :
-- feature : feature/*feature name*
-- fix : fix/*fix name*
+### Branch Naming Conventions
+
+Follow these naming conventions for branches:
+- new feature: `feature/feature-name`
+- fix: `fix/fix-name`
 
 ### API Development
-Only one folder per API, no sub folders
-For each API call, use the documentation name of the API
-Add the description from the documentation into the postman description
-Provide the description from the documentaton for each GET parameters
-API call should work and be parametrized using environment variable
-Optional: provide examples
+
+Follow these rules:
+- Only one folder per API, no sub folders
+- Use the API documentated names
+- Add description from the documentation into the Postman descriptions
+- Provide the description from the documentation for each GET parameters
+- API calls should work and be parametrized using environment variables
+- Optional: provide examples
 
 ### PR Checks
-Each Pull request will check those item :
+
+For each Pull Request we'll check those items:
 - [X] No conflict
-- [X] No credential in sources
-- [X] Successful Export of the files into json file
-- [X] Successful Importing of the json file into Postman
-### PR Result
-New release following semver convention will be created to include new fonctionalities
+- [X] No credentials in sources
+- [X] Successful export of the Postman collection into JSON format
+- [X] Successful import of the JSON file into Postman collection
+
+### PR Results
+
+Upon merging a PR in master we'll create a new release.
+New release versions follow the [semver convention](https://semver.org/).
