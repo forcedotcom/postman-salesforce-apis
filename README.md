@@ -10,7 +10,7 @@ A collection of [Postman](https://www.postman.com/) resources for the Salesforce
 - Composite
 - Chatter
 
-<img alt="Postman screenshot" src="/doc-resources/postman-screenshot.jpg" width="600"/>
+![Postman screenshot](/doc-resources/postman-screenshot.jpg)
 
 # Installation
 
