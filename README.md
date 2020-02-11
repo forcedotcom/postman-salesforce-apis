@@ -10,6 +10,8 @@ A collection of [Postman](https://www.postman.com/) resources for the Salesforce
 - Composite
 - Chatter
 
+<img alt="Postman screenshot" src="/doc-resources/postman-screenshot.jpg" width="600"/>
+
 # Installation
 
 1. Download the [latest Postman collection](https://github.com/scolladon/Salesforce-Postman/releases/latest/download/salesforce-apis.postman_export.json) or go to [previous releases](https://github.com/scolladon/Salesforce-Postman/releases). The collection comes as a `salesforce-apis.postman_export.json` file.
