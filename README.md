@@ -1,4 +1,4 @@
-# Salesforce Postman Collection
+# Salesforce APIs for Postman
 A collection of [Postman](https://www.postman.com/) resources for the Salesforce APIs:
 - Auth
 - Bulk (V1 & V2)
