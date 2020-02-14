@@ -31,4 +31,4 @@ A collection of [Postman](https://www.postman.com/) resources for the Salesforce
 
 # Contributions
 
-[Contribution guidelines for this project](CONTRIBUTING.md)
+[Contribution guidelines for this project](CONTRIBUTE.md)
