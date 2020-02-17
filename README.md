@@ -1,6 +1,17 @@
 # Salesforce APIs for Postman
 A collection of [Postman](https://www.postman.com/) resources for the Salesforce APIs:
 
+## APIs in the box
+- Auth
+- Bulk (V1 & V2)
+- Async Query
+- Rest
+- UI 
+- Tooling
+- Metadata
+- Composite
+- Chatter
+
 ![Postman screenshot](/doc-resources/postman-screenshot.jpg)
 
 # Installation
@@ -40,17 +51,6 @@ Use it when you need to create a new API call from scratch.
 Salesforce APIs Postman Collection
 Name of the endpoint and its description are taken from the Salesforce documentations.
 Collections use environment variable in order to partition the variable content per env and easily switch between environment
-
-### APIs in the box
-- Auth
-- Bulk (V1 & V2)
-- Async Query
-- Rest
-- UI 
-- Tooling
-- Metadata
-- Composite
-- Chatter
 
 # Contributions
 
