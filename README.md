@@ -20,7 +20,7 @@ A collection of [Postman](https://www.postman.com/) resources for the Salesforce
 
 1. [Import it in Postman](https://learning.postman.com/docs/postman/collections/data-formats/#importing-postman-data).
 
-# Usage
+# Get started
 
 1. Clone the "Salesforce Template" Postman environment. Never customize the template directly! Always clone it and link the environment created to the target Sandbox, Trailhead Playground (TP), Developer Edition (DE) or production org.
 1. Edit the environment and fill in these variables:
