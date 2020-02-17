@@ -1,8 +1,8 @@
 # Prerequisites
 
 Install the following apps:
-- [Postman](https://learning.postman.com/docs/postman/launching-postman/installation-and-updates/) installed on your laptop.
-- [Postman Extractor](https://github.com/pozil/postman-extractor).
+- [Postman](https://learning.postman.com/docs/postman/launching-postman/installation-and-updates/)
+- [Postman Extractor](https://github.com/pozil/postman-extractor)
 
 # Development Lifecycle
 
