@@ -1,7 +1,7 @@
 {
   "id": "22b51ae0-1e1e-49bb-874a-f938da3bbe07",
   "name": "Resources by Version",
-  "url": "{{endpoint}}/services/data//v{version}.0/",
+  "url": "{{endpoint}}/services/data/{{version}}/",
   "description": "Lists available resources for the specified API version, including resource name and URI.",
   "data": [],
   "dataOptions": null,
