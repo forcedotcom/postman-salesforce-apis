@@ -1,5 +1,5 @@
 {
-  "id": "38158203-c167-4399-a696-01760dfe6a28",
+  "id": "96578fe4-d6f8-41e5-8c48-57ffda53556b",
   "name": "Upload Job Data",
   "url": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}/batches",
   "description": null,
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "95304fc2-fbf8-49ba-a94d-f9357c64c2ce",
+  "folder": "f989be51-0b74-4da3-bfd3-dfcc37274e8b",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: text/csv\n",
   "pathVariables": {}

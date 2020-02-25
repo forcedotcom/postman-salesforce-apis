@@ -1,5 +1,5 @@
 {
-  "id": "cfb252fa-cb01-4b24-a567-76797b4c72e7",
+  "id": "df62e3d6-fd10-4550-bc28-7b5d94661c75",
   "name": "SObject Named Layouts",
   "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/describe/namedLayouts/{layoutName}",
   "description": "Retrieves information about alternate named layouts for a given object.",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

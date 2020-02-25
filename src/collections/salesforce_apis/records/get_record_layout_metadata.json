@@ -1,5 +1,5 @@
 {
-  "id": "021fca21-791c-4229-955b-ffc9aa406df4",
+  "id": "7612a649-570c-4cd7-a92d-cd6433330c26",
   "name": "Get Record Layout Metadata",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/layout/{objectApiName}",
   "description": "Get metadata about page layouts for the specified object type.",
@@ -45,10 +45,10 @@
   ],
   "auth": null,
   "events": [],
-  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}
 }

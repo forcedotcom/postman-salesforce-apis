@@ -1,5 +1,5 @@
 {
-  "id": "75d4a8b0-2184-4218-bf10-ddc8dfadb1a1",
+  "id": "77da689f-a901-4915-8a95-07888c5a74e2",
   "name": "SObject Tree",
   "url": "{{endpoint}}/services/data/v{{version}}/composite/tree/{SObject}",
   "description": "Creates one or more sObject trees with root records of the specified type. An sObject tree is a collection of nested, parent-child records with a single root record.\nIn the request data, you supply the record hierarchies, required and optional field values, each record’s type, and a reference ID for each record. Upon success, the response contains the IDs of the created records. If an error occurs while creating a record, the entire request fails. In this case, the response contains only the reference ID of the record that caused the error and the error information.\n\nThe request can contain the following:\nUp to a total of 200 records across all trees\nUp to five records of different types\nSObject trees up to five levels deep\nBecause an sObject tree can contain a single record, you can use this resource to create up to 200 unrelated records of the same type.\n\nWhen the request is processed and records are created, triggers, processes, and workflow rules fire separately for each of the following groups of records.\nRoot records across all sObject trees in the request\nAll second-level records of the same type—for example, second-level Contacts across all sObject trees in the request\nAll third-level records of the same type\nAll fourth-level records of the same type\nAll fifth-level records of the same type\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_sobject_tree.htm",
@@ -23,10 +23,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "37217ed6-6fdf-4f2e-b493-a107397a783c",
+  "folder": "0b8f4535-a3d7-4587-84d3-7b01f1e37efe",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "{\n    \"records\":\"SObject Tree Input[]\"\n}",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}

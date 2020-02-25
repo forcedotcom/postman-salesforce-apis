@@ -1,5 +1,5 @@
 {
-  "id": "6f042d72-486a-40ed-954b-40036fb97c6f",
+  "id": "0e61d74b-2eea-4727-9cbd-112a7d02a89c",
   "name": "SOAP Login",
   "url": "{{url}}{{site}}/services/Soap/u/{{version}}",
   "description": null,
@@ -43,12 +43,12 @@
       }
     }
   ],
-  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "folder": "12894ada-1c1d-4dde-8ed7-deebc40104f2",
   "preRequestScript": null,
   "tests": "var xmlTree = xml2Json(responseBody);\npostman.setEnvironmentVariable(\"access_token\", xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.sessionId);\nvar url = xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.serverUrl.split(\"/\");\npostman.setEnvironmentVariable(\"endpoint\", url[0] + \"//\" + url[2]);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<env:Envelope xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <env:Body>\n    <n1:login xmlns:n1=\"urn:partner.soap.sforce.com\">\n      <n1:username>{{username}}</n1:username>\n      <n1:password>{{password}}{{secret_token}}</n1:password>\n    </n1:login>\n  </env:Body>\n</env:Envelope>",
   "headers": "Content-Type: text/xml\nSOAPAction: login\ncharset: UTF-8\n",
   "pathVariables": {}

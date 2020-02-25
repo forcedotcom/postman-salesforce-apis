@@ -1,5 +1,5 @@
 {
-  "id": "435b1232-4093-48b4-af10-829c2d47eb89",
+  "id": "dfa10f4c-3193-4944-8bf8-4b9d200f7e7a",
   "name": "Abort a Job Query",
   "url": "{{endpoint}}/services/data/v{{version}}/jobs/query/{{jobId}}",
   "description": null,
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "56ad4146-858d-4ef6-9736-9a42e5ba575a",
+  "folder": "8538f571-40e1-4e4f-b6a3-cdacc89ae3ec",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "{\n\t\"state\":\"Aborted\"\n}",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}

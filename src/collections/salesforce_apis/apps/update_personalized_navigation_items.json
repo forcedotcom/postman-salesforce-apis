@@ -1,5 +1,5 @@
 {
-  "id": "f4aaeaab-e610-45e1-804f-27ac6e13a090",
+  "id": "f83916ed-d3c6-41ca-a0ef-5f430a9c7f0d",
   "name": "Update Personalized Navigation Items",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/apps/{appId}/user-nav-items",
   "description": "Updates the order of a user’s personalized navigation items (tabs) and adds a navigation item to the list in the order specified.",
@@ -35,12 +35,12 @@
       }
     }
   ],
-  "folder": "b0b1d197-1f7f-4a58-8c63-9716ed5b6b77",
+  "folder": "18813579-d5d4-44b1-836e-108b00dd501b",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}

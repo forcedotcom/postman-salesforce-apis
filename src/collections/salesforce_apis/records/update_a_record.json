@@ -1,5 +1,5 @@
 {
-  "id": "257928b4-04f6-4a32-926d-46b3c92f3846",
+  "id": "54aef866-f0e9-409c-b693-a72b1f94e99e",
   "name": "Update a Record",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/records/{recordId}",
   "description": "Update a record's data.\nUser Interface API enforces Salesforce validation rules. If a validation rule fails, the response is an Error with Output.\n\nWhen you make a PATCH request to update a record, make sure that the record hasn’t changed since the user started editing it. To find out whether it’s safe to save a record, pass the If-Modified-Since HTTP header in the request.\n\nAs of API version 43.0, if you pass read-only fields in a request body, the response is an Error with Output.",
@@ -38,12 +38,12 @@
       }
     }
   ],
-  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "{\n    \"allowSaveOnDuplicate\": false,\n    \"apiName\": \"Object\",\n    \"fields\": {\n        \"FieldAPIName\": \"FieldValue\"\n    }\n}",
   "headers": "Authorization: {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}

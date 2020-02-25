@@ -1,5 +1,5 @@
 {
-  "id": "cfaf807c-f46d-44ca-9bda-13f882e9350e",
+  "id": "122f4eab-8854-44e3-9bfe-0ed4ce7e36cb",
   "name": "Platform Event Schema by Schema ID",
   "url": "{{endpoint}}/services/data/v{{version}}/event/eventSchema/{schemaId}",
   "description": "Set, reset, or get information about a user password. This resource is available in REST API version 24.0 and later.",
@@ -28,10 +28,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

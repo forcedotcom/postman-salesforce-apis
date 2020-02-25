@@ -1,5 +1,5 @@
 {
-  "id": "2561e086-246d-46c5-9ed5-997c74cec53c",
+  "id": "4c1b6638-db15-4b6d-8914-510db214f845",
   "name": "Create job",
   "url": "{{endpoint}}/services/data/v{{version}}/jobs/ingest",
   "description": null,
@@ -33,12 +33,12 @@
       }
     }
   ],
-  "folder": "95304fc2-fbf8-49ba-a94d-f9357c64c2ce",
+  "folder": "f989be51-0b74-4da3-bfd3-dfcc37274e8b",
   "preRequestScript": null,
   "tests": "var response = JSON.parse(responseBody)\npostman.setGlobalVariable(\"jobId\", response.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "{\n\"object\":\"Asset\",\n\"operation\":\"update\"\n}",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}

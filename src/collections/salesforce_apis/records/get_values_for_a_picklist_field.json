@@ -1,5 +1,5 @@
 {
-  "id": "f3f554ef-817c-4d35-a6cb-6dabcee94fe9",
+  "id": "65756a6a-be92-4f19-bcd5-e85ef063f49c",
   "name": "Get Values for a Picklist Field",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/object-info/{objectApiName}/picklist-values/{recordTypeId}/{fieldApiName}",
   "description": "Get metadata about a specific object. The response includes metadata describing fields, child relationships, record type, and theme.",
@@ -20,10 +20,10 @@
   "queryParams": [],
   "auth": null,
   "events": [],
-  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}
 }

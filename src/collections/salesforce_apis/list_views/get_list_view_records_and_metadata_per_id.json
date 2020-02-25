@@ -1,5 +1,5 @@
 {
-  "id": "c013d773-3313-4906-9d83-75f9b314d064",
+  "id": "17748525-4273-4cbc-a84d-f6f6ea9e3134",
   "name": "Get List View Records and Metadata per Id",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/list-ui/{listViewId}",
   "description": "Returns record data and metadata for a list view.",
@@ -35,7 +35,7 @@
       }
     }
   ],
-  "folder": "67609923-4403-4733-aa24-7f2219902e75",
+  "folder": "1e390ece-2f33-42ab-a140-a024519a2ab7",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,7 +43,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}

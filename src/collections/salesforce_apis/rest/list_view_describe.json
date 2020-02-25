@@ -1,5 +1,5 @@
 {
-  "id": "25c70ba1-b943-4750-a92d-a06ee9f23026",
+  "id": "93390408-2ead-42d4-b928-b86907d61be8",
   "name": "List View Describe",
   "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObject}/listviews/{queryLocator}/describe",
   "description": "Returns detailed information about a list view, including the ID, the columns, and the SOQL query.",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

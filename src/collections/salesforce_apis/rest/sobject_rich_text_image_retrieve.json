@@ -1,5 +1,5 @@
 {
-  "id": "5e904b68-a135-4ebf-a5bc-63f2b2825624",
+  "id": "3392cf01-845e-4875-a5dd-970fb1f834b9",
   "name": "SObject Rich Text Image Retrieve",
   "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObject}/{Id}/richTextImageFields/{fieldName}/{contentReferenceId}",
   "description": "Retrieves the specified image data from a specific rich text area field in a given record.\ncontentReferenceId\tThe reference ID that uniquely identifies an image within a rich text area field.\nYou can obtain the reference by retrieving information for the object. The description will show the contents of the rich text area field",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

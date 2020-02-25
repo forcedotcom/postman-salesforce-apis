@@ -1,5 +1,5 @@
 {
-  "id": "c800ced5-50db-464a-b7ef-1d21b9108979",
+  "id": "ca19115f-099c-4668-b957-a36fb5929cab",
   "name": "Get Related List Actions",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/actions/record/{recordIds}/related-list/{relatedListIds}",
   "description": "Get the actions on record detail pages.",
@@ -31,7 +31,7 @@
       }
     }
   ],
-  "folder": "1e76f3df-37a1-470e-af23-8123a244a00c",
+  "folder": "5b407fe6-0d18-470d-8cd6-e9eb50c1cd88",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,7 +39,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}

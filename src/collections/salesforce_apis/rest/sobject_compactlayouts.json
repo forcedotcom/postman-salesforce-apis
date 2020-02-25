@@ -1,5 +1,5 @@
 {
-  "id": "e3fa3862-6942-407b-b180-0aca87741bf4",
+  "id": "0c9094a8-956e-4c76-bfe5-820d8ce544a4",
   "name": "SObject CompactLayouts",
   "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/describe/describe/compactLayouts",
   "description": "Returns a list of compact layouts for a specific object. This resource is available in REST API version 29.0 and later.",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

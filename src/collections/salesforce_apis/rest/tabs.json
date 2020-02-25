@@ -1,5 +1,5 @@
 {
-  "id": "47c5ccbd-cd02-4119-955e-cb27e8b58759",
+  "id": "dde37ba1-b73c-4ddb-b5a0-7edd39f6aaf5",
   "name": "Tabs",
   "url": "{{endpoint}}/services/data/v{{version}}/tabs",
   "description": "f a survey field can be translated or is already translated into a particular language, you can add or change the translated value of the survey field.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/request_survey_translate_add_change.htm",
@@ -21,13 +21,13 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
