@@ -1,0 +1,38 @@
+{
+  "id": "062fbe92-7fa3-4ebb-aafb-79a6b28c7069",
+  "name": "Create/Clone Sandbox",
+  "url": "{{endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo",
+  "description": "Creates or clones a sandbox. If you wish to clone, fill the SourceId body field with the org Id of the source sandbox.",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json",
+      "description": "",
+      "type": "text",
+      "enabled": true
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "d06aa8eb-86b6-440d-bef9-fe300b0f2960",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "rawModeData": "{\n    \"SandboxName\": \"devSandbox\",\n    \"LicenseType\": \"DEVELOPER\",\n    \"TemplateId\": null,\n    \"HistoryDays\": 0,\n    \"CopyChatter\": false,\n    \"AutoActivate\": false,\n    \"ApexClassId\": null,\n    \"Description\": null,\n    \"SourceId\": null\n}",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

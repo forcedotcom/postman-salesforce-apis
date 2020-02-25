@@ -1,0 +1,38 @@
+{
+  "id": "53e24a9f-4f25-4ce4-98fe-23fae958c69a",
+  "name": "Refresh Sandbox",
+  "url": "{{endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo/{SandboxInfoId}",
+  "description": "Refreshes a sandbox.",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json",
+      "description": "",
+      "type": "text",
+      "enabled": true
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "d06aa8eb-86b6-440d-bef9-fe300b0f2960",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "rawModeData": "{\n    \"LicenseType\": \"DEVELOPER\",\n    \"AutoActivate\": true\n}",
+  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

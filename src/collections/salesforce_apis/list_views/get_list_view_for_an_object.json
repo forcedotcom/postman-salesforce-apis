@@ -1,5 +1,5 @@
 {
-  "id": "4f3c43a9-7c06-4e14-8cc5-5e499a7aff0a",
+  "id": "86a78a5e-9875-4cac-a982-3c2626950187",
   "name": "Get List View for an Object",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/list-ui/{objectApiName}",
   "description": "Returns a collection of list views associated with an object.",
@@ -35,7 +35,7 @@
       }
     }
   ],
-  "folder": "67609923-4403-4733-aa24-7f2219902e75",
+  "folder": "1e390ece-2f33-42ab-a140-a024519a2ab7",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,7 +43,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}

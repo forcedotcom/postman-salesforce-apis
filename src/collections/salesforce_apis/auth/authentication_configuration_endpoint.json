@@ -1,5 +1,5 @@
 {
-  "id": "73195a84-d06a-48bd-99d2-43bf426aeae6",
+  "id": "21308189-be2d-4c0e-9fd6-4fde65ce367f",
   "name": "Authentication Configuration Endpoint",
   "url": "{{url}}{{site}}/.well-known/auth-configuration",
   "description": null,
@@ -12,10 +12,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "folder": "12894ada-1c1d-4dde-8ed7-deebc40104f2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "",
   "pathVariables": {}
 }

@@ -1,5 +1,5 @@
 {
-  "id": "caae3466-3261-4e75-a6f4-b58e430ce1ae",
+  "id": "329605aa-0d62-449d-a836-e83536145978",
   "name": "List Views",
   "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObject}/listviews/",
   "description": "Returns the list of list views for the specified sObject, including the ID and other basic information about each list view. You can also get basic information for a specific list view by ID.",
@@ -34,10 +34,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

@@ -1,5 +1,5 @@
 {
-  "id": "16b9d4bb-4ad0-4ee1-bf59-0640039564c4",
+  "id": "8a9ceae9-cf0a-4de9-bbcc-8507c2e8b225",
   "name": "Close or Abort a Job",
   "url": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}",
   "description": null,
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "95304fc2-fbf8-49ba-a94d-f9357c64c2ce",
+  "folder": "f989be51-0b74-4da3-bfd3-dfcc37274e8b",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "{\n\t\"state\":\"UploadComplete\"\n}",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}

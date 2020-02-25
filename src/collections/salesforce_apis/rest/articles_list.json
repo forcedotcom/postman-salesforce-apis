@@ -1,5 +1,5 @@
 {
-  "id": "01155653-c0f0-4da3-a47c-5607dc903eb0",
+  "id": "212e3a6f-27e3-4daf-bda4-f246be60563c",
   "name": "Articles List",
   "url": "{{endpoint}}/services/data/v{{version}}/support/knowledgeArticles",
   "description": "Get a page of online articles for the given language and category through either search or query.",
@@ -70,10 +70,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

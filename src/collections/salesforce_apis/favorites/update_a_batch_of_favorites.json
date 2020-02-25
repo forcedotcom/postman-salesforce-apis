@@ -1,5 +1,5 @@
 {
-  "id": "f6199ef0-7aca-441e-bb93-c4af63decd15",
+  "id": "4fb5bd27-4416-426b-8527-2ca648fa809b",
   "name": "Update a Batch of Favorites",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/favorites/batch",
   "description": "Update all favorites at once. The sort order is updated to the given relative ordering. Any favorites missing from the request body are deleted.",
@@ -35,12 +35,12 @@
       }
     }
   ],
-  "folder": "0bcda5e4-8aaa-4d95-ae67-378325650997",
+  "folder": "ce7a4819-1b00-4174-9885-0b2b58fc8f9f",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "{\n    \"favorites\": [\n        {\n            \"id\": \"0MVR00000004DhnOAE\",\n            \"name\": \"Q4 Perf\"\n        }\n    ]\n}",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}

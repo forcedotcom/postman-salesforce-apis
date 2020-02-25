@@ -1,5 +1,5 @@
 {
-  "id": "af4c7dc1-ee86-47b3-9635-194150e6bc72",
+  "id": "4cfc683b-73b1-4d36-9ce6-dcd7010b7eeb",
   "name": "Delete Job Query",
   "url": "{{endpoint}}/services/data/v{{version}}/jobs/query/{{jobId}}",
   "description": null,
@@ -22,10 +22,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "56ad4146-858d-4ef6-9736-9a42e5ba575a",
+  "folder": "8538f571-40e1-4e4f-b6a3-cdacc89ae3ec",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: Bearer {{access_token}}\n//Content-Type: application/json\n",
   "pathVariables": {}

@@ -1,5 +1,5 @@
 {
-  "id": "31141e83-9999-46b8-a17c-f9b7e2711dde",
+  "id": "250a554a-8d34-4d12-8d8a-4c0f92c945ae",
   "name": "Get Default Values to Create a Record",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/record-defaults/create/{recordId}",
   "description": "Get the default values for fields for a new record of a specified object and optional record type. After getting the default values, make a request to POST /ui-api/records to create the record.\nThe response contains the default field values for the Full layout type for a new record of the object type specified in {objectApiName}.\n\nIt also contains the corresponding layout for create mode. In the Salesforce user interface, an admin with “Customize Application” permission can mark a field as required in a layout. When you’re building UI, to determine which fields to mark as required in a layout for create mode, use the RecordLayoutItem.required property.\n\nThe response contains object metadata for the object specified in {objectApiName} and for any nested objects. For example, a request to /ui-api/record-defaults/create/Account returns object metadata for Account and User, because the OwnerId field on the Account object contains a reference to the User object.",
@@ -50,7 +50,7 @@
       }
     }
   ],
-  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -58,7 +58,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}

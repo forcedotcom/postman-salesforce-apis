@@ -1,5 +1,5 @@
 {
-  "id": "6eac17c0-89b8-4603-8c93-6f9603f41af8",
+  "id": "4c35c1ff-8834-40ad-af1e-163f048fc069",
   "name": "Lightning Usage by App Type",
   "url": "{{endpoint}}/services/data/v{{version}}/sobjects/LightningUsageByAppTypeMetrics",
   "description": "Return the total number of Lightning Experience and Salesforce Mobile users.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_lightning_usagebyapptypemetrics.htm",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

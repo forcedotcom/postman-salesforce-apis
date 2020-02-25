@@ -1,5 +1,5 @@
 {
-  "id": "9064a228-227d-44f7-90e8-cf9225fd401e",
+  "id": "d9ea9c01-cf68-43e6-9710-ad5faabea907",
   "name": "Get Lookup Field Suggestions for a Specified Object",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/lookups/{objectApiName}/{fieldApiName}/{targetApiName}",
   "description": "When a user edits a lookup field, use this resource to search for and display suggestions for a specified object. You can search for most recently used matches, for matching names, or for any match in a searchable field. You can also specify lookup filter bindings for dependent lookups.",
@@ -62,7 +62,7 @@
       }
     }
   ],
-  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -70,7 +70,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}

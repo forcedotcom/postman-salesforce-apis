@@ -1,5 +1,5 @@
 {
-  "id": "66cb46cb-3d20-4b6e-a3cc-e260981bf70a",
+  "id": "ffd53118-bd99-4c08-baa3-19c2d82eee01",
   "name": "SObject Describe",
   "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/describe",
   "description": "Describes the individual metadata for the specified object. Can also be used to create a new record for a given object. For example, this can be used to retrieve the metadata for the Account object using the GET method, or create a new Account object using the POST method.",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

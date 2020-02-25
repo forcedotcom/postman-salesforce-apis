@@ -1,5 +1,5 @@
 {
-  "id": "de848109-a4a5-494a-a0bf-82098e9536e2",
+  "id": "27a73659-f4e8-4dba-97aa-57cbf81e1e16",
   "name": "Get Child Records",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/records/{recordId}/child-relationships/{relationshipName}\n",
   "description": "Get child records for a specified record and child relationship name. Relationships are connections between records. On a record detail page, each record in a related list has a child relationship to the parent record.",
@@ -51,10 +51,10 @@
   ],
   "auth": null,
   "events": [],
-  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}
 }

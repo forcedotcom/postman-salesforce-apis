@@ -1,5 +1,5 @@
 {
-  "id": "bf1bc92a-133b-4f62-b535-39f46d72adef",
+  "id": "c46d712b-fa76-44d0-9889-13523f7f65f6",
   "name": "SObject ApprovalLayouts",
   "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/describe/approvalLayouts/{approvalProcessName}",
   "description": "Returns a list of approval layouts for a specified object. Specify a particular approval process name to limit the return value to one specific approval layout. This resource is available in REST API version 30.0 and later.\n\napprovalProcessName parameter is optional",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

@@ -1,5 +1,5 @@
 {
-  "id": "1c9f373f-ea40-41bc-b721-0edb94a9e939",
+  "id": "7e44a7da-bd99-4bbb-8698-28839a761275",
   "name": "User Agent Flow",
   "url": "{{url}}{{site}}/services/oauth2/authorize?response_type=token token_id&client_id={{clientId}}&redirect_uri={{redirectUrl}}&display=touch&login_hint&nonce=awesome",
   "description": null,
@@ -50,12 +50,12 @@
       }
     }
   ],
-  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "folder": "12894ada-1c1d-4dde-8ed7-deebc40104f2",
   "preRequestScript": null,
   "tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"access_token\", jsonData.access_token);\npostman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "",
   "pathVariables": {}
 }

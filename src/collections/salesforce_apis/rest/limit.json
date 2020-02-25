@@ -1,5 +1,5 @@
 {
-  "id": "403c5835-8a5f-4869-ad79-7c1c7d4a630e",
+  "id": "edc542df-8c94-4431-bea0-47989f787875",
   "name": "Limit",
   "url": "{{endpoint}}/services/data/v{{version}}/limits",
   "description": "Lists information about limits in your org. For each limit, this resource returns the maximum allocation and the remaining allocation based on usage. This resource is available in REST API version 29.0 and later for API users with the View Setup and Configuration permission",
@@ -17,10 +17,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\n",
   "pathVariables": {}
 }

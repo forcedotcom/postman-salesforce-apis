@@ -1,5 +1,5 @@
 {
-  "id": "0c13bfe8-5d11-4fa2-9c7f-297626766671",
+  "id": "78584878-00c8-4cc3-a8e5-bc7ae0e25b2a",
   "name": "Bulk Check Batch Status",
   "url": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}/batch",
   "description": null,
@@ -25,10 +25,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "3a82ee07-553f-45dd-81c1-37547849b3d3",
+  "folder": "45648f99-faff-4b36-8439-18a7e91671b5",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "X-SFDC-Session: {{access_token}}\nAccept-Encoding: gzip\nContent-Encoding: gzip\n",
   "pathVariables": {}
 }

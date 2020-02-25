@@ -1,5 +1,5 @@
 {
-  "id": "56b4c5e1-93a7-40af-96d3-a480370c33aa",
+  "id": "e9a9241f-93da-4954-8aa6-d38420f4e3ef",
   "name": "User Info",
   "url": "{{url}}{{site}}/services/oauth2/userinfo",
   "description": null,
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "42e54988-935e-49a9-b64f-519566493e4b",
+  "folder": "12894ada-1c1d-4dde-8ed7-deebc40104f2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

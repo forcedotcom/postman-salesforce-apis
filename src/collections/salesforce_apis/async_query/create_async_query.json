@@ -1,5 +1,5 @@
 {
-  "id": "6482f251-a7ae-42c2-a44b-78d762b59d14",
+  "id": "4089e114-b92a-4fda-ae69-07de9d0ecd9c",
   "name": "Create Async Query",
   "url": "{{endpoint}}/services/data/v{{version}}/async-queries",
   "description": null,
@@ -43,15 +43,15 @@
       }
     }
   ],
-  "folder": "f7f0b2ce-95ac-473c-bafd-3210a262257f",
+  "folder": "0995184f-b7e2-48af-a9d0-fc0bbcea83c3",
   "responses": [
     {
-      "id": "3eb3a255-e4ff-413b-b860-d3b90072dca6",
+      "id": "78e5e021-bf0a-40a8-a15b-7bb65e7f2b4e",
       "name": "REST Create Lead",
-      "status": null,
-      "mime": null,
-      "language": null,
-      "text": null,
+      "status": "",
+      "mime": "",
+      "language": "",
+      "text": "",
       "responseCode": null,
       "requestObject": {
         "data": [],
@@ -73,17 +73,17 @@
         "url": "{{url}}/services/data/v{{version}}/sobjects/Lead",
         "rawModeData": "{\n\"FirstName\":\"Test\",\n\"LastName\":\"API\"\n}\n"
       },
-      "headers": null,
-      "cookies": null,
-      "request": "6482f251-a7ae-42c2-a44b-78d762b59d14",
-      "collection": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21"
+      "headers": [],
+      "cookies": [],
+      "request": "4089e114-b92a-4fda-ae69-07de9d0ecd9c",
+      "collection": "3514eccb-888f-4bbf-82c4-ba07fdd5173e"
     }
   ],
   "preRequestScript": null,
   "tests": "var jsonData = JSON.parse(responseBody);\npostman.setGlobalVariable(\"jobId\", jsonData.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "{\n    \"query\": \"SELECT fields FROM bigObject\",\n    \"operation\": \"<insert update upsert>\",\n    \"targetObject\": \"<custom object>\",\n    \"targetFieldMap\": {\n        \"firstField__c\": \"firstFieldTarget__c\",\n        \"secondField__c\": \"secondFieldTarget__c\"\n    },\n    \"targetValueMap\": {\n        \"$JOB_ID\": \"BackgroundOperationLookup__c\",\n        \"Copy fields from source to target\": \"BackgroundOperationDescription__c\"\n    },\n    \"targetExternalIdField\":\"<external id field used in upsert>\"\n}",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}

@@ -1,5 +1,5 @@
 {
-  "id": "7be14ac3-b8e0-4682-9755-853f4fb9f49f",
+  "id": "7c787a82-e6ae-4641-893a-c92912741236",
   "name": "SObject Collections Update",
   "url": "{{endpoint}}/services/data/v{{version}}/composite/sobjects/{SObject}",
   "description": "Executes actions on multiple records in one request. Use SObject Collections to reduce the number of round-trips between the client and server. This resource is available in API version 42.0 and later.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_sobjects_collections.htm",
@@ -23,10 +23,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "37217ed6-6fdf-4f2e-b493-a107397a783c",
+  "folder": "0b8f4535-a3d7-4587-84d3-7b01f1e37efe",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "{\n    \"allOrNone\": \"Boolean\",\n    \"records\":\"SObject[]\"\n}",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}

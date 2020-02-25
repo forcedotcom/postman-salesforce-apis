@@ -1,5 +1,5 @@
 {
-  "id": "ed2bff20-62d5-40e5-aa48-c8e56e08ad8a",
+  "id": "ffacb064-7ff8-4c5e-81f3-78a3de5b4dbf",
   "name": "Get Object Metadata",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/object-info/{objectApiName}",
   "description": "Get metadata about a specific object. The response includes metadata describing fields, child relationships, record type, and theme.",
@@ -20,10 +20,10 @@
   "queryParams": [],
   "auth": null,
   "events": [],
-  "folder": "313851db-3d6b-4956-9132-441e14d06145",
+  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}
 }

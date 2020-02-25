@@ -1,5 +1,5 @@
 {
-  "id": "dbb0f0f8-771f-4f5a-9f5f-7a28e0bc933c",
+  "id": "e533f33d-1400-4258-b818-a5c12e038bf6",
   "name": "Get Lightning Page Actions",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/actions/flexipage/{flexipageNames}",
   "description": "Get the actions on Lightning pages (FlexiPages).",
@@ -31,7 +31,7 @@
       }
     }
   ],
-  "folder": "1e76f3df-37a1-470e-af23-8123a244a00c",
+  "folder": "5b407fe6-0d18-470d-8cd6-e9eb50c1cd88",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,7 +39,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}

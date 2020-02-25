@@ -1,5 +1,5 @@
 {
-  "id": "56b3406f-f200-40cd-836f-687577eaece4",
+  "id": "25d1196a-5403-4711-8fb3-f935833ee93f",
   "name": "Delete Async Query",
   "url": "{{endpoint}}/services/data/v{{version}}/async-queries/{{jobId}}",
   "description": null,
@@ -42,15 +42,15 @@
       }
     }
   ],
-  "folder": "f7f0b2ce-95ac-473c-bafd-3210a262257f",
+  "folder": "0995184f-b7e2-48af-a9d0-fc0bbcea83c3",
   "responses": [
     {
-      "id": "8d6481fe-1d14-4bd4-8425-92133de69e1f",
+      "id": "31d83bd2-d0ad-431f-8906-ad708c25d661",
       "name": "REST Create Lead",
-      "status": null,
-      "mime": null,
-      "language": null,
-      "text": null,
+      "status": "",
+      "mime": "",
+      "language": "",
+      "text": "",
       "responseCode": null,
       "requestObject": {
         "data": [],
@@ -72,17 +72,17 @@
         "url": "{{url}}/services/data/v{{version}}/sobjects/Lead",
         "rawModeData": "{\n\"FirstName\":\"Test\",\n\"LastName\":\"API\"\n}\n"
       },
-      "headers": null,
-      "cookies": null,
-      "request": "56b3406f-f200-40cd-836f-687577eaece4",
-      "collection": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21"
+      "headers": [],
+      "cookies": [],
+      "request": "25d1196a-5403-4711-8fb3-f935833ee93f",
+      "collection": "3514eccb-888f-4bbf-82c4-ba07fdd5173e"
     }
   ],
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}

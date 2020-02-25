@@ -1,0 +1,30 @@
+{
+  "id": "456a20ed-3520-4b76-82c3-e2659f564275",
+  "name": "Delete Sandbox",
+  "url": "{{endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo/{SandboxInfoId}",
+  "description": "Deletes a sandbox.",
+  "data": null,
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{access_token}}"
+    }
+  ],
+  "method": "DELETE",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "d06aa8eb-86b6-440d-bef9-fe300b0f2960",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "headers": "Authorization: Bearer {{access_token}}\n",
+  "pathVariables": {}
+}

@@ -1,7 +1,7 @@
 {
-  "id": "2db4b67a-ec62-496e-bdfb-30ea8ec93835",
+  "id": "2e976e0b-7c01-4211-a47e-de5adfd966cb",
   "name": "Access Records",
-  "url": "{{endpoint}}/services/data/{{version}}/tooling/sobjects/{id}",
+  "url": "{{endpoint}}/services/data/v{{version}}/tooling/sobjects/{id}",
   "description": "",
   "data": null,
   "dataOptions": {
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "c799fa65-7caa-462f-bcc3-88ba3e674b79",
+  "folder": "1347ab9b-06a4-4ce3-87d0-b2e76e2ee8eb",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\n",
   "pathVariables": {}
 }

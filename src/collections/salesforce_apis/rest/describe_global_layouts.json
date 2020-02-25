@@ -1,5 +1,5 @@
 {
-  "id": "6258828e-9467-4a85-a4b9-9b2f1d49cc46",
+  "id": "64205ece-7329-409a-a701-33e2737bf1c7",
   "name": "Describe Global Layouts",
   "url": "{{endpoint}}/services/data/v{{version}}/sobjects/Global/describe/layouts/",
   "description": "Returns a list of layouts and descriptions. The list of fields and the layout name are returned.",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "782b69d1-36f1-4b89-a2c4-a09e74d4acfa",
+  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

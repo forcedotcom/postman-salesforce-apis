@@ -1,5 +1,5 @@
 {
-  "id": "05ec4b36-e631-4056-8c14-c1ebfbf54136",
+  "id": "dceb1fe3-692a-40e9-b05c-5e2aa0834d84",
   "name": "Get Apps",
   "url": "{{endpoint}}/services/data/v{{version}}/ui-api/apps",
   "description": "Get metadata for all the apps a user has access to. Metadata for the selected app includes tabs on the app’s navigation bar. Metadata for other apps doesn’t include tabs on the navigation bar.",
@@ -35,7 +35,7 @@
       }
     }
   ],
-  "folder": "b0b1d197-1f7f-4a58-8c63-9716ed5b6b77",
+  "folder": "18813579-d5d4-44b1-836e-108b00dd501b",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,7 +43,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "",
   "headers": "Authorization: {{access_token}}\n",
   "pathVariables": {}

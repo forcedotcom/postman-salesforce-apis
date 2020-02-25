@@ -1,5 +1,5 @@
 {
-  "id": "57f7f2b8-5c8e-42e5-8d8b-6ec8b9877014",
+  "id": "fe4c4f61-f297-4640-864d-dd76242a58bf",
   "name": "Bulk Close Job",
   "url": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}",
   "description": null,
@@ -35,10 +35,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "3a82ee07-553f-45dd-81c1-37547849b3d3",
+  "folder": "45648f99-faff-4b36-8439-18a7e91671b5",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ad0a8738-1c8a-4ec4-907c-7b6af7470f21",
+  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
   "rawModeData": "{\n   \"state\" : \"UploadComplete\"\n}",
   "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: application/json\ncharset: UTF-8\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
   "pathVariables": {}
