@@ -10,13 +10,16 @@ Install the following apps:
 
 1. Develop new APIs directly in Postman.
 
-1. Export the collection using the [export data feature](https://learning.postman.com/docs/postman/collections/data-formats/#data-dumps).
+1. Export the entire Postman workspace using the [export data feature](https://learning.postman.com/docs/postman/collections/data-formats/#data-dumps).
 
 1. Use [Postman Extractor](https://github.com/pozil/postman-extractor) to format the collection for easier versioning:
     ```bash
     $ pmx import -f Backup.postman_dump.json
     ```
-1. Commit **only** the result of the import command.
+
+1. Remove unneeded files (the JSON dump file, other collections, other environments...)
+
+1. Check your files for hardcoded Ids or credentials
     
     **/!\ Never commit credentials!**
 
