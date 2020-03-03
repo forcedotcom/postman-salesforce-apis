@@ -1,7 +1,7 @@
 {
-  "id": "ffaa238f-f75c-425c-b214-ccfc2b6ba70a",
+  "id": "5a5959e8-0ad9-4e89-b1e6-67eae126ef8e",
   "name": "SObject Quick Actions",
-  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObject}/quickActions/",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/{SObject}/quickActions/",
   "description": "Returns a list of actions and their details. This resource is available in REST API version 28.0 and later. When working with actions, also refer to Quick Actions.\n\nTo return a specific object’s actions as well as global actions, use: /vXX.X/sobjects/object/quickActions/\nTo return a specific action, use /vXX.X/sobjects/object/quickActions/{action name}\nTo return a specific action’s descriptive detail, use /vXX.X/sobjects/object/quickActions/{action name}/describe/\nTo return a specific action’s default values, including default field values, use services/data/vXX.X/sobjects/object/quickActions/{action name}/defaultValues/\nIn API version 28.0, to evaluate the default values for an action, use vXX.X/sobjects/object/quickActions/{action name}/defaultValues/{parent id}\nIn API version 29.0 and greater, to evaluate the default values for an action, use vXX.X/sobjects/object/quickActions/{action name}/defaultValues/{context id}\nThis returns the default values specific to the {context id} object.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "6d380c8e-3b9c-4de8-9df0-c8c9b528503c",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

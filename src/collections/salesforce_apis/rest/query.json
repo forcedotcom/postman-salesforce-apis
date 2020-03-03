@@ -1,7 +1,7 @@
 {
-  "id": "958e447e-ead2-4865-a12b-609ecc4b2c64",
+  "id": "836015ae-eafb-4318-b1d3-757b092bc5b1",
   "name": "Query",
-  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/OpportunityLineItem/{OpportunityLineItemId}/OpportunityLineItemSchedules?q",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/OpportunityLineItem/{OpportunityLineItemId}/OpportunityLineItemSchedules?q",
   "description": "Executes the specified SOQL query.\n\nIf the query results are too large, the response contains the first batch of results and a query identifier in the nextRecordsUrl field of the response. The identifier can be used in an additional request to retrieve the next batch.\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_query.htm",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -29,10 +29,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "6d380c8e-3b9c-4de8-9df0-c8c9b528503c",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

@@ -1,7 +1,7 @@
 {
-  "id": "dde37ba1-b73c-4ddb-b5a0-7edd39f6aaf5",
+  "id": "1331438d-e1e7-4545-b2fc-517b05f13c90",
   "name": "Tabs",
-  "url": "{{endpoint}}/services/data/v{{version}}/tabs",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tabs",
   "description": "f a survey field can be translated or is already translated into a particular language, you can add or change the translated value of the survey field.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/request_survey_translate_add_change.htm",
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,14 +21,14 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "6d380c8e-3b9c-4de8-9df0-c8c9b528503c",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

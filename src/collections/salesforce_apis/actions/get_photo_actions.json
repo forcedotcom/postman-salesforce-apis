@@ -1,7 +1,7 @@
 {
-  "id": "47d3cd4b-3e0b-4b44-8e1c-600b98fc3c09",
+  "id": "633b1cc0-611d-4378-849d-2dfd04eae701",
   "name": "Get Photo Actions",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/actions/photo/{recordIds}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/photo/{recordIds}",
   "description": "Get the photo actions for pages. Currently, only group and user pages support photo actions.",
   "data": [],
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -24,14 +24,12 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [
-          ""
-        ],
+        "exec": [""],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "5b407fe6-0d18-470d-8cd6-e9eb50c1cd88",
+  "folder": "a2c7aca8-406f-4333-98c6-7f57c128d845",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,8 +37,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

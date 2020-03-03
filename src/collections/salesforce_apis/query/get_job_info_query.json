@@ -1,7 +1,7 @@
 {
-  "id": "22a5215d-4c4e-4e32-bbe3-8473a523ca18",
+  "id": "68f032d9-25f3-4e55-a9c1-6a0421b45031",
   "name": "Get Job Info Query",
-  "url": "{{endpoint}}/services/data/v{{version}}/jobs/query/{{jobId}}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/jobs/query/{{_jobId}}",
   "description": null,
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "enabled": false,
@@ -22,10 +22,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "8538f571-40e1-4e4f-b6a3-cdacc89ae3ec",
+  "folder": "5ef6ab2c-09a3-4142-8f07-7c5cce26d598",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\n//Content-Type: application/json\n",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: application/json\n",
   "pathVariables": {}
 }

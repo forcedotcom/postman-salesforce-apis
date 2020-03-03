@@ -1,7 +1,7 @@
 {
-  "id": "49a47674-59ec-4e00-8ad5-d2fea94c24ac",
+  "id": "54987ab3-e6db-40df-ada1-9ffd7106452b",
   "name": "ID Token",
-  "url": "{{endpoint}}/id/{{orgId}}/{{userId}}",
+  "url": "{{_endpoint}}/id/{{orgId}}/{{userId}}",
   "description": null,
   "data": null,
   "dataOptions": null,
@@ -10,7 +10,7 @@
     {
       "key": "Authorization",
       "type": "text",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -23,10 +23,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "12894ada-1c1d-4dde-8ed7-deebc40104f2",
+  "folder": "2d96c5c0-bda6-41d8-aa58-2cd11e582e7f",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

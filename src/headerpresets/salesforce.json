@@ -1,10 +1,10 @@
 {
-  "id": "f9f05c2f-c0c9-4850-9d48-66141614bc23",
+  "id": "f83f363d-c638-4c56-b3c8-c986d8da2ccc",
   "name": "Salesforce",
   "headers": [
     {
       "key": "Authorization",
-      "value": "{{access_token}}",
+      "value": "{{_accessToken}}",
       "type": "text",
       "description": "",
       "enabled": true

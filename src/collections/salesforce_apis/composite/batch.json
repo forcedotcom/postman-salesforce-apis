@@ -1,7 +1,7 @@
 {
-  "id": "0b98da73-dfbb-48a5-8333-6acd43bf27e1",
+  "id": "3c0a3b15-633f-44fc-92d8-666de34cee84",
   "name": "Batch",
-  "url": "{{endpoint}}/services/data/v{{version}}/composite/batch",
+  "url": "{{_endpoint}}/services/data/v{{version}}/composite/batch",
   "description": "Executes up to 25 subrequests in a single request. The response bodies and HTTP statuses of the subrequests in the batch are returned in a single response body. Each subrequest counts against rate limits.\nThe requests in a batch are called subrequests. All subrequests are executed in the context of the same user. Subrequests are independent, and you can’t pass information between them. Subrequests execute serially in their order in the request body. When a subrequest executes successfully, it commits its data. Commits are reflected in the output of later subrequests. If a subrequest fails, commits made by previous subrequests are not rolled back. If a batch request doesn’t complete within 10 minutes, the batch times out and the remaining subrequests aren’t executed.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_batch.htm",
   "data": [],
   "dataOptions": null,
@@ -10,7 +10,7 @@
     {
       "key": "Authorization",
       "type": "text",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -23,11 +23,11 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "0b8f4535-a3d7-4587-84d3-7b01f1e37efe",
+  "folder": "c31b48f5-d3dd-4d3d-a844-dc996b7ddc5f",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "{\n    \"haltOnError\": \"Boolean\",\n    \"batchRequests\": \"Subrequest[]\"\n}",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

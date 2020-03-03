@@ -1,7 +1,7 @@
 {
-  "id": "dd747176-59ab-4aa8-af8f-490fff14cda6",
+  "id": "c9596a5f-0eba-4f4f-83b9-66c2c49322fb",
   "name": "Get Default Values to Clone a Record",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/record-defaults/clone/{recordId}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/record-defaults/clone/{recordId}",
   "description": "Get the default layout information, object information, and data for cloning a record. After getting the default values, make a request to POST /ui-api/records to create the record.\nThe response contains the default field values for a record cloned from the record specified in {recordId}, optionally of the specified recordTypeId.\n\nIt also contains the corresponding layout information for edit mode. In the Salesforce user interface, an admin with “Customize Application” permission can mark a field as required in a layout. When you’re building UI, to determine which fields to mark as required in a layout for edit mode, use the RecordLayoutItem.required property.\n\nThe response contains object metadata for the object type of the record specified in {recordId} and for any nested objects. For example, /ui-api/record-defaults/clone/001d000000AtfRIAAZ is a request to clone an Account record. It returns object metadata for Account and User, because the OwnerId field on the Account object contains a reference to the User object.",
   "data": [],
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -43,14 +43,12 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [
-          ""
-        ],
+        "exec": [""],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
+  "folder": "2137f4be-3102-4738-9285-70659b949fa9",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -58,8 +56,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

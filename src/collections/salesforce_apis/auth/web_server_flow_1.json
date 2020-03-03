@@ -1,5 +1,5 @@
 {
-  "id": "bcfc6d6d-04cd-4866-805f-a7e0e892b2e8",
+  "id": "318534cf-0ce6-4da3-9e8f-d50d36eadfe8",
   "name": "Web Server Flow 1",
   "url": "{{url}}{{site}}/services/oauth2/authorize?response_type=code&client_id={{clientId}}&redirect_uri={{redirectUrl}}&scope=full refresh_token",
   "description": null,
@@ -29,10 +29,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "12894ada-1c1d-4dde-8ed7-deebc40104f2",
+  "folder": "2d96c5c0-bda6-41d8-aa58-2cd11e582e7f",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "headers": "",
   "pathVariables": {}
 }

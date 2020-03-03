@@ -1,7 +1,7 @@
 {
-  "id": "44113024-b1eb-4e0e-b4e5-6067025286a6",
+  "id": "6f0be9b0-2adc-458d-9e85-a5916fd4aec1",
   "name": "Consent",
-  "url": "{{endpoint}}/services/data/v{{version}}/consent/action/action?actions&ids",
+  "url": "{{_endpoint}}/services/data/v{{version}}/consent/action/action?actions&ids",
   "description": "Your users can store consent preferences in different locations and possibly inconsistently. You can locate your customers’ preferences for consent across multiple records when using API version 44.0 and later. Tracking consent preferences helps you and your users respect the most restrictive requests.\nConsent API aggregates consent settings across the Contact, Contact Point Type Consent, Data Use Purpose, Individual, Lead, Person Account, and User objects when the records have a lookup relationship. The Consent API can't locate records in which the email address field is protected by Platform Encryption.\n\nThe API returns consent details based on a single action, like email or track, or—starting with API version 45.0—the multiaction endpoint allows you to request multiple actions in a single API call.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -58,10 +58,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "6d380c8e-3b9c-4de8-9df0-c8c9b528503c",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

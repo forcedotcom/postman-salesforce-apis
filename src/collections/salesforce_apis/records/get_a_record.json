@@ -1,7 +1,7 @@
 {
-  "id": "98eaab2f-af33-4f49-9fb6-562543f04400",
+  "id": "7f4f433d-b224-42e0-9303-188a0918be7c",
   "name": "Get a Record",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/records/{recordId}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records/{recordId}",
   "description": "Get a record’s data.",
   "data": null,
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -63,10 +63,10 @@
   ],
   "auth": null,
   "events": [],
-  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
+  "folder": "2137f4be-3102-4738-9285-70659b949fa9",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: {{access_token}}\n",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

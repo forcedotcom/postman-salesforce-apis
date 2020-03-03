@@ -1,7 +1,7 @@
 {
-  "id": "1641ad4d-c465-4356-9f6a-49a8c0adbae7",
+  "id": "b33c3423-642f-43b3-a95b-c42474c4118e",
   "name": "Get List View Metadata per API Name",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/list-info/{objectApiName}/{listViewApiName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-info/{objectApiName}/{listViewApiName}",
   "description": "Returns list view metadata.",
   "data": [],
   "dataOptions": {
@@ -16,7 +16,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -28,14 +28,12 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [
-          ""
-        ],
+        "exec": [""],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "1e390ece-2f33-42ab-a140-a024519a2ab7",
+  "folder": "188bfad0-c325-416e-9954-f105e1d87928",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,8 +41,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

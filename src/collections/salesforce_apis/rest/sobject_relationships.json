@@ -1,7 +1,7 @@
 {
-  "id": "186c0f92-5835-4b43-886c-6275f9b3334d",
+  "id": "0cb759a7-bc34-4211-b9c9-bc48e2b73f21",
   "name": "SObject Relationships",
-  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObject}/{Id}/{RelationShipFieldName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/{SObject}/{Id}/{RelationShipFieldName}",
   "description": "Accesses records by traversing object relationships via friendly URLs. You can retrieve, update, or delete the record associated with the traversed relationship field. If there are multiple related records, you can retrieve the complete set of associated records. This resource is available in REST API version 36.0 and later.\n\nGET, PATCH, DELETE",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "6d380c8e-3b9c-4de8-9df0-c8c9b528503c",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

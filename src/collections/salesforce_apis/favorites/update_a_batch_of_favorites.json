@@ -1,7 +1,7 @@
 {
-  "id": "4fb5bd27-4416-426b-8527-2ca648fa809b",
+  "id": "e5c2dafc-cc37-450e-adc6-3fab42823497",
   "name": "Update a Batch of Favorites",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/favorites/batch",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/batch",
   "description": "Update all favorites at once. The sort order is updated to the given relative ordering. Any favorites missing from the request body are deleted.",
   "data": [],
   "dataOptions": {
@@ -16,7 +16,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "PUT",
@@ -28,20 +28,18 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [
-          ""
-        ],
+        "exec": [""],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "ce7a4819-1b00-4174-9885-0b2b58fc8f9f",
+  "folder": "fae26955-842d-438b-aef4-9b87aafe2496",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "{\n    \"favorites\": [\n        {\n            \"id\": \"0MVR00000004DhnOAE\",\n            \"name\": \"Q4 Perf\"\n        }\n    ]\n}",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

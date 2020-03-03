@@ -1,7 +1,7 @@
 {
-  "id": "abd845a2-5d1c-4ec1-bcbf-98bbd0ba35fe",
+  "id": "16388b01-cd22-4680-ab0a-add714efe673",
   "name": "Versions",
-  "url": "{{endpoint}}/services/data",
+  "url": "{{_endpoint}}/services/data",
   "description": "Lists summary information about each Salesforce version currently available, including the version, label, and a link to each version's root.",
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -36,13 +36,13 @@
       }
     }
   ],
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "6d380c8e-3b9c-4de8-9df0-c8c9b528503c",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "responses": [
     {
-      "id": "94bc4fdd-e08c-49b0-b871-1d57af65def9",
+      "id": "3e5bd895-614c-4ec8-bd20-acb2e893e42e",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -56,7 +56,7 @@
         "headerData": [
           {
             "key": "Authorization",
-            "value": "Bearer {{access_token}}"
+            "value": "Bearer {{_accessToken}}"
           },
           {
             "key": "Content-Type",
@@ -71,16 +71,16 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "abd845a2-5d1c-4ec1-bcbf-98bbd0ba35fe",
-      "collection": "3514eccb-888f-4bbf-82c4-ba07fdd5173e"
+      "request": "16388b01-cd22-4680-ab0a-add714efe673",
+      "collection": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e"
     }
   ],
   "preRequestScript": "{\n    \"FirstName\" : \"test\",\n    \"LastName\" : \"test\"\n}\n",
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "{\n\"FirstName\":\"Test\",\n\"LastName\":\"API\"\n}\n",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

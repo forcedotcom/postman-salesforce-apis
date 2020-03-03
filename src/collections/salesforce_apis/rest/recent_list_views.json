@@ -1,7 +1,7 @@
 {
-  "id": "5f213627-8057-4b18-9485-d3353a366789",
+  "id": "dfec0862-61ca-488d-ab6c-7f6b974c96a7",
   "name": "Recent List Views",
-  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{sobjectType}/listviews/recent",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/{sobjectType}/listviews/recent",
   "description": "Returns the list of recently used list views for the given sObject type.\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_recentlistviews.htm",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "6d380c8e-3b9c-4de8-9df0-c8c9b528503c",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

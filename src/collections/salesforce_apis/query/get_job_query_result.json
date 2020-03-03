@@ -1,7 +1,7 @@
 {
-  "id": "0c00166a-352f-4942-9430-c7e181665f16",
+  "id": "e3746e07-b18d-49b8-ac33-be7a84096010",
   "name": "Get Job Query Result",
-  "url": "{{endpoint}}/services/data/v{{version}}/jobs/query/{{jobId}}/results",
+  "url": "{{_endpoint}}/services/data/v{{version}}/jobs/query/{{_jobId}}/results",
   "description": null,
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "enabled": true,
@@ -42,10 +42,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "8538f571-40e1-4e4f-b6a3-cdacc89ae3ec",
+  "folder": "5ef6ab2c-09a3-4142-8f07-7c5cce26d598",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\nAccept: test/csv\n",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\nAccept: test/csv\n",
   "pathVariables": {}
 }

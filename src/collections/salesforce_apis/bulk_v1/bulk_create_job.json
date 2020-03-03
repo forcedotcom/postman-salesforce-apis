@@ -1,7 +1,7 @@
 {
-  "id": "8f464619-6c48-4c04-8339-a66acdf96f42",
+  "id": "37d452cc-406b-45c7-a2bb-26372beb5e98",
   "name": "Bulk Create Job",
-  "url": "{{endpoint}}/services/async/{{version}}/job",
+  "url": "{{_endpoint}}/services/async/{{version}}/job",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "X-SFDC-Session",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -80,13 +80,13 @@
       }
     }
   ],
-  "folder": "45648f99-faff-4b36-8439-18a7e91671b5",
+  "folder": "87dfaef8-13f7-455e-8fa5-4989524d181b",
   "preRequestScript": null,
   "tests": "if(postman.getResponseHeader(\"Content-Type\").indexOf(\"xml\") !== -1) {\n    var jsonData = xml2Json(responseBody);\n    postman.setGlobalVariable(\"jobId\", jsonData['jobInfo']['id']);    \n}\n\nif(postman.getResponseHeader(\"Content-Type\").indexOf(\"json\") !== -1) {\n    var jsonData = JSON.parse(responseBody);\n    postman.setGlobalVariable(\"jobId\", jsonData.id);\n}\n\n",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "{\n  \"operation\" : \"insert\",\n  \"object\" : \"Account\",\n  \"contentType\" : \"CSV\"\n}",
-  "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: application/json\ncharset: UTF-8\n//Sforce-Disable-Batch-Retry: FALSE\n//Sforce-Line-Ending: CRLF\n//Sforce-Enable-PKChunking: FALSE\n//chunkSize: 10000\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
+  "headers": "X-SFDC-Session: {{_accessToken}}\nContent-Type: application/json\ncharset: UTF-8\n//Sforce-Disable-Batch-Retry: FALSE\n//Sforce-Line-Ending: CRLF\n//Sforce-Enable-PKChunking: FALSE\n//chunkSize: 10000\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
   "pathVariables": {}
 }

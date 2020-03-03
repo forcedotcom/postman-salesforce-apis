@@ -1,5 +1,5 @@
 {
-  "id": "d8f308fa-af74-4a8f-a4b3-c9df4f3edbba",
+  "id": "e4c40a95-6e2f-4d4c-ae5e-e2a96d98525d",
   "name": "OpenID Connect Discovery Endpoint",
   "url": "{{url}}{{site}}/.well-known/openid-configuration",
   "description": null,
@@ -12,10 +12,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "12894ada-1c1d-4dde-8ed7-deebc40104f2",
+  "folder": "2d96c5c0-bda6-41d8-aa58-2cd11e582e7f",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "headers": "",
   "pathVariables": {}
 }

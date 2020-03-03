@@ -1,7 +1,7 @@
 {
-  "id": "4f0fb577-5622-4d41-b31a-697fb9b23da6",
+  "id": "1d03af7b-517e-436a-9bae-9e40a0276106",
   "name": "Get a Batch of Records",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/records/batch/{recordIds}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records/batch/{recordIds}",
   "description": "Get data for a batch of records.",
   "data": null,
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -63,10 +63,10 @@
   ],
   "auth": null,
   "events": [],
-  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
+  "folder": "2137f4be-3102-4738-9285-70659b949fa9",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: {{access_token}}\n",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

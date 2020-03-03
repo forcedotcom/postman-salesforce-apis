@@ -1,7 +1,7 @@
 {
-  "id": "da7444d3-9a49-4217-850b-8ab651d9498d",
+  "id": "e68e0d3a-86f0-41e4-a4d8-9f5d8d3fa947",
   "name": "List Sandboxes",
-  "url": "{{endpoint}}/services/data/v{{version}}/tooling/query/?q=SELECT Id, SandboxName, LicenseType, AutoActivate FROM SandboxInfo",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/query/?q=SELECT Id, SandboxName, LicenseType, AutoActivate FROM SandboxInfo",
   "description": "Lists all sandboxes.",
   "data": [],
   "dataOptions": null,
@@ -10,7 +10,7 @@
     {
       "key": "Authorization",
       "type": "text",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "enabled": false,
@@ -32,14 +32,14 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "d06aa8eb-86b6-440d-bef9-fe300b0f2960",
+  "folder": "7fd3ae19-0625-4fa6-9d6e-686050dad83e",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{access_token}}\n//Content-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: application/json\n",
   "pathVariables": {}
 }

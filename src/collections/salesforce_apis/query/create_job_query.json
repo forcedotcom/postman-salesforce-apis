@@ -1,7 +1,7 @@
 {
-  "id": "0f35f8f2-cd4b-471d-bfbf-f46c0bb5ec0f",
+  "id": "3d65e191-81eb-4f07-9684-6fa48a1a85aa",
   "name": "Create job Query",
-  "url": "{{endpoint}}/services/data/v{{version}}/jobs/query",
+  "url": "{{_endpoint}}/services/data/v{{version}}/jobs/query",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -33,13 +33,13 @@
       }
     }
   ],
-  "folder": "8538f571-40e1-4e4f-b6a3-cdacc89ae3ec",
+  "folder": "5ef6ab2c-09a3-4142-8f07-7c5cce26d598",
   "preRequestScript": null,
   "tests": "var response = JSON.parse(responseBody)\npostman.setGlobalVariable(\"id\", response.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "{\n  \"operation\" : \"query\",\n  \"query\" : \"SELECT fields FROM object WHERE filter\",\n  \"contentType\" : \"CSV\",\n  \"columnDelimiter\" : \"BACKQUOTE | CARET | COMMA | PIPE | SEMICOLON | TAB\",\n  \"lineEnding\" : \"CRLF | LF\"\n} ",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

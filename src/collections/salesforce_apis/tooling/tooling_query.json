@@ -1,7 +1,7 @@
 {
-  "id": "d6a5e986-e87c-4e89-a604-c764cb07c35a",
+  "id": "63e31096-9c07-414a-9c4d-5bcbf578ff15",
   "name": "Tooling Query",
-  "url": "{{endpoint}}/services/data/v{{version}}/tooling/query/?q",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/query/?q",
   "description": "Executes a query against an object and returns data that matches the specified criteria. Tooling API exposes objects like EntityDefinition and FieldDefinition that use the external object framework. That is, they don’t exist in the database but are constructed dynamically. Special query rules apply to virtual entities.\nIf the query result is too large, it’s broken up into batches. The response contains the first batch of results and a query identifier. The identifier can be used in a request to retrieve the next batch.",
   "data": [],
   "dataOptions": null,
@@ -10,7 +10,7 @@
     {
       "key": "Authorization",
       "type": "text",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "enabled": false,
@@ -31,14 +31,14 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "1347ab9b-06a4-4ce3-87d0-b2e76e2ee8eb",
+  "folder": "4030dd83-2d8a-4e6f-9644-743b6642efc2",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{access_token}}\n//Content-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: application/json\n",
   "pathVariables": {}
 }

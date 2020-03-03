@@ -1,7 +1,7 @@
 {
-  "id": "38c40135-9cdc-42e2-934a-f9dd978acc86",
+  "id": "ebab6162-76a1-4a62-af43-64a4568d4b45",
   "name": "Upload Photo Chatter",
-  "url": "{{endpoint}}/services/data/v{{version}}/connect/user-profiles/me/photo",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/user-profiles/me/photo",
   "description": null,
   "data": [
     {
@@ -20,7 +20,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -43,10 +43,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "d5695e7d-e68e-423e-87a6-332f1b76fd22",
+  "folder": "6ce9cab1-4da8-4a48-94e2-a1ccdf83de39",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\n//Content-Type: multipart/form-data\n//Content-Disposition: form-data; name=\"photo\"\n//Content-Type: application/json; charset=UTF-8\n",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: multipart/form-data\n//Content-Disposition: form-data; name=\"photo\"\n//Content-Type: application/json; charset=UTF-8\n",
   "pathVariables": {}
 }

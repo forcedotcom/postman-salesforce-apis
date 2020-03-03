@@ -1,7 +1,7 @@
 {
-  "id": "4089e114-b92a-4fda-ae69-07de9d0ecd9c",
+  "id": "84c633f2-8e9b-4bb2-abbf-d89487f3da98",
   "name": "Create Async Query",
-  "url": "{{endpoint}}/services/data/v{{version}}/async-queries",
+  "url": "{{_endpoint}}/services/data/v{{version}}/async-queries",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -25,9 +25,7 @@
       "listen": "prerequest",
       "script": {
         "id": "18f8ee9f-81e2-46ba-9d88-fc0090afe065",
-        "exec": [
-          ""
-        ],
+        "exec": [""],
         "type": "text/javascript"
       }
     },
@@ -43,10 +41,10 @@
       }
     }
   ],
-  "folder": "0995184f-b7e2-48af-a9d0-fc0bbcea83c3",
+  "folder": "c32d984d-6f5f-4e7e-a82c-c031de084b12",
   "responses": [
     {
-      "id": "78e5e021-bf0a-40a8-a15b-7bb65e7f2b4e",
+      "id": "50b2b230-cec7-4e06-8313-267accac732d",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -60,7 +58,7 @@
         "headerData": [
           {
             "key": "Authorization",
-            "value": "Bearer {{access_token}}"
+            "value": "Bearer {{_accessToken}}"
           },
           {
             "key": "Content-Type",
@@ -75,16 +73,16 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "4089e114-b92a-4fda-ae69-07de9d0ecd9c",
-      "collection": "3514eccb-888f-4bbf-82c4-ba07fdd5173e"
+      "request": "84c633f2-8e9b-4bb2-abbf-d89487f3da98",
+      "collection": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e"
     }
   ],
   "preRequestScript": null,
   "tests": "var jsonData = JSON.parse(responseBody);\npostman.setGlobalVariable(\"jobId\", jsonData.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "{\n    \"query\": \"SELECT fields FROM bigObject\",\n    \"operation\": \"<insert update upsert>\",\n    \"targetObject\": \"<custom object>\",\n    \"targetFieldMap\": {\n        \"firstField__c\": \"firstFieldTarget__c\",\n        \"secondField__c\": \"secondFieldTarget__c\"\n    },\n    \"targetValueMap\": {\n        \"$JOB_ID\": \"BackgroundOperationLookup__c\",\n        \"Copy fields from source to target\": \"BackgroundOperationDescription__c\"\n    },\n    \"targetExternalIdField\":\"<external id field used in upsert>\"\n}",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

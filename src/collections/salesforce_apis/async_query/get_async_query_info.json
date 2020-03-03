@@ -1,7 +1,7 @@
 {
-  "id": "4ce72a6b-fce2-4b3c-bcc9-d175bcc77c86",
+  "id": "1da665da-964f-422b-b6cf-5117d9ce0862",
   "name": "Get Async Query Info",
-  "url": "{{endpoint}}/services/data/v{{version}}/async-queries/{{jobId}}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/async-queries/{{_jobId}}",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -25,9 +25,7 @@
       "listen": "prerequest",
       "script": {
         "id": "18f8ee9f-81e2-46ba-9d88-fc0090afe065",
-        "exec": [
-          ""
-        ],
+        "exec": [""],
         "type": "text/javascript"
       }
     },
@@ -35,20 +33,18 @@
       "listen": "test",
       "script": {
         "id": "d52d0f63-6e82-41e0-a3c4-77e6f53b768d",
-        "exec": [
-          ""
-        ],
+        "exec": [""],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "0995184f-b7e2-48af-a9d0-fc0bbcea83c3",
+  "folder": "c32d984d-6f5f-4e7e-a82c-c031de084b12",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "responses": [
     {
-      "id": "7b0aa565-9fd5-43c8-a496-c38693469e9c",
+      "id": "e0148f67-9a3c-4c7a-92af-5414779b2369",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -62,7 +58,7 @@
         "headerData": [
           {
             "key": "Authorization",
-            "value": "Bearer {{access_token}}"
+            "value": "Bearer {{_accessToken}}"
           },
           {
             "key": "Content-Type",
@@ -77,16 +73,16 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "4ce72a6b-fce2-4b3c-bcc9-d175bcc77c86",
-      "collection": "3514eccb-888f-4bbf-82c4-ba07fdd5173e"
+      "request": "1da665da-964f-422b-b6cf-5117d9ce0862",
+      "collection": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e"
     }
   ],
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

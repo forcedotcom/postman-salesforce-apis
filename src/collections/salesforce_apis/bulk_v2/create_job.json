@@ -1,7 +1,7 @@
 {
-  "id": "4c1b6638-db15-4b6d-8914-510db214f845",
+  "id": "f7d18b92-37f1-4506-aa1f-81b2f11a4e71",
   "name": "Create job",
-  "url": "{{endpoint}}/services/data/v{{version}}/jobs/ingest",
+  "url": "{{_endpoint}}/services/data/v{{version}}/jobs/ingest",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -33,13 +33,13 @@
       }
     }
   ],
-  "folder": "f989be51-0b74-4da3-bfd3-dfcc37274e8b",
+  "folder": "3aa8025d-1209-4714-a376-8955f31cafc0",
   "preRequestScript": null,
   "tests": "var response = JSON.parse(responseBody)\npostman.setGlobalVariable(\"jobId\", response.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "{\n\"object\":\"Asset\",\n\"operation\":\"update\"\n}",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

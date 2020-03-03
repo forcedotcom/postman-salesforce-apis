@@ -1,7 +1,7 @@
 {
-  "id": "01db3240-af08-4174-96c8-950497dfa29b",
+  "id": "76115de8-ce46-45c4-ae7d-4c083a08ba2a",
   "name": "Bulk Create Batch",
-  "url": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}/batch",
+  "url": "{{_endpoint}}/services/async/{{version}}/job/{{_jobId}}/batch",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "X-SFDC-Session",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -53,13 +53,13 @@
       }
     }
   ],
-  "folder": "45648f99-faff-4b36-8439-18a7e91671b5",
+  "folder": "87dfaef8-13f7-455e-8fa5-4989524d181b",
   "preRequestScript": null,
   "tests": "var xmlTree = xml2Json(responseBody);\nconsole.log(xmlTree);\npostman.setGlobalVariable(\"batchId\", xmlTree['batchInfo']['id']);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
   "rawModeData": "",
-  "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: text/csv\n//Content-Type: zip/csv\ncharset: UTF-8\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
+  "headers": "X-SFDC-Session: {{_accessToken}}\nContent-Type: text/csv\n//Content-Type: zip/csv\ncharset: UTF-8\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
   "pathVariables": {}
 }
