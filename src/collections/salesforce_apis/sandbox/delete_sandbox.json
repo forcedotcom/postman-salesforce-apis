@@ -1,7 +1,7 @@
 {
   "id": "afc760a3-04a8-4be3-a2ec-ddf4a1a25922",
   "name": "Delete Sandbox",
-  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo/{SandboxInfoId}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo/<SandboxInfoId>",
   "description": "Deletes a sandbox.",
   "data": null,
   "dataOptions": {

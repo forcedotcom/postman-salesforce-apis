@@ -1,7 +1,7 @@
 {
   "id": "633b1cc0-611d-4378-849d-2dfd04eae701",
   "name": "Get Photo Actions",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/photo/{recordIds}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/photo/<recordIds>",
   "description": "Get the photo actions for pages. Currently, only group and user pages support photo actions.",
   "data": [],
   "dataOptions": null,

@@ -1,7 +1,7 @@
 {
   "id": "f4ff8423-36e4-4f46-ab1b-a96df4d3b8f1",
   "name": "Get List View Records per Id",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-records/{listViewId}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-records/<listViewId>",
   "description": "Returns record data for a list view.",
   "data": [],
   "dataOptions": {

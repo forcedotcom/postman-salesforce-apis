@@ -1,7 +1,7 @@
 {
   "id": "fac041de-d81d-425a-84ec-7ee323986402",
   "name": "Get List View Chart Actions",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/list-view-chart/{objectApiName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/list-view-chart/<objectApiName>",
   "description": "Get the record actions on list views.",
   "data": [],
   "dataOptions": null,

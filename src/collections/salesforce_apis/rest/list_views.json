@@ -1,7 +1,7 @@
 {
   "id": "a1bd1b51-b836-450a-bc8a-784e15eebc4d",
   "name": "List Views",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/{SObject}/listviews/",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObject>/listviews/",
   "description": "Returns the list of list views for the specified sObject, including the ID and other basic information about each list view. You can also get basic information for a specific list view by ID.",
   "data": null,
   "dataOptions": null,

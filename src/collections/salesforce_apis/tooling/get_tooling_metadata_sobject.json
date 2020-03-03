@@ -1,7 +1,7 @@
 {
   "id": "257c6017-caca-4363-9b4d-8bc307ef0579",
   "name": "Get Tooling Metadata SObject",
-  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/{sobjectName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/<sobjectName>",
   "description": "",
   "data": null,
   "dataOptions": null,

@@ -1,7 +1,7 @@
 {
   "id": "64eb10bb-3290-4656-9371-cdd2e9e4674e",
   "name": "Get Lookup Field Actions",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/lookup/{objectApiNames}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/lookup/<objectApiNames>",
   "description": "Get the actions on Lightning pages (FlexiPages).",
   "data": [],
   "dataOptions": null,

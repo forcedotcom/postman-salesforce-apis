@@ -1,7 +1,7 @@
 {
   "id": "66c2978f-dfc9-4b53-b941-4a7a45c08c32",
   "name": "Get List View Records per API Name",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-records/{objectApiName}/{listViewApiName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-records/<objectApiName>/{listViewApiName}",
   "description": "Returns a collection of list views associated with an object.",
   "data": [],
   "dataOptions": {

@@ -1,7 +1,7 @@
 {
   "id": "01dea5a0-07db-40c4-93ce-4fdb9e7fad90",
   "name": "Get Record Detail Page Actions",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/record/{recordIds}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/record/<recordIds>",
   "description": "Get the actions on record detail pages.",
   "data": [],
   "dataOptions": null,

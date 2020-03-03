@@ -1,7 +1,7 @@
 {
   "id": "e325bd2d-4087-460c-8211-8dcbe058c766",
   "name": "Embedded Service Configuration Describe",
-  "url": "{{_endpoint}}/services/data/v{{version}}/support/embeddedservice/configuration/{EmbeddedServiceConfigDeveloperName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/support/embeddedservice/configuration/<EmbeddedServiceConfigDeveloperName>",
   "description": "Retrieves the values for your Embedded Service deployment configuration, including the branding colors, font, and site URL.\n\nYou must be logged in to the account that owns the EmbeddedServiceConfigDeveloperName you are querying.",
   "data": null,
   "dataOptions": null,

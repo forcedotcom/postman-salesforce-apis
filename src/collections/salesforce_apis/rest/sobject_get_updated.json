@@ -1,7 +1,7 @@
 {
   "id": "86b39526-a0ba-47d0-a400-ca3ddbebc4f5",
   "name": "SObject Get Updated",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/updated/?start=&end=",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObjectName>/updated/?start=&end=",
   "description": "Retrieves the list of individual records that have been updated (added or changed) within the given timespan for the specified object. SObject Get Updated is available in API version 29.0 and later.\n\nThis resource is commonly used in data replication applications. Note the following considerations:\nResults are returned for no more than 30 days previous to the day the call is executed.\nYour client application can replicate any objects to which it has sufficient permissions. For example, to replicate all data for your organization, your client application must be logged in with “View All Data” access rights to the specified object. Similarly, the objects must be within your sharing rules.\nThere is a limit of 600,000 IDs returned from this resource. If more than 600,000 IDs would be returned, EXCEEDED_ID_LIMIT is returned. You can correct the error by choosing start and end dates that are closer together.",
   "data": null,
   "dataOptions": null,

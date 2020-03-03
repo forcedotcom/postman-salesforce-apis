@@ -1,7 +1,7 @@
 {
   "id": "b33c3423-642f-43b3-a95b-c42474c4118e",
   "name": "Get List View Metadata per API Name",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-info/{objectApiName}/{listViewApiName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-info/<objectApiName>/{listViewApiName}",
   "description": "Returns list view metadata.",
   "data": [],
   "dataOptions": {

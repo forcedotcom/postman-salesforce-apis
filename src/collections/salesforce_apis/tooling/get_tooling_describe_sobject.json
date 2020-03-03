@@ -1,7 +1,7 @@
 {
   "id": "2053889e-a920-4ede-b428-222d75e4b57d",
   "name": "Get Tooling Describe SObject",
-  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/{sobjectName}/describe",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/<sobjectName>/describe",
   "description": "",
   "data": null,
   "dataOptions": null,

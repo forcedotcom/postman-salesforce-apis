@@ -1,7 +1,7 @@
 {
   "id": "db7d01ba-3310-4faa-9e02-6f6a78476e95",
   "name": "Get Related List Actions",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/record/{recordIds}/related-list/{relatedListIds}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/record/<recordIds>/related-list/<relatedListIds>",
   "description": "Get the actions on record detail pages.",
   "data": [],
   "dataOptions": null,

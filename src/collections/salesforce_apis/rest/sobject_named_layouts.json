@@ -1,7 +1,7 @@
 {
   "id": "fa33a4e6-559c-4d22-aa74-ba0fd89d03b4",
   "name": "SObject Named Layouts",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/describe/namedLayouts/{layoutName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObjectName>/describe/namedLayouts/<layoutName>",
   "description": "Retrieves information about alternate named layouts for a given object.",
   "data": null,
   "dataOptions": null,

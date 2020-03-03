@@ -1,7 +1,7 @@
 {
   "id": "68f3a2b2-64df-44b3-a573-7820265b544a",
   "name": "SObject Rich Text Image Retrieve",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/{SObject}/{Id}/richTextImageFields/{fieldName}/{contentReferenceId}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObject>/{Id}/richTextImageFields/<fieldName>/{contentReferenceId}",
   "description": "Retrieves the specified image data from a specific rich text area field in a given record.\ncontentReferenceId\tThe reference ID that uniquely identifies an image within a rich text area field.\nYou can obtain the reference by retrieving information for the object. The description will show the contents of the rich text area field",
   "data": null,
   "dataOptions": null,

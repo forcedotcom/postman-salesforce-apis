@@ -1,7 +1,7 @@
 {
   "id": "cdbbef3b-e87d-4770-81bc-f65220b3899e",
   "name": "Data Category Detail",
-  "url": "{{_endpoint}}/services/data/v{{version}}/support/dataCategoryGroups/{group}/dataCategories/{category}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/support/dataCategoryGroups/<group>/dataCategories/<category>",
   "description": "Get data category details and the child categories by a given category.",
   "data": null,
   "dataOptions": null,

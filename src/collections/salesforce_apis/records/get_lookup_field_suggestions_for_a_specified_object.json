@@ -1,7 +1,7 @@
 {
   "id": "b081c810-5f0b-4c27-b8fe-86260166cf89",
   "name": "Get Lookup Field Suggestions for a Specified Object",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/lookups/{objectApiName}/{fieldApiName}/{targetApiName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/lookups/<objectApiName>/{fieldApiName}/<targetApiName>",
   "description": "When a user edits a lookup field, use this resource to search for and display suggestions for a specified object. You can search for most recently used matches, for matching names, or for any match in a searchable field. You can also specify lookup filter bindings for dependent lookups.",
   "data": [],
   "dataOptions": null,
@@ -21,7 +21,7 @@
     {
       "key": "dependentFieldBindings",
       "value": "",
-      "description": "The dependent field bindings for dependent lookups. These field bindings represent the lookup filter that restricts the valid values for the field.\nSpecify field bindings in a comma-separated list in the format dependentFieldBindings={fieldApiName}​={fieldValue},{field2ApiName}={field2Value}.\n\nTo know whether a field is a dependent lookup, check the Object Info response body for a non-null filteredLookupInfo property. Specify the name and a value for each field in the controllingFields property. Get the field values from the Record response body. Both responses are returned from the /ui-api/record-ui/{recordIds} resource.",
+      "description": "The dependent field bindings for dependent lookups. These field bindings represent the lookup filter that restricts the valid values for the field.\nSpecify field bindings in a comma-separated list in the format dependentFieldBindings=<fieldApiName>​=<fieldValue>,{field2ApiName}=<field2Value>.\n\nTo know whether a field is a dependent lookup, check the Object Info response body for a non-null filteredLookupInfo property. Specify the name and a value for each field in the controllingFields property. Get the field values from the Record response body. Both responses are returned from the /ui-api/record-ui/<recordIds> resource.",
       "enabled": false
     },
     {

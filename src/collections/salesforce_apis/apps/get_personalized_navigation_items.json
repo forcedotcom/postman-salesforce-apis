@@ -1,7 +1,7 @@
 {
   "id": "b60922d1-7064-4ee8-b342-ac91c4d54826",
   "name": "Get Personalized Navigation Items",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps/{appId}/user-nav-items",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps/<appId>/user-nav-items",
   "description": "Get a user’s personalized navigation items (tabs).",
   "data": [],
   "dataOptions": {

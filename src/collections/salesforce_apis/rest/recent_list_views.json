@@ -1,7 +1,7 @@
 {
   "id": "dfec0862-61ca-488d-ab6c-7f6b974c96a7",
   "name": "Recent List Views",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/{sobjectType}/listviews/recent",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<sobjectType>/listviews/recent",
   "description": "Returns the list of recently used list views for the given sObject type.\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_recentlistviews.htm",
   "data": null,
   "dataOptions": null,

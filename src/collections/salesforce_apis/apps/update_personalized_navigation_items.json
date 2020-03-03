@@ -1,7 +1,7 @@
 {
   "id": "f01ef37d-e902-4079-b28c-2d1ac757ba41",
   "name": "Update Personalized Navigation Items",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps/{appId}/user-nav-items",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps/<appId>/user-nav-items",
   "description": "Updates the order of a user’s personalized navigation items (tabs) and adds a navigation item to the list in the order specified.",
   "data": [],
   "dataOptions": {

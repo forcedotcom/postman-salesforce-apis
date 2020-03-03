@@ -1,7 +1,7 @@
 {
   "id": "bd7b9826-ca6c-440f-9d79-c1775255ea60",
   "name": "Get Record Edit Page Actions",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/record/{recordIds}/record-edit",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/record/<recordIds>/record-edit",
   "description": "Get the actions on record detail pages.",
   "data": [],
   "dataOptions": null,

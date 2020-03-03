@@ -1,7 +1,7 @@
 {
   "id": "01913759-669d-4a85-b040-994067057ab7",
   "name": "Get Child Records",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records/{recordId}/child-relationships/{relationshipName}\n",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records/<recordId>/child-relationships/<relationshipName>\n",
   "description": "Get child records for a specified record and child relationship name. Relationships are connections between records. On a record detail page, each record in a related list has a child relationship to the parent record.",
   "data": null,
   "dataOptions": null,

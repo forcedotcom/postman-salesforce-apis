@@ -1,7 +1,7 @@
 {
   "id": "94a30919-9d64-4d32-8731-1f3c1cd0a48c",
   "name": "Get Values for All Picklist Fields of a Record Type",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/object-info/{objectApiName}/picklist-values/{recordTypeId}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/object-info/<objectApiName>/picklist-values/<recordTypeId>",
   "description": "Get metadata about a specific object. The response includes metadata describing fields, child relationships, record type, and theme.",
   "data": null,
   "dataOptions": null,

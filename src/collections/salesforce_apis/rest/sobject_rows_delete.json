@@ -1,7 +1,7 @@
 {
   "id": "10133d43-84fd-4f07-bdd5-4ad5f690fafc",
   "name": "SObject Rows Delete",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/{id}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObjectName>/{id}",
   "description": "Accesses records based on the specified object ID. Retrieves, updates, or deletes records. This resource can also be used to retrieve field values. Use the GET method to retrieve records or fields, the DELETE method to delete records, and the PATCH method to update records.",
   "data": null,
   "dataOptions": null,

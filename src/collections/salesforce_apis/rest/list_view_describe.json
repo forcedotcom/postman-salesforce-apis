@@ -1,7 +1,7 @@
 {
   "id": "b4e557a2-c835-48ec-be93-977ae22e52a3",
   "name": "List View Describe",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/{SObject}/listviews/{queryLocator}/describe",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObject>/listviews/<queryLocator>/describe",
   "description": "Returns detailed information about a list view, including the ID, the columns, and the SOQL query.",
   "data": null,
   "dataOptions": null,

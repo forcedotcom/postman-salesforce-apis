@@ -1,7 +1,7 @@
 {
   "id": "8fb6674a-94da-469d-a217-d37093b9ef29",
   "name": "Update Usage of a Favorite",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/{favoriteId}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/<favoriteId>",
   "description": "Update the usage of an individual favorite, for example, the last time and number of times the favorite was clicked.",
   "data": [],
   "dataOptions": {

@@ -1,7 +1,7 @@
 {
   "id": "3d8ec6e5-d2c4-4a97-b7b1-4a049c4f3f1a",
   "name": "Get a Favorite",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/{favoriteId}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/<favoriteId>",
   "description": "Get a favorite.",
   "data": [],
   "dataOptions": {

@@ -1,7 +1,7 @@
 {
   "id": "bf65ee26-b8c1-4a1e-b90f-2e51d599aeb2",
   "name": "SObject Blob Retrieve",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/{id}/{blobField}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObjectName>/{id}/<blobField>",
   "description": "Retrieves the specified blob field from an individual record.",
   "data": null,
   "dataOptions": null,

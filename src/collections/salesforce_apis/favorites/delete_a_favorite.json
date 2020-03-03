@@ -1,7 +1,7 @@
 {
   "id": "ba1e9f94-404a-4194-b31b-be469cfb9839",
   "name": "Delete a Favorite",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/{favoriteId}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/<favoriteId>",
   "description": "Get a favorite.",
   "data": [],
   "dataOptions": {
