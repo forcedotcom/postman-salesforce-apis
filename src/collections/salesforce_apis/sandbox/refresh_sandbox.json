@@ -1,7 +1,7 @@
 {
   "id": "e65c63db-aac2-4303-8283-e100feb4e106",
   "name": "Refresh Sandbox",
-  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo/<SandboxInfoId>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo/<SANDBOX_INFO_ID>",
   "description": "Refreshes a sandbox.",
   "data": [],
   "dataOptions": {

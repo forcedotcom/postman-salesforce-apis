@@ -1,7 +1,7 @@
 {
   "id": "36191110-96b8-449e-b7c1-879603021c7a",
   "name": "QueryAll",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/OpportunityLineItem/<OpportunityLineItemId>/OpportunityLineItemSchedules?q",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/OpportunityLineItem/<OPPORTUNITY_LINE_ITEM_ID>/OpportunityLineItemSchedules?q",
   "description": "Executes the specified SOQL query. Unlike the Query resource, QueryAll will return records that have been deleted because of a merge or delete. QueryAll will also return information about archived Task and Event records. QueryAll is available in API version 29.0 and later.\n\nIf the query results are too large, the response contains the first batch of results and a query identifier in the nextRecordsUrl field of the response. The identifier can be used in an additional request to retrieve the next batch. Note that even though nextRecordsUrl has query in the URL, it will still provide remaining results from the initial QueryAll request. The remaining results will include deleted records that matched the initial query.\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_queryall.htm",
   "data": null,
   "dataOptions": null,
