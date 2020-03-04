@@ -1,7 +1,7 @@
 {
   "id": "21845d58-bc37-4576-bdaf-7a4a7ac0496c",
   "name": "Get Sandbox",
-  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo/<SandboxInfoId>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo/<SANDBOX_INFO_ID>",
   "description": "Retrieves a sandbox record.",
   "data": null,
   "dataOptions": {
