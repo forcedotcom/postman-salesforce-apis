@@ -42,9 +42,9 @@
       "script": {
         "id": "0a0dc544-c18f-4a6b-86e4-df3cccf8ab2d",
         "exec": [
-          "var jsonData = JSON.parse(responseBody);",
-          "postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);",
-          "postman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);"
+          "var jsonData = pm.response.json();",
+          "pm.environment.set(\"access_token\", jsonData.access_token);",
+          "pm.environment.set(\"endpoint\", jsonData.instance_url);"
         ],
         "type": "text/javascript"
       }
@@ -52,7 +52,7 @@
   ],
   "folder": "2d96c5c0-bda6-41d8-aa58-2cd11e582e7f",
   "preRequestScript": null,
-  "tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"access_token\", jsonData.access_token);\npostman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);",
+  "tests": "var jsonData = pm.response.json();\npm.environment.set(\"access_token\", jsonData.access_token);\npm.environment.set(\"endpoint\", jsonData.instance_url);",
   "currentHelper": null,
   "helperAttributes": null,
   "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",

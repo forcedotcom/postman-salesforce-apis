@@ -26,8 +26,8 @@
       "script": {
         "id": "b438d4fa-1275-4c48-ad33-20b679018754",
         "exec": [
-          "var response = JSON.parse(responseBody)",
-          "postman.setGlobalVariable(\"jobId\", response.id);"
+          "var response = JSON.parse(pm.response.text();)",
+          "pm.environment.set(\"_jobId\", response.id);"
         ],
         "type": "text/javascript"
       }
@@ -35,7 +35,7 @@
   ],
   "folder": "3aa8025d-1209-4714-a376-8955f31cafc0",
   "preRequestScript": null,
-  "tests": "var response = JSON.parse(responseBody)\npostman.setGlobalVariable(\"jobId\", response.id);",
+  "tests": "var response = JSON.parse(pm.response.text();)\npm.environment.set(\"_jobId\", response.id);",
   "currentHelper": null,
   "helperAttributes": null,
   "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",

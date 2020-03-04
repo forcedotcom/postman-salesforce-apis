@@ -34,10 +34,10 @@
       "script": {
         "id": "7fff925d-9787-45e6-9e08-23d0f8886eb4",
         "exec": [
-          "var xmlTree = xml2Json(responseBody);",
-          "postman.setEnvironmentVariable(\"access_token\", xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.sessionId);",
+          "var xmlTree = xml2Json(pm.response.text(););",
+          "pm.environment.set(\"access_token\", xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.sessionId);",
           "var url = xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.serverUrl.split(\"/\");",
-          "postman.setEnvironmentVariable(\"endpoint\", url[0] + \"//\" + url[2]);"
+          "pm.environment.set(\"endpoint\", url[0] + \"//\" + url[2]);"
         ],
         "type": "text/javascript"
       }
@@ -45,11 +45,11 @@
   ],
   "folder": "2d96c5c0-bda6-41d8-aa58-2cd11e582e7f",
   "preRequestScript": null,
-  "tests": "var xmlTree = xml2Json(responseBody);\npostman.setEnvironmentVariable(\"access_token\", xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.sessionId);\nvar url = xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.serverUrl.split(\"/\");\npostman.setEnvironmentVariable(\"endpoint\", url[0] + \"//\" + url[2]);",
+  "tests": "var xmlTree = xml2Json(pm.response.text(););\npm.environment.set(\"access_token\", xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.sessionId);\nvar url = xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.serverUrl.split(\"/\");\npm.environment.set(\"endpoint\", url[0] + \"//\" + url[2]);",
   "currentHelper": null,
   "helperAttributes": null,
   "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
-  "rawModeData": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<env:Envelope xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <env:Body>\n    <n1:login xmlns:n1=\"urn:partner.soap.sforce.com\">\n      <n1:username>{{username}}</n1:username>\n      <n1:password>{{password}}{{secret_token}}</n1:password>\n    </n1:login>\n  </env:Body>\n</env:Envelope>",
+  "rawModeData": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<env:Envelope xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <env:Body>\n    <n1:login xmlns:n1=\"urn:partner.soap.sforce.com\">\n      <n1:username>{{username}}</n1:username>\n      <n1:password>{{password}}{{secretToken}}</n1:password>\n    </n1:login>\n  </env:Body>\n</env:Envelope>",
   "headers": "Content-Type: text/xml\nSOAPAction: login\ncharset: UTF-8\n",
   "pathVariables": {}
 }

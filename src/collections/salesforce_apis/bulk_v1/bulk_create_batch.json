@@ -45,9 +45,9 @@
       "script": {
         "id": "3823484e-282d-406a-b718-c3622539fd11",
         "exec": [
-          "var xmlTree = xml2Json(responseBody);",
+          "var xmlTree = xml2Json(pm.response.text(););",
           "console.log(xmlTree);",
-          "postman.setGlobalVariable(\"batchId\", xmlTree['batchInfo']['id']);"
+          "pm.environment.set(\"_batchId\", xmlTree['batchInfo']['id']);"
         ],
         "type": "text/javascript"
       }
@@ -55,7 +55,7 @@
   ],
   "folder": "87dfaef8-13f7-455e-8fa5-4989524d181b",
   "preRequestScript": null,
-  "tests": "var xmlTree = xml2Json(responseBody);\nconsole.log(xmlTree);\npostman.setGlobalVariable(\"batchId\", xmlTree['batchInfo']['id']);",
+  "tests": "var xmlTree = xml2Json(pm.response.text(););\nconsole.log(xmlTree);\npm.environment.set(\"_batchId\", xmlTree['batchInfo']['id']);",
   "currentHelper": null,
   "helperAttributes": null,
   "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
