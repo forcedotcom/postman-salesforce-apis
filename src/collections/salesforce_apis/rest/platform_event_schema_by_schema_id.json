@@ -1,7 +1,7 @@
 {
   "id": "98b9afb7-b1d2-4965-a9a8-0522c6200a8f",
   "name": "Platform Event Schema by Schema ID",
-  "url": "{{_endpoint}}/services/data/v{{version}}/event/eventSchema/<schemaId>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/event/eventSchema/<SCHEMA_ID>",
   "description": "Set, reset, or get information about a user password. This resource is available in REST API version 24.0 and later.",
   "data": null,
   "dataOptions": null,

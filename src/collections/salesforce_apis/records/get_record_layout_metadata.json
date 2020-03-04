@@ -1,7 +1,7 @@
 {
   "id": "7bd5187f-42c1-4f4c-b2b1-2abf2de4ce4e",
   "name": "Get Record Layout Metadata",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/layout/<objectApiName>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/layout/<SOBJECT_API_NAME>",
   "description": "Get metadata about page layouts for the specified object type.",
   "data": null,
   "dataOptions": null,
@@ -33,7 +33,7 @@
     {
       "key": "modes",
       "value": "",
-      "description": "The access mode for the record. This value determines which fields to get from a layout. Layouts have different fields for create, edit, and view modes. For example, formula fields are rendered in view mode, but not in create mode because they’re calculated at run time, like formulas in a spreadsheet. A collection of any of these values:\nCreate—Use this mode if you intend to build UI that lets a user create a record. This mode is used by the /ui-api/record-defaults/create/<apiName> resource.\nEdit—Use this mode if you intend to build UI that lets a user edit a record. This mode is used by the /ui-api/record-defaults/clone/<recordId> resource.\nView—(Default) Use this mode if you intend to build UI that displays a record.",
+      "description": "The access mode for the record. This value determines which fields to get from a layout. Layouts have different fields for create, edit, and view modes. For example, formula fields are rendered in view mode, but not in create mode because they’re calculated at run time, like formulas in a spreadsheet. A collection of any of these values:\nCreate—Use this mode if you intend to build UI that lets a user create a record. This mode is used by the /ui-api/record-defaults/create/<SOBJECT_API_NAME> resource.\nEdit—Use this mode if you intend to build UI that lets a user edit a record. This mode is used by the /ui-api/record-defaults/clone/<RECORD_ID> resource.\nView—(Default) Use this mode if you intend to build UI that displays a record.",
       "enabled": false
     },
     {

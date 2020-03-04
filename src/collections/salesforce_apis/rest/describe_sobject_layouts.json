@@ -1,7 +1,7 @@
 {
   "id": "e6b81b5f-1bc9-497f-b376-c2414834c369",
   "name": "Describe SObject Layouts",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObject>/describe/layouts/",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/describe/layouts/",
   "description": "Returns a list of layouts and descriptions. The list of fields and the layout name are returned.",
   "data": null,
   "dataOptions": null,

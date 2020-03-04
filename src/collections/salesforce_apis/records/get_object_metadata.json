@@ -1,7 +1,7 @@
 {
   "id": "4be67310-4c90-4b34-9c99-ee0b255c18f5",
   "name": "Get Object Metadata",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/object-info/<objectApiName>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/object-info/<SOBJECT_API_NAME>",
   "description": "Get metadata about a specific object. The response includes metadata describing fields, child relationships, record type, and theme.",
   "data": null,
   "dataOptions": null,

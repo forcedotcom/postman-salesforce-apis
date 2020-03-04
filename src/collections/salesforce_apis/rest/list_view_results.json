@@ -1,7 +1,7 @@
 {
   "id": "1de19e28-973c-4e57-a420-e968317e1098",
   "name": "List View Results",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObject>/listviews/<listViewID>/results",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/listviews/<LIST_VIEW_ID>/results",
   "description": "Returns detailed information about a list view, including the ID, the columns, and the SOQL query.",
   "data": null,
   "dataOptions": null,

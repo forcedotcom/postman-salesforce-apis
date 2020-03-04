@@ -1,7 +1,7 @@
 {
   "id": "4c1ab90b-57a2-49b8-ab73-5dac3ce4bd8c",
   "name": "Post Tooling SObject",
-  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/<sobjectName>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/<SOBJECT_API_NAME>",
   "description": "",
   "data": [],
   "dataOptions": {

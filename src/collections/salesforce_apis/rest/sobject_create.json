@@ -1,7 +1,7 @@
 {
   "id": "f488b712-9d6e-42ec-9bed-38ec6493eb54",
   "name": "SObject Create",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObjectName>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>",
   "description": null,
   "data": [],
   "dataOptions": null,

@@ -1,7 +1,7 @@
 {
   "id": "9c484c6f-a304-4afe-b2e6-122878b466e5",
   "name": "Access Records",
-  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/<id>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/<RECORD_ID>",
   "description": "",
   "data": null,
   "dataOptions": {

@@ -1,7 +1,7 @@
 {
   "id": "e081fa11-6b50-4284-b7b7-32467f0359ef",
   "name": "Describe SObject Layouts Per Record Type",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObject>/describe/layouts/<recordTypeId>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/describe/layouts/<RECORD_TYPE_ID>",
   "description": "Returns a list of layouts and descriptions. The list of fields and the layout name are returned.",
   "data": null,
   "dataOptions": null,

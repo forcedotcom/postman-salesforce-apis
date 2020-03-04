@@ -1,7 +1,7 @@
 {
   "id": "448dde9a-22cd-478f-aa29-b4c0f038ce77",
   "name": "Get List View Header Actions",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/list-view/<listViewIds>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/list-view/<LIST_VIEW_IDS>",
   "description": "Get the actions on records in related lists.",
   "data": [],
   "dataOptions": null,

@@ -1,7 +1,7 @@
 {
   "id": "1d894c05-f8d5-46d8-8b44-0d86d5a4ef2e",
   "name": "SObject CompactLayouts",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObjectName>/describe/describe/compactLayouts",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/describe/describe/compactLayouts",
   "description": "Returns a list of compact layouts for a specific object. This resource is available in REST API version 29.0 and later.",
   "data": null,
   "dataOptions": null,

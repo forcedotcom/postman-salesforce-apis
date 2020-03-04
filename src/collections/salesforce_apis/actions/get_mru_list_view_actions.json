@@ -1,7 +1,7 @@
 {
   "id": "11f90f4c-c365-4eb8-b5c8-cfd55cd271ad",
   "name": "Get MRU List View Actions",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/mru-list/<objectApiNames>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/mru-list/<SOBJECT_API_NAMES>",
   "description": "Get the header actions on the most recently used (MRU) list view for objects.",
   "data": [],
   "dataOptions": null,

@@ -1,7 +1,7 @@
 {
   "id": "3c19dae0-70d0-434c-ad49-658d596dc137",
   "name": "SObject Suggested Articles",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObject>/suggestedArticles?description=&language=&subject=",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/suggestedArticles?description=&language=&subject=",
   "description": "Returns a list of suggested Salesforce Knowledge articles for a case, work order, or work order line item.",
   "data": null,
   "dataOptions": null,

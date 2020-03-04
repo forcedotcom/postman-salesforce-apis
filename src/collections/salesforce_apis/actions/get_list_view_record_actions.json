@@ -1,7 +1,7 @@
 {
   "id": "1b747ae3-fc10-46d4-8627-62df4c3d837e",
   "name": "Get List View Record Actions",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/list-view-record/<recordIds>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/list-view-record/<RECORD_IDS>",
   "description": "Get the record actions on list views.",
   "data": [],
   "dataOptions": null,

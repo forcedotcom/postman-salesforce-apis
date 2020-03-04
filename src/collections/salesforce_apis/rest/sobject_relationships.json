@@ -1,7 +1,7 @@
 {
   "id": "e6d22148-34a1-44f7-8cae-a6d4db5b29ee",
   "name": "SObject Relationships",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObject>/{Id}/<RelationShipFieldName>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/<RECORD_ID>/<RELATIONSHIP_FIELD_NAME>",
   "description": "Accesses records by traversing object relationships via friendly URLs. You can retrieve, update, or delete the record associated with the traversed relationship field. If there are multiple related records, you can retrieve the complete set of associated records. This resource is available in REST API version 36.0 and later.\n\nGET, PATCH, DELETE",
   "data": null,
   "dataOptions": null,

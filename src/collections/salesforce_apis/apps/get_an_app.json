@@ -1,7 +1,7 @@
 {
   "id": "fb98a9d1-e923-415f-9652-68bc5450e1b5",
   "name": "Get an App",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps/<appId>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps/<APP_ID>",
   "description": "Get metadata about an app.",
   "data": [],
   "dataOptions": {

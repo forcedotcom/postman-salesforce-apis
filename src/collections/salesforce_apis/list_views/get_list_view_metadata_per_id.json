@@ -1,7 +1,7 @@
 {
   "id": "205062c9-4ff2-4bdb-840f-51b67648d583",
   "name": "Get List View Metadata per Id",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-info/<listViewId>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-info/<LIST_VIEW_ID>",
   "description": "Returns list view metadata.",
   "data": [],
   "dataOptions": {

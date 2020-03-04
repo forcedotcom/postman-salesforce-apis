@@ -1,7 +1,7 @@
 {
   "id": "a0a00b98-3063-4154-81bc-b172382db565",
   "name": "Get Most Recently Used List View Metadata",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/mru-list-info/<objectApiName>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/mru-list-info/<SOBJECT_API_NAME>",
   "description": "Returns metadata for an object’s most recently viewed (MRU) list view.",
   "data": [],
   "dataOptions": {

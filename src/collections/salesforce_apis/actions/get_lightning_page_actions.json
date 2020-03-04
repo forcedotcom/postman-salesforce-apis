@@ -1,7 +1,7 @@
 {
   "id": "43c980bc-bd38-49fd-aca2-75d13cbf5dfa",
   "name": "Get Lightning Page Actions",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/flexipage/<flexipageNames>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/flexipage/<FLEXIPAGE_NAMES>",
   "description": "Get the actions on Lightning pages (FlexiPages).",
   "data": [],
   "dataOptions": null,

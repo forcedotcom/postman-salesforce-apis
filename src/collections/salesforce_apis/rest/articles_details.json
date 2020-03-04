@@ -1,7 +1,7 @@
 {
   "id": "2826e768-e530-40c2-88f9-7003217f4384",
   "name": "Articles Details",
-  "url": "{{_endpoint}}/services/data/v{{version}}/support/knowledgeArticles/<articleId>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/support/knowledgeArticles/<ARTICLE_ID>",
   "description": "Get all online article fields, accessible to the user.",
   "data": null,
   "dataOptions": null,

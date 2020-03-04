@@ -1,7 +1,7 @@
 {
   "id": "0c12cf76-1e34-40fa-a8ff-16c41fef4c49",
   "name": "Update a Favorite",
-  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/<favoriteId>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/<FAVORITE_ID>",
   "description": "Update a Favorite",
   "data": [],
   "dataOptions": {
