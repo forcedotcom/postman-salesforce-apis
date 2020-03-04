@@ -1,5 +1,5 @@
 {
-  "id": "f4ff8423-36e4-4f46-ab1b-a96df4d3b8f1",
+  "id": "042973b6-f37b-46e6-9fdb-db81627a951c",
   "name": "Get List View Records per Id",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-records/<listViewId>",
   "description": "Returns record data for a list view.",
@@ -28,12 +28,14 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [""],
+        "exec": [
+          ""
+        ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "188bfad0-c325-416e-9954-f105e1d87928",
+  "folder": "5e713f09-45c6-489e-8555-1649e663384e",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -41,7 +43,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}

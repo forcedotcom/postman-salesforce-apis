@@ -1,5 +1,5 @@
 {
-  "id": "3c0a3b15-633f-44fc-92d8-666de34cee84",
+  "id": "49811a3a-e48c-403c-9198-e444f9225a2c",
   "name": "Batch",
   "url": "{{_endpoint}}/services/data/v{{version}}/composite/batch",
   "description": "Executes up to 25 subrequests in a single request. The response bodies and HTTP statuses of the subrequests in the batch are returned in a single response body. Each subrequest counts against rate limits.\nThe requests in a batch are called subrequests. All subrequests are executed in the context of the same user. Subrequests are independent, and you can’t pass information between them. Subrequests execute serially in their order in the request body. When a subrequest executes successfully, it commits its data. Commits are reflected in the output of later subrequests. If a subrequest fails, commits made by previous subrequests are not rolled back. If a batch request doesn’t complete within 10 minutes, the batch times out and the remaining subrequests aren’t executed.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_batch.htm",
@@ -23,10 +23,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "c31b48f5-d3dd-4d3d-a844-dc996b7ddc5f",
+  "folder": "b2486132-e6fa-4be7-8b52-69a1b68eb5ab",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n    \"haltOnError\": \"Boolean\",\n    \"batchRequests\": \"Subrequest[]\"\n}",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}

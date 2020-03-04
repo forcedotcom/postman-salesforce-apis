@@ -1,5 +1,5 @@
 {
-  "id": "48df5e24-41d5-45df-8c19-c99f5bba536a",
+  "id": "24489a02-cbf4-441f-bf86-5a759e5dd579",
   "name": "Retrieve Knowledge Language Settings",
   "url": "{{_endpoint}}/services/data/v{{version}}/knowledgeManagement/settings",
   "description": "Returns the existing Knowledge language settings, including the default knowledge language and a list of supported Knowledge language information.\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_knowledge_retrieve_language.htm",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "6d380c8e-3b9c-4de8-9df0-c8c9b528503c",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

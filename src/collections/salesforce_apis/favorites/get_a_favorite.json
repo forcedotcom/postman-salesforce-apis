@@ -1,5 +1,5 @@
 {
-  "id": "3d8ec6e5-d2c4-4a97-b7b1-4a049c4f3f1a",
+  "id": "1fc24003-0ac3-49c2-a4d1-1dae74ad1432",
   "name": "Get a Favorite",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/<favoriteId>",
   "description": "Get a favorite.",
@@ -28,12 +28,14 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [""],
+        "exec": [
+          ""
+        ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "fae26955-842d-438b-aef4-9b87aafe2496",
+  "folder": "f590d714-aad1-4bb8-a7c4-cd5f898da2e2",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -41,7 +43,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}

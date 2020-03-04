@@ -1,5 +1,5 @@
 {
-  "id": "8389f732-cf5c-4f7b-9b8c-4ab3dd2fdb10",
+  "id": "27835a80-db07-450f-a140-1f8cf35f463c",
   "name": "Web Server Flow 2",
   "url": "{{url}}{{site}}/services/oauth2/token",
   "description": null,
@@ -49,20 +49,22 @@
         "id": "42af4a8f-87e2-47d9-94fc-7025cb052f12",
         "exec": [
           "var jsonData = pm.response.json();",
-          "pm.environment.set(\"access_token\", jsonData.access_token);",
-          "pm.environment.set(\"refresh_token\", jsonData.refresh_token);",
-          ""
+          "var id = jsonData.id.split('/');",
+          "pm.environment.set(\"_accessToken\", jsonData.access_token);",
+          "pm.environment.set(\"_endpoint\", jsonData.instance_url);",
+          "pm.environment.set(\"_userId\", id.pop());",
+          "pm.environment.set(\"_orgId\", id.pop());"
         ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "2d96c5c0-bda6-41d8-aa58-2cd11e582e7f",
+  "folder": "b335d5ec-4ad5-4353-a61f-d12d1413e33c",
   "preRequestScript": null,
-  "tests": "var jsonData = pm.response.json();\npm.environment.set(\"access_token\", jsonData.access_token);\npm.environment.set(\"refresh_token\", jsonData.refresh_token);\n",
+  "tests": "var jsonData = pm.response.json();\nvar id = jsonData.id.split('/');\npm.environment.set(\"_accessToken\", jsonData.access_token);\npm.environment.set(\"_endpoint\", jsonData.instance_url);\npm.environment.set(\"_userId\", id.pop());\npm.environment.set(\"_orgId\", id.pop());",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "",
   "pathVariables": {}
 }

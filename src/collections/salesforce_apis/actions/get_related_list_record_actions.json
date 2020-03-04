@@ -1,5 +1,5 @@
 {
-  "id": "d58b294d-cfc3-46f1-a7ce-4af526d4cf0c",
+  "id": "a150aa6d-6ecd-4935-9f6d-0d860864e94b",
   "name": "Get Related List Record Actions",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/record/<recordId>/related-list-record/<relatedListRecordIds>",
   "description": "Get the actions on records in related lists.",
@@ -24,12 +24,14 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [""],
+        "exec": [
+          ""
+        ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "a2c7aca8-406f-4333-98c6-7f57c128d845",
+  "folder": "cfd08d38-5a29-4127-9871-bfb9a519dfdb",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -37,7 +39,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}

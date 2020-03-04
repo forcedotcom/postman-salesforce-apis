@@ -1,5 +1,5 @@
 {
-  "id": "c6d1239e-6e75-4d60-8ccb-98207fa845dd",
+  "id": "52af5512-10e3-40d8-a2af-6b10fb2d1bdd",
   "name": "Get Job Successful Record Results",
   "url": "{{_endpoint}}/services/data/v{{version}}/jobs/ingest/{{_jobId}}/successfulResults",
   "description": null,
@@ -22,10 +22,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "3aa8025d-1209-4714-a376-8955f31cafc0",
+  "folder": "b4f35a3d-0ea9-464f-bf0d-d4d5c989de52",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: application/json\n",
   "pathVariables": {}
 }

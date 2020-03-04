@@ -1,5 +1,5 @@
 {
-  "id": "1d03af7b-517e-436a-9bae-9e40a0276106",
+  "id": "3c7de905-bf7d-41c9-970d-b81546aa0d5b",
   "name": "Get a Batch of Records",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records/batch/<recordIds>",
   "description": "Get data for a batch of records.",
@@ -63,10 +63,10 @@
   ],
   "auth": null,
   "events": [],
-  "folder": "2137f4be-3102-4738-9285-70659b949fa9",
+  "folder": "d671d7ac-a20e-4ab8-b4ae-e758fd6387a1",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

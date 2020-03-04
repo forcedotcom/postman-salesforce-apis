@@ -1,5 +1,5 @@
 {
-  "id": "df9518fc-4a57-44f2-8f30-cf4b6b641b80",
+  "id": "903000a9-8c26-4cfc-8ab6-f44005fd7965",
   "name": "SObject Get Deleted",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SObjectName>/deleted/?start=&end=",
   "description": "Retrieves the list of individual records that have been deleted within the given timespan for the specified object. SObject Get Deleted is available in API version 29.0 and later.\n\nThis resource is commonly used in data replication applications. Note the following considerations:\nDeleted records are written to a delete log which this resource accesses. A background process that runs every two hours purges records that have been in an organization's delete log for more than two hours if the number of records is above a certain limit. Starting with the oldest records, the process purges delete log entries until the delete log is back below the limit. This is done to protect Salesforce from performance issues related to massive delete logs\nInformation on deleted records are returned only if the current session user has access to them.\nResults are returned for no more than 15 days previous to the day the call is executed (or earlier if an administrator has purged the Recycle Bin).",
@@ -36,10 +36,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "6d380c8e-3b9c-4de8-9df0-c8c9b528503c",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

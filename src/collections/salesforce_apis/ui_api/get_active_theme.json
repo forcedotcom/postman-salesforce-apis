@@ -1,5 +1,5 @@
 {
-  "id": "383b747c-a3c0-4c8e-894c-bbcda1196f77",
+  "id": "1f953011-8051-4f65-965a-db7ca2f8f370",
   "name": "Get Active Theme",
   "url": "{{url}}/services/data/v{{version}}/ui-api/themes/active",
   "description": "Get a Salesforce org’s active theme. A theme uses colors, images, and banners to change the overall appearance of Salesforce. Administrators can define themes and switch themes to provide a different look. The User Interface API response matches the Admin’s selection.",
@@ -20,10 +20,10 @@
   "queryParams": [],
   "auth": null,
   "events": [],
-  "folder": "76964019-5138-4031-b216-034c327b4462",
+  "folder": "c7fe518a-1aa2-4f2b-bf7c-99b74a11e73a",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

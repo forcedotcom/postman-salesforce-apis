@@ -1,5 +1,5 @@
 {
-  "id": "b33c3423-642f-43b3-a95b-c42474c4118e",
+  "id": "b2104961-e0cb-427e-b5fc-a72e8148dd33",
   "name": "Get List View Metadata per API Name",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-info/<objectApiName>/{listViewApiName}",
   "description": "Returns list view metadata.",
@@ -28,12 +28,14 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [""],
+        "exec": [
+          ""
+        ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "188bfad0-c325-416e-9954-f105e1d87928",
+  "folder": "5e713f09-45c6-489e-8555-1649e663384e",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -41,7 +43,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}

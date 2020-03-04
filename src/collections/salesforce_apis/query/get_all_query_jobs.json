@@ -1,5 +1,5 @@
 {
-  "id": "e45fc673-a5af-459a-8039-a06aa24ff1fa",
+  "id": "32cbcdaa-46f1-4797-a79b-108df18172ce",
   "name": "Get All Query Jobs",
   "url": "{{_endpoint}}/services/data/v{{version}}/jobs/query?isPkChunkingEnabled=false&jobType&concurrencyMode&queryLocator",
   "description": null,
@@ -51,10 +51,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "5ef6ab2c-09a3-4142-8f07-7c5cce26d598",
+  "folder": "5c277453-4308-49f5-9bc6-f6126e00e67c",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

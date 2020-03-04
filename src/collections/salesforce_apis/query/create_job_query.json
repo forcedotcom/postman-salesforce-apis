@@ -1,5 +1,5 @@
 {
-  "id": "3d65e191-81eb-4f07-9684-6fa48a1a85aa",
+  "id": "47debcd0-edf7-4c97-9951-bdce8c3ab050",
   "name": "Create job Query",
   "url": "{{_endpoint}}/services/data/v{{version}}/jobs/query",
   "description": null,
@@ -33,12 +33,12 @@
       }
     }
   ],
-  "folder": "5ef6ab2c-09a3-4142-8f07-7c5cce26d598",
+  "folder": "5c277453-4308-49f5-9bc6-f6126e00e67c",
   "preRequestScript": null,
   "tests": "var response = JSON.parse(pm.response.text();)\npm.environment.set(\"id\", response.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n  \"operation\" : \"query\",\n  \"query\" : \"SELECT fields FROM object WHERE filter\",\n  \"contentType\" : \"CSV\",\n  \"columnDelimiter\" : \"BACKQUOTE | CARET | COMMA | PIPE | SEMICOLON | TAB\",\n  \"lineEnding\" : \"CRLF | LF\"\n} ",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}

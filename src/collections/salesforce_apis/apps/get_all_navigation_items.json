@@ -1,5 +1,5 @@
 {
-  "id": "23e8fd2a-1d60-4d8b-b8db-b984872b56d4",
+  "id": "901c99ec-5116-4936-8068-e96343e52cba",
   "name": "Get All Navigation Items",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/nav-items",
   "description": "Gets all navigation items (tabs) that the user has access to.",
@@ -28,12 +28,14 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [""],
+        "exec": [
+          ""
+        ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "a7f3af0a-8c4e-4e25-8f0b-802d61f55cec",
+  "folder": "d2dfa5a2-fa1f-4eb9-865f-af4546dc5a39",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -41,7 +43,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}

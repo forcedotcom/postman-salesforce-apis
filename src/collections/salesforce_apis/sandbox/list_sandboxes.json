@@ -1,5 +1,5 @@
 {
-  "id": "e68e0d3a-86f0-41e4-a4d8-9f5d8d3fa947",
+  "id": "54df46f7-d32d-460a-b643-62a5050d9195",
   "name": "List Sandboxes",
   "url": "{{_endpoint}}/services/data/v{{version}}/tooling/query/?q=SELECT Id, SandboxName, LicenseType, AutoActivate FROM SandboxInfo",
   "description": "Lists all sandboxes.",
@@ -32,13 +32,13 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "7fd3ae19-0625-4fa6-9d6e-686050dad83e",
+  "folder": "2d80e8e8-6e59-45f5-acd2-a5cfc661673f",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
   "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: application/json\n",
   "pathVariables": {}

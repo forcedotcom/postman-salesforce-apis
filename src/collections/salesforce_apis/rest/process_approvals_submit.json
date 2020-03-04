@@ -1,5 +1,5 @@
 {
-  "id": "96107643-53aa-4fbd-b0bc-4aae00d46132",
+  "id": "b0797900-0a9a-4ccd-95a2-631fadb669dd",
   "name": "Process Approvals Submit",
   "url": "{{_endpoint}}/services/data/v{{version}}/process/approvals",
   "description": "Returns a list of all approval processes. Can also be used to submit a particular record if that entity supports an approval process and one has already been defined. Records can be approved and rejected if the current user is an assigned approver. When using a POST request to do bulk approvals, the requests that succeed are committed and the requests that don’t succeed send back an error.\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_process_approvals.htm",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "6d380c8e-3b9c-4de8-9df0-c8c9b528503c",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n\t\"actionType\":\"string\",\n\t\"contextActorId\":\"ID\",\n\t\"contextId\":\"ID\",\n\t\"comments\":\"string\",\n\t\"nextApproverIds\":\"ID[]\",\n\t\"processDefinitionNameOrId\":\"string\",\n\t\"skipEntryCriteria\":\"boolean\",\n}",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}

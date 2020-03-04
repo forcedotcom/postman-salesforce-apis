@@ -1,5 +1,5 @@
 {
-  "id": "e9da0bd5-0bd9-419a-9eb6-77a60f9bcf8f",
+  "id": "58be4fdd-0d2d-4950-a114-d30f8b6d35c3",
   "name": "SOAP Login",
   "url": "{{url}}{{site}}/services/Soap/u/{{version}}",
   "description": null,
@@ -34,21 +34,23 @@
       "script": {
         "id": "7fff925d-9787-45e6-9e08-23d0f8886eb4",
         "exec": [
-          "var xmlTree = xml2Json(pm.response.text(););",
-          "pm.environment.set(\"access_token\", xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.sessionId);",
-          "var url = xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.serverUrl.split(\"/\");",
-          "pm.environment.set(\"endpoint\", url[0] + \"//\" + url[2]);"
+          "var result = xml2Json(pm.response.text())[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result;",
+          "var url = result.serverUrl.split(\"/\");",
+          "pm.environment.set(\"_accessToken\", result.sessionId);",
+          "pm.environment.set(\"_endpoint\", url[0] + \"//\" + url[2]);",
+          "pm.environment.set(\"_userId\", result.userId);",
+          "pm.environment.set(\"_orgId\", result.userInfo.organizationId);"
         ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "2d96c5c0-bda6-41d8-aa58-2cd11e582e7f",
+  "folder": "b335d5ec-4ad5-4353-a61f-d12d1413e33c",
   "preRequestScript": null,
-  "tests": "var xmlTree = xml2Json(pm.response.text(););\npm.environment.set(\"access_token\", xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.sessionId);\nvar url = xmlTree[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result.serverUrl.split(\"/\");\npm.environment.set(\"endpoint\", url[0] + \"//\" + url[2]);",
+  "tests": "var result = xml2Json(pm.response.text())[\"soapenv:Envelope\"][\"soapenv:Body\"].loginResponse.result;\nvar url = result.serverUrl.split(\"/\");\npm.environment.set(\"_accessToken\", result.sessionId);\npm.environment.set(\"_endpoint\", url[0] + \"//\" + url[2]);\npm.environment.set(\"_userId\", result.userId);\npm.environment.set(\"_orgId\", result.userInfo.organizationId);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<env:Envelope xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <env:Body>\n    <n1:login xmlns:n1=\"urn:partner.soap.sforce.com\">\n      <n1:username>{{username}}</n1:username>\n      <n1:password>{{password}}{{secretToken}}</n1:password>\n    </n1:login>\n  </env:Body>\n</env:Envelope>",
   "headers": "Content-Type: text/xml\nSOAPAction: login\ncharset: UTF-8\n",
   "pathVariables": {}

@@ -1,5 +1,5 @@
 {
-  "id": "f7f51a4b-ae34-45fd-9c51-964a6986ea42",
+  "id": "4c1ab90b-57a2-49b8-ab73-5dac3ce4bd8c",
   "name": "Post Tooling SObject",
   "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/<sobjectName>",
   "description": "",
@@ -28,10 +28,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "4030dd83-2d8a-4e6f-9644-743b6642efc2",
+  "folder": "11958f1f-3ace-44f6-b2fa-a66c6ab0eb9b",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n\t\"Name\":\"test\"\n}",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}

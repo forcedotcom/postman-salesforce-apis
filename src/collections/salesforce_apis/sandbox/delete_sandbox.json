@@ -1,5 +1,5 @@
 {
-  "id": "afc760a3-04a8-4be3-a2ec-ddf4a1a25922",
+  "id": "e9cd53bc-c259-4211-8f1d-5dcf3fd7b706",
   "name": "Delete Sandbox",
   "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo/<SandboxInfoId>",
   "description": "Deletes a sandbox.",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "7fd3ae19-0625-4fa6-9d6e-686050dad83e",
+  "folder": "2d80e8e8-6e59-45f5-acd2-a5cfc661673f",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Authorization: Bearer {{_accessToken}}\n",
   "pathVariables": {}
 }

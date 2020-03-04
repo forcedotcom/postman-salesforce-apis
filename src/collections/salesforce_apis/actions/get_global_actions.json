@@ -1,5 +1,5 @@
 {
-  "id": "233ae6f6-1b31-4b81-baf4-2bac54a63ad3",
+  "id": "aeb031ca-0439-4c97-a59f-2d0a70254a76",
   "name": "Get Global Actions",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/global",
   "description": "Get the actions on record detail pages.",
@@ -24,12 +24,14 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [""],
+        "exec": [
+          ""
+        ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "a2c7aca8-406f-4333-98c6-7f57c128d845",
+  "folder": "cfd08d38-5a29-4127-9871-bfb9a519dfdb",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -37,7 +39,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}

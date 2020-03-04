@@ -1,5 +1,5 @@
 {
-  "id": "468300ac-6cf9-47af-9911-67a353ca1df6",
+  "id": "21845d58-bc37-4576-bdaf-7a4a7ac0496c",
   "name": "Get Sandbox",
   "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo/<SandboxInfoId>",
   "description": "Retrieves a sandbox record.",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "7fd3ae19-0625-4fa6-9d6e-686050dad83e",
+  "folder": "2d80e8e8-6e59-45f5-acd2-a5cfc661673f",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Authorization: Bearer {{_accessToken}}\n",
   "pathVariables": {}
 }

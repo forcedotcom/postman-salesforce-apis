@@ -1,5 +1,5 @@
 {
-  "id": "83d1876e-52aa-4be3-a468-de621fe999ab",
+  "id": "57df5cba-936e-4361-a379-6101a865769b",
   "name": "Revoke Token",
   "url": "{{url}}{{site}}/services/oauth2/revoke",
   "description": null,
@@ -34,12 +34,12 @@
       }
     }
   ],
-  "folder": "2d96c5c0-bda6-41d8-aa58-2cd11e582e7f",
+  "folder": "b335d5ec-4ad5-4353-a61f-d12d1413e33c",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Content-Type: application/x-www-form-urlencoded\n",
   "pathVariables": {}
 }

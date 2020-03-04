@@ -1,5 +1,5 @@
 {
-  "id": "dea8a8a0-4920-4bd4-9ef1-db223b8b70f1",
+  "id": "07fc0754-717d-4765-a667-76dff3116873",
   "name": "Bulk Retrieve Batch Result",
   "url": "{{_endpoint}}/services/async/{{version}}/job/{{_jobId}}/batch/{{_batchId}}/result",
   "description": null,
@@ -25,10 +25,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "87dfaef8-13f7-455e-8fa5-4989524d181b",
+  "folder": "b0baf931-3c64-4922-a189-654ef495902a",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "X-SFDC-Session: {{_accessToken}}\nAccept-Encoding: gzip\nContent-Encoding: gzip\n",
   "pathVariables": {}
 }

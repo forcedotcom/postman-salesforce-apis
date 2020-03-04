@@ -1,5 +1,5 @@
 {
-  "id": "76115de8-ce46-45c4-ae7d-4c083a08ba2a",
+  "id": "007b9dfa-7c11-4429-ad1f-86b23a7a0a72",
   "name": "Bulk Create Batch",
   "url": "{{_endpoint}}/services/async/{{version}}/job/{{_jobId}}/batch",
   "description": null,
@@ -53,12 +53,12 @@
       }
     }
   ],
-  "folder": "87dfaef8-13f7-455e-8fa5-4989524d181b",
+  "folder": "b0baf931-3c64-4922-a189-654ef495902a",
   "preRequestScript": null,
   "tests": "var xmlTree = xml2Json(pm.response.text(););\nconsole.log(xmlTree);\npm.environment.set(\"_batchId\", xmlTree['batchInfo']['id']);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
   "headers": "X-SFDC-Session: {{_accessToken}}\nContent-Type: text/csv\n//Content-Type: zip/csv\ncharset: UTF-8\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
   "pathVariables": {}

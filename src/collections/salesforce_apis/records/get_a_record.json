@@ -1,5 +1,5 @@
 {
-  "id": "7f4f433d-b224-42e0-9303-188a0918be7c",
+  "id": "5ca34c29-7791-428d-b6f4-1c56e15e09e7",
   "name": "Get a Record",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records/<recordId>",
   "description": "Get a record’s data.",
@@ -63,10 +63,10 @@
   ],
   "auth": null,
   "events": [],
-  "folder": "2137f4be-3102-4738-9285-70659b949fa9",
+  "folder": "d671d7ac-a20e-4ab8-b4ae-e758fd6387a1",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

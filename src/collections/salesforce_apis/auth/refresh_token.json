@@ -1,5 +1,5 @@
 {
-  "id": "e898a4f5-91c1-4139-9f0c-8083c1f4fff3",
+  "id": "b7d94187-9534-4a6e-9212-17b45ceb03b7",
   "name": "Refresh Token",
   "url": "{{url}}{{site}}/services/oauth2/token",
   "description": null,
@@ -44,19 +44,22 @@
         "id": "4c88977a-e2b4-47bd-91db-cd57d1b07daf",
         "exec": [
           "var jsonData = pm.response.json();",
-          "pm.environment.set(\"access_token\", jsonData.access_token);",
-          "pm.environment.set(\"endpoint\", jsonData.instance_url);"
+          "var id = jsonData.id.split('/');",
+          "pm.environment.set(\"_accessToken\", jsonData.access_token);",
+          "pm.environment.set(\"_endpoint\", jsonData.instance_url);",
+          "pm.environment.set(\"_userId\", id.pop());",
+          "pm.environment.set(\"_orgId\", id.pop());"
         ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "2d96c5c0-bda6-41d8-aa58-2cd11e582e7f",
+  "folder": "b335d5ec-4ad5-4353-a61f-d12d1413e33c",
   "preRequestScript": null,
-  "tests": "var jsonData = pm.response.json();\npm.environment.set(\"access_token\", jsonData.access_token);\npm.environment.set(\"endpoint\", jsonData.instance_url);",
+  "tests": "var jsonData = pm.response.json();\nvar id = jsonData.id.split('/');\npm.environment.set(\"_accessToken\", jsonData.access_token);\npm.environment.set(\"_endpoint\", jsonData.instance_url);\npm.environment.set(\"_userId\", id.pop());\npm.environment.set(\"_orgId\", id.pop());",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Content-Type: application/x-www-form-urlencoded\n",
   "pathVariables": {}
 }

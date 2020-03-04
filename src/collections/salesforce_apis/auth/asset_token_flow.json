@@ -1,5 +1,5 @@
 {
-  "id": "191260ba-6c7f-4df4-a8cc-aa49c8597bb0",
+  "id": "bbe305e9-cec0-4d6c-8e58-edca418f0710",
   "name": "Asset Token Flow",
   "url": "{{url}}{{site}}/services/oauth2/token",
   "description": null,
@@ -45,10 +45,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "2d96c5c0-bda6-41d8-aa58-2cd11e582e7f",
+  "folder": "b335d5ec-4ad5-4353-a61f-d12d1413e33c",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Content-Type: application/x-www-form-urlencoded\n",
   "pathVariables": {}
 }

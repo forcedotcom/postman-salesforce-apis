@@ -1,5 +1,5 @@
 {
-  "id": "b081c810-5f0b-4c27-b8fe-86260166cf89",
+  "id": "588619e7-e8be-4344-a0e2-4a12c5599adf",
   "name": "Get Lookup Field Suggestions for a Specified Object",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/lookups/<objectApiName>/{fieldApiName}/<targetApiName>",
   "description": "When a user edits a lookup field, use this resource to search for and display suggestions for a specified object. You can search for most recently used matches, for matching names, or for any match in a searchable field. You can also specify lookup filter bindings for dependent lookups.",
@@ -55,12 +55,14 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [""],
+        "exec": [
+          ""
+        ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "2137f4be-3102-4738-9285-70659b949fa9",
+  "folder": "d671d7ac-a20e-4ab8-b4ae-e758fd6387a1",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -68,7 +70,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}

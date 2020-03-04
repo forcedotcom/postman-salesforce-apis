@@ -1,5 +1,5 @@
 {
-  "id": "4b80e69d-46be-4644-a875-f499b124bbd0",
+  "id": "990153c1-9361-486b-b3a1-f9d24556b341",
   "name": "Tooling Search",
   "url": "{{_endpoint}}/services/data/v{{version}}/tooling/search?q",
   "description": "Runs one or more methods within one or more Apex classes, using the asynchronous test execution mechanism. In the request body, you can specify test class names and IDs, suite names and IDs, the maximum number of failed tests to allow, and the test level, as comma-separated lists or as an array. You can also indicate whether to opt out of collecting code coverage information during the test run (available in API version 43.0 and later).",
@@ -36,13 +36,13 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "4030dd83-2d8a-4e6f-9644-743b6642efc2",
+  "folder": "11958f1f-3ace-44f6-b2fa-a66c6ab0eb9b",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "[\n    {\n        \"className\": \"YourClassName\",\n        \"testMethods\": [\n            \"testMethod1\",\n            \"testMethod2\",\n            \"testMethod3\"\n        ]\n    },\n    {\n        \"maxFailedTests\": \"2\"\n    }\n]\n\nor\n\n[\n    {\n        \"classId\": \"01pD0000000Fhy9IAC\",\n        \"testMethods\": [\n            \"testMethod1\",\n            \"testMethod2\",\n            \"testMethod3\"\n        ]\n    },\n    {\n        \"maxFailedTests\": \"2\"\n    }\n]",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}

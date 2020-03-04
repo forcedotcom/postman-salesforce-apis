@@ -1,5 +1,5 @@
 {
-  "id": "84c633f2-8e9b-4bb2-abbf-d89487f3da98",
+  "id": "a547cc4f-fddb-4c7c-bb99-62aa587c3ccb",
   "name": "Create Async Query",
   "url": "{{_endpoint}}/services/data/v{{version}}/async-queries",
   "description": null,
@@ -25,7 +25,9 @@
       "listen": "prerequest",
       "script": {
         "id": "18f8ee9f-81e2-46ba-9d88-fc0090afe065",
-        "exec": [""],
+        "exec": [
+          ""
+        ],
         "type": "text/javascript"
       }
     },
@@ -41,10 +43,10 @@
       }
     }
   ],
-  "folder": "c32d984d-6f5f-4e7e-a82c-c031de084b12",
+  "folder": "d641c584-fddb-4d20-a78e-a5f86207f55e",
   "responses": [
     {
-      "id": "50b2b230-cec7-4e06-8313-267accac732d",
+      "id": "079f556a-59e8-49bc-97f4-a5df941babf5",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -73,15 +75,15 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "84c633f2-8e9b-4bb2-abbf-d89487f3da98",
-      "collection": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e"
+      "request": "a547cc4f-fddb-4c7c-bb99-62aa587c3ccb",
+      "collection": "dcabe06e-5abb-4b30-9188-64ecc63d6edc"
     }
   ],
   "preRequestScript": null,
   "tests": "var jsonData = pm.response.json();\npm.environment.set(\"_jobId\", jsonData.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n    \"query\": \"SELECT fields FROM bigObject\",\n    \"operation\": \"<insert update upsert>\",\n    \"targetObject\": \"<custom object>\",\n    \"targetFieldMap\": {\n        \"firstField__c\": \"firstFieldTarget__c\",\n        \"secondField__c\": \"secondFieldTarget__c\"\n    },\n    \"targetValueMap\": {\n        \"$JOB_ID\": \"BackgroundOperationLookup__c\",\n        \"Copy fields from source to target\": \"BackgroundOperationDescription__c\"\n    },\n    \"targetExternalIdField\":\"<external id field used in upsert>\"\n}",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}

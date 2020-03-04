@@ -1,5 +1,5 @@
 {
-  "id": "de121b31-4905-4acd-beb0-8e35d5648cd0",
+  "id": "e65c63db-aac2-4303-8283-e100feb4e106",
   "name": "Refresh Sandbox",
   "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/SandboxInfo/<SandboxInfoId>",
   "description": "Refreshes a sandbox.",
@@ -28,10 +28,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "7fd3ae19-0625-4fa6-9d6e-686050dad83e",
+  "folder": "2d80e8e8-6e59-45f5-acd2-a5cfc661673f",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n    \"LicenseType\": \"DEVELOPER\",\n    \"AutoActivate\": true\n}",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}

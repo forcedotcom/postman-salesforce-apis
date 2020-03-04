@@ -1,5 +1,5 @@
 {
-  "id": "4f3e426f-1b9d-4f9f-8941-e21fb688311f",
+  "id": "1396a5c5-45fe-4635-8caf-894116f5403f",
   "name": "Get Most Recently Used List View Records",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/mru-list-records/<objectApiName>",
   "description": "Returns record data for an object’s most recently used (MRU) list view.",
@@ -28,12 +28,14 @@
       "listen": "prerequest",
       "script": {
         "id": "076c8104-49ed-41ff-9281-fd1359292263",
-        "exec": [""],
+        "exec": [
+          ""
+        ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "188bfad0-c325-416e-9954-f105e1d87928",
+  "folder": "5e713f09-45c6-489e-8555-1649e663384e",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -41,7 +43,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "ef6270a2-204a-4f44-ad82-a606c1d1ad3e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
