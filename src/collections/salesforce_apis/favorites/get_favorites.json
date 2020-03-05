@@ -1,7 +1,7 @@
 {
-  "id": "82029632-2ae5-48aa-bd65-7800a3dfc9ad",
+  "id": "2560fccd-9af1-497c-bc8e-dfb7747bc9fb",
   "name": "Get Favorites",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/favorites",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites",
   "description": "Get all of a user’s favorites.",
   "data": [],
   "dataOptions": {
@@ -16,7 +16,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -35,7 +35,7 @@
       }
     }
   ],
-  "folder": "ce7a4819-1b00-4174-9885-0b2b58fc8f9f",
+  "folder": "f590d714-aad1-4bb8-a7c4-cd5f898da2e2",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,8 +43,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

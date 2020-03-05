@@ -1,5 +1,5 @@
 {
-  "id": "e9a9241f-93da-4954-8aa6-d38420f4e3ef",
+  "id": "cfed89f6-2c62-4fa7-8e17-d4bfa7a5821e",
   "name": "User Info",
   "url": "{{url}}{{site}}/services/oauth2/userinfo",
   "description": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "12894ada-1c1d-4dde-8ed7-deebc40104f2",
+  "folder": "b335d5ec-4ad5-4353-a61f-d12d1413e33c",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

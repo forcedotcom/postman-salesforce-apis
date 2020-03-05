@@ -1,7 +1,7 @@
 {
-  "id": "4e59b7d7-ac41-43f0-835a-3701497b166f",
+  "id": "d47b5297-78e9-41eb-b4fc-9a41cd877a1f",
   "name": "Get Appointment Candidates",
-  "url": "{{endpoint}}/services/data/v{{version}}/scheduling/getAppointmentCandidates",
+  "url": "{{_endpoint}}/services/data/v{{version}}/scheduling/getAppointmentCandidates",
   "description": "Returns a list of available service resources (appointment candidates) based on work type group and service territories.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/requests_ls_getappointmentcandidates.htm",
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,11 +21,11 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n\t\"startTime\": \"string\",\n\t\"endTime\": \"string\",\n\t\"workTypeGroupId\": \"string\",\n\t\"workType\": \"Work Type\",\n\t\"accountId\": \"string\",\n\t\"territoryIds\": \"string[]\",\n\t\"requiredResourceIds\": \"string[]\",\n\t\"schedulingPolicyId\": \"string\",\n\t\"allowConcurrentScheduling\": \"boolean\",\n}",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

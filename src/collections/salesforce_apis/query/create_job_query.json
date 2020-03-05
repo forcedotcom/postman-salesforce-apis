@@ -1,7 +1,7 @@
 {
-  "id": "0f35f8f2-cd4b-471d-bfbf-f46c0bb5ec0f",
+  "id": "47debcd0-edf7-4c97-9951-bdce8c3ab050",
   "name": "Create job Query",
-  "url": "{{endpoint}}/services/data/v{{version}}/jobs/query",
+  "url": "{{_endpoint}}/services/data/v{{version}}/jobs/query",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -26,20 +26,20 @@
       "script": {
         "id": "b438d4fa-1275-4c48-ad33-20b679018754",
         "exec": [
-          "var response = JSON.parse(responseBody)",
-          "postman.setGlobalVariable(\"id\", response.id);"
+          "var response = JSON.parse(pm.response.text();)",
+          "pm.environment.set(\"id\", response.id);"
         ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "8538f571-40e1-4e4f-b6a3-cdacc89ae3ec",
+  "folder": "5c277453-4308-49f5-9bc6-f6126e00e67c",
   "preRequestScript": null,
-  "tests": "var response = JSON.parse(responseBody)\npostman.setGlobalVariable(\"id\", response.id);",
+  "tests": "var response = JSON.parse(pm.response.text();)\npm.environment.set(\"id\", response.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n  \"operation\" : \"query\",\n  \"query\" : \"SELECT fields FROM object WHERE filter\",\n  \"contentType\" : \"CSV\",\n  \"columnDelimiter\" : \"BACKQUOTE | CARET | COMMA | PIPE | SEMICOLON | TAB\",\n  \"lineEnding\" : \"CRLF | LF\"\n} ",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

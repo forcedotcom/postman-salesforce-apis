@@ -1,7 +1,7 @@
 {
-  "id": "10a2dcd1-daa0-490e-9cdd-586d247d7af0",
+  "id": "18b8a27f-fac2-43e0-8135-70d476a300df",
   "name": "SObject Rows Delete",
-  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/{id}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/<RECORD_ID>",
   "description": "Accesses records based on the specified object ID. Retrieves, updates, or deletes records. This resource can also be used to retrieve field values. Use the GET method to retrieve records or fields, the DELETE method to delete records, and the PATCH method to update records.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

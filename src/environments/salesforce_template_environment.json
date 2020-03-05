@@ -1,5 +1,5 @@
 {
-  "id": "79871e13-3648-42c5-9fc6-663809ea1254",
+  "id": "c9953dc8-53ef-49f1-98ec-8481c8f3ac54",
   "name": "Salesforce Template Environment",
   "values": [
     {
@@ -23,7 +23,7 @@
       "enabled": true
     },
     {
-      "key": "secret_token",
+      "key": "secretToken",
       "value": "",
       "enabled": true
     },
@@ -43,47 +43,12 @@
       "enabled": true
     },
     {
-      "key": "init_access_token",
+      "key": "initAccessToken",
       "value": "",
       "enabled": true
     },
     {
       "key": "site",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "key",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "env",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "orgId",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "userId",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "endpoint",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "access_token",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "refresh_token",
       "value": "",
       "enabled": true
     }

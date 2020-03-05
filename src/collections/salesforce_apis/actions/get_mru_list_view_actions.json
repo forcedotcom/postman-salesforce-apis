@@ -1,7 +1,7 @@
 {
-  "id": "933fb58f-439e-4336-bc81-a270705e03a1",
+  "id": "11f90f4c-c365-4eb8-b5c8-cfd55cd271ad",
   "name": "Get MRU List View Actions",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/actions/mru-list/{objectApiNames}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/mru-list/<SOBJECT_API_NAMES>",
   "description": "Get the header actions on the most recently used (MRU) list view for objects.",
   "data": [],
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -31,7 +31,7 @@
       }
     }
   ],
-  "folder": "5b407fe6-0d18-470d-8cd6-e9eb50c1cd88",
+  "folder": "cfd08d38-5a29-4127-9871-bfb9a519dfdb",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,8 +39,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

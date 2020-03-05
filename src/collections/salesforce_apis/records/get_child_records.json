@@ -1,7 +1,7 @@
 {
-  "id": "27a73659-f4e8-4dba-97aa-57cbf81e1e16",
+  "id": "e01eb715-47fb-4a82-b589-c01e3af13cf5",
   "name": "Get Child Records",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/records/{recordId}/child-relationships/{relationshipName}\n",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records/<RECORD_ID>/child-relationships/<RELATIONSHIP_NAME>\n",
   "description": "Get child records for a specified record and child relationship name. Relationships are connections between records. On a record detail page, each record in a related list has a child relationship to the parent record.",
   "data": null,
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -51,10 +51,10 @@
   ],
   "auth": null,
   "events": [],
-  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
+  "folder": "d671d7ac-a20e-4ab8-b4ae-e758fd6387a1",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: {{access_token}}\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

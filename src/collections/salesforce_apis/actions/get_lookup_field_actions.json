@@ -1,7 +1,7 @@
 {
-  "id": "04e6d411-6f00-478d-a80d-818088b98ea1",
+  "id": "1e6bc0a4-abf9-4907-b271-40f516b4af10",
   "name": "Get Lookup Field Actions",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/actions/lookup/{objectApiNames}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/lookup/<SOBJECT_API_NAMES>",
   "description": "Get the actions on Lightning pages (FlexiPages).",
   "data": [],
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -31,7 +31,7 @@
       }
     }
   ],
-  "folder": "5b407fe6-0d18-470d-8cd6-e9eb50c1cd88",
+  "folder": "cfd08d38-5a29-4127-9871-bfb9a519dfdb",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,8 +39,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

@@ -1,7 +1,7 @@
 {
-  "id": "fc21d1c2-6a7e-4fd8-bd1c-2b578d179865",
+  "id": "e47b8ff2-010f-46f8-8fbd-0413b4634755",
   "name": "Get Job Unprocessed Record Results",
-  "url": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}/unprocessedrecords",
+  "url": "{{_endpoint}}/services/data/v{{version}}/jobs/ingest/{{_jobId}}/unprocessedrecords",
   "description": null,
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -22,10 +22,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "f989be51-0b74-4da3-bfd3-dfcc37274e8b",
+  "folder": "b4f35a3d-0ea9-464f-bf0d-d4d5c989de52",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\n//Content-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: application/json\n",
   "pathVariables": {}
 }

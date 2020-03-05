@@ -1,7 +1,7 @@
 {
-  "id": "5d071be1-e658-4bb7-af83-71279783a95f",
+  "id": "de9843e6-587d-470f-bab1-77ee6ecd246a",
   "name": "Get List View Records and Metadata API Name",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/list-info/{objectApiName}/{listViewApiName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-info/<SOBJECT_API_NAME>/<LIST_VIEW_API_NAME>",
   "description": "Returns record data and metadata for a list view.",
   "data": [],
   "dataOptions": {
@@ -16,7 +16,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -35,7 +35,7 @@
       }
     }
   ],
-  "folder": "1e390ece-2f33-42ab-a140-a024519a2ab7",
+  "folder": "5e713f09-45c6-489e-8555-1649e663384e",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,8 +43,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

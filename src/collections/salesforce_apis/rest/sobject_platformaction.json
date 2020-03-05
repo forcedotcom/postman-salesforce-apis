@@ -1,7 +1,7 @@
 {
-  "id": "eb89b566-a122-4da2-88a3-e3e4888c49ff",
+  "id": "abc4f9cd-1ef9-4f1e-bf0c-ad322fbc0a22",
   "name": "SObject PlatformAction",
-  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/PlatformAction",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/PlatformAction",
   "description": "PlatformAction is a virtual read-only object. It enables you to query for actions displayed in the UI, given a user, a context, device format, and a record ID. Examples include standard and custom buttons, quick actions, and productivity actions.\nReturns the description of the PlatformAction.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

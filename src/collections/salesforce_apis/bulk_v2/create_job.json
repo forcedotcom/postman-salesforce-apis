@@ -1,7 +1,7 @@
 {
-  "id": "4c1b6638-db15-4b6d-8914-510db214f845",
+  "id": "ec1f8fcc-daf6-49c5-8d42-d72032f9d71d",
   "name": "Create job",
-  "url": "{{endpoint}}/services/data/v{{version}}/jobs/ingest",
+  "url": "{{_endpoint}}/services/data/v{{version}}/jobs/ingest",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -26,20 +26,20 @@
       "script": {
         "id": "b438d4fa-1275-4c48-ad33-20b679018754",
         "exec": [
-          "var response = JSON.parse(responseBody)",
-          "postman.setGlobalVariable(\"jobId\", response.id);"
+          "var response = JSON.parse(pm.response.text();)",
+          "pm.environment.set(\"_jobId\", response.id);"
         ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "f989be51-0b74-4da3-bfd3-dfcc37274e8b",
+  "folder": "b4f35a3d-0ea9-464f-bf0d-d4d5c989de52",
   "preRequestScript": null,
-  "tests": "var response = JSON.parse(responseBody)\npostman.setGlobalVariable(\"jobId\", response.id);",
+  "tests": "var response = JSON.parse(pm.response.text();)\npm.environment.set(\"_jobId\", response.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n\"object\":\"Asset\",\n\"operation\":\"update\"\n}",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

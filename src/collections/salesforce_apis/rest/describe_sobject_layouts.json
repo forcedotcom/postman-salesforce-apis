@@ -1,7 +1,7 @@
 {
-  "id": "48d5ea7b-14b3-4f67-aa45-1c738b5af240",
+  "id": "e6b81b5f-1bc9-497f-b376-c2414834c369",
   "name": "Describe SObject Layouts",
-  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObject}/describe/layouts/",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/describe/layouts/",
   "description": "Returns a list of layouts and descriptions. The list of fields and the layout name are returned.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

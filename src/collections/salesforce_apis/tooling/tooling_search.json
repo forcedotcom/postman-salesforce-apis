@@ -1,7 +1,7 @@
 {
-  "id": "282e50e9-b410-4352-a098-459de6f818d9",
+  "id": "990153c1-9361-486b-b3a1-f9d24556b341",
   "name": "Tooling Search",
-  "url": "{{endpoint}}/services/data/v{{version}}/tooling/search?q",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/search?q",
   "description": "Runs one or more methods within one or more Apex classes, using the asynchronous test execution mechanism. In the request body, you can specify test class names and IDs, suite names and IDs, the maximum number of failed tests to allow, and the test level, as comma-separated lists or as an array. You can also indicate whether to opt out of collecting code coverage information during the test run (available in API version 43.0 and later).",
   "data": [],
   "dataOptions": {
@@ -14,7 +14,7 @@
     {
       "key": "Authorization",
       "type": "text",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "description": "",
@@ -36,14 +36,14 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "1347ab9b-06a4-4ce3-87d0-b2e76e2ee8eb",
+  "folder": "11958f1f-3ace-44f6-b2fa-a66c6ab0eb9b",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "[\n    {\n        \"className\": \"YourClassName\",\n        \"testMethods\": [\n            \"testMethod1\",\n            \"testMethod2\",\n            \"testMethod3\"\n        ]\n    },\n    {\n        \"maxFailedTests\": \"2\"\n    }\n]\n\nor\n\n[\n    {\n        \"classId\": \"01pD0000000Fhy9IAC\",\n        \"testMethods\": [\n            \"testMethod1\",\n            \"testMethod2\",\n            \"testMethod3\"\n        ]\n    },\n    {\n        \"maxFailedTests\": \"2\"\n    }\n]",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

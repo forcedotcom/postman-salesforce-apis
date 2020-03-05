@@ -1,7 +1,7 @@
 {
-  "id": "c5ded2ec-c1ef-4265-ba62-9c1dda9fb2c7",
+  "id": "426b88b7-9bb8-40b0-a306-be6f77273b70",
   "name": "Search",
-  "url": "{{endpoint}}/services/data/v{{version}}/search?q",
+  "url": "{{_endpoint}}/services/data/v{{version}}/search?q",
   "description": "Executes the specified SOSL search. The search string must be URL-encoded.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_search.htm",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -28,10 +28,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

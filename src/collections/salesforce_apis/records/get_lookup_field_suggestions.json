@@ -1,7 +1,7 @@
 {
-  "id": "7c205318-0357-4b61-b23d-890c6eb4d546",
+  "id": "6b4f5c4f-ac5f-4d76-87d2-e50291bf4e29",
   "name": "Get Lookup Field Suggestions",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/lookups/{objectApiName}/{fieldApiName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/lookups/<SOBJECT_API_NAME>/<FIELD_API_NAME>",
   "description": "When a user edits a lookup field, use this resource to search for and display suggestions. You can search for most recently used matches, for matching names, or for any match in a searchable field. You can also specify lookup filter bindings for dependent lookups.",
   "data": [],
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -21,7 +21,7 @@
     {
       "key": "dependentFieldBindings",
       "value": "",
-      "description": "The dependent field bindings for dependent lookups. These field bindings represent the lookup filter that restricts the valid values for the field.\nSpecify field bindings in a comma-separated list in the format dependentFieldBindings={fieldApiName}​={fieldValue},{field2ApiName}={field2Value}.\n\nTo know whether a field is a dependent lookup, check the Object Info response body for a non-null filteredLookupInfo property. Specify the name and a value for each field in the controllingFields property. Get the field values from the Record response body. Both responses are returned from the /ui-api/record-ui/{recordIds} resource.",
+      "description": "The dependent field bindings for dependent lookups. These field bindings represent the lookup filter that restricts the valid values for the field.\nSpecify field bindings in a comma-separated list in the format dependentFieldBindings=<FIELD_API_NAME1>=<FIELD_VALUE1>,<FIELD_API_NAME2>=<FIELD_VALUE2>.\n\nTo know whether a field is a dependent lookup, check the Object Info response body for a non-null filteredLookupInfo property. Specify the name and a value for each field in the controllingFields property. Get the field values from the Record response body. Both responses are returned from the /ui-api/record-ui/<RECORD_IDS> resource.",
       "enabled": false
     },
     {
@@ -62,7 +62,7 @@
       }
     }
   ],
-  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
+  "folder": "d671d7ac-a20e-4ab8-b4ae-e758fd6387a1",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -70,8 +70,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

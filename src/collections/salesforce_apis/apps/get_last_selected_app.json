@@ -1,7 +1,7 @@
 {
-  "id": "d870a906-e37d-4d26-8c95-6f514eb82f8f",
+  "id": "30c15404-a805-4de4-a9a8-b44a0be36fef",
   "name": "Get Last Selected App",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/apps/selected",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps/selected",
   "description": "Retrieves the app the current user last selected or the app the user sees by default.",
   "data": [],
   "dataOptions": {
@@ -16,7 +16,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -35,7 +35,7 @@
       }
     }
   ],
-  "folder": "18813579-d5d4-44b1-836e-108b00dd501b",
+  "folder": "d2dfa5a2-fa1f-4eb9-865f-af4546dc5a39",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,8 +43,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

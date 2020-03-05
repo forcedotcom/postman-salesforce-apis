@@ -1,7 +1,7 @@
 {
-  "id": "4e3e1b91-8f18-449c-9616-91c621f0e1ca",
+  "id": "9b45e003-7713-4e17-b69b-446cb540e27a",
   "name": "Describe Global",
-  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/",
   "description": "Lists the available objects and their metadata for your organization’s data. In addition, it provides the organization encoding, as well as the maximum batch size permitted in queries.\n\nYou can use the If-Modified-Since header with this resource, with the date format EEE, dd MMM yyyy HH:mm:ss z. When using this header, if no available object’s metadata has changed since the provided date, a 304 Not Modified status code is returned with no response body.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

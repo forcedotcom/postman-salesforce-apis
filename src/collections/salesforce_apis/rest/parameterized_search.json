@@ -1,7 +1,7 @@
 {
-  "id": "6b7e07a8-fa89-45dd-b074-7b5fa9651e4a",
+  "id": "67b4c382-107b-4a91-aa53-60227deee43a",
   "name": "Parameterized Search",
-  "url": "{{endpoint}}/services/data/v{{version}}/parameterizedSearch/?q",
+  "url": "{{_endpoint}}/services/data/v{{version}}/parameterizedSearch/?q",
   "description": "Executes a simple RESTful search using parameters instead of a SOSL clause. Indicate parameters in a URL in the GET method. Or, use POST for more complex JSON searches.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -29,10 +29,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

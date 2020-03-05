@@ -1,7 +1,7 @@
 {
-  "id": "ac428354-359f-49e4-a26b-951fcc261914",
+  "id": "047999d6-b2b4-4ee0-90ff-5f0ce316f23b",
   "name": "Get Personalized Navigation Items",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/apps/{appId}/user-nav-items",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps/<APP_ID>/user-nav-items",
   "description": "Get a user’s personalized navigation items (tabs).",
   "data": [],
   "dataOptions": {
@@ -16,7 +16,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -35,7 +35,7 @@
       }
     }
   ],
-  "folder": "18813579-d5d4-44b1-836e-108b00dd501b",
+  "folder": "d2dfa5a2-fa1f-4eb9-865f-af4546dc5a39",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,8 +43,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

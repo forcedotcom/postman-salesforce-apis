@@ -1,7 +1,7 @@
 {
-  "id": "4752e7d5-2b16-4911-b3e3-25dde5195a51",
+  "id": "79b8435b-ce9b-4a69-b3c2-26adc8e92b3d",
   "name": "SObject Blob Retrieve",
-  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObjectName}/{id}/{blobField}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/<RECORD_ID>/<BLOB_FIELD>",
   "description": "Retrieves the specified blob field from an individual record.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

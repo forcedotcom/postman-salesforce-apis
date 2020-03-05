@@ -1,7 +1,7 @@
 {
-  "id": "4f8452ce-e323-4572-ba18-db9facdcb967",
+  "id": "90199efe-9226-482b-85ad-1f1a4dcdbd3d",
   "name": "Get Tooling Describe",
-  "url": "{{endpoint}}/services/data/v{{version}}/tooling/sobjects/",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/",
   "description": "Lists the available Tooling API objects and their metadata.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -17,10 +17,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "1347ab9b-06a4-4ce3-87d0-b2e76e2ee8eb",
+  "folder": "11958f1f-3ace-44f6-b2fa-a66c6ab0eb9b",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
   "pathVariables": {}
 }

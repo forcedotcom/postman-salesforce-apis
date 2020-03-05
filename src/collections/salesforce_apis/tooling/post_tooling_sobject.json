@@ -1,7 +1,7 @@
 {
-  "id": "bc3ff892-ba7c-4e53-9e1b-5e53d9ccb80c",
+  "id": "4c1ab90b-57a2-49b8-ab73-5dac3ce4bd8c",
   "name": "Post Tooling SObject",
-  "url": "{{endpoint}}/services/data/v{{version}}/tooling/sobjects/{sobjectName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/<SOBJECT_API_NAME>",
   "description": "",
   "data": [],
   "dataOptions": {
@@ -13,7 +13,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -28,11 +28,11 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "1347ab9b-06a4-4ce3-87d0-b2e76e2ee8eb",
+  "folder": "11958f1f-3ace-44f6-b2fa-a66c6ab0eb9b",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n\t\"Name\":\"test\"\n}",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

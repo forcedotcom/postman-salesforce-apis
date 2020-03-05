@@ -1,7 +1,7 @@
 {
-  "id": "041eed94-9020-42d7-9b3e-920003159c7e",
+  "id": "d2dee67c-579b-494b-ae7b-b00788a6cc35",
   "name": "Bulk Spec",
-  "url": "{{endpoint}}/services/async/{{version}}/job/{{jobid}}/spec",
+  "url": "{{_endpoint}}/services/async/{{version}}/job/{{_jobId}}/spec",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "X-SFDC-Session",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -33,11 +33,11 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "45648f99-faff-4b36-8439-18a7e91671b5",
+  "folder": "b0baf931-3c64-4922-a189-654ef495902a",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "Salesforce Field,Csv Header,Value,Hint\nName,Full Name,,\nTitle,Job Title,,\nLeadSource,Lead Source,Import,\nDescription,,Imported from XYZ.csv,\nBirthdate,Date of Birth,,dd MM yy",
-  "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: text/csv\ncharset: UTF-8\nAccept-Encoding: gzip\nContent-Encoding: gzip\n",
+  "headers": "X-SFDC-Session: {{_accessToken}}\nContent-Type: text/csv\ncharset: UTF-8\nAccept-Encoding: gzip\nContent-Encoding: gzip\n",
   "pathVariables": {}
 }

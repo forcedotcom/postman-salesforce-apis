@@ -1,7 +1,7 @@
 {
-  "id": "8a9ceae9-cf0a-4de9-bbcc-8507c2e8b225",
+  "id": "e71b0a72-a6e5-4e08-a114-36ca93b5a16b",
   "name": "Close or Abort a Job",
-  "url": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/jobs/ingest/{{_jobId}}",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,11 +21,11 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "f989be51-0b74-4da3-bfd3-dfcc37274e8b",
+  "folder": "b4f35a3d-0ea9-464f-bf0d-d4d5c989de52",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n\t\"state\":\"UploadComplete\"\n}",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

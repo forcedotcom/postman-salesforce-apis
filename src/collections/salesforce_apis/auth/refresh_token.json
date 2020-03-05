@@ -1,5 +1,5 @@
 {
-  "id": "8ba4ef78-2fff-4198-a358-b09469feffa9",
+  "id": "b7d94187-9534-4a6e-9212-17b45ceb03b7",
   "name": "Refresh Token",
   "url": "{{url}}{{site}}/services/oauth2/token",
   "description": null,
@@ -21,7 +21,7 @@
     },
     {
       "key": "refresh_token",
-      "value": "{{refresh_token}}",
+      "value": "{{_refreshToken}}",
       "type": "text"
     }
   ],
@@ -43,20 +43,23 @@
       "script": {
         "id": "4c88977a-e2b4-47bd-91db-cd57d1b07daf",
         "exec": [
-          "var jsonData = JSON.parse(responseBody);",
-          "postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);",
-          "postman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);"
+          "var jsonData = pm.response.json();",
+          "var id = jsonData.id.split('/');",
+          "pm.environment.set(\"_accessToken\", jsonData.access_token);",
+          "pm.environment.set(\"_endpoint\", jsonData.instance_url);",
+          "pm.environment.set(\"_userId\", id.pop());",
+          "pm.environment.set(\"_orgId\", id.pop());"
         ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "12894ada-1c1d-4dde-8ed7-deebc40104f2",
+  "folder": "b335d5ec-4ad5-4353-a61f-d12d1413e33c",
   "preRequestScript": null,
-  "tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"access_token\", jsonData.access_token);\npostman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);",
+  "tests": "var jsonData = pm.response.json();\nvar id = jsonData.id.split('/');\npm.environment.set(\"_accessToken\", jsonData.access_token);\npm.environment.set(\"_endpoint\", jsonData.instance_url);\npm.environment.set(\"_userId\", id.pop());\npm.environment.set(\"_orgId\", id.pop());",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "Content-Type: application/x-www-form-urlencoded\n",
   "pathVariables": {}
 }

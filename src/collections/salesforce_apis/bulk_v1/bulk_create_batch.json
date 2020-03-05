@@ -1,7 +1,7 @@
 {
-  "id": "01db3240-af08-4174-96c8-950497dfa29b",
+  "id": "007b9dfa-7c11-4429-ad1f-86b23a7a0a72",
   "name": "Bulk Create Batch",
-  "url": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}/batch",
+  "url": "{{_endpoint}}/services/async/{{version}}/job/{{_jobId}}/batch",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "X-SFDC-Session",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -45,21 +45,21 @@
       "script": {
         "id": "3823484e-282d-406a-b718-c3622539fd11",
         "exec": [
-          "var xmlTree = xml2Json(responseBody);",
+          "var xmlTree = xml2Json(pm.response.text(););",
           "console.log(xmlTree);",
-          "postman.setGlobalVariable(\"batchId\", xmlTree['batchInfo']['id']);"
+          "pm.environment.set(\"_batchId\", xmlTree['batchInfo']['id']);"
         ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "45648f99-faff-4b36-8439-18a7e91671b5",
+  "folder": "b0baf931-3c64-4922-a189-654ef495902a",
   "preRequestScript": null,
-  "tests": "var xmlTree = xml2Json(responseBody);\nconsole.log(xmlTree);\npostman.setGlobalVariable(\"batchId\", xmlTree['batchInfo']['id']);",
+  "tests": "var xmlTree = xml2Json(pm.response.text(););\nconsole.log(xmlTree);\npm.environment.set(\"_batchId\", xmlTree['batchInfo']['id']);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: text/csv\n//Content-Type: zip/csv\ncharset: UTF-8\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
+  "headers": "X-SFDC-Session: {{_accessToken}}\nContent-Type: text/csv\n//Content-Type: zip/csv\ncharset: UTF-8\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
   "pathVariables": {}
 }

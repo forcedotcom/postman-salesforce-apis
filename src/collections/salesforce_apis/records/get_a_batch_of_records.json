@@ -1,7 +1,7 @@
 {
-  "id": "4f0fb577-5622-4d41-b31a-697fb9b23da6",
+  "id": "3c7de905-bf7d-41c9-970d-b81546aa0d5b",
   "name": "Get a Batch of Records",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/records/batch/{recordIds}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records/batch/<RECORD_IDS>",
   "description": "Get data for a batch of records.",
   "data": null,
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -39,7 +39,7 @@
     {
       "key": "modes",
       "value": "",
-      "description": "The access mode for the record. This value determines which fields to get from a layout. Layouts have different fields for create, edit, and view modes. For example, formula fields are rendered in view mode, but not in create mode because they’re calculated at run time, like formulas in a spreadsheet. A collection containing any of these values:\nCreate—Use this mode if you intend to build UI that lets a user create a record. This mode is used by the /ui-api/record-defaults/create/{apiName} resource.\nEdit—Use this mode if you intend to build UI that lets a user edit a record. This mode is used by the /ui-api/record-defaults/clone/{recordId} resource.\nView—(Default) Use this mode if you intend to build UI that displays a record.",
+      "description": "The access mode for the record. This value determines which fields to get from a layout. Layouts have different fields for create, edit, and view modes. For example, formula fields are rendered in view mode, but not in create mode because they’re calculated at run time, like formulas in a spreadsheet. A collection containing any of these values:\nCreate—Use this mode if you intend to build UI that lets a user create a record. This mode is used by the /ui-api/record-defaults/create/<SOBJECT_API_NAME> resource.\nEdit—Use this mode if you intend to build UI that lets a user edit a record. This mode is used by the /ui-api/record-defaults/clone/<RECORD_ID> resource.\nView—(Default) Use this mode if you intend to build UI that displays a record.",
       "enabled": false
     },
     {
@@ -63,10 +63,10 @@
   ],
   "auth": null,
   "events": [],
-  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
+  "folder": "d671d7ac-a20e-4ab8-b4ae-e758fd6387a1",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: {{access_token}}\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

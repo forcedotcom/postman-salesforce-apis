@@ -1,7 +1,7 @@
 {
-  "id": "1410b226-786c-42b7-9d2d-50911fe50a70",
+  "id": "16cb12b8-9676-427a-9cd1-ee276bfc55fb",
   "name": "Data Category Detail",
-  "url": "{{endpoint}}/services/data/v{{version}}/support/dataCategoryGroups/{group}/dataCategories/{category}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/support/dataCategoryGroups/<GROUP>/dataCategories/<CATEGORY>",
   "description": "Get data category details and the child categories by a given category.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -28,10 +28,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

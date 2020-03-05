@@ -1,7 +1,7 @@
 {
-  "id": "d7de8397-b7f1-4404-8036-4ce0678393d5",
+  "id": "2826e768-e530-40c2-88f9-7003217f4384",
   "name": "Articles Details",
-  "url": "{{endpoint}}/services/data/v{{version}}/support/knowledgeArticles/{articleId}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/support/knowledgeArticles/<ARTICLE_ID>",
   "description": "Get all online article fields, accessible to the user.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -40,10 +40,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

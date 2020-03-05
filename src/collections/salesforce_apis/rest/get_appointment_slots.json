@@ -1,7 +1,7 @@
 {
-  "id": "405bb48e-a6ad-4412-a393-334c9a805020",
+  "id": "827f4fe7-41e6-4321-8e7c-e20bdc431ec2",
   "name": "Get Appointment Slots",
-  "url": "{{endpoint}}/services/data/v{{version}}/scheduling/getAppointmentSlots",
+  "url": "{{_endpoint}}/services/data/v{{version}}/scheduling/getAppointmentSlots",
   "description": "Returns a list of available appointment time slots for a resource based on given work type group and territories.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/requests_ls_getappointmentslots.htm",
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,11 +21,11 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n\t\"startTime\": \"string\",\n\t\"endTime\": \"string\",\n\t\"workTypeGroupId\": \"string\",\n\t\"workType\": \"Work Type\",\n\t\"accountId\": \"string\",\n\t\"territoryIds\": \"string[]\",\n\t\"requiredResourceIds\": \"string[]\",\n\t\"schedulingPolicyId\": \"string\",\n\t\"allowConcurrentScheduling\": \"boolean\",\n}",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

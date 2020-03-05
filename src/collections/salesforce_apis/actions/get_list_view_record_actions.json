@@ -1,7 +1,7 @@
 {
-  "id": "34197761-3959-49ac-9946-8c293da74faa",
+  "id": "1b747ae3-fc10-46d4-8627-62df4c3d837e",
   "name": "Get List View Record Actions",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/actions/list-view-record/{recordIds}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/list-view-record/<RECORD_IDS>",
   "description": "Get the record actions on list views.",
   "data": [],
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -31,7 +31,7 @@
       }
     }
   ],
-  "folder": "5b407fe6-0d18-470d-8cd6-e9eb50c1cd88",
+  "folder": "cfd08d38-5a29-4127-9871-bfb9a519dfdb",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,8 +39,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

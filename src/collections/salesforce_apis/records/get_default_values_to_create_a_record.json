@@ -1,8 +1,8 @@
 {
-  "id": "250a554a-8d34-4d12-8d8a-4c0f92c945ae",
+  "id": "30083933-5eda-4426-b77d-81cf5b94ff68",
   "name": "Get Default Values to Create a Record",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/record-defaults/create/{recordId}",
-  "description": "Get the default values for fields for a new record of a specified object and optional record type. After getting the default values, make a request to POST /ui-api/records to create the record.\nThe response contains the default field values for the Full layout type for a new record of the object type specified in {objectApiName}.\n\nIt also contains the corresponding layout for create mode. In the Salesforce user interface, an admin with “Customize Application” permission can mark a field as required in a layout. When you’re building UI, to determine which fields to mark as required in a layout for create mode, use the RecordLayoutItem.required property.\n\nThe response contains object metadata for the object specified in {objectApiName} and for any nested objects. For example, a request to /ui-api/record-defaults/create/Account returns object metadata for Account and User, because the OwnerId field on the Account object contains a reference to the User object.",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/record-defaults/create/<RECORD_ID>",
+  "description": "Get the default values for fields for a new record of a specified object and optional record type. After getting the default values, make a request to POST /ui-api/records to create the record.\nThe response contains the default field values for the Full layout type for a new record of the object type specified in <SOBJECT_API_NAME>.\n\nIt also contains the corresponding layout for create mode. In the Salesforce user interface, an admin with “Customize Application” permission can mark a field as required in a layout. When you’re building UI, to determine which fields to mark as required in a layout for create mode, use the RecordLayoutItem.required property.\n\nThe response contains object metadata for the object specified in <SOBJECT_API_NAME> and for any nested objects. For example, a request to /ui-api/record-defaults/create/Account returns object metadata for Account and User, because the OwnerId field on the Account object contains a reference to the User object.",
   "data": [],
   "dataOptions": null,
   "dataMode": "raw",
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -50,7 +50,7 @@
       }
     }
   ],
-  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
+  "folder": "d671d7ac-a20e-4ab8-b4ae-e758fd6387a1",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -58,8 +58,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

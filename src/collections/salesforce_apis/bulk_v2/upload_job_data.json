@@ -1,7 +1,7 @@
 {
-  "id": "96578fe4-d6f8-41e5-8c48-57ffda53556b",
+  "id": "adfc007a-a43e-466a-a6cc-373c50686f95",
   "name": "Upload Job Data",
-  "url": "{{endpoint}}/services/data/v{{version}}/jobs/ingest/{{jobId}}/batches",
+  "url": "{{_endpoint}}/services/data/v{{version}}/jobs/ingest/{{_jobId}}/batches",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,11 +21,11 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "f989be51-0b74-4da3-bfd3-dfcc37274e8b",
+  "folder": "b4f35a3d-0ea9-464f-bf0d-d4d5c989de52",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: text/csv\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: text/csv\n",
   "pathVariables": {}
 }

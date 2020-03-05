@@ -1,7 +1,7 @@
 {
-  "id": "fe4c4f61-f297-4640-864d-dd76242a58bf",
+  "id": "2f3f499f-6474-4550-a027-bd34501ffdcb",
   "name": "Bulk Close Job",
-  "url": "{{endpoint}}/services/async/{{version}}/job/{{jobId}}",
+  "url": "{{_endpoint}}/services/async/{{version}}/job/{{_jobId}}",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "X-SFDC-Session",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -35,11 +35,11 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "45648f99-faff-4b36-8439-18a7e91671b5",
+  "folder": "b0baf931-3c64-4922-a189-654ef495902a",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n   \"state\" : \"UploadComplete\"\n}",
-  "headers": "X-SFDC-Session: {{access_token}}\nContent-Type: application/json\ncharset: UTF-8\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
+  "headers": "X-SFDC-Session: {{_accessToken}}\nContent-Type: application/json\ncharset: UTF-8\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
   "pathVariables": {}
 }

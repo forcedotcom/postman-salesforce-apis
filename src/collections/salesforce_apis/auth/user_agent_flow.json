@@ -1,5 +1,5 @@
 {
-  "id": "7e44a7da-bd99-4bbb-8698-28839a761275",
+  "id": "6a308980-a928-4bc6-8ddf-5ed4edf93166",
   "name": "User Agent Flow",
   "url": "{{url}}{{site}}/services/oauth2/authorize?response_type=token token_id&client_id={{clientId}}&redirect_uri={{redirectUrl}}&display=touch&login_hint&nonce=awesome",
   "description": null,
@@ -12,27 +12,45 @@
   "queryParams": [
     {
       "key": "response_type",
-      "value": "token token_id"
+      "value": "token token_id",
+      "equals": true,
+      "description": "",
+      "enabled": true
     },
     {
       "key": "client_id",
-      "value": "{{clientId}}"
+      "value": "{{clientId}}",
+      "equals": true,
+      "description": "",
+      "enabled": true
     },
     {
       "key": "redirect_uri",
-      "value": "{{redirectUrl}}"
+      "value": "{{redirectUrl}}",
+      "equals": true,
+      "description": "",
+      "enabled": true
     },
     {
       "key": "display",
-      "value": "touch"
+      "value": "touch",
+      "equals": true,
+      "description": "",
+      "enabled": true
     },
     {
       "key": "login_hint",
-      "value": null
+      "value": "",
+      "equals": false,
+      "description": "",
+      "enabled": true
     },
     {
       "key": "nonce",
-      "value": "awesome"
+      "value": "awesome",
+      "equals": true,
+      "description": "",
+      "enabled": true
     }
   ],
   "auth": null,
@@ -42,20 +60,23 @@
       "script": {
         "id": "0a0dc544-c18f-4a6b-86e4-df3cccf8ab2d",
         "exec": [
-          "var jsonData = JSON.parse(responseBody);",
-          "postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);",
-          "postman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);"
+          "var jsonData = pm.response.json();",
+          "var id = jsonData.id.split('/');",
+          "pm.environment.set(\"_accessToken\", jsonData.access_token);",
+          "pm.environment.set(\"_endpoint\", jsonData.instance_url);",
+          "pm.environment.set(\"_userId\", id.pop());",
+          "pm.environment.set(\"_orgId\", id.pop());"
         ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "12894ada-1c1d-4dde-8ed7-deebc40104f2",
+  "folder": "b335d5ec-4ad5-4353-a61f-d12d1413e33c",
   "preRequestScript": null,
-  "tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"access_token\", jsonData.access_token);\npostman.setEnvironmentVariable(\"endpoint\", jsonData.instance_url);",
+  "tests": "var jsonData = pm.response.json();\nvar id = jsonData.id.split('/');\npm.environment.set(\"_accessToken\", jsonData.access_token);\npm.environment.set(\"_endpoint\", jsonData.instance_url);\npm.environment.set(\"_userId\", id.pop());\npm.environment.set(\"_orgId\", id.pop());",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "headers": "",
   "pathVariables": {}
 }

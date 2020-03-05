@@ -1,7 +1,7 @@
 {
-  "id": "93390408-2ead-42d4-b928-b86907d61be8",
+  "id": "f87ab736-f503-4a5a-9234-a1b5d2c80e69",
   "name": "List View Describe",
-  "url": "{{endpoint}}/services/data/v{{version}}/sobjects/{SObject}/listviews/{queryLocator}/describe",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/listviews/<QUERY_LOCATOR>/describe",
   "description": "Returns detailed information about a list view, including the ID, the columns, and the SOQL query.",
   "data": null,
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "dda4a2d2-461e-4e33-aef7-e16e9d3f8850",
+  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

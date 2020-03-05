@@ -1,8 +1,8 @@
 {
-  "id": "dd747176-59ab-4aa8-af8f-490fff14cda6",
+  "id": "0391aaa2-c5fd-4c15-9ac2-3bab7e3a32ec",
   "name": "Get Default Values to Clone a Record",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/record-defaults/clone/{recordId}",
-  "description": "Get the default layout information, object information, and data for cloning a record. After getting the default values, make a request to POST /ui-api/records to create the record.\nThe response contains the default field values for a record cloned from the record specified in {recordId}, optionally of the specified recordTypeId.\n\nIt also contains the corresponding layout information for edit mode. In the Salesforce user interface, an admin with “Customize Application” permission can mark a field as required in a layout. When you’re building UI, to determine which fields to mark as required in a layout for edit mode, use the RecordLayoutItem.required property.\n\nThe response contains object metadata for the object type of the record specified in {recordId} and for any nested objects. For example, /ui-api/record-defaults/clone/001d000000AtfRIAAZ is a request to clone an Account record. It returns object metadata for Account and User, because the OwnerId field on the Account object contains a reference to the User object.",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/record-defaults/clone/<RECORD_ID>",
+  "description": "Get the default layout information, object information, and data for cloning a record. After getting the default values, make a request to POST /ui-api/records to create the record.\nThe response contains the default field values for a record cloned from the record specified in <RECORD_ID>, optionally of the specified recordTypeId.\n\nIt also contains the corresponding layout information for edit mode. In the Salesforce user interface, an admin with “Customize Application” permission can mark a field as required in a layout. When you’re building UI, to determine which fields to mark as required in a layout for edit mode, use the RecordLayoutItem.required property.\n\nThe response contains object metadata for the object type of the record specified in <RECORD_ID> and for any nested objects. For example, /ui-api/record-defaults/clone/001d000000AtfRIAAZ is a request to clone an Account record. It returns object metadata for Account and User, because the OwnerId field on the Account object contains a reference to the User object.",
   "data": [],
   "dataOptions": null,
   "dataMode": "raw",
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -50,7 +50,7 @@
       }
     }
   ],
-  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
+  "folder": "d671d7ac-a20e-4ab8-b4ae-e758fd6387a1",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -58,8 +58,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

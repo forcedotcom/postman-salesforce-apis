@@ -1,7 +1,7 @@
 {
-  "id": "43a2266f-4493-4c54-9e77-176f031c1100",
+  "id": "fcb9cdd8-8452-4938-acfd-7108286645eb",
   "name": "Create a Record",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/records",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records",
   "description": "Create a record. First, make a request to the Clone Record Default or Create Record Default resources to get the default metadata and data for the record.\nAs of API version 43.0, if you pass read-only fields in a request body, the response is an Error with Output.",
   "data": [],
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -38,13 +38,13 @@
       }
     }
   ],
-  "folder": "bd57df94-a4e0-47ab-9101-edd0ebcee46f",
+  "folder": "d671d7ac-a20e-4ab8-b4ae-e758fd6387a1",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n    \"allowSaveOnDuplicate\": false,\n    \"apiName\": \"Object\",\n    \"fields\": {\n        \"FieldAPIName\": \"FieldValue\"\n    }\n}",
-  "headers": "Authorization: {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

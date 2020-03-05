@@ -1,7 +1,7 @@
 {
-  "id": "4089e114-b92a-4fda-ae69-07de9d0ecd9c",
+  "id": "a547cc4f-fddb-4c7c-bb99-62aa587c3ccb",
   "name": "Create Async Query",
-  "url": "{{endpoint}}/services/data/v{{version}}/async-queries",
+  "url": "{{_endpoint}}/services/data/v{{version}}/async-queries",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -9,7 +9,7 @@
   "headerData": [
     {
       "key": "Authorization",
-      "value": "Bearer {{access_token}}"
+      "value": "Bearer {{_accessToken}}"
     },
     {
       "key": "Content-Type",
@@ -36,17 +36,17 @@
       "script": {
         "id": "d52d0f63-6e82-41e0-a3c4-77e6f53b768d",
         "exec": [
-          "var jsonData = JSON.parse(responseBody);",
-          "postman.setGlobalVariable(\"jobId\", jsonData.id);"
+          "var jsonData = pm.response.json();",
+          "pm.environment.set(\"_jobId\", jsonData.id);"
         ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "0995184f-b7e2-48af-a9d0-fc0bbcea83c3",
+  "folder": "d641c584-fddb-4d20-a78e-a5f86207f55e",
   "responses": [
     {
-      "id": "78e5e021-bf0a-40a8-a15b-7bb65e7f2b4e",
+      "id": "079f556a-59e8-49bc-97f4-a5df941babf5",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -60,7 +60,7 @@
         "headerData": [
           {
             "key": "Authorization",
-            "value": "Bearer {{access_token}}"
+            "value": "Bearer {{_accessToken}}"
           },
           {
             "key": "Content-Type",
@@ -75,16 +75,16 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "4089e114-b92a-4fda-ae69-07de9d0ecd9c",
-      "collection": "3514eccb-888f-4bbf-82c4-ba07fdd5173e"
+      "request": "a547cc4f-fddb-4c7c-bb99-62aa587c3ccb",
+      "collection": "dcabe06e-5abb-4b30-9188-64ecc63d6edc"
     }
   ],
   "preRequestScript": null,
-  "tests": "var jsonData = JSON.parse(responseBody);\npostman.setGlobalVariable(\"jobId\", jsonData.id);",
+  "tests": "var jsonData = pm.response.json();\npm.environment.set(\"_jobId\", jsonData.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "{\n    \"query\": \"SELECT fields FROM bigObject\",\n    \"operation\": \"<insert update upsert>\",\n    \"targetObject\": \"<custom object>\",\n    \"targetFieldMap\": {\n        \"firstField__c\": \"firstFieldTarget__c\",\n        \"secondField__c\": \"secondFieldTarget__c\"\n    },\n    \"targetValueMap\": {\n        \"$JOB_ID\": \"BackgroundOperationLookup__c\",\n        \"Copy fields from source to target\": \"BackgroundOperationDescription__c\"\n    },\n    \"targetExternalIdField\":\"<external id field used in upsert>\"\n}",
-  "headers": "Authorization: Bearer {{access_token}}\nContent-Type: application/json\n",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

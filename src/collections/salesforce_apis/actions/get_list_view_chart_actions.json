@@ -1,7 +1,7 @@
 {
-  "id": "bb724204-6108-4251-8ae5-afd9f2f8e7e3",
+  "id": "7f1d60f3-b87d-4c1b-910b-fcebfde737e3",
   "name": "Get List View Chart Actions",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/actions/list-view-chart/{objectApiName}",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/list-view-chart/<SOBJECT_API_NAME>",
   "description": "Get the record actions on list views.",
   "data": [],
   "dataOptions": null,
@@ -12,7 +12,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -31,7 +31,7 @@
       }
     }
   ],
-  "folder": "5b407fe6-0d18-470d-8cd6-e9eb50c1cd88",
+  "folder": "cfd08d38-5a29-4127-9871-bfb9a519dfdb",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,8 +39,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

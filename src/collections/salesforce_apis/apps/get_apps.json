@@ -1,7 +1,7 @@
 {
-  "id": "dceb1fe3-692a-40e9-b05c-5e2aa0834d84",
+  "id": "b0a8a91e-99d2-4329-9002-4506ae0be719",
   "name": "Get Apps",
-  "url": "{{endpoint}}/services/data/v{{version}}/ui-api/apps",
+  "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps",
   "description": "Get metadata for all the apps a user has access to. Metadata for the selected app includes tabs on the app’s navigation bar. Metadata for other apps doesn’t include tabs on the navigation bar.",
   "data": [],
   "dataOptions": {
@@ -16,7 +16,7 @@
       "enabled": true,
       "key": "Authorization",
       "type": "text",
-      "value": "{{access_token}}"
+      "value": "{{_accessToken}}"
     }
   ],
   "method": "GET",
@@ -35,7 +35,7 @@
       }
     }
   ],
-  "folder": "18813579-d5d4-44b1-836e-108b00dd501b",
+  "folder": "d2dfa5a2-fa1f-4eb9-865f-af4546dc5a39",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,8 +43,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "3514eccb-888f-4bbf-82c4-ba07fdd5173e",
+  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
   "rawModeData": "",
-  "headers": "Authorization: {{access_token}}\n",
+  "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }
