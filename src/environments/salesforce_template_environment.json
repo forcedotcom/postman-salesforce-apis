@@ -51,31 +51,6 @@
       "key": "site",
       "value": "",
       "enabled": true
-    },
-    {
-      "key": "_orgId",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "_userId",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "_endpoint",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "_accessToken",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "_refreshToken",
-      "value": "",
-      "enabled": true
     }
   ]
 }
