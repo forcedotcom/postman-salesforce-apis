@@ -1,7 +1,7 @@
 {
   "id": "0eeed3d7-d39e-43c4-8d78-7d64306c206f",
   "name": "Query",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/OpportunityLineItem/<OPPORTUNITY_LINE_ITEM_ID>/OpportunityLineItemSchedules?q",
+  "url": "{{_endpoint}}/services/data/v{{version}}/query/?q=SELECT+name+from+Account",
   "description": "Executes the specified SOQL query.\n\nIf the query results are too large, the response contains the first batch of results and a query identifier in the nextRecordsUrl field of the response. The identifier can be used in an additional request to retrieve the next batch.\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_query.htm",
   "data": null,
   "dataOptions": null,
