@@ -35,7 +35,7 @@
   ],
   "folder": "b4f35a3d-0ea9-464f-bf0d-d4d5c989de52",
   "preRequestScript": null,
-  "tests": "var response = JSON.parse(pm.response.text();)\npm.environment.set(\"_jobId\", response.id);",
+  "tests": "var response = JSON.parse(pm.response.text());\npm.environment.set(\"_jobId\", response.id);",
   "currentHelper": null,
   "helperAttributes": null,
   "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
