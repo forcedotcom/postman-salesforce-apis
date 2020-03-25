@@ -1,5 +1,5 @@
 {
-  "id": "1de19e28-973c-4e57-a420-e968317e1098",
+  "id": "5bfb3e2e-f7df-4379-ab86-43a1e44c1d5c",
   "name": "List View Results",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/listviews/<LIST_VIEW_ID>/results",
   "description": "Returns detailed information about a list view, including the ID, the columns, and the SOQL query.",
@@ -34,10 +34,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
+  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

@@ -1,5 +1,5 @@
 {
-  "id": "59f671e1-fc32-4b2a-a5be-22226f911f91",
+  "id": "fbc556a0-1661-4d21-a305-3d81ec0531ae",
   "name": "Upload Photo Chatter",
   "url": "{{_endpoint}}/services/data/v{{version}}/connect/user-profiles/me/photo",
   "description": null,
@@ -43,10 +43,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "e9eac37f-dc75-4607-897d-123296c3b8d2",
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: multipart/form-data\n//Content-Disposition: form-data; name=\"photo\"\n//Content-Type: application/json; charset=UTF-8\n",
   "pathVariables": {}
 }

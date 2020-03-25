@@ -1,5 +1,5 @@
 {
-  "id": "04443887-192a-45e9-8c26-2ff53d0c380d",
+  "id": "b9f2c9d9-c879-4c76-99c9-c93747fad4b3",
   "name": "SObject Quick Actions",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/quickActions/",
   "description": "Returns a list of actions and their details. This resource is available in REST API version 28.0 and later. When working with actions, also refer to Quick Actions.\n\nTo return a specific object’s actions as well as global actions, use: /vXX.X/sobjects/object/quickActions/\nTo return a specific action, use /vXX.X/sobjects/object/quickActions/{action name}\nTo return a specific action’s descriptive detail, use /vXX.X/sobjects/object/quickActions/{action name}/describe/\nTo return a specific action’s default values, including default field values, use services/data/vXX.X/sobjects/object/quickActions/{action name}/defaultValues/\nIn API version 28.0, to evaluate the default values for an action, use vXX.X/sobjects/object/quickActions/{action name}/defaultValues/{parent id}\nIn API version 29.0 and greater, to evaluate the default values for an action, use vXX.X/sobjects/object/quickActions/{action name}/defaultValues/{context id}\nThis returns the default values specific to the {context id} object.",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
+  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

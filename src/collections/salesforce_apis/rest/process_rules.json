@@ -1,5 +1,5 @@
 {
-  "id": "4668b21a-2f0c-4a31-b7de-869a04f6fbf6",
+  "id": "020f8526-825f-4428-87d5-f83e0767069e",
   "name": "Process Rules",
   "url": "{{_endpoint}}/services/data/v{{version}}/process/rules",
   "description": "Returns a list of all active workflow rules. If a rule has actions, the actions will be listed under the rule. Can also be used to trigger all workflow rules that are associated with a specified record. The actions for a rule are only fired if the rule’s criteria is met. When using a POST request, if anything fails, the whole transaction is rolled back.\n\nCross-object workflow rules cannot be invoked using the REST API.\n\nTo get a list of the workflow rules or to trigger one or more workflow rules, the URI is: /vXX.X/process/rules/\nTo get the rules for a particular object: /vXX.X/process/rules/SObjectName\nTo get the metadata for a particular rule: /vXX.X/process/rules/SObjectName/workflowRuleId\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_process_rules.htm",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
+  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

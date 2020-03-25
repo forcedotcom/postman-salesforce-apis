@@ -1,5 +1,5 @@
 {
-  "id": "0eeed3d7-d39e-43c4-8d78-7d64306c206f",
+  "id": "0c009e02-681d-4f0b-b482-5623f56df305",
   "name": "Query",
   "url": "{{_endpoint}}/services/data/v{{version}}/query/?q=SELECT+name+from+Account",
   "description": "Executes the specified SOQL query.\n\nIf the query results are too large, the response contains the first batch of results and a query identifier in the nextRecordsUrl field of the response. The identifier can be used in an additional request to retrieve the next batch.\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_query.htm",
@@ -21,18 +21,18 @@
   "queryParams": [
     {
       "key": "q",
-      "value": "",
-      "equals": false,
+      "value": "SELECT+name+from+Account",
+      "equals": true,
       "description": "A SOQL query. Note that you will need to replace spaces with “+” characters in your query string to create a valid URI. An example query parameter string might look like: “SELECT+Name+FROM+MyObject”. If the SOQL query string is invalid, a MALFORMED_QUERY response is returned.",
       "enabled": true
     }
   ],
   "auth": null,
   "events": null,
-  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
+  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

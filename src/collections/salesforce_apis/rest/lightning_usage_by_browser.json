@@ -1,5 +1,5 @@
 {
-  "id": "2310982a-9303-4fcf-b683-69138e7f65c6",
+  "id": "ba964c03-ae42-41d5-a01b-9abc78968ed2",
   "name": "Lightning Usage by Browser",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/LightningUsageByBrowserMetrics",
   "description": "Return Lightning Experience usage results grouped by browser instance.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_lightning_usagebybrowsermetrics.htm",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
+  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

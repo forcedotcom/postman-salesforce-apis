@@ -1,5 +1,5 @@
 {
-  "id": "0f985d56-f794-45ae-9247-eb8d21de6e48",
+  "id": "2b3fcc77-8bb5-48d1-afc1-0993753648b8",
   "name": "Get Job Failed Record Results",
   "url": "{{_endpoint}}/services/data/v{{version}}/jobs/ingest/{{_jobId}}/failedResults",
   "description": null,
@@ -22,10 +22,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "b4f35a3d-0ea9-464f-bf0d-d4d5c989de52",
+  "folder": "086f9213-eeb0-46c2-bf99-3ece72cb0b8c",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: application/json\n",
   "pathVariables": {}
 }

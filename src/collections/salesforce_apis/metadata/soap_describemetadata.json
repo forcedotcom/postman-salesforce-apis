@@ -1,5 +1,5 @@
 {
-  "id": "aedd5054-3fea-4fe2-84bc-9ca7869061d4",
+  "id": "83d857be-1d7e-4501-a0c0-f95a7c208b30",
   "name": "SOAP DescribeMetadata",
   "url": "{{_endpoint}}/services/Soap/m/{{version}}",
   "description": null,
@@ -44,12 +44,12 @@
       }
     }
   ],
-  "folder": "788aac8a-3f21-48de-bbe4-812c2ca07ea5",
+  "folder": "2a5b155a-93f0-477f-8443-d38a9727395e",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "rawModeData": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tns=\"http://soap.sforce.com/2006/04/metadata\">\n\t<soapenv:Header>\n\t<tns:SessionHeader>\n\t\t<tns:sessionId>{{_accessToken}}</tns:sessionId>\n\t</tns:SessionHeader>\n\t</soapenv:Header>\n\t<soapenv:Body>\n\t\t<tns:describeMetadata>\n\t\t\t<asOfVersion>{{version}}</asOfVersion>\n\t\t</tns:describeMetadata>\n\t</soapenv:Body>\n</soapenv:Envelope>",
   "headers": "Content-Type: text/xml\ncharset: UTF-8\nSOAPAction: login\n//Accept: application/json\n",
   "pathVariables": {}

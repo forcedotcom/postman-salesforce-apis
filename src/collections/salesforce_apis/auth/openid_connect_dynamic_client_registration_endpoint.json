@@ -1,5 +1,5 @@
 {
-  "id": "2c210cda-55ab-425b-81de-8244872d110d",
+  "id": "7776a039-62ec-4f32-9d31-bc4efc3be9b7",
   "name": "OpenID Connect Dynamic Client Registration Endpoint",
   "url": "{{url}}{{site}}/services/oauth2/register",
   "description": null,
@@ -29,10 +29,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "b335d5ec-4ad5-4353-a61f-d12d1413e33c",
+  "folder": "32acb1b0-3ff8-40e8-9195-7e1ed0837157",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "rawModeData": "{\n    \"redirect_uris\": [\n        \"http://localhost\"\n    ],\n    \"response_types\": [\n        \"code\",\n        \"token\",\n        \"id_token\"\n    ],\n    \"grant_types\": [\n        \"authorization_code\",\n        \"implicit\",\n        \"refresh_token\"\n    ],\n    \"application_type\": \"web\",\n    \"contacts\": [\n        \"abc@sf.com\",\n        \"ve7jtb@example.org\"\n    ],\n    \"client_name\": \"Example Olivier\"\n}",
   "headers": "Content-Type: application/json\nAccept: application/json\nAuthorization: Bearer {{init_access_token}}\n",
   "pathVariables": {}

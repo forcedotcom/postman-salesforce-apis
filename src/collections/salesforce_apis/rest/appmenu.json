@@ -1,5 +1,5 @@
 {
-  "id": "084268c3-8149-42a7-965c-cc5e47420307",
+  "id": "77a645b9-0581-48b3-a2c9-66b7ee1b7ec3",
   "name": "AppMenu",
   "url": "{{_endpoint}}/services/data/v{{version}}/appMenu/",
   "description": "Returns a list of items in either the Salesforce app drop-down menu or the Salesforce for Android, iOS, and mobile web navigation menu.",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
+  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

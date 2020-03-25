@@ -1,5 +1,5 @@
 {
-  "id": "a788e711-724f-41d0-bfe2-23ad5e4abfd6",
+  "id": "f4e2e7e7-0f07-479d-87a3-7ef6997358f7",
   "name": "Lightning Exit by Page Metrics",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/LightningExitByPageMetrics",
   "description": "Return frequency metrics about the standard pages within which users switched from Lightning Experience to Salesforce Classic.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_lightning_exitbypagemetrics.htm",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
+  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }
