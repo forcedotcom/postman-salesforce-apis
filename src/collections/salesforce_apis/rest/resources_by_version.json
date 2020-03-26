@@ -1,7 +1,7 @@
 {
   "id": "7a0a8eb7-521b-4565-9dba-1f8f66ba962f",
   "name": "Resources by Version",
-  "url": "{{_endpoint}}/services/data/{{version}}/",
+  "url": "{{_endpoint}}/services/data/v{{version}}/",
   "description": "Lists available resources for the specified API version, including resource name and URI.",
   "data": [],
   "dataOptions": null,
@@ -26,10 +26,6 @@
       "script": {
         "id": "18f8ee9f-81e2-46ba-9d88-fc0090afe065",
         "exec": [
-          "{",
-          "    \"FirstName\" : \"test\",",
-          "    \"LastName\" : \"test\"",
-          "}",
           ""
         ],
         "type": "text/javascript"
@@ -75,12 +71,12 @@
       "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df"
     }
   ],
-  "preRequestScript": "{\n    \"FirstName\" : \"test\",\n    \"LastName\" : \"test\"\n}\n",
+  "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
   "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "rawModeData": "{\n\"FirstName\":\"Test\",\n\"LastName\":\"API\"\n}\n",
+  "rawModeData": "",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }
