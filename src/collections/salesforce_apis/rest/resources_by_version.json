@@ -1,5 +1,5 @@
 {
-  "id": "388a3a5c-df28-48ad-bc77-964f81153eb1",
+  "id": "7a0a8eb7-521b-4565-9dba-1f8f66ba962f",
   "name": "Resources by Version",
   "url": "{{_endpoint}}/services/data/{{version}}/",
   "description": "Lists available resources for the specified API version, including resource name and URI.",
@@ -36,13 +36,13 @@
       }
     }
   ],
-  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
+  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "responses": [
     {
-      "id": "7dd6dfeb-dc44-45ca-9b5a-6f93a8588ff2",
+      "id": "6ace9cbb-3fce-4a68-846e-8eb1c38fb142",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -71,15 +71,15 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "388a3a5c-df28-48ad-bc77-964f81153eb1",
-      "collection": "dcabe06e-5abb-4b30-9188-64ecc63d6edc"
+      "request": "7a0a8eb7-521b-4565-9dba-1f8f66ba962f",
+      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df"
     }
   ],
   "preRequestScript": "{\n    \"FirstName\" : \"test\",\n    \"LastName\" : \"test\"\n}\n",
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "rawModeData": "{\n\"FirstName\":\"Test\",\n\"LastName\":\"API\"\n}\n",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}

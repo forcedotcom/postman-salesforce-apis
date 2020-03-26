@@ -1,5 +1,5 @@
 {
-  "id": "e081fa11-6b50-4284-b7b7-32467f0359ef",
+  "id": "abaa3ad3-d56b-4f5b-98b2-20bb3867817d",
   "name": "Describe SObject Layouts Per Record Type",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/describe/layouts/<RECORD_TYPE_ID>",
   "description": "Returns a list of layouts and descriptions. The list of fields and the layout name are returned.",
@@ -21,10 +21,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
+  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

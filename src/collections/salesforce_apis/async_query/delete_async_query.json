@@ -1,5 +1,5 @@
 {
-  "id": "cf557974-ce2c-429f-aa2a-74f78f5289ed",
+  "id": "6f53f0fc-e6c7-490e-875e-b5072f436fb7",
   "name": "Delete Async Query",
   "url": "{{_endpoint}}/services/data/v{{version}}/async-queries/{{_jobId}}",
   "description": null,
@@ -42,10 +42,10 @@
       }
     }
   ],
-  "folder": "d641c584-fddb-4d20-a78e-a5f86207f55e",
+  "folder": "8e63540c-256c-4da3-843c-272f56848d2a",
   "responses": [
     {
-      "id": "ac1c4fa7-cdad-4373-9775-ca35251b8f2b",
+      "id": "ccf8f5f6-518a-4f38-9bfc-3643893ad29e",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -74,15 +74,15 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "cf557974-ce2c-429f-aa2a-74f78f5289ed",
-      "collection": "dcabe06e-5abb-4b30-9188-64ecc63d6edc"
+      "request": "6f53f0fc-e6c7-490e-875e-b5072f436fb7",
+      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df"
     }
   ],
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "rawModeData": "",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}

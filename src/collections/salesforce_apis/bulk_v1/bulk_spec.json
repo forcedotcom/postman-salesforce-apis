@@ -1,5 +1,5 @@
 {
-  "id": "d2dee67c-579b-494b-ae7b-b00788a6cc35",
+  "id": "cb1a3688-9aac-4873-af91-d78beae2c2ac",
   "name": "Bulk Spec",
   "url": "{{_endpoint}}/services/async/{{version}}/job/{{_jobId}}/spec",
   "description": null,
@@ -33,10 +33,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "b0baf931-3c64-4922-a189-654ef495902a",
+  "folder": "a7522bc1-a6fe-487f-a725-e3b900ccbcd4",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "rawModeData": "Salesforce Field,Csv Header,Value,Hint\nName,Full Name,,\nTitle,Job Title,,\nLeadSource,Lead Source,Import,\nDescription,,Imported from XYZ.csv,\nBirthdate,Date of Birth,,dd MM yy",
   "headers": "X-SFDC-Session: {{_accessToken}}\nContent-Type: text/csv\ncharset: UTF-8\nAccept-Encoding: gzip\nContent-Encoding: gzip\n",
   "pathVariables": {}

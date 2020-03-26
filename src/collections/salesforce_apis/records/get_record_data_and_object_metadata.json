@@ -1,5 +1,5 @@
 {
-  "id": "9ee8dbf8-0779-4cf9-978b-6fd09f2f77c6",
+  "id": "a5880eec-c46a-4cc9-acfc-328d120c9648",
   "name": "Get Record Data and Object Metadata",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/record-ui/<RECORD_IDS>",
   "description": "Get layout information, metadata, and data to build UI for a single record or for a collection of records.\nThe response contains layout information for whichever layout types are specified in the layoutTypes parameter.\n\nIt contains data for the records specified in the recordIds parameter.\n\nThe response contains object metadata for the object types of the records specified in the recordIds parameter, and for any nested objects. For example, a request to /ui-api/record-ui/001RM000003RsOHYA0, which is an Account, returns object metadata for Account and User, because the OwnerId field on the Account object contains a reference to the User object.",
@@ -63,10 +63,10 @@
   ],
   "auth": null,
   "events": [],
-  "folder": "d671d7ac-a20e-4ab8-b4ae-e758fd6387a1",
+  "folder": "4d16654a-9c96-4247-a5c8-ad85d4595c43",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
 }

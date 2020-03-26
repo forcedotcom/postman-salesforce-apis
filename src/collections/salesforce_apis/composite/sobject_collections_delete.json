@@ -1,5 +1,5 @@
 {
-  "id": "6fcec6a5-7662-4998-a4dc-841d4530a487",
+  "id": "331157c0-511b-4837-ad1a-ec382afd6149",
   "name": "SObject Collections Delete",
   "url": "{{_endpoint}}/services/data/v{{version}}/composite/sobjects/<SOBJECT_API_NAME>?ids&allOrNone",
   "description": "Executes actions on multiple records in one request. Use SObject Collections to reduce the number of round-trips between the client and server. This resource is available in API version 42.0 and later.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_sobjects_collections.htm",
@@ -38,10 +38,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "b2486132-e6fa-4be7-8b52-69a1b68eb5ab",
+  "folder": "1aeea941-aac2-4538-badc-074e2b328716",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "rawModeData": "",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}

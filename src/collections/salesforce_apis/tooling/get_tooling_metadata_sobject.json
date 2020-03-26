@@ -1,5 +1,5 @@
 {
-  "id": "5ce08366-8ecc-4bfb-9461-52b555b26291",
+  "id": "0b8baf2e-6b20-40db-9bcc-7fa6e8b08f53",
   "name": "Get Tooling Metadata SObject",
   "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/<SOBJECT_API_NAME>",
   "description": "",
@@ -17,10 +17,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "11958f1f-3ace-44f6-b2fa-a66c6ab0eb9b",
+  "folder": "0f822144-6331-4019-a51b-95786c6f5da9",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\n",
   "pathVariables": {}
 }

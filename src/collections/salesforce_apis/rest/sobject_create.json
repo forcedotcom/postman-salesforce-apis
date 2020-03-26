@@ -1,7 +1,7 @@
 {
-  "id": "f488b712-9d6e-42ec-9bed-38ec6493eb54",
+  "id": "f53691c8-7d36-4a4d-b3e5-76b092dcc668",
   "name": "SObject Create",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/Attachment",
   "description": null,
   "data": [],
   "dataOptions": null,
@@ -32,10 +32,10 @@
       }
     }
   ],
-  "folder": "0d3ee9a8-caca-4178-8113-2b29bde30bc2",
+  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
   "responses": [
     {
-      "id": "47e16ca0-d8a8-4cdf-884d-6d24a5a4a29c",
+      "id": "f2b5a9ed-64b4-42b0-9ee0-59995cceb085",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -64,16 +64,16 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "f488b712-9d6e-42ec-9bed-38ec6493eb54",
-      "collection": "dcabe06e-5abb-4b30-9188-64ecc63d6edc"
+      "request": "f53691c8-7d36-4a4d-b3e5-76b092dcc668",
+      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df"
     }
   ],
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
-  "rawModeData": "{\n\"field api name\":\"value\"\n}\n",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "{\n\"Name\":\"test\"\n}\n",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}
 }

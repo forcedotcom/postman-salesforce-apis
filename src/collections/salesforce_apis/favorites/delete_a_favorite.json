@@ -1,5 +1,5 @@
 {
-  "id": "87cec1ff-538e-48e1-a33e-595034c34727",
+  "id": "d87eeb31-c023-4aeb-9684-6f05a95bf43f",
   "name": "Delete a Favorite",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/<FAVORITE_ID>",
   "description": "Get a favorite.",
@@ -35,12 +35,12 @@
       }
     }
   ],
-  "folder": "f590d714-aad1-4bb8-a7c4-cd5f898da2e2",
+  "folder": "4595c8a1-7928-4db0-861d-6dd4ee26d2e7",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}

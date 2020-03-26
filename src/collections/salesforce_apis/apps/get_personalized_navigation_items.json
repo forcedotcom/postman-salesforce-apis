@@ -1,5 +1,5 @@
 {
-  "id": "047999d6-b2b4-4ee0-90ff-5f0ce316f23b",
+  "id": "e1dce5cb-1fbb-4f4e-8582-f4f0a52f3db8",
   "name": "Get Personalized Navigation Items",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps/<APP_ID>/user-nav-items",
   "description": "Get a user’s personalized navigation items (tabs).",
@@ -35,7 +35,7 @@
       }
     }
   ],
-  "folder": "d2dfa5a2-fa1f-4eb9-865f-af4546dc5a39",
+  "folder": "0c1a3d16-0941-4c83-a953-9e8c491ac7c5",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,7 +43,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}

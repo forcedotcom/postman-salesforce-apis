@@ -1,5 +1,5 @@
 {
-  "id": "90199efe-9226-482b-85ad-1f1a4dcdbd3d",
+  "id": "931143ec-c76d-4dec-9ad4-152a5b9159e6",
   "name": "Get Tooling Describe",
   "url": "{{_endpoint}}/services/data/v{{version}}/tooling/sobjects/",
   "description": "Lists the available Tooling API objects and their metadata.",
@@ -17,10 +17,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "11958f1f-3ace-44f6-b2fa-a66c6ab0eb9b",
+  "folder": "0f822144-6331-4019-a51b-95786c6f5da9",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Authorization: Bearer {{_accessToken}}\n",
   "pathVariables": {}
 }

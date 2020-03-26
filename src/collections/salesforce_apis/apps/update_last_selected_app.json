@@ -1,5 +1,5 @@
 {
-  "id": "c8cd8fa9-b80a-4aae-b526-af96e1850d41",
+  "id": "ed908c83-c981-434f-b1bd-4051ab080a3a",
   "name": "Update Last Selected App",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps/<APP_ID>",
   "description": "Returns metadata for an app, and saves an app as the last selected for a user.",
@@ -35,12 +35,12 @@
       }
     }
   ],
-  "folder": "d2dfa5a2-fa1f-4eb9-865f-af4546dc5a39",
+  "folder": "0c1a3d16-0941-4c83-a953-9e8c491ac7c5",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}

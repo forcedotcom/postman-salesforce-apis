@@ -1,5 +1,5 @@
 {
-  "id": "9e9679ba-63f2-44c2-9fd5-07485df74173",
+  "id": "0e3f75e7-5e95-4983-b188-d2e4086ed134",
   "name": "OpenID Connect Token Introspection Endpoint",
   "url": "{{url}}{{site}}/services/oauth2/introspect",
   "description": null,
@@ -45,10 +45,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "b335d5ec-4ad5-4353-a61f-d12d1413e33c",
+  "folder": "32acb1b0-3ff8-40e8-9195-7e1ed0837157",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "headers": "Content-Type: application/x-www-form-urlencoded\nAccept: application/json\n",
   "pathVariables": {}
 }

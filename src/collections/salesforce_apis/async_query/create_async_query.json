@@ -1,5 +1,5 @@
 {
-  "id": "a547cc4f-fddb-4c7c-bb99-62aa587c3ccb",
+  "id": "c7ed10f6-f98b-4c2e-a46b-99b673e5acf3",
   "name": "Create Async Query",
   "url": "{{_endpoint}}/services/data/v{{version}}/async-queries",
   "description": null,
@@ -43,10 +43,10 @@
       }
     }
   ],
-  "folder": "d641c584-fddb-4d20-a78e-a5f86207f55e",
+  "folder": "8e63540c-256c-4da3-843c-272f56848d2a",
   "responses": [
     {
-      "id": "079f556a-59e8-49bc-97f4-a5df941babf5",
+      "id": "3535743c-fd92-47c7-bb32-aebcc0f59233",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -75,15 +75,15 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "a547cc4f-fddb-4c7c-bb99-62aa587c3ccb",
-      "collection": "dcabe06e-5abb-4b30-9188-64ecc63d6edc"
+      "request": "c7ed10f6-f98b-4c2e-a46b-99b673e5acf3",
+      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df"
     }
   ],
   "preRequestScript": null,
   "tests": "var jsonData = pm.response.json();\npm.environment.set(\"_jobId\", jsonData.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "rawModeData": "{\n    \"query\": \"SELECT fields FROM bigObject\",\n    \"operation\": \"<insert update upsert>\",\n    \"targetObject\": \"<custom object>\",\n    \"targetFieldMap\": {\n        \"firstField__c\": \"firstFieldTarget__c\",\n        \"secondField__c\": \"secondFieldTarget__c\"\n    },\n    \"targetValueMap\": {\n        \"$JOB_ID\": \"BackgroundOperationLookup__c\",\n        \"Copy fields from source to target\": \"BackgroundOperationDescription__c\"\n    },\n    \"targetExternalIdField\":\"<external id field used in upsert>\"\n}",
   "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
   "pathVariables": {}

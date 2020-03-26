@@ -1,5 +1,5 @@
 {
-  "id": "7f1d60f3-b87d-4c1b-910b-fcebfde737e3",
+  "id": "09968447-38a1-4ddf-8428-e85d97f40f2c",
   "name": "Get List View Chart Actions",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/list-view-chart/<SOBJECT_API_NAME>",
   "description": "Get the record actions on list views.",
@@ -31,7 +31,7 @@
       }
     }
   ],
-  "folder": "cfd08d38-5a29-4127-9871-bfb9a519dfdb",
+  "folder": "c451b8e5-6f6e-4242-9c63-fac725813b42",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,7 +39,7 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "dcabe06e-5abb-4b30-9188-64ecc63d6edc",
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "rawModeData": "",
   "headers": "Authorization: {{_accessToken}}\n",
   "pathVariables": {}
