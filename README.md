@@ -1,8 +1,6 @@
 # Salesforce APIs for Postman
 
-A collection of [Postman](https://www.postman.com/) resources for the Salesforce APIs:
-
-## APIs in the box
+A [Postman](https://www.postman.com/) collection of ~200 requests for 10 Salesforce APIs:
 
 - Auth
 - Bulk (V1 & V2)
@@ -15,6 +13,10 @@ A collection of [Postman](https://www.postman.com/) resources for the Salesforce
 - Chatter
 
 ![Postman screenshot](/doc-resources/postman-screenshot.jpg)
+
+Learn more about the Collection:
+- 🎥 [Webinar](https://trailhead.salesforce.com/live/videos/a2r3k000001WFhk/exploring-the-salesforce-apis-with-postman/)
+- 📖 [Blog post](https://developer.salesforce.com/blogs/2020/03/explore-the-salesforce-apis-with-a-postman-collection.html)
 
 # Installation
 
