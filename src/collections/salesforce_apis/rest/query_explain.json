@@ -1,0 +1,38 @@
+{
+    "id": "0c009e02-681d-4f0b-b482-5623f56df305",
+    "name": "Query",
+    "url": "{{_endpoint}}/services/data/v{{version}}/?explain=SELECT+name+from+account+where+id+=+'xxxxxxxxxx'",
+    "description": "Get Feedback on Query Performance\n https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_query_explain.htm",
+    "data": null,
+    "dataOptions": null,
+    "dataMode": null,
+    "headerData": [
+        {
+            "key": "Authorization",
+            "value": "Bearer {{_accessToken}}"
+        },
+        {
+            "key": "Content-Type",
+            "value": "application/json"
+        }
+    ],
+    "method": "GET",
+    "pathVariableData": [],
+    "queryParams": [
+        {
+            "key": "explain",
+            "value": "SELECT+name+from+account+where+id+=+'xxxxxxxxxx'",
+            "equals": true,
+            "description": "A SOQL query. Note that you will need to replace spaces with “+” characters in your query string to create a valid URI. An example query parameter string might look like: “SELECT+Name+FROM+MyObject”. If the SOQL query string is invalid, a MALFORMED_QUERY response is returned.",
+            "enabled": true
+        }
+    ],
+    "auth": null,
+    "events": null,
+    "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+    "currentHelper": null,
+    "helperAttributes": null,
+    "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+    "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+    "pathVariables": {}
+}
