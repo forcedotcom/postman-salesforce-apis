@@ -65,7 +65,7 @@
         "id": "3a4d4b27-e558-45cb-90b1-0bcfdf006cec",
         "exec": [
           "if(pm.response.headers.get(\"Content-Type\").indexOf(\"xml\") !== -1) {",
-          "    var jsonData = xml2Json(pm.response.text(););",
+          "    var jsonData = xml2Json(pm.response.text());",
           "    pm.environment.set(\"_jobId\", jsonData['jobInfo']['id']);    ",
           "}",
           "",
@@ -82,7 +82,7 @@
   ],
   "folder": "a7522bc1-a6fe-487f-a725-e3b900ccbcd4",
   "preRequestScript": null,
-  "tests": "if(pm.response.headers.get(\"Content-Type\").indexOf(\"xml\") !== -1) {\n    var jsonData = xml2Json(pm.response.text(););\n    pm.environment.set(\"_jobId\", jsonData['jobInfo']['id']);    \n}\n\nif(pm.response.headers.get(\"Content-Type\").indexOf(\"json\") !== -1) {\n    var jsonData = pm.response.json();\n    pm.environment.set(\"_jobId\", jsonData.id);\n}\n\n",
+  "tests": "if(pm.response.headers.get(\"Content-Type\").indexOf(\"xml\") !== -1) {\n    var jsonData = xml2Json(pm.response.text());\n    pm.environment.set(\"_jobId\", jsonData['jobInfo']['id']);    \n}\n\nif(pm.response.headers.get(\"Content-Type\").indexOf(\"json\") !== -1) {\n    var jsonData = pm.response.json();\n    pm.environment.set(\"_jobId\", jsonData.id);\n}\n\n",
   "currentHelper": null,
   "helperAttributes": null,
   "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
