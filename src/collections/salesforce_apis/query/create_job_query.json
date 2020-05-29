@@ -26,7 +26,7 @@
       "script": {
         "id": "b438d4fa-1275-4c48-ad33-20b679018754",
         "exec": [
-          "var response = JSON.parse(pm.response.text();)",
+          "var response = JSON.parse(pm.response.text())",
           "pm.environment.set(\"id\", response.id);"
         ],
         "type": "text/javascript"
@@ -35,7 +35,7 @@
   ],
   "folder": "3fdd1653-9a88-4262-a3d6-ff93b3ef92d8",
   "preRequestScript": null,
-  "tests": "var response = JSON.parse(pm.response.text();)\npm.environment.set(\"id\", response.id);",
+  "tests": "var response = JSON.parse(pm.response.text())\npm.environment.set(\"id\", response.id);",
   "currentHelper": null,
   "helperAttributes": null,
   "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
