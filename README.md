@@ -1,6 +1,6 @@
 # Salesforce APIs for Postman
 
-A [Postman](https://www.postman.com/) collection of >200 requests for those` Salesforce APIs:
+A [Postman](https://www.postman.com/) collection of 200+ requests for the following Salesforce APIs:
 
 - Auth
 - Bulk (V1 & V2)
