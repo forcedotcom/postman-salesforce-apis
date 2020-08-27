@@ -40,6 +40,13 @@ Follow these naming conventions for branches:
 - new feature: `feature/feature-name`
 - fix: `fix/fix-name`
 
+## Variable Naming Convention
+
+The Collection uses Postman global variables to store and reuse variable from API Call
+- User defined variables uses camel case naming convention. Ex: secretToken, password
+- System defined variables uses camel case prefixed with underscore naming convention. Those variable are set automatically when executing a request (Auth requests and Bulk API use this per exemple) Ex: _endpoint
+- URL parameter variables use upper case separated by underscore and enclosed between less than and greater than sign naming convention. Ex: <AWESOME_VARIABLE>
+
 ## API Development
 
 Follow these rules:
@@ -47,6 +54,8 @@ Follow these rules:
 - Use the API documentated names
 - Add description from the documentation into the Postman descriptions
 - Provide the description from the documentation for each GET parameters
+- Authentication API endpoints must use {{url}}{{site}} as host
+- Other API endpoint must use {{_endpoint}} as host
 - API calls should work and be parametrized using environment variables
 - Optional: provide examples
 
