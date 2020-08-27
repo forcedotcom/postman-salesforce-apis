@@ -1,7 +1,7 @@
 {
   "id": "0f24aeb3-54cb-455a-9456-8e7fc1379949",
   "name": "Get Following",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/users/<USER_ID>/following",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/users/<USER_ID>/following",
   "description": "Returns a list of people, groups, records, topics, and files that the specified user is following.",
   "data": null,
   "dataOptions": null,

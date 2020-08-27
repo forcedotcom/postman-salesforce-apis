@@ -1,7 +1,7 @@
 {
   "id": "f963eb94-129f-445e-9b73-c28396993577",
   "name": "User Feed Elements",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/feeds/user-profile/<USER_ID>/feed-elements",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feeds/user-profile/<USER_ID>/feed-elements",
   "description": "Get the latest elements and information from a user's feed.",
   "data": null,
   "dataOptions": null,

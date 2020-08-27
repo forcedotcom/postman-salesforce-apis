@@ -1,7 +1,7 @@
 {
   "id": "a624d127-87ba-4642-99cf-d24efc26a9ec",
   "name": "Approve or Reject a Request to Join Group",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/group-membership-requests/<CHATTER_GROUP_REQUEST_ID>?status=Accepted&responseMessage=Welcome to the group!",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/group-membership-requests/<CHATTER_GROUP_REQUEST_ID>?status=Accepted&responseMessage=Welcome to the group!",
   "description": "Request membership in a private group or get the status of requests to a join a private group.",
   "data": null,
   "dataOptions": null,

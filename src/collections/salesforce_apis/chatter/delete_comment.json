@@ -1,7 +1,7 @@
 {
   "id": "c827659c-3fde-45bc-8799-a4d91657eabc",
   "name": "Delete Comment",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/comments/<COMMENT_ID>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/comments/<COMMENT_ID>",
   "description": "Delete a comment.",
   "data": null,
   "dataOptions": null,

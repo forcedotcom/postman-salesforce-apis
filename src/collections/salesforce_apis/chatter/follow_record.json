@@ -1,7 +1,7 @@
 {
   "id": "a872b9da-842b-4dcb-8395-2efe926c3c9a",
   "name": "Follow Record",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/users/<USER_ID>/following?subjectId=<RECORD_ID>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/users/<USER_ID>/following?subjectId=<RECORD_ID>",
   "description": "Follow a record by creating a subscription.",
   "data": null,
   "dataOptions": null,

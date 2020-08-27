@@ -1,7 +1,7 @@
 {
   "id": "3fe0692c-b08b-4b11-9e2e-eb60f911f613",
   "name": "Send Private Message",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/users/me/messages?text=This is a private message&recipients=<USER1_ID>,<USER2_ID>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/users/me/messages?text=This is a private message&recipients=<USER1_ID>,<USER2_ID>",
   "description": "Send a private message toa single or many recipients (comma-separated list). You cannot include the Id of the running user in the recipients list.",
   "data": null,
   "dataOptions": null,

@@ -1,7 +1,7 @@
 {
   "id": "8e2dbbb6-9b90-4c50-acb5-b896a2520ef5",
   "name": "Send Group Invites",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/groups/group/<GROUP_ID>/invite",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/groups/group/<GROUP_ID>/invite",
   "description": "Invite internal and external users to join a group. If customer invitations are enabled for your organization, you can invite, add, and remove customers. It must be a private group that you own or manage and that allows customers.",
   "data": [],
   "dataOptions": {

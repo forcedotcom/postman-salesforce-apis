@@ -1,7 +1,7 @@
 {
   "id": "a6cc4529-7f88-41ac-aa92-57deebfbee33",
   "name": "Upload File",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/connect/files/users/me",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/files/users/me",
   "description": "Upload a file to the Files home",
   "data": [
     {

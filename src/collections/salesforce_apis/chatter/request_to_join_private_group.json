@@ -1,7 +1,7 @@
 {
   "id": "edc57f10-c32d-495a-8db3-197623743ec7",
   "name": "Request to Join Private Group",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/groups/<GROUP_ID>/members/requests",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/groups/<GROUP_ID>/members/requests",
   "description": "Request to join a private Chatter group, Administrators cannot request to join any Chatter Group they may submit the 'Join a Chatter Group' request. POST doesn’t take request parameters or a request body.",
   "data": null,
   "dataOptions": null,

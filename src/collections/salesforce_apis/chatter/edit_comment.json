@@ -1,7 +1,7 @@
 {
   "id": "101f3848-2a70-4c48-9266-047bee98af60",
   "name": "Edit Comment",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/comments/<COMMENT_ID>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/comments/<COMMENT_ID>",
   "description": "Edit a comment on a chatter feed element. This Comment Input request body includes a body property that is a Message Body Input request body. In this example, the Message Body Input request body includes a messageSegments property that has one Message Segment Input: Text request body.",
   "data": [],
   "dataOptions": {

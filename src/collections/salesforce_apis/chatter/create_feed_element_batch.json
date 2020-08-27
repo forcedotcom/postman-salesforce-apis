@@ -1,7 +1,7 @@
 {
   "id": "bc6e3b5b-a85a-495c-b696-707d33471d74",
   "name": "Create Feed Element Batch",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/feed-elements/batch",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feed-elements/batch",
   "description": "Create/post a batch of many feed element. The Feed Item Input request body includes a body property that is a Message Body Input request body. The example in this template portrays how to include a mention & file as well as other feed element attributes.",
   "data": [],
   "dataOptions": {

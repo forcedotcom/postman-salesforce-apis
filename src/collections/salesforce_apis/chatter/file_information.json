@@ -1,7 +1,7 @@
 {
   "id": "9cb7b535-879f-4ec8-a53d-a69a4ee07018",
   "name": "File Information",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/connect/files/<FILE_ID>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/files/<FILE_ID>",
   "description": "Get information about a specified file, including references to external files.",
   "data": null,
   "dataOptions": null,

@@ -1,7 +1,7 @@
 {
   "id": "78ddc065-245a-4738-b4a0-ee06033ff8b3",
   "name": "Record/Group Feed Elements",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/feeds/record/<RECORD_GROUP_ID>/feed-elements",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feeds/record/<RECORD_GROUP_ID>/feed-elements",
   "description": "Get the latest elements and information from a record or group feed.",
   "data": [],
   "dataOptions": null,

@@ -1,7 +1,7 @@
 {
   "id": "33da5644-ae22-406e-bbf4-ce450efaef02",
   "name": "Create Feed Element With File, Mention, Markup, Inline or Code Block",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/feed-elements",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feed-elements",
   "description": "Create/post a feed element.The Feed Item Input request body includes a body property that is a Message Body Input request body. The example in this template portrays how to include a mention & file as well as other feed element attributes.\n\nUsing a request body as oppsed to paramaters allows you to use mentions, attach files (including inline), use mark-up, etc.",
   "data": [],
   "dataOptions": null,

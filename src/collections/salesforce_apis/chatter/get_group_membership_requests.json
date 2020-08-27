@@ -1,7 +1,7 @@
 {
   "id": "13a56ee2-9be9-4cbb-a268-5f9fefebad62",
   "name": "Get Group Membership Requests",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/groups/<GROUP_ID>/members/requests",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/groups/<GROUP_ID>/members/requests",
   "description": "Get information about a request to join a private group",
   "data": null,
   "dataOptions": null,

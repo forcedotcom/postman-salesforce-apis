@@ -1,7 +1,7 @@
 {
   "id": "344dde02-e6ad-43b8-8fc2-9020b74baf4d",
   "name": "Create Group",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/groups?name=New Chatter Group  (Private Access)&visibility=PrivateAccess&description=Created via API&information=Private Information&isArchived=false&isAutoArchiveDisabled=false&isBroadcast=false&canHaveChatterGuests\t=true",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/groups?name=New Chatter Group  (Private Access)&visibility=PrivateAccess&description=Created via API&information=Private Information&isArchived=false&isAutoArchiveDisabled=false&isBroadcast=false&canHaveChatterGuests\t=true",
   "description": "Create a Chatter group.",
   "data": null,
   "dataOptions": null,

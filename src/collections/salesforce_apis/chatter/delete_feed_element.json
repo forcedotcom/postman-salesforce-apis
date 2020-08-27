@@ -1,7 +1,7 @@
 {
   "id": "5b89d91e-7867-48ae-9562-546439a63d81",
   "name": "Delete Feed Element",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/feed-elements/<FEED_ELEMENT_ID>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feed-elements/<FEED_ELEMENT_ID>",
   "description": "Delete a feed element.",
   "data": null,
   "dataOptions": null,

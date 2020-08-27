@@ -1,7 +1,7 @@
 {
   "id": "c13ce744-6fca-46e2-ad1e-46457a930ff4",
   "name": "My Feed Elements",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/feeds/news/me/feed-elements",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feeds/news/me/feed-elements",
   "description": "Get the latest elements and information from your feed.",
   "data": [],
   "dataOptions": null,

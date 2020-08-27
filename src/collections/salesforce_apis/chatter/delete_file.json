@@ -1,7 +1,7 @@
 {
   "id": "90a09bb2-7798-48d2-805d-beeaf0925690",
   "name": "Delete File",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/connect/files/<FILE_ID>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/files/<FILE_ID>",
   "description": "Delete a file.",
   "data": null,
   "dataOptions": null,

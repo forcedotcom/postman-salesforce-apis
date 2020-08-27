@@ -1,7 +1,7 @@
 {
   "id": "9b701147-d9bf-4c8d-90e2-9d3fb1f7e688",
   "name": "Stop Following Record",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/subscriptions/<SUBSCRIPTION_ID>",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/subscriptions/<SUBSCRIPTION_ID>",
   "description": "Delete a subscription.",
   "data": null,
   "dataOptions": null,

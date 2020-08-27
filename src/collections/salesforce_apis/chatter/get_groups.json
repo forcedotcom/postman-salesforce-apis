@@ -1,7 +1,7 @@
 {
   "id": "1232daa1-ca65-4d71-ad60-4ff0e06de906",
   "name": "Get Groups",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/groups",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/groups",
   "description": "Get Chatter groups.",
   "data": null,
   "dataOptions": null,

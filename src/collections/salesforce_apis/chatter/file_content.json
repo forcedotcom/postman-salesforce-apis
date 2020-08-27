@@ -1,7 +1,7 @@
 {
   "id": "bc8eb2cb-e7e8-4ef0-898f-7f973b01e050",
   "name": "File Content",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/connect/files/<FILE_ID>/content",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/files/<FILE_ID>/content",
   "description": "Returns the binary content of the file, including references to external files. The content is streamed as the body of the response.",
   "data": null,
   "dataOptions": null,

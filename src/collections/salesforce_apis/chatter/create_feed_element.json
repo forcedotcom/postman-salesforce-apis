@@ -1,7 +1,7 @@
 {
   "id": "428c7cb2-261b-4e6e-bf49-484268e6e317",
   "name": "Create Feed Element",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/feed-elements?feedElementType=FeedItem&subjectId=<USER_GROUP_RECORD_ID>&text=New Feed Item",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feed-elements?feedElementType=FeedItem&subjectId=<USER_GROUP_RECORD_ID>&text=New Feed Item",
   "description": "Create/post a feed element.",
   "data": null,
   "dataOptions": null,

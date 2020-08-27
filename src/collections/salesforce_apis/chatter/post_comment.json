@@ -1,7 +1,7 @@
 {
   "id": "d60dee07-8b05-42f8-b9fe-245e4babcbb9",
   "name": "Post Comment",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/chatter/feed-elements/<FEED_ELEMENT_ID>/capabilities/comments/items?text=New Comment",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feed-elements/<FEED_ELEMENT_ID>/capabilities/comments/items?text=New Comment",
   "description": "Post a comment on a chatter feed element.",
   "data": null,
   "dataOptions": null,

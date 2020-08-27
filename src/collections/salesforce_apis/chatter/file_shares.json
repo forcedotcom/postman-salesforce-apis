@@ -1,7 +1,7 @@
 {
   "id": "c81d1740-884c-49d0-a2f0-8c27eb53e657",
   "name": "File Shares",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/connect/files/<FILE_ID>/file-shares",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/files/<FILE_ID>/file-shares",
   "description": "Returns information about the objects with which the specified file has been shared. Objects can be users, groups, or records.",
   "data": null,
   "dataOptions": null,

@@ -1,7 +1,7 @@
 {
   "id": "ae82e1a7-fddf-4de3-be28-d64b6497b396",
   "name": "Create Public File Share Link",
-  "url": "{{url}}{{site}}/services/data/v{{version}}/connect/files/<FILE_ID>/file-shares/link",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/files/<FILE_ID>/file-shares/link",
   "description": "Creates a File Share Link with a 'Viewer' permission level.\n\n\nSharing permission levels for files:\n\nC — Collaborator\n\nI — Sharing permission is determined by location. This generally occurs when the sharing permission is not set on the file, but on the library\nN — No access\n\nV — Viewer",
   "data": null,
   "dataOptions": null,
