@@ -1,0 +1,52 @@
+{
+  "id": "90a09bb2-7798-48d2-805d-beeaf0925690",
+  "name": "Delete File",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/files/<FILE_ID>",
+  "description": "Delete a file.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "DELETE",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "1e26618e-56d9-4d38-b5b0-eaf49815ebd0",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "ec8eab6c-23e6-4c56-93aa-d4fc24cf550b",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

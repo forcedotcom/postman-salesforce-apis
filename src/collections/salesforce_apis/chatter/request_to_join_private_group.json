@@ -1,0 +1,52 @@
+{
+  "id": "edc57f10-c32d-495a-8db3-197623743ec7",
+  "name": "Request to Join Private Group",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/groups/<GROUP_ID>/members/requests",
+  "description": "Request to join a private Chatter group, Administrators cannot request to join any Chatter Group they may submit the 'Join a Chatter Group' request. POST doesn’t take request parameters or a request body.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "a6877dd5-e701-40d8-8bf5-a52910aed84f",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "7433fe7d-04cb-4ec1-89e2-bf432c1bdab8",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

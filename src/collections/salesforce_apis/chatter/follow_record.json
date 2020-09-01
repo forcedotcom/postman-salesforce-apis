@@ -1,0 +1,60 @@
+{
+  "id": "a872b9da-842b-4dcb-8395-2efe926c3c9a",
+  "name": "Follow Record",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/users/<USER_ID>/following?subjectId=<RECORD_ID>",
+  "description": "Follow a record by creating a subscription.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "subjectId",
+      "value": "<RECORD_ID>",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "71e417cf-4ef8-4ac7-b83e-26e587bb6e75",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "26bbbb3a-9eb3-4eb1-956a-3a84d80115e1",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

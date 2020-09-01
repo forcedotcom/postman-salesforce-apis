@@ -1,0 +1,60 @@
+{
+  "id": "33da5644-ae22-406e-bbf4-ce450efaef02",
+  "name": "Create Feed Element With File, Mention, Markup, Inline or Code Block",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feed-elements",
+  "description": "Create/post a feed element.The Feed Item Input request body includes a body property that is a Message Body Input request body. The example in this template portrays how to include a mention & file as well as other feed element attributes.\n\nUsing a request body as oppsed to paramaters allows you to use mentions, attach files (including inline), use mark-up, etc.",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    },
+    {
+      "key": "Content-Type",
+      "type": "text",
+      "value": "application/json"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "75efd383-6828-40da-b5df-0bf9a9ddcffd",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "62f3a411-f54c-49aa-aca0-bcbc3217037e",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {
+      "content-type": true
+    }
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "{\n   \"body\": {\n      \"messageSegments\": [\n         {\n            \"type\": \"Text\",\n            \"text\": \"Chatter Feed Item Created via API: \"\n         },\n         {\n            \"markupType\" : \"Paragraph\",\n            \"type\" : \"MarkupBegin\"\n         },\n         {\n            \"markupType\" : \"Bold\",\n            \"type\" : \"MarkupBegin\"\n         },\n         {\n             \"text\" : \"First line of text.\",\n             \"type\" : \"Text\"\n         },\n         {\n            \"markupType\" : \"Bold\",\n            \"type\" : \"MarkupEnd\"\n         },\n         {\n            \"markupType\" : \"Paragraph\",\n            \"type\" : \"MarkupEnd\"\n         },\n         {\n            \"markupType\" : \"Paragraph\",\n            \"type\" : \"MarkupBegin\"\n         },\n         {\n            \"text\" : \"&nbsp;\",\n            \"type\" : \"Text\"\n         },\n         {\n            \"markupType\" : \"Paragraph\",\n            \"type\" : \"MarkupEnd\"\n         },\n         {\n            \"markupType\" : \"Paragraph\",\n            \"type\" : \"MarkupBegin\"\n         },\n         {\n            \"text\" : \"Second line of text.\",\n            \"type\" : \"Text\"\n         },\n         {\n            \"markupType\" : \"Paragraph\",\n            \"type\" : \"MarkupEnd\"\n         },\n         {\n            \"markupType\" : \"Code\",\n            \"type\" : \"MarkupBegin\"\n         },\n         {\n             \"text\" : \"<script>\\nvar i, t = 0;\\nfor (i = 0; i < 5; i++) {\\n   t += i;\\n}\\n</script>\",\n             \"type\" : \"Text\"\n         },\n         {\n            \"markupType\" : \"Code\",\n            \"type\" : \"MarkupEnd\"\n         },\n         {\n            \"type\": \"Mention\",\n            \"id\": \"<USER_GROUP_ID>\"\n         }\n      ]\n   },\n   \"capabilities\": {\n      \"files\": {\n         \"items\": [\n            {\n               \"id\": \"<FILE_ID>\"\n            }\n         ]\n      }\n   },\n   \"subjectId\": \"<USER_RECORD_GROUP_ID>\",\n   \"feedElementType\": \"FeedItem\"\n}",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

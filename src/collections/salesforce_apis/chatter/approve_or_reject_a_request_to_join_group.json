@@ -1,0 +1,67 @@
+{
+  "id": "a624d127-87ba-4642-99cf-d24efc26a9ec",
+  "name": "Approve or Reject a Request to Join Group",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/group-membership-requests/<CHATTER_GROUP_REQUEST_ID>?status=Accepted&responseMessage=Welcome to the group!",
+  "description": "Request membership in a private group or get the status of requests to a join a private group.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "status",
+      "value": "Accepted",
+      "equals": true,
+      "description": "Accepted or Declined",
+      "enabled": true
+    },
+    {
+      "key": "responseMessage",
+      "value": "Welcome to the group!",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "6508406b-a61c-4530-977b-64a0e1239fdc",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "4c8ce28b-8aab-4d81-9560-baa657eccab5",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

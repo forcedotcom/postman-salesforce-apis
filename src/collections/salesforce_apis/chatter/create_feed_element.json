@@ -1,0 +1,76 @@
+{
+  "id": "428c7cb2-261b-4e6e-bf49-484268e6e317",
+  "name": "Create Feed Element",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feed-elements?feedElementType=FeedItem&subjectId=<USER_GROUP_RECORD_ID>&text=New Feed Item",
+  "description": "Create/post a feed element.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "feedElementType",
+      "value": "FeedItem",
+      "equals": true,
+      "description": "Feed elements are the top-level objects that a feed contains. The feed element type describes the characteristics of that feed element. One of these values:\nBundle—A container of feed elements. A bundle also has a body made up of message segments that can always be gracefully degraded to text-only values.\nFeedItem—A feed item has a single parent and is scoped to one community or across all communities. A feed item can have capabilities such as bookmarks, canvas, content, comment, link, poll. Feed items have a body made up of message segments that can always be gracefully degraded to text-only values.\nRecommendation—A recommendation is a feed element with a recommendations capability. A recommendation suggests records to follow, groups to join, or applications that are helpful to the context user.",
+      "enabled": true
+    },
+    {
+      "key": "subjectId",
+      "value": "<USER_GROUP_RECORD_ID>",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "text",
+      "value": "New Feed Item",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "7445ebb4-1f9b-4486-a584-0f6382f9bd73",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "ad8419bf-308e-4b4a-8e18-66ac62964e72",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {
+      "content-type": true
+    }
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

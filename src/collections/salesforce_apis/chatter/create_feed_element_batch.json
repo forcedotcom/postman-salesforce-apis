@@ -1,0 +1,58 @@
+{
+  "id": "bc6e3b5b-a85a-495c-b696-707d33471d74",
+  "name": "Create Feed Element Batch",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feed-elements/batch",
+  "description": "Create/post a batch of many feed element. The Feed Item Input request body includes a body property that is a Message Body Input request body. The example in this template portrays how to include a mention & file as well as other feed element attributes.",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "937412a6-a402-418e-92bb-0262b1629f4b",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "14ad3b8d-9558-4c03-8d76-bb22f33eb54a",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "{\n    \"inputs\": [\n        {\n            \"richInput\": {\n                \"subjectId\": \"<USER_GROUP_RECORD_ID>\",\n                \"body\": {\n                    \"messageSegments\": [\n                        {\n                            \"type\": \"Text\",\n                            \"text\": \"Post Number 1\"\n                        }\n                    ]\n                },\n                \"capabilities\": {\n                    \"files\": {\n                        \"items\": [\n                            {\n                                \"id\": \"<FILE_ID>\"\n                            }\n                        ]\n                    }\n                },\n                \"feedElementType\": \"FeedItem\"\n            }\n        },\n        {\n            \"richInput\": {\n                \"subjectId\": \"<USER_GROUP_RECORD_ID>\",\n                \"body\": {\n                    \"messageSegments\": [\n                        {\n                            \"type\": \"Text\",\n                            \"text\": \"Post Number 2\"\n                        }\n                    ]\n                },\n                \"feedElementType\": \"FeedItem\"\n            }\n        },\n        {\n            \"richInput\": {\n                \"subjectId\": \"me\",\n                \"body\": {\n                    \"messageSegments\": [\n                        {\n                            \"type\": \"Text\",\n                            \"text\": \"Post Number 3 with Inline\"\n                        },\n                        {\n                            \"type\": \"InlineImage\",\n                            \"fileId\": \"<FILE_ID>\",\n                            \"altText\": \"Test Inline\"\n                        }\n                    ]\n                },\n                \"feedElementType\": \"FeedItem\"\n            }\n        }\n    ]\n}",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

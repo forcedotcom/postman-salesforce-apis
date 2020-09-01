@@ -1,0 +1,71 @@
+{
+  "id": "0f24aeb3-54cb-455a-9456-8e7fc1379949",
+  "name": "Get Following",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/users/<USER_ID>/following",
+  "description": "Returns a list of people, groups, records, topics, and files that the specified user is following.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "filterType",
+      "value": null,
+      "description": "Specifies the key prefix to filter the type of objects returned. The key prefix is the three-character prefix code in the object ID. Object IDs are prefixed with three-character codes that specify the type of the object. For example, User objects have a prefix of 005 and Group objects have a prefix of 0F9.",
+      "enabled": false
+    },
+    {
+      "key": "page",
+      "value": null,
+      "description": "Specifies the page number to return. The default value is 0, which returns the first page.",
+      "enabled": false
+    },
+    {
+      "key": "pageSize",
+      "value": null,
+      "description": "Specifies the number of items per page. Valid values are between 1 and 1000. If you don't specify a size, the default is 25.\n",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "38052276-95f6-4744-9513-cbb4432cb646",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "080ddbcd-9130-4c10-819a-aed6d828a9d0",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

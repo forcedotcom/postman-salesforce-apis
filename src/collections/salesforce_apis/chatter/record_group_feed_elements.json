@@ -1,0 +1,53 @@
+{
+  "id": "78ddc065-245a-4738-b4a0-ee06033ff8b3",
+  "name": "Record/Group Feed Elements",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feeds/record/<RECORD_GROUP_ID>/feed-elements",
+  "description": "Get the latest elements and information from a record or group feed.",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "abea3ff9-4189-4bb0-8a82-d9aceec5cc3b",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "5667c6ca-50c1-4acb-8594-2ab354780b0d",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

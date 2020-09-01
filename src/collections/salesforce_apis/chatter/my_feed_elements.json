@@ -1,0 +1,53 @@
+{
+  "id": "c13ce744-6fca-46e2-ad1e-46457a930ff4",
+  "name": "My Feed Elements",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feeds/news/me/feed-elements",
+  "description": "Get the latest elements and information from your feed.",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "9ae663a1-0891-4f17-99a7-bd1587450a43",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "faf8e30a-6562-42c9-8e9a-08b79742b14f",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

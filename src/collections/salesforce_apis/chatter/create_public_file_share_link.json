@@ -1,0 +1,52 @@
+{
+  "id": "ae82e1a7-fddf-4de3-be28-d64b6497b396",
+  "name": "Create Public File Share Link",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/files/<FILE_ID>/file-shares/link",
+  "description": "Creates a File Share Link with a 'Viewer' permission level.\n\n\nSharing permission levels for files:\n\nC — Collaborator\n\nI — Sharing permission is determined by location. This generally occurs when the sharing permission is not set on the file, but on the library\nN — No access\n\nV — Viewer",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "PUT",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "3b86f5c2-4585-4ac9-a245-11868fc33a7c",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "0d2e7497-c6f2-4001-a71b-467a105aee75",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

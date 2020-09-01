@@ -1,0 +1,59 @@
+{
+  "id": "13a56ee2-9be9-4cbb-a268-5f9fefebad62",
+  "name": "Get Group Membership Requests",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/groups/<GROUP_ID>/members/requests",
+  "description": "Get information about a request to join a private group",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "status",
+      "value": "Accepted",
+      "description": "Optional. If you include this parameter, results are filtered to include those that match the specified status. Valid values:\nAccepted\nDeclined\nPending",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "342ca7e0-dc4d-43b3-8a9f-ec5c5ff24a0c",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "9ac8011d-7151-431e-8d2d-c33115600987",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

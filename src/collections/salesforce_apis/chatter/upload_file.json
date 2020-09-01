@@ -1,0 +1,62 @@
+{
+  "id": "a6cc4529-7f88-41ac-aa92-57deebfbee33",
+  "name": "Upload File",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/files/users/me",
+  "description": "Upload a file to the Files home",
+  "data": [
+    {
+      "key": "fileData",
+      "value": [],
+      "type": "file"
+    }
+  ],
+  "dataOptions": {
+    "raw": {
+      "language": "text"
+    }
+  },
+  "dataMode": "params",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "bf597d09-f849-43ad-8058-380f7eb0970d",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "093b44fa-55c0-4ec4-92be-9cad3c408961",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

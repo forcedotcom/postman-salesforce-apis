@@ -1,0 +1,54 @@
+{
+  "id": "d60dee07-8b05-42f8-b9fe-245e4babcbb9",
+  "name": "Post Comment",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feed-elements/<FEED_ELEMENT_ID>/capabilities/comments/items?text=New Comment",
+  "description": "Post a comment on a chatter feed element.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "text",
+      "value": "New Comment"
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "7cb3b84b-8b9d-4473-a746-862453f53a9f",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "4a4cbc11-2bd1-47fe-afa9-0b1a7a9b77a7",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

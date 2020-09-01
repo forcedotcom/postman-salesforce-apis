@@ -1,0 +1,109 @@
+{
+  "id": "344dde02-e6ad-43b8-8fc2-9020b74baf4d",
+  "name": "Create Group",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/groups?name=New Chatter Group  (Private Access)&visibility=PrivateAccess&description=Created via API&information=Private Information&isArchived=false&isAutoArchiveDisabled=false&isBroadcast=false&canHaveChatterGuests\t=true",
+  "description": "Create a Chatter group.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "name",
+      "value": "New Chatter Group  (Private Access)",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "visibility",
+      "value": "PrivateAccess",
+      "equals": true,
+      "description": "PrivateAccess—Only members of the group can see posts to this group.\nPublicAccess—All users within the community can see posts to this group.\nUnlisted—Reserved for future use.",
+      "enabled": true
+    },
+    {
+      "key": "description",
+      "value": "Created via API",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "information",
+      "value": "Private Information",
+      "equals": true,
+      "description": "If the group is private, the “Information” section is visible only to members.",
+      "enabled": true
+    },
+    {
+      "key": "isArchived",
+      "value": "false",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "isAutoArchiveDisabled",
+      "value": "false",
+      "equals": true,
+      "description": "true if automatic archiving is turned off for the group, false otherwise. Defaults to false. If true, if there are no posts or comments for 90 days the group is archived.",
+      "enabled": true
+    },
+    {
+      "key": "isBroadcast",
+      "value": "false",
+      "equals": true,
+      "description": "true if only group owners and managers can create posts in the group, false otherwise.",
+      "enabled": true
+    },
+    {
+      "key": "canHaveChatterGuests\t",
+      "value": "true",
+      "equals": true,
+      "description": "true if this group allows Chatter customers, false otherwise. After this property is set to true, it cannot be set to false.",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "2a5ed7c7-7fd3-439f-9ed0-52fa41784058",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "67e1ca0a-28f5-4cf3-88d7-adc4ac9604b3",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}

@@ -1,0 +1,71 @@
+{
+  "id": "3fe0692c-b08b-4b11-9e2e-eb60f911f613",
+  "name": "Send Private Message",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/users/me/messages?text=This is a private message&recipients=<USER1_ID>,<USER2_ID>",
+  "description": "Send a private message toa single or many recipients (comma-separated list). You cannot include the Id of the running user in the recipients list.",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [
+    {
+      "key": "Authorization",
+      "value": "Bearer {{_accessToken}}"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "text",
+      "value": "This is a private message",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "recipients",
+      "value": "<USER1_ID>,<USER2_ID>",
+      "equals": true,
+      "description": "You can send a single private message to many recipients (comma-separated list), but cannot send a private message to the Id of the runnning user. Specify either recipients or inReplyTo. Specify one or the other, not both",
+      "enabled": true
+    },
+    {
+      "key": "inReplyTo",
+      "value": "<MESSAGE_ID>",
+      "equals": true,
+      "description": "ID of an existing message that identifies which conversation this message is part of. Specify either recipients or inReplyTo. Specify one or the other, not both.",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "b0cbc21d-fffe-4707-b32a-6e13da1d290f",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "f97832ba-f154-4c99-9163-0cf0e3074733",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "pathVariables": {}
+}
