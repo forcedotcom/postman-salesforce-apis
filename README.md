@@ -38,7 +38,7 @@ Learn more about the Collection:
 
 # Postman Architecture
 
-## Template Environnement
+## Template Environment
 
 Salesforce template environment meant to be duplicated for each of your environment. Do not modify it directly
 Environment variable have been designed to be used by the API \endpoint in order to :
