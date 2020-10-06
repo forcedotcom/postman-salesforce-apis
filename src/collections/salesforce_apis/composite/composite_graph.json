@@ -1,0 +1,33 @@
+{
+  "id": "2f5ad115-7f7e-4ae6-a759-052928ecbf6b",
+  "name": "Composite Graph",
+  "url": "{{_endpoint}}/services/data/v{{version}}/composite/graph",
+  "description": "Composite graphs provide an enhanced way to perform composite requests, which execute a series of REST API requests in a single call.\nRegular composite requests allow you to execute a series of REST API requests in a single call. And you can use the output of one request as the input to a subsequent request.\n\nComposite graphs extend this by allowing you to assemble a more complicated and complete series of related objects and records.\n\nComposite graphs also enable you to ensure that the steps in a given set of operations are either all completed or all not completed. This avoids requiring you to check for a mix of successful and unsuccessful results.\n\nRegular composite requests have a limit of 25 subrequests. Composite graphs increase this limit to 500. This gives a single API call much greater power.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_graph_introduction.htm",
+  "data": [],
+  "dataOptions": null,
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Authorization",
+      "type": "text",
+      "value": "Bearer {{_accessToken}}"
+    },
+    {
+      "key": "Content-Type",
+      "type": "text",
+      "value": "application/json"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "1aeea941-aac2-4538-badc-074e2b328716",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "{\n  \"graphs\": [\n    {\n      \"graphId\": \"graphId\",\n      \"compositeRequest\": [\n        compositeSubrequest,\n        compositeSubrequest,\n        ...\n      ]\n    },\n    {\n      \"graphId\": \"graphId\",\n      \"compositeRequest\": [\n        compositeSubrequest,\n        compositeSubrequest,\n        ...\n      ]\n    },\n    ...\n  ]\n}",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}
