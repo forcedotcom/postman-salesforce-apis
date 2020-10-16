@@ -19,6 +19,12 @@ Learn more about the Collection:
 - 🎥 [Webinar](https://trailhead.salesforce.com/live/videos/a2r3k000001WFhk/exploring-the-salesforce-apis-with-postman/)
 - 📖 [Blog post](https://developer.salesforce.com/blogs/2020/03/explore-the-salesforce-apis-with-a-postman-collection.html)
 
+**Disclaimers:**
+- This collection is provided as-is. It's not officially supported by Salesforce or covered by SLAs.
+- API documentation is not provided with the collection. Please refer to the [official documentation](https://developer.salesforce.com/docs).
+
+Please [report issues here](https://github.com/forcedotcom/postman-salesforce-apis/issues).
+
 # Installation
 
 1. Download the [latest Postman collection](https://github.com/scolladon/Salesforce-Postman/releases/latest/download/salesforce-apis.postman_export.json) or go to [previous releases](https://github.com/scolladon/Salesforce-Postman/releases). The collection comes as a `salesforce-apis.postman_export.json` file.
