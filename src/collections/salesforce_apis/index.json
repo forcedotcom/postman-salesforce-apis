@@ -1,7 +1,7 @@
 {
   "id": "58651f2c-c011-41d0-b34b-b5609b7d95df",
   "name": "Salesforce APIs",
-  "description": null,
+  "description": "This is a collection of 200+ requests for the following Salesforce APIs:\n- Auth\n- Bulk (V1 & V2)\n- Async Query\n- Rest\n- UI\n- Tooling\n- Metadata\n- Composite\n- Chatter\n- Connect\n\n**Disclaimers:**\n- This collection is provided as-is. It's not officially supported by Salesforce or covered by SLAs.\n- API documentation is not provided with the collection. Please refer to the [official docucmentation](https://developer.salesforce.com/docs).\n\nPlease [report issues here](https://github.com/forcedotcom/postman-salesforce-apis/issues).\n\n# Get started\n\n1. Clone the \"Salesforce Template\" environment. Never customize the template directly! Always clone it and link the environment created to the target Sandbox, Trailhead Playground (TP), Developer Edition (DE) or production org.\n1. Edit the environment and fill in these variables:\n   - url (login, test or mydomain)\n   - username\n   - password (+ security token if required)\n1. Use your preferred authentication method from the **Auth** folder (SOAP login is very convenient). This automatically fills the endpoint url and access token environment variables for subsequent API calls.\n1. Use any of the API endpoints from the collection.<br/>\n   **Note:** some APIs are just boilerplates (ex : UI API), you need to copy them and customize them (uri + get parameters) according to your need.\n",
   "auth": null,
   "events": null,
   "variables": [],
