@@ -5,31 +5,6 @@
   "description": null,
   "data": [
     {
-      "key": "grant_type",
-      "value": "password",
-      "type": "text"
-    },
-    {
-      "key": "client_id",
-      "value": "{{clientId}}",
-      "type": "text"
-    },
-    {
-      "key": "client_secret",
-      "value": "{{clientSecret}}",
-      "type": "text"
-    },
-    {
-      "key": "username",
-      "value": "{{username}}",
-      "type": "text"
-    },
-    {
-      "key": "password",
-      "value": "{{password}}{{secretToken}}",
-      "type": "text"
-    },
-    {
       "key": "response_type",
       "value": "code",
       "description": "",
