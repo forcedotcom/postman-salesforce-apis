@@ -1,0 +1,81 @@
+{
+  "id": "60f788be-29a6-42cc-9d54-9c8576ac248c",
+  "name": "OAuth 2 - Post for Access and Refresh Token",
+  "url": "{{url}}{{site}}//services/oauth2/token",
+  "description": null,
+  "data": [
+    {
+      "key": "code",
+      "value": "aPrxMlEJ_p.tl5zx.MHdvRYIxzeMo5.LqAmzsDmYOA7d8FRIkIYWddPVCASuCb1NXvMvQUOoOQ==",
+      "description": "Authorization Code obtained after login at Salesforce with de URL from OAuth 1",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "grant_type",
+      "value": "authorization_code",
+      "description": "",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "client_id",
+      "value": "{{clientId}}",
+      "description": "",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "client_secret",
+      "value": "{{clientSecret}}",
+      "description": "",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "redirect_uri",
+      "value": "{{redirectUrl}}",
+      "description": "Callback URL configured in the Connected App at Salesforce",
+      "type": "text",
+      "enabled": true
+    }
+  ],
+  "dataOptions": null,
+  "dataMode": "urlencoded",
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "05ccafa5-a9d5-48d8-9c29-088d58550e17",
+        "exec": [
+          "var jsonData = pm.response.json();",
+          "var id = jsonData.id.split('/');",
+          "pm.environment.set(\"_accessToken\", jsonData.access_token);",
+          "pm.environment.set(\"_refreshToken\", jsonData.refresh_token);",
+          "pm.environment.set(\"_endpoint\", jsonData.instance_url);",
+          "pm.environment.set(\"_userId\", id.pop());",
+          "pm.environment.set(\"_orgId\", id.pop());"
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "ccafa90e-59d8-48fb-ab3f-5d45f53f46a1",
+  "preRequestScript": null,
+  "tests": "var jsonData = pm.response.json();\nvar id = jsonData.id.split('/');\npm.environment.set(\"_accessToken\", jsonData.access_token);\npm.environment.set(\"_refreshToken\", jsonData.refresh_token);\npm.environment.set(\"_endpoint\", jsonData.instance_url);\npm.environment.set(\"_userId\", id.pop());\npm.environment.set(\"_orgId\", id.pop());",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "8b69b556-3e42-45c0-93d4-d4fb6401ccee",
+  "headers": "Content-Type: application/x-www-form-urlencoded\n",
+  "pathVariables": {}
+}

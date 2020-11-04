@@ -1,0 +1,107 @@
+{
+  "id": "e99b723c-fdff-4af9-be89-542056384a9c",
+  "name": "OAuth 1 - Get Authorization Code",
+  "url": "{{url}}{{site}}/services/oauth2/authorize?response_type=code&client_id={{clientId}}&redirect_uri={{redirectUrl}}",
+  "description": null,
+  "data": [
+    {
+      "key": "grant_type",
+      "value": "password",
+      "type": "text"
+    },
+    {
+      "key": "client_id",
+      "value": "{{clientId}}",
+      "type": "text"
+    },
+    {
+      "key": "client_secret",
+      "value": "{{clientSecret}}",
+      "type": "text"
+    },
+    {
+      "key": "username",
+      "value": "{{username}}",
+      "type": "text"
+    },
+    {
+      "key": "password",
+      "value": "{{password}}{{secretToken}}",
+      "type": "text"
+    },
+    {
+      "key": "response_type",
+      "value": "code",
+      "description": "",
+      "type": "text",
+      "enabled": false
+    },
+    {
+      "key": "scope",
+      "value": "full refresh_token",
+      "description": "",
+      "type": "text",
+      "enabled": false
+    }
+  ],
+  "dataOptions": null,
+  "dataMode": "urlencoded",
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "response_type",
+      "value": "code",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "client_id",
+      "value": "{{clientId}}",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "redirect_uri",
+      "value": "{{redirectUrl}}",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "130591d0-fcb0-4eff-8755-752c900d39e3",
+        "exec": [
+          "/**",
+          " * Use the URL at the response body to log into your Salesforce Org and get the AUTHORIZATION CODE",
+          " * to use in the second request, which will give you the access and refresh token",
+          " */"
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "ccafa90e-59d8-48fb-ab3f-5d45f53f46a1",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "preRequestScript": null,
+  "tests": "/**\n * Use the URL at the response body to log into your Salesforce Org and get the AUTHORIZATION CODE\n * to use in the second request, which will give you the access and refresh token\n */",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "8b69b556-3e42-45c0-93d4-d4fb6401ccee",
+  "headers": "Content-Type: application/x-www-form-urlencoded\n",
+  "pathVariables": {}
+}
