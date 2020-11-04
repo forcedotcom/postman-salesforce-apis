@@ -30,7 +30,7 @@
   "pathVariableData": [],
   "queryParams": [
     {
-      "key": "?reader",
+      "key": "reader",
       "value": "SBQQ.QuoteAPI.QuoteReader",
       "equals": true,
       "description": "",
