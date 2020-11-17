@@ -51,7 +51,7 @@
   "currentHelper": null,
   "helperAttributes": null,
   "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "rawModeData": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<env:Envelope xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <env:Body>\n    <n1:login xmlns:n1=\"urn:partner.soap.sforce.com\">\n      <n1:username>{{username}}</n1:username>\n      <n1:password>{{password}}{{secretToken}}</n1:password>\n    </n1:login>\n  </env:Body>\n</env:Envelope>",
+  "rawModeData": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<env:Envelope xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <env:Body>\n    <n1:login xmlns:n1=\"urn:partner.soap.sforce.com\">\n      <n1:username><![CDATA[{{username}}]]></n1:username>\n      <n1:password><![CDATA[{{password}}{{secretToken}}]]></n1:password>\n    </n1:login>\n  </env:Body>\n</env:Envelope>",
   "headers": "Content-Type: text/xml\nSOAPAction: login\ncharset: UTF-8\n",
   "pathVariables": {}
 }
