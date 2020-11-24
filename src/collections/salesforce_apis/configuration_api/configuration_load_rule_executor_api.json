@@ -1,0 +1,56 @@
+{
+  "id": "b1e597c7-d42c-4c04-98c3-d044a27369d0",
+  "name": "Configuration Load Rule Executor API",
+  "url": "{{_endpoint}}/services/apexrest/SBQQ/ServiceRouter?loader=SBQQ.ConfigAPI.LoadRuleExecutor&uid=",
+  "description": "The Configuration Load Rule Executor API invokes all the load event product rules for the specified product. When configuring a nested bundle, set the parentProduct property to the parent product to inherit configuration attributes on the nested bundle.\nAvailable in: Salesforce CPQ Spring ’17 and later\n\nhttps://developer.salesforce.com/docs/atlas.en-us.cpq_dev_api.meta/cpq_dev_api/cpq_api_config_loadruleexecutor.htm",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "Bearer {{_accessToken}}"
+    },
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Content-Type",
+      "type": "text",
+      "value": "application/json"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "loader",
+      "value": "SBQQ.ConfigAPI.LoadRuleExecutor",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "uid",
+      "value": "",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": [],
+  "folder": "993b3422-ad9a-4a9d-9be2-22482baa81e2",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

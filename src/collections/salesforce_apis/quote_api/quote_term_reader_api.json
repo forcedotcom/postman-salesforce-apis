@@ -1,0 +1,56 @@
+{
+  "id": "acf56b73-67f8-4f26-8ebe-bce85f2f6cf1",
+  "name": "Quote Term Reader API",
+  "url": "{{_endpoint}}/services/apexrest/SBQQ/ServiceRouter?loader=SBQQ.QuoteTermAPI.Load&uid=",
+  "description": "The Read Product API takes the request’s product ID, pricebook ID, and currency code and returns a Product model. The Product model loads the product from your catalog when the user requests it.\nAvailable in: Salesforce CPQ Summer ’16 and later\nSpecial Access Rules: Users must have read access to the product2 object.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.cpq_dev_api.meta/cpq_dev_api/cpq_api_read_product.htm",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "Bearer {{_accessToken}}"
+    },
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Content-Type",
+      "type": "text",
+      "value": "application/json"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "loader",
+      "value": "SBQQ.QuoteTermAPI.Load",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "uid",
+      "value": "",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": [],
+  "folder": "5133a955-70e0-4af3-ab90-2c61a744cafc",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "{\n    \"context\": {\n        \"templateId\": \"a0v5C000000jTgr\",\n        \"language\": \"es\"\n    }\n}",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

@@ -1,0 +1,56 @@
+{
+  "id": "ebe458bf-92a6-4e92-8f6b-1dc4967cca7c",
+  "name": "Configuration Loader API",
+  "url": "{{_endpoint}}/services/apexrest/SBQQ/ServiceRouter?loader=SBQQ.ConfigAPI.ConfigLoader&uid",
+  "description": "The Configuration Loader API returns all the data for the product, including its product options and configuration model. When configuring a nested bundle, set the parentProductproperty to the parent product to inherit configuration attributes on the nested bundle.\nAvailable in: Salesforce CPQ Spring ’17 and later\n\nhttps://developer.salesforce.com/docs/atlas.en-us.cpq_dev_api.meta/cpq_dev_api/cpq_api_config_loader.htm",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "Bearer {{_accessToken}}"
+    },
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Content-Type",
+      "type": "text",
+      "value": "application/json"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "loader",
+      "value": "SBQQ.ConfigAPI.ConfigLoader",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "uid",
+      "value": null,
+      "equals": false,
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": [],
+  "folder": "993b3422-ad9a-4a9d-9be2-22482baa81e2",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

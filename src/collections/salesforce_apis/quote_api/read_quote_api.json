@@ -1,0 +1,59 @@
+{
+  "id": "91eb9ecb-8fcb-40da-a5de-dc8fc108fee9",
+  "name": "Read Quote API",
+  "url": "{{_endpoint}}/services/apexrest/SBQQ/ServiceRouter??reader=SBQQ.QuoteAPI.QuoteReader&uid=",
+  "description": "The Read Quote API reads a quote from a CPQ quote ID.\nAvailable in: Salesforce CPQ Summer ’16 and later\n\nhttps://developer.salesforce.com/docs/atlas.en-us.cpq_dev_api.meta/cpq_dev_api/cpq_api_read_quote.htm",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "Bearer {{_accessToken}}"
+    },
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Content-Type",
+      "type": "text",
+      "value": "application/json"
+    }
+  ],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "reader",
+      "value": "SBQQ.QuoteAPI.QuoteReader",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    },
+    {
+      "key": "uid",
+      "value": "",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": [],
+  "folder": "5133a955-70e0-4af3-ab90-2c61a744cafc",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "https://developer.salesforce.com/docs/atlas.en-us.cpq_dev_api.meta/cpq_dev_api/cpq_api_quote_model_9.htm#cpq_api_quote_model_9",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

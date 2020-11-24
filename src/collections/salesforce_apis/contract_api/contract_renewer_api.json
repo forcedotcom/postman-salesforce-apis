@@ -1,0 +1,49 @@
+{
+  "id": "ed479b0e-4073-4c2f-a912-749b3ac385fe",
+  "name": "Contract Renewer API",
+  "url": "{{_endpoint}}/services/apexrest/SBQQ/ServiceRouter?loader=SBQQ.ContractManipulationAPI.ContractRenewer",
+  "description": "Receive a CPQ contract in a request, and return quote data for one or more renewal quotes.\nAvailable in: Salesforce CPQ Summer ’16 and later\nSpecial Access Rules: All of these user permissions are required.\nInsert and update on quote and opportunity objects\nRead on quote, opportunity, and product2 objects\nDelete on quote object\n\nhttps://developer.salesforce.com/docs/atlas.en-us.cpq_dev_api.meta/cpq_dev_api/cpq_api_contract_renewer.htm",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "Bearer {{_accessToken}}"
+    },
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Content-Type",
+      "type": "text",
+      "value": "application/json"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "loader",
+      "value": "SBQQ.ContractManipulationAPI.ContractRenewer",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": [],
+  "folder": "1d1a3b27-cca2-4fa3-84c1-236d08ae24d1",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "{\n    \"context\": {\n        \"masterContractId\": null,\n        \"renewedContracts\": [\n            {\n                \"attributes\": {\n                    \"type\": \"Contract\"\n                },\n                \"Id\": \"800540000006LLVAA2\"\n            }\n        ]\n    }\n}",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

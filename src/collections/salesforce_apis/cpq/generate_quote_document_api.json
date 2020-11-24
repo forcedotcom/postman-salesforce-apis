@@ -1,0 +1,49 @@
+{
+  "id": "76dd02fc-778a-4d8d-bb9f-53b29f3f82e9",
+  "name": "Generate Quote Document API",
+  "url": "{{_endpoint}}/services/apexrest/SBQQ/ServiceRouter?loader=QuoteDocumentAPI.SaveProposal",
+  "description": "Creates and saves a CPQ quote document.\nAvailable in: Salesforce CPQ Winter ’19 and later\n\nhttps://developer.salesforce.com/docs/atlas.en-us.cpq_dev_api.meta/cpq_dev_api/cpq_api_generate_proposal.htm",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Authorization",
+      "type": "text",
+      "value": "Bearer {{_accessToken}}"
+    },
+    {
+      "description": "",
+      "enabled": true,
+      "key": "Content-Type",
+      "type": "text",
+      "value": "application/json"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "loader",
+      "value": "QuoteDocumentAPI.SaveProposal",
+      "equals": true,
+      "description": "",
+      "enabled": true
+    }
+  ],
+  "auth": null,
+  "events": [],
+  "folder": "df372fb1-f6b8-4f0b-ad1c-069843362b8f",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "rawModeData": "{\n    \"saver\": \"SBQQ.QuoteDocumentAPI.Save\",\n    \"model\": {\n        \"name\": \"test\",\n        \"quoteId\": \"<SFDC_ID>\",\n        \"templateId\": \"<SFDC_ID>\",\n        \"outputFormat\": \"PDF\",\n        \"language\": \"en_US\",\n        \"paperSize\": \"Default\"\n    }\n}",
+  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "pathVariables": {}
+}

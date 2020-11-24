@@ -13,6 +13,7 @@
     "086f9213-eeb0-46c2-bf99-3ece72cb0b8c",
     "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73",
     "1aeea941-aac2-4538-badc-074e2b328716",
+    "df372fb1-f6b8-4f0b-ad1c-069843362b8f",
     "2a5b155a-93f0-477f-8443-d38a9727395e",
     "7e4757ad-56f4-43ad-8175-051e53410941",
     "0f822144-6331-4019-a51b-95786c6f5da9",
@@ -209,6 +210,26 @@
       "folderId": "9ed91fe0-5bc1-4383-91a5-a5f55a19ef73"
     },
     {
+      "id": "df372fb1-f6b8-4f0b-ad1c-069843362b8f",
+      "name": "CPQ",
+      "description": "",
+      "auth": null,
+      "events": null,
+      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+      "folder": null,
+      "order": [
+        "76dd02fc-778a-4d8d-bb9f-53b29f3f82e9"
+      ],
+      "folders_order": [
+        "993b3422-ad9a-4a9d-9be2-22482baa81e2",
+        "1d1a3b27-cca2-4fa3-84c1-236d08ae24d1",
+        "5133a955-70e0-4af3-ab90-2c61a744cafc"
+      ],
+      "protocolProfileBehavior": {},
+      "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+      "folderId": "df372fb1-f6b8-4f0b-ad1c-069843362b8f"
+    },
+    {
       "id": "1aeea941-aac2-4538-badc-074e2b328716",
       "name": "Composite",
       "description": null,
@@ -230,6 +251,41 @@
       "protocolProfileBehavior": {},
       "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
       "folderId": "1aeea941-aac2-4538-badc-074e2b328716"
+    },
+    {
+      "id": "993b3422-ad9a-4a9d-9be2-22482baa81e2",
+      "name": "Configuration API",
+      "description": "",
+      "auth": null,
+      "events": null,
+      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+      "folder": "df372fb1-f6b8-4f0b-ad1c-069843362b8f",
+      "order": [
+        "ebe458bf-92a6-4e92-8f6b-1dc4967cca7c",
+        "b1e597c7-d42c-4c04-98c3-d044a27369d0",
+        "acee4809-32d3-4243-932c-9e33cb3dfbac"
+      ],
+      "folders_order": [],
+      "protocolProfileBehavior": {},
+      "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+      "folderId": "993b3422-ad9a-4a9d-9be2-22482baa81e2"
+    },
+    {
+      "id": "1d1a3b27-cca2-4fa3-84c1-236d08ae24d1",
+      "name": "Contract API",
+      "description": "",
+      "auth": null,
+      "events": null,
+      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+      "folder": "df372fb1-f6b8-4f0b-ad1c-069843362b8f",
+      "order": [
+        "362a4a54-fc04-4aaf-8ebb-8d34900c3044",
+        "ed479b0e-4073-4c2f-a912-749b3ac385fe"
+      ],
+      "folders_order": [],
+      "protocolProfileBehavior": {},
+      "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+      "folderId": "1d1a3b27-cca2-4fa3-84c1-236d08ae24d1"
     },
     {
       "id": "4595c8a1-7928-4db0-861d-6dd4ee26d2e7",
@@ -315,6 +371,29 @@
       "protocolProfileBehavior": {},
       "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
       "folderId": "3fdd1653-9a88-4262-a3d6-ff93b3ef92d8"
+    },
+    {
+      "id": "5133a955-70e0-4af3-ab90-2c61a744cafc",
+      "name": "Quote API",
+      "description": "",
+      "auth": null,
+      "events": null,
+      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+      "folder": "df372fb1-f6b8-4f0b-ad1c-069843362b8f",
+      "order": [
+        "8bec8dbd-66a7-4161-9d2c-9353cfdfc7b9",
+        "ec5c8de0-30c5-4883-8da6-fbaeae5b77f9",
+        "91eb9ecb-8fcb-40da-a5de-dc8fc108fee9",
+        "43f21c22-f02d-4d9f-9e2f-2b3e3bff4669",
+        "90ef6e94-c4ec-48a7-9e02-2ad8d12a6020",
+        "8c6edd45-4df2-47a8-b46b-76c5941aa2c7",
+        "80524f74-8a3b-43af-aee5-9c7bd22571c6",
+        "acf56b73-67f8-4f26-8ebe-bce85f2f6cf1"
+      ],
+      "folders_order": [],
+      "protocolProfileBehavior": {},
+      "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+      "folderId": "5133a955-70e0-4af3-ab90-2c61a744cafc"
     },
     {
       "id": "7e4757ad-56f4-43ad-8175-051e53410941",
