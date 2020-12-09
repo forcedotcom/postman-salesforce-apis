@@ -2,16 +2,28 @@
 
 A [Postman](https://www.postman.com/) collection of 200+ requests for the following Salesforce APIs:
 
-- Auth
-- Bulk (V1 & V2)
-- Async Query
-- Rest
-- UI
-- Tooling
-- Metadata
-- Composite
-- Chatter
-- Connect
+<table>
+   <tr>
+      <td>
+         <ul>
+            <li>Async Query</li>
+            <li>Auth</li>
+            <li>Bulk (V1 & V2)</li>
+            <li>Chatter (Connect)</li>
+            <li>Composite</li>
+         </ul>
+      </td>
+      <td>
+         <ul>
+            <li>CPQ</li>
+            <li>Metadata</li>
+            <li>Rest</li>
+            <li>Tooling</li>
+            <li>UI</li>
+         </ul>
+      </td>
+   </tr>
+</table>
 
 ![Postman screenshot](/doc-resources/postman-screenshot.jpg)
 
