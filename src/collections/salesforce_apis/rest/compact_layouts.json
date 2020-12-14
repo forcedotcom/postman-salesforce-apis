@@ -1,7 +1,7 @@
 {
   "id": "a9f6e539-9950-41cf-92dd-ffeafae60c09",
   "name": "Compact Layouts",
-  "url": "{{_endpoint}}/services/data/v{{version}}/appMenu/compactLayouts?q=",
+  "url": "{{_endpoint}}/services/data/v{{version}}/compactLayouts?q=",
   "description": "Returns a list of compact layouts for multiple objects. This resource is available in REST API version 31.0 and later.",
   "data": null,
   "dataOptions": null,
