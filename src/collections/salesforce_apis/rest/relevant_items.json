@@ -1,5 +1,5 @@
 {
-  "id": "7718f88d-9242-411e-90ae-283b2a4b7fb5",
+  "id": "9d87660f-f8b9-4817-a035-05c9955efa49",
   "name": "Relevant Items",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/relevantItems",
   "description": "Gets the current user’s most relevant items. Relevant items include records for objects in the user’s global search scope and also most recently used (MRU) objects.\nRelevant items include up to 50 of the most recently viewed or updated records for each object in the user’s global search scope.\nNote\nThe user’s global search scope includes the objects the user interacted with most in the last 30 days, including objects the user pinned from the search results page in the Salesforce Classic.\n\nThen, the resource finds more recent records for each most recently used (MRU) object until the maximum number of records, which is 2,000, is returned.\nThis resource only accesses the relevant item information. Modifying the list of relevant items is not currently supported\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_relevant_items.htm",
@@ -7,10 +7,6 @@
   "dataOptions": null,
   "dataMode": null,
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -40,10 +36,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

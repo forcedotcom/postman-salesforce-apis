@@ -1,0 +1,50 @@
+{
+  "id": "f0d71605-6843-4b14-b3fb-5ec180f60bed",
+  "name": "Record Feed Elements",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feeds/record/<RECORD_GROUP_ID>/feed-elements",
+  "description": "Returns the feed elements for all the records the context user is following, or all the feed elements of the specified recordId. Use this resource to search a feed or to get the feed elements for a specific feed, including another user’s feed. To use this resource to get the feed elements for a group, specify the group ID as the recordId.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/connect_resource_feeds_record.htm",
+  "data": [],
+  "dataOptions": {
+    "raw": {}
+  },
+  "dataMode": "raw",
+  "headerData": [],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "3d8f3f81-85ac-4fe0-a894-d7ca430b04f3",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "de6922f9-61d4-4cde-8736-525746e7532f",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "5e445952-a4d6-45c0-a79d-175f0b055e1e",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "rawModeData": "",
+  "headers": "",
+  "pathVariables": {}
+}

@@ -1,16 +1,14 @@
 {
-  "id": "7a0a8eb7-521b-4565-9dba-1f8f66ba962f",
+  "id": "22237f55-cb2f-4e4a-b445-df7750b074b1",
   "name": "Resources by Version",
   "url": "{{_endpoint}}/services/data/v{{version}}/",
   "description": "Lists available resources for the specified API version, including resource name and URI.",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -24,7 +22,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "18f8ee9f-81e2-46ba-9d88-fc0090afe065",
+        "id": "9277211d-cdc5-4fc6-9a6a-cf13a4c03b58",
         "exec": [
           ""
         ],
@@ -32,13 +30,13 @@
       }
     }
   ],
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "responses": [
     {
-      "id": "6ace9cbb-3fce-4a68-846e-8eb1c38fb142",
+      "id": "b5aa1b37-1757-43ce-b2ab-0c0fe01ab5ec",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -67,16 +65,16 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "7a0a8eb7-521b-4565-9dba-1f8f66ba962f",
-      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df"
+      "request": "22237f55-cb2f-4e4a-b445-df7750b074b1",
+      "collection": "314d5e58-9fdf-470c-aa02-621a1feb568e"
     }
   ],
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

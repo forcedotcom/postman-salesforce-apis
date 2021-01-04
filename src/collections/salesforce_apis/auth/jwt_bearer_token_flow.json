@@ -1,5 +1,5 @@
 {
-  "id": "f9191d69-6037-41cf-9fbc-b2ccb466bd24",
+  "id": "5b04ee7d-f97f-43b6-bb41-691785ceaa8b",
   "name": "JWT Bearer Token Flow",
   "url": "{{url}}{{site}}/services/oauth2/token",
   "description": "JWT Auth",
@@ -15,7 +15,9 @@
       "type": "text"
     }
   ],
-  "dataOptions": null,
+  "dataOptions": {
+    "urlencoded": {}
+  },
   "dataMode": "urlencoded",
   "headerData": [
     {
@@ -26,30 +28,34 @@
   "method": "POST",
   "pathVariableData": [],
   "queryParams": [],
-  "auth": null,
+  "auth": {
+    "type": "noauth"
+  },
   "events": [
     {
       "listen": "test",
       "script": {
-        "id": "c645730b-b613-4b82-a238-be0b27389707",
+        "id": "3226662b-4688-4fae-bd1d-54baa3afd83b",
         "exec": [
-          "var jsonData = pm.response.json();",
-          "var id = jsonData.id.split('/');",
-          "pm.environment.set(\"_accessToken\", jsonData.access_token);",
-          "pm.environment.set(\"_endpoint\", jsonData.instance_url);",
-          "pm.environment.set(\"_userId\", id.pop());",
-          "pm.environment.set(\"_orgId\", id.pop());"
+          "const jsonData = pm.response.json();",
+          "const id = jsonData.id.split('/');",
+          "",
+          "const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+          "context.set(\"_accessToken\", jsonData.access_token);",
+          "context.set(\"_endpoint\", jsonData.instance_url);",
+          "context.set(\"_userId\", id.pop());",
+          "context.set(\"_orgId\", id.pop());"
         ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "32acb1b0-3ff8-40e8-9195-7e1ed0837157",
+  "folder": "6e9108ab-3369-4245-81b7-d270892e8f0a",
   "preRequestScript": null,
-  "tests": "var jsonData = pm.response.json();\nvar id = jsonData.id.split('/');\npm.environment.set(\"_accessToken\", jsonData.access_token);\npm.environment.set(\"_endpoint\", jsonData.instance_url);\npm.environment.set(\"_userId\", id.pop());\npm.environment.set(\"_orgId\", id.pop());",
+  "tests": "const jsonData = pm.response.json();\nconst id = jsonData.id.split('/');\n\nconst context = pm.environment.name ? pm.environment : pm.collectionVariables;\ncontext.set(\"_accessToken\", jsonData.access_token);\ncontext.set(\"_endpoint\", jsonData.instance_url);\ncontext.set(\"_userId\", id.pop());\ncontext.set(\"_orgId\", id.pop());",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "headers": "Content-Type: application/x-www-form-urlencoded\n",
   "pathVariables": {}
 }

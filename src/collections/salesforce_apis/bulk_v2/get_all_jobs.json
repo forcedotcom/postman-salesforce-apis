@@ -1,5 +1,5 @@
 {
-  "id": "73df24ed-e1a3-46dc-a0b2-479292e4f6b1",
+  "id": "060d8f3f-2768-4781-aeb9-55e87cac0a6d",
   "name": "Get All Jobs",
   "url": "{{_endpoint}}/services/data/v{{version}}/jobs/ingest",
   "description": null,
@@ -7,10 +7,6 @@
   "dataOptions": null,
   "dataMode": null,
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json",
@@ -22,10 +18,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "086f9213-eeb0-46c2-bf99-3ece72cb0b8c",
+  "folder": "6485a7ed-098d-4a9f-bee1-a0141acc9168",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: application/json\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "//Content-Type: application/json\n",
   "pathVariables": {}
 }

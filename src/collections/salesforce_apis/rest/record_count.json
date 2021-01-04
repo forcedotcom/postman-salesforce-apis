@@ -1,5 +1,5 @@
 {
-  "id": "9f7cf9f8-114f-4fe0-a9e2-f5f4ab913e60",
+  "id": "ab4df997-835a-422a-b5da-da619275057e",
   "name": "Record Count",
   "url": "{{_endpoint}}/services/data/v{{version}}/limits/recordCount?sObjects=",
   "description": "Lists information about object record counts in your organization.\nThis resource is available in REST API version 40.0 and later for API users with the “View Setup and Configuration” permission. The returned record count is approximate, and does not include the following types of records:\n\nDeleted records in the recycle bin.\nArchived records.\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_record_count.htm",
@@ -7,10 +7,6 @@
   "dataOptions": null,
   "dataMode": null,
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -29,10 +25,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

@@ -1,5 +1,5 @@
 {
-  "id": "f2d803d1-7be7-4a6e-8059-cf1725eecfa5",
+  "id": "936539ac-3adc-4e5c-abf6-1ace5972ee17",
   "name": "SObject Rows by External ID",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/<FIELD_NAME>/<FIELD_VALUE>",
   "description": "Creates new records or updates existing records (upserts records) based on the value of a specified external ID field.\n\nIf the specified value doesn't exist, a new record is created.\nIf a record does exist with that value, the field values specified in the request body are updated.\nIf the value is not unique, the REST API returns a 300 response with the list of matching records.\n\nHEAD, GET, PATCH, DELETE, POST",
@@ -7,10 +7,6 @@
   "dataOptions": null,
   "dataMode": null,
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -21,10 +17,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

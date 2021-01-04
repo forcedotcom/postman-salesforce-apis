@@ -1,16 +1,14 @@
 {
-  "id": "6f53f0fc-e6c7-490e-875e-b5072f436fb7",
+  "id": "c3750ced-c42a-49fe-9fbf-49fd857d8d42",
   "name": "Delete Async Query",
   "url": "{{_endpoint}}/services/data/v{{version}}/async-queries/{{_jobId}}",
   "description": null,
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -24,7 +22,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "18f8ee9f-81e2-46ba-9d88-fc0090afe065",
+        "id": "b8b3b87b-4ecb-4999-abb1-5f902d4ab542",
         "exec": [
           ""
         ],
@@ -34,7 +32,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "d52d0f63-6e82-41e0-a3c4-77e6f53b768d",
+        "id": "5b5727bd-5e43-453d-8902-aaeb08f4950b",
         "exec": [
           ""
         ],
@@ -42,10 +40,10 @@
       }
     }
   ],
-  "folder": "8e63540c-256c-4da3-843c-272f56848d2a",
+  "folder": "8ce639a8-3c2a-4852-82ac-621af19d7aba",
   "responses": [
     {
-      "id": "ccf8f5f6-518a-4f38-9bfc-3643893ad29e",
+      "id": "242550e5-eb85-4536-92a1-721ba42056f9",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -74,16 +72,16 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "6f53f0fc-e6c7-490e-875e-b5072f436fb7",
-      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df"
+      "request": "c3750ced-c42a-49fe-9fbf-49fd857d8d42",
+      "collection": "314d5e58-9fdf-470c-aa02-621a1feb568e"
     }
   ],
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

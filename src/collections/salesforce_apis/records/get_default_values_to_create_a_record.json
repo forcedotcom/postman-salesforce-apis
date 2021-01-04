@@ -1,20 +1,14 @@
 {
-  "id": "e4365b48-ef46-4172-a66e-8de508eac603",
+  "id": "5e9e4e00-a6f7-49a8-a9ce-7d95facc3cb2",
   "name": "Get Default Values to Create a Record",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/record-defaults/create/<RECORD_ID>",
   "description": "Get the default values for fields for a new record of a specified object and optional record type. After getting the default values, make a request to POST /ui-api/records to create the record.\nThe response contains the default field values for the Full layout type for a new record of the object type specified in <SOBJECT_API_NAME>.\n\nIt also contains the corresponding layout for create mode. In the Salesforce user interface, an admin with “Customize Application” permission can mark a field as required in a layout. When you’re building UI, to determine which fields to mark as required in a layout for create mode, use the RecordLayoutItem.required property.\n\nThe response contains object metadata for the object specified in <SOBJECT_API_NAME> and for any nested objects. For example, a request to /ui-api/record-defaults/create/Account returns object metadata for Account and User, because the OwnerId field on the Account object contains a reference to the User object.",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [
@@ -42,7 +36,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "344b1197-2911-420f-9ad5-37fffb35558c",
         "exec": [
           ""
         ],
@@ -50,7 +44,7 @@
       }
     }
   ],
-  "folder": "4d16654a-9c96-4247-a5c8-ad85d4595c43",
+  "folder": "4976c50d-27fd-43c6-9ffa-496357411f71",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -58,8 +52,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

@@ -1,20 +1,14 @@
 {
-  "id": "7dd5bd69-8a14-4e31-9751-ee0ea073d650",
+  "id": "30d862ab-8663-4e9f-8eec-877d14dbbbf7",
   "name": "Get Related List Record Actions",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/record/<RECORD_ID>/related-list-record/<RELATED_LIST_RECORD_IDS>",
   "description": "Get the actions on records in related lists.",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [],
@@ -23,7 +17,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "982c2d83-b3d3-4d13-a44f-90267cffc7c6",
         "exec": [
           ""
         ],
@@ -31,7 +25,7 @@
       }
     }
   ],
-  "folder": "c451b8e5-6f6e-4242-9c63-fac725813b42",
+  "folder": "91e5209f-fb35-4a22-aac7-96effb0cd59d",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,8 +33,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

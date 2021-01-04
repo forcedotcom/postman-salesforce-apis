@@ -1,10 +1,12 @@
 {
-  "id": "83d857be-1d7e-4501-a0c0-f95a7c208b30",
+  "id": "251770ca-8f78-457d-b3f5-a8cbf9db5b49",
   "name": "SOAP DescribeMetadata",
   "url": "{{_endpoint}}/services/Soap/m/{{version}}",
   "description": null,
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
     {
@@ -31,12 +33,15 @@
   "method": "POST",
   "pathVariableData": [],
   "queryParams": [],
-  "auth": null,
+  "auth": {
+    "type": "noauth",
+    "noauth": []
+  },
   "events": [
     {
       "listen": "test",
       "script": {
-        "id": "8ea3256a-fb89-4eec-85de-2172c63fd5e9",
+        "id": "1e999bfa-cbc5-4c91-9973-2f0e72015dee",
         "exec": [
           ""
         ],
@@ -44,12 +49,12 @@
       }
     }
   ],
-  "folder": "2a5b155a-93f0-477f-8443-d38a9727395e",
+  "folder": "de1bae88-510d-4ac4-9ad9-7d2a4c5379b7",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tns=\"http://soap.sforce.com/2006/04/metadata\">\n\t<soapenv:Header>\n\t<tns:SessionHeader>\n\t\t<tns:sessionId>{{_accessToken}}</tns:sessionId>\n\t</tns:SessionHeader>\n\t</soapenv:Header>\n\t<soapenv:Body>\n\t\t<tns:describeMetadata>\n\t\t\t<asOfVersion>{{version}}</asOfVersion>\n\t\t</tns:describeMetadata>\n\t</soapenv:Body>\n</soapenv:Envelope>",
   "headers": "Content-Type: text/xml\ncharset: UTF-8\nSOAPAction: login\n//Accept: application/json\n",
   "pathVariables": {}

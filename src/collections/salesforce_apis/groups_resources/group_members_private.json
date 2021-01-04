@@ -1,0 +1,54 @@
+{
+  "id": "e57f42f9-6c24-4c6a-bb88-905801c1834c",
+  "name": "Group Members—Private",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/groups/<GROUP_ID>/members/requests",
+  "description": "Request membership in a private group or get the status of requests to a join a private group.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/connect_resources_groups_GroupMembersRequests.htm",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [
+    {
+      "key": "status",
+      "value": "Accepted",
+      "description": "Optional. If you include this parameter, results are filtered to include those that match the specified status. Valid values:\nAccepted\nDeclined\nPending",
+      "enabled": false
+    }
+  ],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "ac69fd3e-1ae9-4dfb-b509-d81b6d280303",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "8ad5ec81-7ef1-414e-ac0f-1f08e60bf336",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9d7a1985-ec3a-4198-a7b5-b9b309479c49",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "",
+  "pathVariables": {}
+}

@@ -1,29 +1,21 @@
 {
-  "id": "74c2fb3b-3a33-4b25-9b12-57b8c20c0cc4",
+  "id": "0b8ebd18-0ed0-4cea-916d-ee15444518a7",
   "name": "Get Object Metadata",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/object-info/<SOBJECT_API_NAME>",
   "description": "Get metadata about a specific object. The response includes metadata describing fields, child relationships, record type, and theme.",
   "data": null,
   "dataOptions": null,
   "dataMode": null,
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [],
   "auth": null,
-  "events": [],
-  "folder": "4d16654a-9c96-4247-a5c8-ad85d4595c43",
+  "events": null,
+  "folder": "4976c50d-27fd-43c6-9ffa-496357411f71",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "",
   "pathVariables": {}
 }

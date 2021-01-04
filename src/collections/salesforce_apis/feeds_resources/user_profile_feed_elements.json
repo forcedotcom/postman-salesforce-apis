@@ -1,0 +1,44 @@
+{
+  "id": "3b4f4d5b-9796-42d5-ac36-59831bc4ce9b",
+  "name": "User Profile Feed Elements",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/feeds/user-profile/<USER_ID>/feed-elements",
+  "description": "Returns feed elements created when a user changes records that can be tracked in a feed, feed elements whose parent is the user, and feed elements that mention the user. This feed is different than the news feed, which returns more feed items, including group updates. You can post feed items to the user-profile feed. You can get another user’s user profile feed.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/connect_resource_feeds_user_profile.htm",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [],
+  "method": "GET",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "de5449ec-ea7d-412a-ad45-29887b502bc6",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "e7dc9499-68a9-44d6-8938-325cd1c3cebe",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "5e445952-a4d6-45c0-a79d-175f0b055e1e",
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "",
+  "pathVariables": {}
+}

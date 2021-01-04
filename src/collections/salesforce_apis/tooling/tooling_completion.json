@@ -1,5 +1,5 @@
 {
-  "id": "873d0c21-fbc5-4054-b46a-1dd41d75b2a9",
+  "id": "00b1ea96-b9dd-4684-8955-1a42cb40038e",
   "name": "Tooling Completion",
   "url": "{{_endpoint}}/services/data/v{{version}}/tooling/completions?type=",
   "description": "Retrieves available code completions of the referenced type for Apex system method symbols (type=apex). Available from API version 28.0 or later.",
@@ -8,8 +8,11 @@
   "dataMode": null,
   "headerData": [
     {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
+      "key": "Accept",
+      "value": "application/json",
+      "description": null,
+      "type": "text",
+      "enabled": true
     }
   ],
   "method": "GET",
@@ -25,10 +28,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "0f822144-6331-4019-a51b-95786c6f5da9",
+  "folder": "c56f8fff-cd87-4008-9969-e2d3aaf9cd93",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "Accept: application/json\n",
   "pathVariables": {}
 }

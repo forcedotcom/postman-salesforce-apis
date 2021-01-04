@@ -1,5 +1,5 @@
 {
-  "id": "01ae390a-8536-4c5e-b7ae-232d2754e46e",
+  "id": "154bf292-906e-4c84-ad55-d59a4738aa0a",
   "name": "Search Result Layouts",
   "url": "{{_endpoint}}/services/data/v{{version}}/search/layout/?q",
   "description": "Returns search result layout information for the objects in the query string. For each object, this call returns the list of fields displayed on the search results page as columns, the number of rows displayed on the first page, and the label used on the search results page.\nThis call supports bulk fetch for up to 100 objects in a query.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_search_layouts.htm",
@@ -7,10 +7,6 @@
   "dataOptions": null,
   "dataMode": null,
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -22,16 +18,17 @@
     {
       "key": "q",
       "value": "",
+      "equals": false,
       "description": "Comma delimited object list",
       "enabled": true
     }
   ],
   "auth": null,
   "events": null,
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

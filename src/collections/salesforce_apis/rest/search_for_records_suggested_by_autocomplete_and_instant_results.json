@@ -1,16 +1,14 @@
 {
-  "id": "58e76979-c1a7-4ac5-b3e7-5b5c5c62f1fa",
+  "id": "e3d5f87e-d26e-4438-bd0b-5f1e718e3d72",
   "name": "Search for Records Suggested by Autocomplete and Instant Results",
   "url": "{{_endpoint}}/services/data/v{{version}}/search/suggestions?q&sobject",
   "description": "Returns a list of suggested records whose names match the user’s search string. The suggestions resource provides autocomplete results and instant results for users to navigate directly to likely relevant records, before performing a full search.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_search_suggest_records.htm",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -19,20 +17,6 @@
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [
-    {
-      "key": "q",
-      "value": "",
-      "equals": false,
-      "description": "Required. The user’s search query string, properly URL-encoded. Suggestions are returned only if the user’s query string meets the minimum length requirements: one character for queries in Chinese, Japanese, Korean, and Thai; three characters for all other languages. Query strings that exceed the maximum length of 255 characters (or 200 consecutive characters without a space break) return an error.",
-      "enabled": true
-    },
-    {
-      "key": "sobject",
-      "value": "",
-      "equals": false,
-      "description": "Required. The objects that the search is scoped to, such as Account or offer__c.\nIf the sobject value is feedItem, it is required to have the type parameter with a value of question.\n\nSpecify up to 10 objects with a comma-separated list. For example: sobject=Account,Contact,Lead. To take advantage of this feature, activate the CrossObjectTypeahead permission.\n\nTo specify the specific fields to return by object, use the following syntax with multiple fields in a comma-separated list. The sobject is lowercase.",
-      "enabled": true
-    },
     {
       "key": "type",
       "value": "",
@@ -98,18 +82,28 @@
       "value": "",
       "description": "Optional. A filter that follows the same syntax as the SOQL WHERE clause. URLs encode the expression.\nUse the clause for an object, or globally for all compatible objects. An example of an object-specific clause is: account.where=name%20LIKE%20%27Smith%25%27. An example of a global clause is: where=name%20LIKE%20%27Smith%25%27. The parameter must be lower case. Any object-specific where clauses override the global where clause. You can’t use this parameter for the Question object.",
       "enabled": false
+    },
+    {
+      "key": "q",
+      "value": "",
+      "equals": false
+    },
+    {
+      "key": "sobject",
+      "value": "",
+      "equals": false
     }
   ],
   "auth": null,
   "events": null,
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

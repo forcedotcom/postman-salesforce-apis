@@ -1,16 +1,14 @@
 {
-  "id": "0a9946f7-2449-4393-90fc-a3c34021d825",
+  "id": "6cff0c11-7b64-48e1-ac24-1f24558ed140",
   "name": "Create job Query",
   "url": "{{_endpoint}}/services/data/v{{version}}/jobs/query",
   "description": null,
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -24,7 +22,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "b438d4fa-1275-4c48-ad33-20b679018754",
+        "id": "db4bfc84-dcb6-4f3e-a734-5d492632b070",
         "exec": [
           "var response = JSON.parse(pm.response.text())",
           "pm.environment.set(\"id\", response.id);"
@@ -33,13 +31,13 @@
       }
     }
   ],
-  "folder": "3fdd1653-9a88-4262-a3d6-ff93b3ef92d8",
+  "folder": "435dcb5b-0f9c-40d9-9cad-33d6feaab6f3",
   "preRequestScript": null,
   "tests": "var response = JSON.parse(pm.response.text())\npm.environment.set(\"id\", response.id);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "{\n  \"operation\" : \"query\",\n  \"query\" : \"SELECT fields FROM object WHERE filter\",\n  \"contentType\" : \"CSV\",\n  \"columnDelimiter\" : \"BACKQUOTE | CARET | COMMA | PIPE | SEMICOLON | TAB\",\n  \"lineEnding\" : \"CRLF | LF\"\n} ",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

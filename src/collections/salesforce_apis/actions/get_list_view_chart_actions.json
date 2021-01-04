@@ -1,20 +1,14 @@
 {
-  "id": "09968447-38a1-4ddf-8428-e85d97f40f2c",
+  "id": "70ff48b7-d7e5-44bf-8e2b-c4702639a213",
   "name": "Get List View Chart Actions",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/list-view-chart/<SOBJECT_API_NAME>",
   "description": "Get the record actions on list views.",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [],
@@ -23,7 +17,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "ac42eff1-37dd-4218-ba73-5f6626669bf4",
         "exec": [
           ""
         ],
@@ -31,7 +25,7 @@
       }
     }
   ],
-  "folder": "c451b8e5-6f6e-4242-9c63-fac725813b42",
+  "folder": "91e5209f-fb35-4a22-aac7-96effb0cd59d",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,8 +33,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

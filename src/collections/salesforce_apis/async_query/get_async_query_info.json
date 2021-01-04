@@ -1,16 +1,14 @@
 {
-  "id": "fe894be9-995a-41b4-a023-8482a6923995",
+  "id": "288acfec-153d-4f93-bccb-cde110099ddc",
   "name": "Get Async Query Info",
   "url": "{{_endpoint}}/services/data/v{{version}}/async-queries/{{_jobId}}",
   "description": null,
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -24,7 +22,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "18f8ee9f-81e2-46ba-9d88-fc0090afe065",
+        "id": "1639bebe-c94b-4da9-b076-62209c5cb465",
         "exec": [
           ""
         ],
@@ -34,7 +32,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "d52d0f63-6e82-41e0-a3c4-77e6f53b768d",
+        "id": "6472cf63-41fc-430f-bccf-7094eee2cd8f",
         "exec": [
           ""
         ],
@@ -42,13 +40,13 @@
       }
     }
   ],
-  "folder": "8e63540c-256c-4da3-843c-272f56848d2a",
+  "folder": "8ce639a8-3c2a-4852-82ac-621af19d7aba",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "responses": [
     {
-      "id": "01f2e376-a9ee-46c6-9687-d530e1ae1d91",
+      "id": "278b78d4-8856-4aaa-9a0c-38cc0bf1234e",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -77,16 +75,16 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "fe894be9-995a-41b4-a023-8482a6923995",
-      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df"
+      "request": "288acfec-153d-4f93-bccb-cde110099ddc",
+      "collection": "314d5e58-9fdf-470c-aa02-621a1feb568e"
     }
   ],
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

@@ -1,10 +1,12 @@
 {
-  "id": "11be8a47-2c68-445d-9b13-24cb2450238f",
+  "id": "a01930a2-1b5f-466e-a110-713a01f2616c",
   "name": "Bulk Create Job",
   "url": "{{_endpoint}}/services/async/{{version}}/job",
   "description": null,
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
     {
@@ -39,7 +41,6 @@
     {
       "key": "chunkSize",
       "value": "10000",
-      "description": "",
       "type": "text",
       "enabled": false
     },
@@ -62,7 +63,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "3a4d4b27-e558-45cb-90b1-0bcfdf006cec",
+        "id": "cfbc6120-2a20-4781-a02e-1fd352b93d1e",
         "exec": [
           "if(pm.response.headers.get(\"Content-Type\").indexOf(\"xml\") !== -1) {",
           "    var jsonData = xml2Json(pm.response.text());",
@@ -80,12 +81,12 @@
       }
     }
   ],
-  "folder": "a7522bc1-a6fe-487f-a725-e3b900ccbcd4",
+  "folder": "3089c456-2c8b-4bb9-aeec-ae4382b36a50",
   "preRequestScript": null,
   "tests": "if(pm.response.headers.get(\"Content-Type\").indexOf(\"xml\") !== -1) {\n    var jsonData = xml2Json(pm.response.text());\n    pm.environment.set(\"_jobId\", jsonData['jobInfo']['id']);    \n}\n\nif(pm.response.headers.get(\"Content-Type\").indexOf(\"json\") !== -1) {\n    var jsonData = pm.response.json();\n    pm.environment.set(\"_jobId\", jsonData.id);\n}\n\n",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "{\n  \"operation\" : \"insert\",\n  \"object\" : \"Account\",\n  \"contentType\" : \"CSV\"\n}",
   "headers": "X-SFDC-Session: {{_accessToken}}\nContent-Type: application/json\ncharset: UTF-8\n//Sforce-Disable-Batch-Retry: FALSE\n//Sforce-Line-Ending: CRLF\n//Sforce-Enable-PKChunking: FALSE\n//chunkSize: 10000\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
   "pathVariables": {}

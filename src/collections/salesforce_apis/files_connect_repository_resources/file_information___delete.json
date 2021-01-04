@@ -1,0 +1,47 @@
+{
+  "id": "329f892f-890b-402d-87b1-d3205f93981f",
+  "name": "File Information - Delete",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/files/<FILE_ID>",
+  "description": "Get information about a specified file, including references to external files. Upload a new version of an existing file, including references to external files. Rename a file, move a file to a different folder, and delete a file.\nTo upload a new version of an existing file, make a POST request. Upload the new version as a binary part in a multipart/form-data request. See Uploading Binary Files. To upload a new file to the Files home, use /connect/files/users/me.Get information about a specified file, including references to external files.\nhttps://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/connect_resources_files_information.htm",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [],
+  "method": "DELETE",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "9031c61e-ea73-4ee2-99a5-63681f9cfb57",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "227ed560-c879-428d-b775-451f76be367b",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "10137b32-6bbd-485a-80a4-236f64695311",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "",
+  "pathVariables": {}
+}

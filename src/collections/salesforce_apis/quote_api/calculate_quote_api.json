@@ -1,5 +1,5 @@
 {
-  "id": "ec5c8de0-30c5-4883-8da6-fbaeae5b77f9",
+  "id": "56671eaa-ba35-4748-b6a8-492973bb6b38",
   "name": "Calculate Quote API",
   "url": "{{_endpoint}}/services/apexrest/SBQQ/ServiceRouter?loader=SBQQ.QuoteAPI.QuoteCalculator",
   "description": "The Calculate Quote API calculates the prices of a CPQ quote.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.cpq_dev_api.meta/cpq_dev_api/cpq_quote_api_calculate_final.htm",
@@ -12,14 +12,6 @@
   "dataMode": "raw",
   "headerData": [
     {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    },
-    {
-      "description": "",
       "enabled": true,
       "key": "Content-Type",
       "type": "text",
@@ -33,17 +25,16 @@
       "key": "loader",
       "value": "SBQQ.QuoteAPI.QuoteCalculator",
       "equals": true,
-      "description": "",
       "enabled": true
     }
   ],
   "auth": null,
-  "events": [],
-  "folder": "5133a955-70e0-4af3-ab90-2c61a744cafc",
+  "events": null,
+  "folder": "a1de7f95-4f4d-4206-b6e7-54b08fc5c825",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "https://developer.salesforce.com/docs/atlas.en-us.cpq_dev_api.meta/cpq_dev_api/cpq_api_quote_model_9.htm#cpq_api_quote_model_9",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

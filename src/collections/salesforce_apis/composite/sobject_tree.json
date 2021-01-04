@@ -1,17 +1,14 @@
 {
-  "id": "ceabcb23-c899-4c79-9d50-ca96e9aa8b4f",
+  "id": "d70992b6-7c8b-4ae3-b075-120059c0e977",
   "name": "SObject Tree",
   "url": "{{_endpoint}}/services/data/v{{version}}/composite/tree/<SOBJECT_API_NAME>",
   "description": "Creates one or more sObject trees with root records of the specified type. An sObject tree is a collection of nested, parent-child records with a single root record.\nIn the request data, you supply the record hierarchies, required and optional field values, each record’s type, and a reference ID for each record. Upon success, the response contains the IDs of the created records. If an error occurs while creating a record, the entire request fails. In this case, the response contains only the reference ID of the record that caused the error and the error information.\n\nThe request can contain the following:\nUp to a total of 200 records across all trees\nUp to five records of different types\nSObject trees up to five levels deep\nBecause an sObject tree can contain a single record, you can use this resource to create up to 200 unrelated records of the same type.\n\nWhen the request is processed and records are created, triggers, processes, and workflow rules fire separately for each of the following groups of records.\nRoot records across all sObject trees in the request\nAll second-level records of the same type—for example, second-level Contacts across all sObject trees in the request\nAll third-level records of the same type\nAll fourth-level records of the same type\nAll fifth-level records of the same type\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_sobject_tree.htm",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
-    {
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "type": "text",
@@ -23,11 +20,11 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "1aeea941-aac2-4538-badc-074e2b328716",
+  "folder": "6d0fe15d-f0be-4e6b-869f-b9110dabd39c",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "{\n    \"records\":\"SObject Tree Input[]\"\n}",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

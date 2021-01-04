@@ -1,16 +1,14 @@
 {
-  "id": "833a8540-034f-4a5b-acc3-6e25fe780012",
+  "id": "a29b669e-8361-4329-a3a7-824df71c209c",
   "name": "Search Suggested Queries",
   "url": "{{_endpoint}}/services/data/v{{version}}/search/suggestSearchQueries?q&language",
   "description": "Returns a list of suggested searches based on the user’s query string text matching searches that other users have performed in Salesforce Knowledge. Provides a way to improve search effectiveness, before the user performs a search.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_search_suggest_queries.htm",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -19,20 +17,6 @@
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [
-    {
-      "key": "q",
-      "value": "",
-      "equals": false,
-      "description": "Required. The user’s search query string, properly URL-encoded. Suggestions are returned only if the user’s query string meets the minimum length requirements: one character for queries in Chinese, Japanese, and Korean, and three characters for all other languages. Query strings exceeding the maximum length of 250 characters return an error.",
-      "enabled": true
-    },
-    {
-      "key": "language",
-      "value": "",
-      "equals": false,
-      "description": "Required. The language of the user’s query.",
-      "enabled": true
-    },
     {
       "key": "channel",
       "value": "",
@@ -45,18 +29,28 @@
       "equals": false,
       "description": "Optional. Specifies the maximum number of suggested searches to return. If there are more suggested queries than the limit specified, the response body’s hasMoreResults property is true.",
       "enabled": false
+    },
+    {
+      "key": "q",
+      "value": "",
+      "equals": false
+    },
+    {
+      "key": "language",
+      "value": "",
+      "equals": false
     }
   ],
   "auth": null,
   "events": null,
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

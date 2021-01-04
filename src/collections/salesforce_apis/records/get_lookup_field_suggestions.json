@@ -1,20 +1,14 @@
 {
-  "id": "3c22f756-e293-4228-bb22-363b7849950d",
+  "id": "840c5934-388c-4c20-8153-20f3ed0aab17",
   "name": "Get Lookup Field Suggestions",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/lookups/<SOBJECT_API_NAME>/<FIELD_API_NAME>",
   "description": "When a user edits a lookup field, use this resource to search for and display suggestions. You can search for most recently used matches, for matching names, or for any match in a searchable field. You can also specify lookup filter bindings for dependent lookups.",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [
@@ -54,7 +48,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "0e56aa65-037a-474b-9132-d7d2f244aa76",
         "exec": [
           ""
         ],
@@ -62,7 +56,7 @@
       }
     }
   ],
-  "folder": "4d16654a-9c96-4247-a5c8-ad85d4595c43",
+  "folder": "4976c50d-27fd-43c6-9ffa-496357411f71",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -70,8 +64,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

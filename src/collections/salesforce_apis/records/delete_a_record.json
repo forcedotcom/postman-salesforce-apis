@@ -1,20 +1,14 @@
 {
-  "id": "22837b1b-f323-40b6-be30-30476ad27e1a",
+  "id": "39d7c367-f425-4eb3-bab0-17fd74edf802",
   "name": "Delete a Record",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records/<RECORD_ID>",
   "description": "Update a record's data.\nUser Interface API enforces Salesforce validation rules. If a validation rule fails, the response is an Error with Output.\n\nWhen you make a PATCH request to update a record, make sure that the record hasn’t changed since the user started editing it. To find out whether it’s safe to save a record, pass the If-Modified-Since HTTP header in the request.\n\nAs of API version 43.0, if you pass read-only fields in a request body, the response is an Error with Output.",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "DELETE",
   "pathVariableData": [],
   "queryParams": [],
@@ -23,7 +17,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "64545a58-31df-45e9-8a53-ba8046ed22b5",
         "exec": [
           ""
         ],
@@ -31,13 +25,13 @@
       }
     }
   ],
-  "folder": "4d16654a-9c96-4247-a5c8-ad85d4595c43",
+  "folder": "4976c50d-27fd-43c6-9ffa-496357411f71",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

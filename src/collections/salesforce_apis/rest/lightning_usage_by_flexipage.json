@@ -1,5 +1,5 @@
 {
-  "id": "3d07b572-115f-4c23-9e31-1957600c0b12",
+  "id": "f8a8f6c0-3c08-4bc4-8c31-24d5583a536c",
   "name": "Lightning Usage by FlexiPage",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/LightningUsageByFlexiPageMetrics",
   "description": "Return details about the custom pages viewed most frequently in Lightning Experience.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_lightning_usagebyflexipagemetrics.htm",
@@ -7,10 +7,6 @@
   "dataOptions": null,
   "dataMode": null,
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -21,10 +17,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

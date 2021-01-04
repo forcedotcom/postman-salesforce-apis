@@ -1,17 +1,14 @@
 {
-  "id": "88b0489b-3d5a-4355-91c3-b2165efff919",
+  "id": "30a96ed7-29f6-4065-864a-62c2e47ad3eb",
   "name": "Tooling ExecuteAnonymous",
   "url": "{{_endpoint}}/services/data/v{{version}}/tooling/executeAnonymous/?anonymousBody=System.Debug('awesome');",
   "description": "Executes Apex code anonymously. Available from API version 29.0 or later.",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
-    {
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "enabled": false,
       "key": "Content-Type",
@@ -26,20 +23,19 @@
       "key": "anonymousBody",
       "value": "System.Debug('awesome');",
       "equals": true,
-      "description": "",
       "enabled": true
     }
   ],
   "auth": null,
   "events": null,
-  "folder": "0f822144-6331-4019-a51b-95786c6f5da9",
+  "folder": "c56f8fff-cd87-4008-9969-e2d3aaf9cd93",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: application/json\n",
+  "headers": "//Content-Type: application/json\n",
   "pathVariables": {}
 }

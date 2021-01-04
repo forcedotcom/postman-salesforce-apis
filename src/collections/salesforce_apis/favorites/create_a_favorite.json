@@ -1,5 +1,5 @@
 {
-  "id": "7f138a94-f5f1-4ef3-b40f-cb78fea02566",
+  "id": "24def4e4-ce33-4f4f-92db-ad6ee98b22bc",
   "name": "Create a Favorite",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites",
   "description": "Create a Favorite",
@@ -12,17 +12,9 @@
   "dataMode": "raw",
   "headerData": [
     {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    },
-    {
       "key": "Content-Type",
       "name": "Content-Type",
       "value": "application/json",
-      "description": "",
       "type": "text"
     }
   ],
@@ -34,7 +26,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "c1f92270-45e3-4ec7-a3c5-e3d703981827",
         "exec": [
           ""
         ],
@@ -42,13 +34,13 @@
       }
     }
   ],
-  "folder": "4595c8a1-7928-4db0-861d-6dd4ee26d2e7",
+  "folder": "678790bd-c38f-4e04-8d63-8dde2cb77042",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "{\n    \"name\": \"Favorite Name\",\n    \"sortOrder\": \"integer\",\n    \"target\": \"API Name or ID\",\n    \"targetType\": \"ListView | ObjectHome | Record | Tab\"\n}",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

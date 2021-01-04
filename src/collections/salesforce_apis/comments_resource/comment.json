@@ -1,0 +1,58 @@
+{
+  "id": "3e307371-2741-452a-a303-3021a93aceb8",
+  "name": "Comment",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/comments/<COMMENT_ID>",
+  "description": "Get information about, edit, or delete a comment.\nTo post a comment, use Feed Elements Capability, Comments Items.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/connect_resources_comments_specific.htm#connect_resources_comments_specific",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "value": "application/json",
+      "type": "text"
+    }
+  ],
+  "method": "PATCH",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "4595b8aa-c5b0-4d48-ac58-57cb0ebb8c52",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "8f1cdb8b-4f29-4d6c-8898-928a99e3f86e",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "916a7c2a-742c-4c60-b914-0ad154aad86f",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "rawModeData": "{\n    \"body\": {\n        \"messageSegments\": [\n            {\n                \"type\": \"Text\",\n                \"text\": \"Editing a comment\"\n            }\n        ]\n    }\n}",
+  "headers": "Content-Type: application/json\n",
+  "pathVariables": {}
+}

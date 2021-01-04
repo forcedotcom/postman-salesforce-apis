@@ -1,0 +1,50 @@
+{
+  "id": "b5858376-9ca2-442b-acd2-9ceb713b492c",
+  "name": "User Photo",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/user-profiles/me/photo",
+  "description": "Get, post, and crop a user photo.\nTo use an image from the Files page as a user photo, pass the file ID in the fileId property of the request body or in the fileId request parameter. Images uploaded on the User page don’t have a file ID and can’t be used as the fileId.\n\nTo upload a binary file as the user photo, you must send it in a multipart/form-data message. For information about how to create the multipart/form-data message, see Uploading Binary Files.\n\nTo display user profile photos in a feed, cache the user photos. Then use the photoVersionId property of the Photo response body to determine when you need to update a photo. This technique helps you avoid running over limits and may improve mobile client performance.",
+  "data": [
+    {
+      "key": "json",
+      "value": "{\"cropY\":\"0\",\"cropX\":\"0\",\"cropSize\":\"200\"}",
+      "type": "text"
+    },
+    {
+      "key": "fileUpload",
+      "value": [],
+      "type": "file"
+    }
+  ],
+  "dataOptions": {
+    "params": {}
+  },
+  "dataMode": "params",
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "value": "multipart/form-data",
+      "enabled": false
+    },
+    {
+      "key": "Content-Disposition",
+      "value": "form-data; name=\"photo\"",
+      "enabled": false
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json; charset=UTF-8",
+      "enabled": false
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": null,
+  "folder": "ba1cb146-127d-4143-8d8d-91ec9d8282fc",
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "//Content-Type: multipart/form-data\n//Content-Disposition: form-data; name=\"photo\"\n//Content-Type: application/json; charset=UTF-8\n",
+  "pathVariables": {}
+}

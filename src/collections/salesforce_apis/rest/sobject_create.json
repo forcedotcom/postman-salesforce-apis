@@ -1,16 +1,14 @@
 {
-  "id": "f53691c8-7d36-4a4d-b3e5-76b092dcc668",
+  "id": "462c4f44-316f-4e71-bfa9-69d234f65288",
   "name": "SObject Create",
-  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/Attachment",
+  "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>",
   "description": null,
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -24,7 +22,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "18f8ee9f-81e2-46ba-9d88-fc0090afe065",
+        "id": "399e75db-f5c3-4eb2-9f6b-d38c852f6f7f",
         "exec": [
           ""
         ],
@@ -32,10 +30,10 @@
       }
     }
   ],
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "responses": [
     {
-      "id": "f2b5a9ed-64b4-42b0-9ee0-59995cceb085",
+      "id": "2f29d933-6ba6-44af-98ae-a8926fdd20e6",
       "name": "REST Create Lead",
       "status": "",
       "mime": "",
@@ -64,16 +62,16 @@
       },
       "headers": [],
       "cookies": [],
-      "request": "f53691c8-7d36-4a4d-b3e5-76b092dcc668",
-      "collection": "58651f2c-c011-41d0-b34b-b5609b7d95df"
+      "request": "462c4f44-316f-4e71-bfa9-69d234f65288",
+      "collection": "314d5e58-9fdf-470c-aa02-621a1feb568e"
     }
   ],
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "{\n\"Name\":\"test\"\n}\n",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

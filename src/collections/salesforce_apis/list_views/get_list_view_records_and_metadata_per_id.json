@@ -1,5 +1,5 @@
 {
-  "id": "17ffb72d-40c5-40ac-a920-7139251848c7",
+  "id": "460453bd-0f45-4fa1-bd58-896ef0bc7d09",
   "name": "Get List View Records and Metadata per Id",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/list-ui/<LIST_VIEW_ID>",
   "description": "Returns record data and metadata for a list view.",
@@ -10,15 +10,7 @@
     }
   },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [],
@@ -27,7 +19,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "18b9b5da-5bd8-4f82-8a19-c4b524169bf6",
         "exec": [
           ""
         ],
@@ -35,7 +27,7 @@
       }
     }
   ],
-  "folder": "8352c5c2-c779-4684-a003-36daa7955fd0",
+  "folder": "4346c3cd-d308-4b2f-b3b5-5f70c741989e",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,8 +35,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

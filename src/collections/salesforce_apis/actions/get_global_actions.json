@@ -1,20 +1,14 @@
 {
-  "id": "b85aef76-001d-4d32-87d5-5aff01e56cfa",
+  "id": "81b56424-d569-4985-8d2c-803deac91f4c",
   "name": "Get Global Actions",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/global",
   "description": "Get the actions on record detail pages.",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [],
@@ -23,7 +17,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "6cf898ac-0be4-4386-ae2b-725d8161053c",
         "exec": [
           ""
         ],
@@ -31,7 +25,7 @@
       }
     }
   ],
-  "folder": "c451b8e5-6f6e-4242-9c63-fac725813b42",
+  "folder": "91e5209f-fb35-4a22-aac7-96effb0cd59d",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,8 +33,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

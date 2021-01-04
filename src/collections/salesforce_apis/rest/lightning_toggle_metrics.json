@@ -1,5 +1,5 @@
 {
-  "id": "d919fcfb-6079-4fc8-943c-352c8d802559",
+  "id": "76a2f401-b682-4ef5-a924-c6d7d2851a0f",
   "name": "Lightning Toggle Metrics",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/LightningToggleMetrics",
   "description": "Return details about users who switched between Salesforce Classic and Lightning Experience.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_lightning_togglemetrics.htm",
@@ -7,10 +7,6 @@
   "dataOptions": null,
   "dataMode": null,
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -21,10 +17,10 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

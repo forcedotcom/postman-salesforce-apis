@@ -1,10 +1,12 @@
 {
-  "id": "3ecddf78-33bc-4fe3-bc6b-c1ab0f77fc60",
+  "id": "94ec9e18-e6d1-455a-a88b-bc239919bfe7",
   "name": "Bulk Create Batch",
   "url": "{{_endpoint}}/services/async/{{version}}/job/{{_jobId}}/batch",
   "description": null,
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "binary": {}
+  },
   "dataMode": "binary",
   "headerData": [
     {
@@ -43,7 +45,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "3823484e-282d-406a-b718-c3622539fd11",
+        "id": "28c1920b-e6cd-4bdc-8eb3-3ba26fda88c7",
         "exec": [
           "var xmlTree = xml2Json(pm.response.text());",
           "console.log(xmlTree);",
@@ -53,12 +55,12 @@
       }
     }
   ],
-  "folder": "a7522bc1-a6fe-487f-a725-e3b900ccbcd4",
+  "folder": "3089c456-2c8b-4bb9-aeec-ae4382b36a50",
   "preRequestScript": null,
   "tests": "var xmlTree = xml2Json(pm.response.text());\nconsole.log(xmlTree);\npm.environment.set(\"_batchId\", xmlTree['batchInfo']['id']);",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
   "headers": "X-SFDC-Session: {{_accessToken}}\nContent-Type: text/csv\n//Content-Type: zip/csv\ncharset: UTF-8\n//Accept-Encoding: gzip\n//Content-Encoding: gzip\n",
   "pathVariables": {}

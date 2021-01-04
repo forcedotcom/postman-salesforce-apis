@@ -1,17 +1,14 @@
 {
-  "id": "54bdee6f-0765-4fe2-a7f8-f23a01dca1fb",
+  "id": "9b9c355e-eae3-4832-9b1e-d0b86c6a87fc",
   "name": "Composite",
   "url": "{{_endpoint}}/services/data/v{{version}}/composite/",
   "description": "Executes a series of REST API requests in a single call. You can use the output of one request as the input to a subsequent request. The response bodies and HTTP statuses of the requests are returned in a single response body. The entire request counts as a single call toward your API limits.\nThe requests in a composite call are called subrequests. All subrequests are executed in the context of the same user. In a subrequest’s body, you specify a reference ID that maps to the subrequest’s response. You can then refer to the ID in the url or body fields of later subrequests by using a JavaScript-like reference notation.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_composite.htm",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
-    {
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "type": "text",
@@ -23,11 +20,11 @@
   "queryParams": [],
   "auth": null,
   "events": null,
-  "folder": "1aeea941-aac2-4538-badc-074e2b328716",
+  "folder": "6d0fe15d-f0be-4e6b-869f-b9110dabd39c",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "{\n    \"allOrNone\": \"Boolean\",\n    \"collateSubrequests\": \"Boolean\",\n    \"compositeRequest\": \"Composite Subrequest[]\"\n}",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

@@ -1,0 +1,55 @@
+{
+  "id": "6032be07-d35d-47b5-b700-188342c304ff",
+  "name": "Users Files, General",
+  "url": "{{_endpoint}}/services/data/v{{version}}/connect/files/users/me",
+  "description": "Upload a file, including references to external files, to the Files home or get information about files a user owns. These files don’t include files shared with a user, files a user follows, or general organization files.\nWhen you upload a file to the Files home, it is private and available only to the file owner.\n\nTo upload a file, send it in a multipart/form-data request. You can include the description and title of the file in the multipart/form-data request as a JSON or XML request body. You can also send the information as request parameters. For information about how to create the multipart/form-data message, see Uploading Binary Files.\nhttps://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/connect_resources_users_files_general.htm",
+  "data": [
+    {
+      "key": "fileData",
+      "value": [],
+      "type": "file"
+    }
+  ],
+  "dataOptions": {
+    "params": {}
+  },
+  "dataMode": "params",
+  "headerData": [],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "8fc8b98a-0481-4907-8b1d-214db441a646",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "ab694c1e-3ff0-4795-a453-d64cf424b80e",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "10137b32-6bbd-485a-80a4-236f64695311",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "",
+  "pathVariables": {}
+}

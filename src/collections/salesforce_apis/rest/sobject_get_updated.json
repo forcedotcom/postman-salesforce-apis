@@ -1,5 +1,5 @@
 {
-  "id": "213eab28-2450-4831-ac90-5f31b925a921",
+  "id": "7cf7163d-bae8-44fc-b842-7b011077bf55",
   "name": "SObject Get Updated",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/updated/?start=&end=",
   "description": "Retrieves the list of individual records that have been updated (added or changed) within the given timespan for the specified object. SObject Get Updated is available in API version 29.0 and later.\n\nThis resource is commonly used in data replication applications. Note the following considerations:\nResults are returned for no more than 30 days previous to the day the call is executed.\nYour client application can replicate any objects to which it has sufficient permissions. For example, to replicate all data for your organization, your client application must be logged in with “View All Data” access rights to the specified object. Similarly, the objects must be within your sharing rules.\nThere is a limit of 600,000 IDs returned from this resource. If more than 600,000 IDs would be returned, EXCEEDED_ID_LIMIT is returned. You can correct the error by choosing start and end dates that are closer together.",
@@ -7,10 +7,6 @@
   "dataOptions": null,
   "dataMode": null,
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -36,10 +32,10 @@
   ],
   "auth": null,
   "events": null,
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

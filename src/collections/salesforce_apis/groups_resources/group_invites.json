@@ -1,0 +1,60 @@
+{
+  "id": "161f615a-7a4a-4f71-ab46-b83e33106232",
+  "name": "Group Invites",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/groups/group/<GROUP_ID>/invite",
+  "description": "Invite internal and external users to join a group.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/connect_resources_groups_invites.htm#connect_resources_groups_invites",
+  "data": [],
+  "dataOptions": {
+    "raw": {
+      "language": "json"
+    }
+  },
+  "dataMode": "raw",
+  "headerData": [
+    {
+      "key": "Content-Type",
+      "value": "application/json",
+      "type": "text"
+    }
+  ],
+  "method": "POST",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "cd6d27a5-c887-4c9e-866a-7c0a14108945",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "037c4a09-3c29-4cfa-b4c5-05c734ea336b",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "9d7a1985-ec3a-4198-a7b5-b9b309479c49",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {
+      "content-type": true
+    }
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "rawModeData": "{\n   \"invitees\" : {\n      \"emails\": [\n         \"testemail1@sfdcpostman.com\",\n         \"testemail2@sfdcpostman.com\"\n      ]\n   },\n   \"message\" : \"Join this group to participate in the discussion about your favorite feature.\"\n}",
+  "headers": "Content-Type: application/json\n",
+  "pathVariables": {}
+}

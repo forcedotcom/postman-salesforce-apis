@@ -1,7 +1,7 @@
 {
-  "id": "afa86dbb-f515-4edb-8841-704b33047e78",
+  "id": "d63683a0-1821-4f37-8f6c-c084873976fc",
   "name": "User Agent Flow",
-  "url": "{{url}}{{site}}/services/oauth2/authorize?response_type=token token_id&client_id={{clientId}}&redirect_uri={{redirectUrl}}&display=touch&login_hint&nonce=awesome",
+  "url": "{{url}}{{site}}/services/oauth2/authorize?response_type=token&client_id={{clientId}}&redirect_uri={{redirectUrl}}&display=touch&login_hint&nonce=awesome",
   "description": null,
   "data": null,
   "dataOptions": null,
@@ -12,72 +12,76 @@
   "queryParams": [
     {
       "key": "response_type",
-      "value": "token token_id",
+      "value": "token",
       "equals": true,
-      "description": "",
+      "description": null,
       "enabled": true
     },
     {
       "key": "client_id",
       "value": "{{clientId}}",
       "equals": true,
-      "description": "",
+      "description": null,
       "enabled": true
     },
     {
       "key": "redirect_uri",
       "value": "{{redirectUrl}}",
       "equals": true,
-      "description": "",
+      "description": null,
       "enabled": true
     },
     {
       "key": "display",
       "value": "touch",
       "equals": true,
-      "description": "",
+      "description": null,
       "enabled": true
     },
     {
       "key": "login_hint",
       "value": "",
       "equals": false,
-      "description": "",
+      "description": null,
       "enabled": true
     },
     {
       "key": "nonce",
       "value": "awesome",
       "equals": true,
-      "description": "",
+      "description": null,
       "enabled": true
     }
   ],
-  "auth": null,
+  "auth": {
+    "type": "noauth"
+  },
   "events": [
     {
       "listen": "test",
       "script": {
-        "id": "0a0dc544-c18f-4a6b-86e4-df3cccf8ab2d",
+        "id": "02652872-4a09-4e09-8f7b-2b753f7eca23",
         "exec": [
-          "var jsonData = pm.response.json();",
-          "var id = jsonData.id.split('/');",
-          "pm.environment.set(\"_accessToken\", jsonData.access_token);",
-          "pm.environment.set(\"_refreshToken\", jsonData.refresh_token);",
-          "pm.environment.set(\"_endpoint\", jsonData.instance_url);",
-          "pm.environment.set(\"_userId\", id.pop());",
-          "pm.environment.set(\"_orgId\", id.pop());"
+          "const jsonData = pm.response.json();",
+          "const id = jsonData.id.split('/');",
+          "",
+          "const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+          "context.set(\"_accessToken\", jsonData.access_token);",
+          "context.set(\"_refreshToken\", jsonData.refresh_token);",
+          "context.set(\"_endpoint\", jsonData.instance_url);",
+          "context.set(\"_userId\", id.pop());",
+          "context.set(\"_orgId\", id.pop());"
         ],
         "type": "text/javascript"
       }
     }
   ],
-  "folder": "32acb1b0-3ff8-40e8-9195-7e1ed0837157",
+  "folder": "6e9108ab-3369-4245-81b7-d270892e8f0a",
   "preRequestScript": null,
-  "tests": "var jsonData = pm.response.json();\nvar id = jsonData.id.split('/');\npm.environment.set(\"_accessToken\", jsonData.access_token);\npm.environment.set(\"_endpoint\", jsonData.instance_url);\npm.environment.set(\"_userId\", id.pop());\npm.environment.set(\"_orgId\", id.pop());",
+  "tests": "const jsonData = pm.response.json();\nconst id = jsonData.id.split('/');\n\nconst context = pm.environment.name ? pm.environment : pm.collectionVariables;\ncontext.set(\"_accessToken\", jsonData.access_token);\ncontext.set(\"_refreshToken\", jsonData.refresh_token);\ncontext.set(\"_endpoint\", jsonData.instance_url);\ncontext.set(\"_userId\", id.pop());\ncontext.set(\"_orgId\", id.pop());",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "headers": "",
   "pathVariables": {}
 }

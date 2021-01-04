@@ -1,20 +1,14 @@
 {
-  "id": "355348a6-09e4-42ec-ba7c-2f9b918da1e0",
+  "id": "895363a1-ff40-4e8b-b824-105c86c1d941",
   "name": "Get List View Header Actions",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/actions/list-view/<LIST_VIEW_IDS>",
   "description": "Get the actions on records in related lists.",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [],
@@ -23,7 +17,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "a2cda8f9-86d5-4b05-8727-50fe66dcb0eb",
         "exec": [
           ""
         ],
@@ -31,7 +25,7 @@
       }
     }
   ],
-  "folder": "c451b8e5-6f6e-4242-9c63-fac725813b42",
+  "folder": "91e5209f-fb35-4a22-aac7-96effb0cd59d",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -39,8 +33,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

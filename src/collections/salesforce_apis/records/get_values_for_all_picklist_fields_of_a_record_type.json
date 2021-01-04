@@ -1,29 +1,21 @@
 {
-  "id": "81473609-d64a-4e23-ab63-2ad4661cf6ce",
+  "id": "644462fd-780c-4969-9d27-97bb3175d576",
   "name": "Get Values for All Picklist Fields of a Record Type",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/object-info/<SOBJECT_API_NAME>/picklist-values/<RECORD_TYPE_ID>",
   "description": "Get metadata about a specific object. The response includes metadata describing fields, child relationships, record type, and theme.",
   "data": null,
   "dataOptions": null,
   "dataMode": null,
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [],
   "auth": null,
-  "events": [],
-  "folder": "4d16654a-9c96-4247-a5c8-ad85d4595c43",
+  "events": null,
+  "folder": "4976c50d-27fd-43c6-9ffa-496357411f71",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "",
   "pathVariables": {}
 }

@@ -1,14 +1,7 @@
 {
-  "id": "2c129bca-92a1-42f7-a355-e664e094c019",
+  "id": "9486a94b-041b-4595-91de-121b7290e8bb",
   "name": "Salesforce",
   "headers": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}",
-      "type": "text",
-      "description": "",
-      "enabled": true
-    },
     {
       "key": "Content-Type",
       "value": "application/json",

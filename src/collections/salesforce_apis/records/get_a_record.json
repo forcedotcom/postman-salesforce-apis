@@ -1,20 +1,12 @@
 {
-  "id": "e202723f-713c-4c10-b38a-7c9695a5f890",
+  "id": "8caaa856-0916-46ab-a659-1d9d1383dd42",
   "name": "Get a Record",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records/<RECORD_ID>",
   "description": "Get a record’s data.",
   "data": null,
   "dataOptions": null,
   "dataMode": null,
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [
@@ -62,11 +54,11 @@
     }
   ],
   "auth": null,
-  "events": [],
-  "folder": "4d16654a-9c96-4247-a5c8-ad85d4595c43",
+  "events": null,
+  "folder": "4976c50d-27fd-43c6-9ffa-496357411f71",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "",
   "pathVariables": {}
 }

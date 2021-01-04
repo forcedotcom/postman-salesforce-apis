@@ -1,5 +1,5 @@
 {
-  "id": "b062cd14-b35a-4b6b-942d-b54685f6fb2d",
+  "id": "fce92442-3eb3-411b-a335-ac4fc8c982b1",
   "name": "Update a Favorite",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/<FAVORITE_ID>",
   "description": "Update a Favorite",
@@ -10,15 +10,7 @@
     }
   },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "PATCH",
   "pathVariableData": [],
   "queryParams": [],
@@ -27,7 +19,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "6de878c3-76b4-496a-9e99-3493673e780d",
         "exec": [
           ""
         ],
@@ -35,13 +27,13 @@
       }
     }
   ],
-  "folder": "4595c8a1-7928-4db0-861d-6dd4ee26d2e7",
+  "folder": "678790bd-c38f-4e04-8d63-8dde2cb77042",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "{\n  \"name\": \"Red Accounts\",\n  \"sortOrder\": 1\n}\n",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

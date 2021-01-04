@@ -1,5 +1,5 @@
 {
-  "id": "6183de74-18bb-4efe-9aa7-e561578d6499",
+  "id": "1eefe1bf-81b7-4197-8379-970547eb6991",
   "name": "Recently Viewed Items",
   "url": "{{_endpoint}}/services/data/v{{version}}/sobjects/<SOBJECT_API_NAME>/listviews/recent?limit",
   "description": "Gets the most recently accessed items that were viewed or referenced by the current user. Salesforce stores information about record views in the interface and uses it to generate a list of recently viewed and referenced records, such as in the sidebar and for the auto-complete options in search.\n\nThis resource only accesses most recently used item information. If you want to modify the list of recently viewed items, you’ll need to update recently viewed information directly by using a SOQL Query with a FOR VIEW or FOR REFERENCE clause.\nhttps://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_recent_items.htm",
@@ -7,10 +7,6 @@
   "dataOptions": null,
   "dataMode": null,
   "headerData": [
-    {
-      "key": "Authorization",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "key": "Content-Type",
       "value": "application/json"
@@ -22,16 +18,17 @@
     {
       "key": "limit",
       "value": "",
+      "equals": false,
       "description": "An optional limit that specifies the maximum number of records to be returned. If this parameter is not specified, the default maximum number of records returned is the maximum number of entries in RecentlyViewed, which is 200 records per object.",
       "enabled": true
     }
   ],
   "auth": null,
   "events": null,
-  "folder": "7e4757ad-56f4-43ad-8175-051e53410941",
+  "folder": "20c042e8-2c38-4549-86e4-56ea0bfd19a3",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

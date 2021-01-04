@@ -1,5 +1,5 @@
 {
-  "id": "0e8891e4-f3b0-43a5-a9fa-cbd9b3027cdd",
+  "id": "8e6a9a3a-250c-480e-a3f3-b19bb29751ac",
   "name": "Get Most Recently Used List View Records and Metadata",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/mru-list-ui/<SOBJECT_API_NAME>",
   "description": "Returns record data and metadata for an object’s most recently used (MRU) list view.",
@@ -10,15 +10,7 @@
     }
   },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [],
@@ -27,7 +19,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "a7e2463b-411a-4068-91b1-98b9aa03bda0",
         "exec": [
           ""
         ],
@@ -35,7 +27,7 @@
       }
     }
   ],
-  "folder": "8352c5c2-c779-4684-a003-36daa7955fd0",
+  "folder": "4346c3cd-d308-4b2f-b3b5-5f70c741989e",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,8 +35,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

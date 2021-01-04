@@ -1,5 +1,5 @@
 {
-  "id": "460d18a2-a13e-4dbf-876a-7239bfb0ddf6",
+  "id": "7e417716-4e3b-4b1c-8e8a-1faeaec23656",
   "name": "Get Favorites",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites",
   "description": "Get all of a user’s favorites.",
@@ -10,15 +10,7 @@
     }
   },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "GET",
   "pathVariableData": [],
   "queryParams": [],
@@ -27,7 +19,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "b4b125e4-b2ac-4f33-8fc0-682968d6dda5",
         "exec": [
           ""
         ],
@@ -35,7 +27,7 @@
       }
     }
   ],
-  "folder": "4595c8a1-7928-4db0-861d-6dd4ee26d2e7",
+  "folder": "678790bd-c38f-4e04-8d63-8dde2cb77042",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
@@ -43,8 +35,8 @@
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

@@ -1,21 +1,15 @@
 {
-  "id": "897c5a1d-435d-46d1-8a9d-e4a7cbe59ed9",
+  "id": "2476424c-a442-4203-a9c9-a9a6bc354072",
   "name": "Update a Record",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/records/<RECORD_ID>",
   "description": "Update a record's data.\nUser Interface API enforces Salesforce validation rules. If a validation rule fails, the response is an Error with Output.\n\nWhen you make a PATCH request to update a record, make sure that the record hasn’t changed since the user started editing it. To find out whether it’s safe to save a record, pass the If-Modified-Since HTTP header in the request.\n\nAs of API version 43.0, if you pass read-only fields in a request body, the response is an Error with Output.",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
     {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    },
-    {
-      "description": "",
       "enabled": true,
       "key": "Content-Type",
       "type": "text",
@@ -30,7 +24,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "6b49bfb8-1eaa-453e-ac6a-3e120bc3cad5",
         "exec": [
           ""
         ],
@@ -38,13 +32,13 @@
       }
     }
   ],
-  "folder": "4d16654a-9c96-4247-a5c8-ad85d4595c43",
+  "folder": "4976c50d-27fd-43c6-9ffa-496357411f71",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "{\n    \"allowSaveOnDuplicate\": false,\n    \"apiName\": \"Object\",\n    \"fields\": {\n        \"FieldAPIName\": \"FieldValue\"\n    }\n}",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

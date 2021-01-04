@@ -1,17 +1,14 @@
 {
-  "id": "751bfe6e-c2e0-48fd-abe0-830b1c1ff00e",
+  "id": "1744c0c0-0a81-4b7a-a93b-08bbd91464fb",
   "name": "Tooling Query",
   "url": "{{_endpoint}}/services/data/v{{version}}/tooling/query/?q",
   "description": "Executes a query against an object and returns data that matches the specified criteria. Tooling API exposes objects like EntityDefinition and FieldDefinition that use the external object framework. That is, they don’t exist in the database but are constructed dynamically. Special query rules apply to virtual entities.\nIf the query result is too large, it’s broken up into batches. The response contains the first batch of results and a query identifier. The identifier can be used in a request to retrieve the next batch.",
   "data": [],
-  "dataOptions": null,
+  "dataOptions": {
+    "raw": {}
+  },
   "dataMode": "raw",
   "headerData": [
-    {
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    },
     {
       "enabled": false,
       "key": "Content-Type",
@@ -25,20 +22,21 @@
     {
       "key": "q",
       "value": "",
+      "equals": false,
       "description": "SOQL Query",
       "enabled": true
     }
   ],
   "auth": null,
   "events": null,
-  "folder": "0f822144-6331-4019-a51b-95786c6f5da9",
+  "folder": "c56f8fff-cd87-4008-9969-e2d3aaf9cd93",
   "protocolProfileBehavior": {
     "disableBodyPruning": true
   },
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n//Content-Type: application/json\n",
+  "headers": "//Content-Type: application/json\n",
   "pathVariables": {}
 }

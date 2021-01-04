@@ -1,5 +1,5 @@
 {
-  "id": "acee4809-32d3-4243-932c-9e33cb3dfbac",
+  "id": "1dba1687-e45c-4761-b49c-ebe6b0d4b572",
   "name": "Configuration Validator API",
   "url": "{{_endpoint}}/services/apexrest/SBQQ/ServiceRouter?loader=SBQQ.ConfigAPI.ConfigurationValidator&uid=",
   "description": "The Configuration Validator API runs selection, validation, and alert product rules and configurator-scoped price rules against the input configuration model and returns an updated configuration model.\nAvailable in: Salesforce CPQ Spring ’17 and later\n\nhttps://developer.salesforce.com/docs/atlas.en-us.cpq_dev_api.meta/cpq_dev_api/cpq_api_config_validator.htm",
@@ -12,14 +12,6 @@
   "dataMode": "raw",
   "headerData": [
     {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    },
-    {
-      "description": "",
       "enabled": true,
       "key": "Content-Type",
       "type": "text",
@@ -33,24 +25,22 @@
       "key": "loader",
       "value": "SBQQ.ConfigAPI.ConfigurationValidator",
       "equals": true,
-      "description": "",
       "enabled": true
     },
     {
       "key": "uid",
       "value": "",
       "equals": true,
-      "description": "",
       "enabled": true
     }
   ],
   "auth": null,
-  "events": [],
-  "folder": "993b3422-ad9a-4a9d-9be2-22482baa81e2",
+  "events": null,
+  "folder": "33d1d400-3192-4a70-9e81-320a3f31ef6d",
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\nContent-Type: application/json\n",
+  "headers": "Content-Type: application/json\n",
   "pathVariables": {}
 }

@@ -1,5 +1,5 @@
 {
-  "id": "ed908c83-c981-434f-b1bd-4051ab080a3a",
+  "id": "e545a8ef-bf3e-4a28-916b-cef4d524fb51",
   "name": "Update Last Selected App",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/apps/<APP_ID>",
   "description": "Returns metadata for an app, and saves an app as the last selected for a user.",
@@ -10,15 +10,7 @@
     }
   },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "PATCH",
   "pathVariableData": [],
   "queryParams": [],
@@ -27,7 +19,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "0dc1efd4-2587-43d1-88e7-f4e9e00fee52",
         "exec": [
           ""
         ],
@@ -35,13 +27,13 @@
       }
     }
   ],
-  "folder": "0c1a3d16-0941-4c83-a953-9e8c491ac7c5",
+  "folder": "38df7084-6b20-4b86-9c24-6aacaea63876",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

@@ -1,5 +1,5 @@
 {
-  "id": "152d71c1-093d-46a7-9d2b-dd3a59e08ed4",
+  "id": "c3c7b546-82fa-44ca-82e8-7fbba82afcfe",
   "name": "Update Usage of a Favorite",
   "url": "{{_endpoint}}/services/data/v{{version}}/ui-api/favorites/<FAVORITE_ID>",
   "description": "Update the usage of an individual favorite, for example, the last time and number of times the favorite was clicked.",
@@ -10,15 +10,7 @@
     }
   },
   "dataMode": "raw",
-  "headerData": [
-    {
-      "description": "",
-      "enabled": true,
-      "key": "Authorization",
-      "type": "text",
-      "value": "Bearer {{_accessToken}}"
-    }
-  ],
+  "headerData": [],
   "method": "PATCH",
   "pathVariableData": [],
   "queryParams": [],
@@ -27,7 +19,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "076c8104-49ed-41ff-9281-fd1359292263",
+        "id": "d6e6bddd-8f3b-47f9-8f11-ab6a86f4ca20",
         "exec": [
           ""
         ],
@@ -35,13 +27,13 @@
       }
     }
   ],
-  "folder": "4595c8a1-7928-4db0-861d-6dd4ee26d2e7",
+  "folder": "678790bd-c38f-4e04-8d63-8dde2cb77042",
   "preRequestScript": null,
   "tests": null,
   "currentHelper": null,
   "helperAttributes": null,
-  "collectionId": "58651f2c-c011-41d0-b34b-b5609b7d95df",
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
   "rawModeData": "",
-  "headers": "Authorization: Bearer {{_accessToken}}\n",
+  "headers": "",
   "pathVariables": {}
 }

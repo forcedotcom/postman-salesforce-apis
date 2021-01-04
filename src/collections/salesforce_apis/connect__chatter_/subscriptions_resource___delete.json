@@ -1,0 +1,47 @@
+{
+  "id": "9a100133-695e-4211-8f3c-bae03e1034a8",
+  "name": "Subscriptions Resource - DELETE",
+  "url": "{{_endpoint}}/services/data/v{{version}}/chatter/subscriptions/<SUBSCRIPTION_ID>",
+  "description": "Information about the specified subscription. Also used to delete a subscription, for example, to unfollow a record or a topic.\nA subscription ID is returned as part of the response body for follower and following resources, for example, /records/recordId/followers. In addition, subscriptions IDs are also returned in many summary response bodies, such as group summary or user summary.\n\nhttps://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/connect_resources_subscriptions.htm",
+  "data": null,
+  "dataOptions": null,
+  "dataMode": null,
+  "headerData": [],
+  "method": "DELETE",
+  "pathVariableData": [],
+  "queryParams": [],
+  "auth": null,
+  "events": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "d4c2ac40-ef4e-4459-8c62-dac8bee60ba3",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "98b8d123-f45c-4514-b8e5-fee44c55b022",
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "folder": "956e6a4b-78e1-4290-9d2e-af29dab30db4",
+  "protocolProfileBehavior": {
+    "disabledSystemHeaders": {}
+  },
+  "preRequestScript": null,
+  "tests": null,
+  "currentHelper": null,
+  "helperAttributes": null,
+  "collectionId": "314d5e58-9fdf-470c-aa02-621a1feb568e",
+  "headers": "",
+  "pathVariables": {}
+}
