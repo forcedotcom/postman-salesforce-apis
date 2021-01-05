@@ -76,8 +76,8 @@ Consider this installation option if you can’t install the Postman desktop app
     | `username`	| Your username	|
     | `password`	| Your password	|
     | `secretToken`	| Your personal [security token](https://help.salesforce.com/articleView?id=user_security_token.htm)	|
-    | `clientId`	| The Connected App consumer key that you've obtained after creating the connnected app in your Salesforce Org	|
-    | `clientSecret`	| The Connected App consumer secret that you've obtained after creating the connnected app in your Salesforce Org	|
+    | `clientId`	| The Connected App consumer key that you've obtained after creating the connected app in your Salesforce Org	|
+    | `clientSecret`	| The Connected App consumer secret that you've obtained after creating the connected app in your Salesforce Org	|
 
 1. Click **Save**
 1. Activate your environment by hovering over its name and clicking on the check icon.

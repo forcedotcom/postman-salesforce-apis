@@ -49,8 +49,8 @@ You can use the **Postman desktop app** or the **Postman web UI** to connect to 
 
 | Installation Option	| Pros	| Cons	|
 | ---	| ---	| ---	|
-| [Option 1: Using Postman Desktop App (Recommended)](install-api-network-app.md)	| - **Fast setup** (approx 10 minutes)<br/>- No changes required in Salesforce<br/>- Supports all authentication methods	|	|
-| [Option 2: Using Postman Web UI](install-api-network-web.md)	| - **No software installation required**	| - **Longer setup** (approx 20 minutes) with greater risk of configuration error<br/>- **Requires Salesforce Org configuration**<br/>- Limited support for authentication methods due to CORS browser restrictions	|
+| [Option 1: Using Postman Desktop App (Recommended)](install-api-network-app.md)	| - **Fast setup** (approx. 10 minutes)<br/>- No changes required in Salesforce<br/>- Supports all authentication methods	|	|
+| [Option 2: Using Postman Web UI](install-api-network-web.md)	| - **No software installation required**	| - **Longer setup** (approx. 20 minutes) with greater risk of configuration error<br/>- **Requires Salesforce Org configuration**<br/>- Limited support for authentication methods due to CORS browser restrictions	|
 
 Regardless of whether you choose the desktop app or the web UI, you can use all of the collection’s requests and your changes are synchronized between the two environments so you can easily switch between them at any time.
 
@@ -72,7 +72,7 @@ The collection relies on the following variables:
 | `clientSecret ` | Connected App client secret. |
 | `redirectUrl ` | Connected App redirect URL for OAuth 2.0. |
 | `initAccessToken ` | Initial access token for dynamic Connected App registration. |
-| `site ` | Community suffic when connecting with an Experience Cloud user. |
+| `site ` | Community suffix when connecting with an Experience Cloud user. |
 
 Only a few of these variables are mandatory. The authentication requests will automatically register and set extra "private" variables identified with a `_` prefix (e.g.: `_accessToken`, `_endpoint`, `_orgId`, `_userId`...).
 
