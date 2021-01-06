@@ -55,28 +55,6 @@ You can use the **Postman desktop app** or the **Postman web UI** to connect to 
 Regardless of whether you choose the desktop app or the web UI, you can use all of the collection’s requests and your changes are synchronized between the two environments so you can easily switch between them at any time.
 
 
-## Variables Reference
-
-The collection comes with some collection variables but we recommend overriding these variables by working with clones of the [Salesforce Template Environment](https://www.postman.com/salesforce-developers/workspace/salesforce-developers/environment/12721794-8b74caf1-3cbb-44d0-b245-855c0fb25f0d). Using environments lets you connect to multiple orgs in parallel.
-
-The collection relies on the following variables:
-
-| Variable | Description |
-| --- | --- |
-| `url` | The base URL for all requests. Either:<br/>- `https://test.salesforce.com` for sandboxes or Scratch orgs<br/>- `https://login.salesforce.com` for production, Trailhead Playground and Developer Edition orgs<br/>- your custom My Domain base URL. |
-| `version` | The Salesforce API version (e.g.: 50.0). |
-| `username ` | Your username. |
-| `password ` | Your password. |
-| `secretToken ` | Your personal [security token](https://help.salesforce.com/articleView?id=user_security_token.htm). |
-| `clientId ` | Connected App client Id. |
-| `clientSecret ` | Connected App client secret. |
-| `redirectUrl ` | Connected App redirect URL for OAuth 2.0. |
-| `initAccessToken ` | Initial access token for dynamic Connected App registration. |
-| `site ` | Community suffix when connecting with an Experience Cloud user. |
-
-Only a few of these variables are mandatory. The authentication requests will automatically register and set extra "private" variables identified with a `_` prefix (e.g.: `_accessToken`, `_endpoint`, `_orgId`, `_userId`...).
-
-
 ## Contributing
 
 Follow [these instructions](contributing.md) to contribute to the collection.
