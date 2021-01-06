@@ -4,6 +4,13 @@
 
 Consider this installation option if you can’t install the Postman desktop app. This process require that you configure your Salesforce org to create a Connected App and set some CORS settings.
 
+- [Create a Connected App](#create-a-connected-app)
+- [Enable CORS](#enable-cors)
+- [Import the Collection](#import-the-collection)
+- [Configure the Collection](#configure-the-collection)
+- [Configure Postman](#configure-postman)
+- [Authenticate with Salesforce](#authenticate-with-salesforce)
+
 
 ## Create a Connected App
 
@@ -39,7 +46,7 @@ Consider this installation option if you can’t install the Postman desktop app
 ![CORS configuration screenshot](doc-gfx/salesforce/cors-finished.png)
 
 
-## Import the Salesforce APIs Collection
+## Import the Collection
 
 1. Using a browser, [sign up/in to Postman](https://identity.getpostman.com/login)
 1. Open [this link](https://documenter.getpostman.com/view/12721794/TVmFjfuh)
@@ -51,7 +58,7 @@ Consider this installation option if you can’t install the Postman desktop app
 1. Select a workspace (the default “My Workspace” workspace is fine)
 
 
-## Configure the Salesforce APIs Collection
+## Configure the Collection
 
 1. In your Salesforce org Setup, enter `My Domain` in the Quick Find and select **My Domain**.
 1. If your org does not have a My Domain, follow [these steps](https://help.salesforce.com/articleView?id=domain_name_setup.htm&type=5) to configure it.

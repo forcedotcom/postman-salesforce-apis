@@ -4,12 +4,18 @@
 
 This is the recommended installation option because it is the fastest to set up and doesn’t require changes on your Salesforce org. You’ll import the collection from the Postman API Network.
 
+- [Install the Postman App](#install-the-postman-app)
+- [Import the Collection](#import-the-collection)
+- [Configure the Collection](#configure-the-collection)
+- [Authenticate with Salesforce](#authenticate-with-salesforce)
+
+
 ## Install the Postman App
 
 Download and install the Postman app from [this link](https://www.postman.com/downloads).
 
 
-## Import the Salesforce APIs Collection
+## Import the Collection
 
 1. In the Postman desktop app, click the **New** button
 1. Switch to the **API Network** tab
@@ -20,7 +26,7 @@ Download and install the Postman app from [this link](https://www.postman.com/do
 ![Network API install screenshot](doc-gfx/app/api-network.png)
 
 
-## Configure the Salesforce APIs Collection
+## Configure the Collection
 
 1. Click on the **Manage Environments** icon
 
