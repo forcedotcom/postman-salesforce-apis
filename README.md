@@ -1,5 +1,5 @@
 > ℹ️  **January 2021 update:** the collection sources were moved to the Postman API Network.<br/>
-This repository will continue to host the documentation and track issues.
+This repository is now dedicated to hosting the setup/contribution documentation and track issues.
 
 
 # Salesforce APIs for Postman
