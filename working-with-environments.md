@@ -4,7 +4,8 @@
 
 You can use the Postman desktop app with environments to work with multiple Salesforce orgs in parallel.
 
-> ⚠️ Using environments means that you will store Salesforce credentials in clear Postman. Do this at your own risks.
+> ⚠️ Using environments means that you will store Salesforce credentials in clear in Postman.<br/>
+> Do this at your own risks.
 
 
 - [Import the Template Environment](#import-the-template-environment)
