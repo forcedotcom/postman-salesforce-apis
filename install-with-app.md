@@ -81,4 +81,7 @@ At this point, if your environment is correctly set up, you should see a `200 OK
 
 ![Authenticate screenshot](doc-gfx/app/limits-status-200.png)
 
+See [additional documentation](README.md#additional-documentation) for more information on how to keep the collection up to date and work with multiple Salesforce orgs.
+
+
 [Back to main page](README.md)
