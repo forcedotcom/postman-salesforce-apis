@@ -3,14 +3,12 @@
 # Contributing
 
 - [About](#about)
-- [Propose Changes](#propose-changes)
-    - [Requirements](#requirements)
-    - [Contribution Guidelines](#contribution-guidelines)
-    - [Create a Public Team](#create-a-public-team)
-    - [Create a Public Workspace](#create-a-public-workspace)
-    - [Fork the Collection](#fork-the-collection)
-    - [Create a Pull Request](#create-a-pull-request)
-- [Pull Changes](#pull-changes)
+- [Requirements](#requirements)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Create a Public Team](#create-a-public-team)
+- [Create a Public Workspace](#create-a-public-workspace)
+- [Move your Collection to your Public Workplace](#move-your-collection-to-your-public-workplace)
+- [Create a Pull Request](#create-a-pull-request)
 
 
 ## About
@@ -24,21 +22,19 @@ With **Public Workspaces**, you’ll find the same contribution flow that you’
 This is also great news for you even if you do not contribute to the collection because you’ll be able to pull changes from the collection (bug fixes, new APIs...) without having to reimport anything.
 
 
-## Propose Changes
-
-### Requirements
+## Requirements
 
 In order to contribute to the collection, you need to:
 - create a public team.
 - create a Public Workspace.
-- fork the collection from the main Public Workspace.
+- move your fork of the collection to your Public Workspace.
 
 All of this can be done with a Postman free plan.
 
->⚠️ Warning: you cannot contribute if you install the collection from the Postman API Network (default installation).
+>⚠️ Warning: you cannot contribute if you install the collection without forking it (legacy installation option and API Network installation)
 
 
-### Contribution Guidelines
+## Contribution Guidelines
 
 Follow these guidelines when contributing to the collection:
 
@@ -53,7 +49,7 @@ Follow these guidelines when contributing to the collection:
 - Optional: provide examples.
 
 
-### Create a Public Team
+## Create a Public Team
 
 1. Using a browser, [sign up/in to Postman](https://identity.getpostman.com/login)
 1. Open the top-right dropdown and click **Manage Team**
@@ -62,7 +58,7 @@ Follow these guidelines when contributing to the collection:
 1. Click **Save Changes**
 
 
-### Create a Public Workspace
+## Create a Public Workspace
 
 1. Open the **Workspaces** menu and click **New Workspace**
 1. Fill in a name for your workspace
@@ -75,47 +71,29 @@ Follow these guidelines when contributing to the collection:
 1. Click **Save Changes**
 
 
-### Fork the Collection
+## Move your Collection to your Public Workplace
 
-1. Navigate to [this link](https://www.postman.com/salesforce-developers/workspace/salesforce-developers/collection/12721794-67cb9baa-e0da-4986-957e-88d8734647e2/fork) to create a fork of the collection
-1. Enter a label for your fork (e.g.: “My fork”)
-1. Select the Public Workspace you create earlier
-1. Click **Fork Collection**
+1. Move your mouse over your “Salesforce APIs” forked collection, click on the “three dots” icon next to it and select **Share collection** from the menu.
+1. Select your newly created public workspace from the list.
+1. Click **Share and Continue**.
+1. Click **Close**.
 
-At this point, you can continue the regular installation procedure either [in the Web UI](install-api-network-web.md) or [in the desktop app](install-api-network-app.md). Postman synchronizes your changes between the two environments.
+Use the **Workspace** menu to navigate to your public workspace and find your collection.
 
 
-### Create a Pull Request
+## Create a Pull Request
 
 Once you're ready to contribute, follow these steps:
 
-1. Using a browser, [sign up/in to Postman](https://identity.getpostman.com/login)
 1. Navigate to the workspace that holds your collection
-1. Click on the “three dots” icon next to the “Salesforce APIs” collection and select **Merge Changes** from the menu.
+1. Click on the “three dots” icon next to the “Salesforce APIs” collection and select **Create Pull Request** from the menu.
 
-    ![Merge changes screenshot](doc-gfx/web/create-pull-request.png)
+    ![Create Pull Request screenshot](doc-gfx/web/create-pull-request.png)
 
-1. Open the **Changes** tab and review your changes. Make sure you've met the [contribution guidelines](#contribution-guidelines)
-1. Go back to the **Overview** tab
+1. Open the **Changes** tab and review your changes. Make sure you've met the [contribution guidelines](#contribution-guidelines).
+1. Go back to the **Overview** tab.
 1. Fill in the title and description fields. Leave the reviewers list empty.
-1. Click **Create Pull Request**
-
-## Pull Changes
-
-Pulling changes requires that you work on a [fork](#fork-the-collection) of the main Public Workspace.<br/>
-Your workspace doesn't need to be public and you don't need a team to pull changes. You can use a personal private workspace.
-
-1. Using a browser, [sign up/in to Postman](https://identity.getpostman.com/login)
-1. Navigate to the workspace that holds your collection
-1. Click on the “three dots” icon next to the “Salesforce APIs” collection and select **Merge Changes** from the menu.
-
-    ![Merge changes screenshot](doc-gfx/web/merge-changes.png)
-
-1. If the master collection has changes, you'll see a yellow banner with a **Pull Changes** link. Click the link.
-
-    ![Pull changes screenshot](doc-gfx/web/pull-changes.png)
-
-1. Review the changes and click **Pull Changes**
+1. Click **Create Pull Request**.
 
 
 [Back to main page](README.md)

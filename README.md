@@ -1,4 +1,4 @@
-> ℹ️  **January 2021 update:** the collection sources were moved to the Postman API Network.<br/>
+> ℹ️  **January 2021 update:** the collection sources were moved to a Postman Public Workspace.<br/>
 This repository is now dedicated to hosting the setup/contribution documentation and tracking issues.
 
 
@@ -39,22 +39,24 @@ Learn more about the Collection:
 - This collection is provided as-is. It's not officially supported by Salesforce or covered by SLAs.
 - API documentation is not provided with the collection. Please refer to the [official documentation](https://developer.salesforce.com/docs).
 
+
 ## Issues and Questions
 
 Report issues and ask questions [here](https://github.com/forcedotcom/postman-salesforce-apis/issues).
 
+
 ## Installation
 
-You can use the **Postman desktop app** or the **Postman web UI** to connect to Salesforce with the Salesforce APIs collection. Use the following table to decide which option works best for you:
+You can use the **Postman desktop app** or the **Postman web UI** to connect to Salesforce with the Salesforce APIs collection:
 
-| Installation Option	| Pros	| Cons	|
-| ---	| ---	| ---	|
-| [Option 1: Using Postman Desktop App (Recommended)](install-api-network-app.md)	| - **Fast setup** (approx. 10 minutes)<br/>- No changes required in Salesforce<br/>- Supports all authentication methods	|	|
-| [Option 2: Using Postman Web UI](install-api-network-web.md)	| - **No software installation required**	| - **Longer setup** (approx. 20 minutes) with greater risk of configuration error<br/>- **Requires Salesforce Org configuration**<br/>- Limited support for authentication methods due to CORS browser restrictions	|
+- [Install using the Postman desktop app](install-with-app.md) (recommended)
+- [Install using the Postman web UI](install-with-web.md) (longer setup, requires CORS configuration in Salesforce org)
 
 Regardless of whether you choose the desktop app or the web UI, you can use all of the collection’s requests and your changes are synchronized between the two environments so you can easily switch between them at any time.
 
 
-## Contributing
+## Additional Documentation
 
-Follow [these instructions](contributing.md) to contribute to the collection.
+- [Keeping the collection up to date](updating.md)
+- [Working with environments to connect to multiple orgs](working-with-environments.md)
+- [Contributing](contributing.md)
