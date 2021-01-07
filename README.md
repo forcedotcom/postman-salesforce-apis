@@ -55,7 +55,7 @@ You can use the **Postman desktop app** or the **Postman web UI** to connect to 
 Regardless of whether you choose the desktop app or the web UI, you can use all of the collection’s requests and your changes are synchronized between the two environments so you can easily switch between them at any time.
 
 
-# Additional Documentation
+## Additional Documentation
 
 - [Keeping the collection up to date](updating.md)
 - [Working with environments to connect to multiple orgs](working-with-environments.md)

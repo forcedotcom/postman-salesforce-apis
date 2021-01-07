@@ -8,8 +8,8 @@ You can use the Postman desktop app with environments to work with multiple Sale
 
 
 - [Import the Template Environment](#import-the-template-environment)
-- [Configure the Collection](#configure-the-collection)
-- [Configure Postman](#configure-postman)
+- [Configure the Environment](#configure-the-environment)
+- [Change the Collection Authorization Type](#change-the-collection-authorization-type)
 - [Authenticate with Salesforce](#authenticate-with-salesforce)
 
 
@@ -60,7 +60,7 @@ You can use the Postman desktop app with environments to work with multiple Sale
     ![Select environment screenshot](doc-gfx/app/select-env.png)
 
 
-## Change the Collection Authentication Type
+## Change the Collection Authorization Type
 
 1. Move your mouse over the “Salesforce APIs” collection, click on the “three dots” icon next to it and select **Edit** from the menu.
 
