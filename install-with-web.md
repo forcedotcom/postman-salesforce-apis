@@ -1,6 +1,6 @@
 [Back to main page](README.md)
 
-# Installing via the Postman API Network with the Web UI
+# Installing with the Postman Web UI
 
 Consider this installation option if you can’t install the Postman desktop app.
 
