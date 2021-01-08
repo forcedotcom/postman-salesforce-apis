@@ -1,6 +1,6 @@
 [Back to main page](README.md)
 
-# Installing via the Postman API Network with the Desktop App
+# Installing with the Postman Desktop App
 
 This is the recommended installation option because it is the fastest to set up and doesn’t require changes on your Salesforce org.
 
