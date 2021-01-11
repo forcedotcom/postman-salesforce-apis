@@ -41,7 +41,7 @@ Consider this installation option if you can’t install the Postman desktop app
 
 1. In Salesforce Setup, enter `CORS` in the Quick Find and select **CORS**.
 1. Click **New** under Allowed Origins List
-1. Enter `https://*.`[`postman.com`](http://postman.com/) as the **Origin URL Pattern**
+1. Enter `https://*.postman.com` as the **Origin URL Pattern**
 1. Click **Save**
 1. Repeat the previous steps and add `https://*.postman.co` (note the `.co` domain extension)
 
