@@ -55,7 +55,7 @@ You'll need to authenticate with Salesforce to access the APIs. Doing so grants 
 Repeat this step whenever your access token expires.
 
 1. Move your mouse over the “Salesforce APIs” collection, click on the “three dots” icon next to it and select **Edit** from the menu.
-1. Open the **Authorization** tab.
+1. Open the **Authorization** tab. The authorization type should be set to OAuth 2.0.
 1. Click **Get New Access Token**. This opens a browser tab with the Salesforce login screen.
 1. Log in to your Salesforce org.
 1. Click **Allow** to grant access to "Salesforce APIs Collection for Postman" to your org.
