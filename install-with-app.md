@@ -4,6 +4,8 @@
 
 This is the recommended installation option because it is the fastest to set up and doesn’t require changes on your Salesforce org.
 
+🎥 [Video instructions](https://youtu.be/W-IwW6RM4F0)
+
 - [Install the Postman App](#install-the-postman-app)
 - [Fork the Collection](#fork-the-collection)
 - [Configure the Collection](#configure-the-collection)

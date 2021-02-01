@@ -4,6 +4,8 @@
 
 Consider this installation option if you can’t install the Postman desktop app.
 
+🎥 [Video instructions](https://youtu.be/lxRNs4LsVdo)
+
 - [Fork the Collection](#fork-the-collection)
 - [Configure the Collection](#configure-the-collection)
 - [Enable CORS in Salesforce](#enable-cors-in-salesforce)
