@@ -1,5 +1,7 @@
 [Back to main page](README.md)
 
+> Instructions updated for Postman desktop app v8
+
 # Installing with the Postman Desktop App
 
 This is the recommended installation option because it is the fastest to set up and doesn’t require changes on your Salesforce org.
@@ -20,32 +22,32 @@ Download and install the Postman app from [this link](https://www.postman.com/do
 
 ### Fork the Collection
 
-1. Using a browser, [sign up/in to Postman](https://identity.getpostman.com/login).
-2. Navigate to [this link](https://www.postman.com/salesforce-developers/workspace/salesforce-developers/collection/12721794-67cb9baa-e0da-4986-957e-88d8734647e2/fork) to create a fork of the collection.
-3. Enter a label for your fork (e.g.: “My fork”).
-4. Select a workspace (the default “My Workspace” workspace is fine).
-5. Click **Fork Collection**.
-6. Close the browser tab. We'll continue the installation on the Postman app.
+1. In the Postman desktop app, click on the top search bar and type **Salesforce**.
+1. Click **Salesforce Developers** under Teams.
+
+    ![Searching for Salesforce screenshot](doc-gfx/app/search-salesforce.png)
+
+1. Click the **Salesforce APIs** tile.
+1. Click **Fork**
+
+    ![Fork button screenshot](doc-gfx/app/fork-button.png)
+
+1. Enter a label for your fork (e.g.: “My fork”).
+1. Select a workspace (the default “My Workspace” workspace is fine).
+1. Click **Fork Collection**.
 
 
 ## Configure the Collection
 
-1. Open the Postman desktop app and sign in with your account. This synchronizes the collection you just forked in the web UI into the app.
-
-    ![Collection fork synchronized in app screenshot](doc-gfx/app/collection-fork-synchronized.png)
-
-1. Move your mouse over the “Salesforce APIs” collection, click on the “three dots” icon next to it and select **Edit** from the menu.
-
-    ![Edit collection screenshot](doc-gfx/app/edit-collection.png)
-
+1. Click **Salesforce APIs**
 1. Open the **Variables** tab.
-1. If needed, update the `CURRENT VALUE` of the `url` variable with:
+1. If needed, update the `CURRENT VALUE` of the `url` variable with either:
 
     - `https://test.salesforce.com` for sandboxes or Scratch orgs.
     - `https://login.salesforce.com` for production, Trailhead Playground and Developer Edition orgs.
     - your custom My Domain URL.
 
-1. Click **Update**.
+1. Click **Save**.
 
 
 ## Authenticate with Salesforce
@@ -54,7 +56,7 @@ You'll need to authenticate with Salesforce to access the APIs. Doing so grants 
 
 Repeat this step whenever your access token expires.
 
-1. Move your mouse over the “Salesforce APIs” collection, click on the “three dots” icon next to it and select **Edit** from the menu.
+1. Click **Salesforce APIs**
 1. Open the **Authorization** tab. The authorization type should be set to OAuth 2.0.
 1. Click **Get New Access Token**. This opens a browser tab with the Salesforce login screen.
 1. Log in to your Salesforce org.
@@ -68,6 +70,7 @@ Repeat this step whenever your access token expires.
 
     <details><summary>Click here for instructions on how to authorize popups.</summary>
     <p>
+    Note: these instructions are for Chrome but the steps should be similar with other browsers.
 
     1. Click the popup error in the address bar, choose to allow popups from Postman:
 
@@ -86,7 +89,7 @@ Repeat this step whenever your access token expires.
 1. Click **Use Token**.
 1. Open the **Variables** tab.
 1. Update the `CURRENT VALUE` of the `_endpoint` variable with the value that you just copied from the `instance_url` field in the access token details.
-1. Click **Update**.
+1. Click **Save**.
 
 
 ## Execute a Request
