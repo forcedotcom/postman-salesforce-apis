@@ -82,7 +82,7 @@ Repeat this step whenever your access token expires.
     </p>
     </details>
 
-1. Copy the value of the `instance_url` field from the token details view.
+1. Copy the value of the `instance_url` field from the token details view. Make sure not to copy the line break character.
 
     ![Grant access screenshot](doc-gfx/app/manage-token.png)
 

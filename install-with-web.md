@@ -24,19 +24,15 @@ Consider this installation option if you can’t install the Postman desktop app
 
 ## Configure the Collection
 
-1. If needed, navigate to your workspace.
-1. Move your mouse over your “Salesforce APIs” forked collection, click on the “three dots” icon next to it and select **Edit** from the menu.
-
-    ![Edit collection screenshot](doc-gfx/web/edit-collection.png)
-
+1. Click **Salesforce APIs**
 1. Open the **Variables** tab.
-1. If needed, update the `CURRENT VALUE` of the `url` variable with:
+1. If needed, update the `CURRENT VALUE` of the `url` variable with either:
 
     - `https://test.salesforce.com` for sandboxes or Scratch orgs.
     - `https://login.salesforce.com` for production, Trailhead Playground and Developer Edition orgs.
     - your custom My Domain URL.
 
-1. Click **Save** if you made some changes to the variables.
+1. Click **Save**.
 
 
 ## Enable CORS in Salesforce
@@ -56,7 +52,7 @@ You'll need to authenticate with Salesforce to access the APIs. Doing so grants 
 
 Repeat this step whenever your access token expires.
 
-1. Move your mouse over the “Salesforce APIs” collection, click on the “three dots” icon next to it and select **Edit** from the menu.
+1. Click **Salesforce APIs**
 1. Open the **Authorization** tab. The authorization type should be set to OAuth 2.0.
 1. Click **Get New Access Token**. This opens a browser tab with the Salesforce login screen.
 1. Log in to your Salesforce org.
@@ -64,9 +60,9 @@ Repeat this step whenever your access token expires.
 
     ![Grant access screenshot](doc-gfx/salesforce/grant-access.png)
 
-    At this point, if your environment is correctly set up, you should see a success message and you should be redirected to the Postman UI.
+    At this point, if your environment is correctly set up, you should see a success message and you should be redirected to the Postman web UI.
 
-1. Copy the value of the `instance_url` field from the token details view.
+1. Copy the value of the `instance_url` field from the token details view. Make sure not to copy the line break character.
 
     ![Grant access screenshot](doc-gfx/web/manage-token.png)
 
