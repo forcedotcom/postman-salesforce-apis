@@ -1,5 +1,4 @@
-> ℹ️  **January 2021 update:** the collection sources were moved to a [Postman Public Workspace](https://www.postman.com/salesforce-developers). This makes it easier to install, update and contribute to the collection.<br/>
-This repository is now dedicated to hosting the setup/contribution documentation and tracking issues.
+> ℹ️ &nbsp;&nbsp;**March 2021 news:** our friends at MuleSoft are looking at how you could be using Postman with MuleSoft. Could you help them by filing this [short survey](https://www.surveymonkey.com/r/8TKRBW6)?
 
 
 # Salesforce APIs for Postman
