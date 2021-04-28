@@ -1,6 +1,3 @@
-> ℹ️ &nbsp;&nbsp;**March 2021 news:** our friends at MuleSoft are looking at how you could be using Postman with MuleSoft. Could you help them by filing this [short survey](https://www.surveymonkey.com/r/8TKRBW6)?
-
-
 # Salesforce APIs for Postman
 
 A [Postman](https://www.postman.com) collection of 230+ requests for the following Salesforce APIs:
