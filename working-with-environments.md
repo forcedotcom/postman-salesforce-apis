@@ -49,7 +49,7 @@ You can use the Postman desktop app with environments to work with multiple Sale
 
     | Variable	| Current Value	|
     | ---	| ---	|
-    | `url`	| Either:<br/>- `https://test.salesforce.com` for sandboxes or Scratch orgs.<br/>- `https://login.salesforce.com` for production, Trailhead Playground and Developer Edition orgs.<br/>- your custom My Domain URL.	|
+    | `url`	| Either:<br/>- `https://MyDomainName--SandboxName.sandbox.my.salesforce.com` for sandboxes or Scratch orgs.<br/>- `https://MyDomainName.my.salesforce.com` for production, Trailhead Playground and Developer Edition orgs.	|
     | `username`	| Your username	|
     | `password`	| Your password	|
     | `secretToken`	| Your personal [security token](https://help.salesforce.com/articleView?id=user_security_token.htm) (if required by your org)	|
