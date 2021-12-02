@@ -26,10 +26,10 @@ Consider this installation option if you can’t install the Postman desktop app
 
 1. Click **Salesforce APIs**
 1. Open the **Variables** tab.
-1. If needed, update the `CURRENT VALUE` of the `url` variable with either:
+1. If needed, update the `CURRENT VALUE` of the `url` variable with your org's My Domain login URL in one of these formats:
 
-    - `https://test.salesforce.com` for sandboxes or Scratch orgs.
-    - `https://login.salesforce.com` for production, Trailhead Playground and Developer Edition orgs.
+    - `https://MyDomainName--SandboxName.sandbox.my.salesforce.com` for sandboxes or Scratch orgs.
+    - `https://MyDomainName.my.salesforce.com` for production, Trailhead Playground and Developer Edition orgs.
     - your custom My Domain URL.
 
 1. Click **Save**.
