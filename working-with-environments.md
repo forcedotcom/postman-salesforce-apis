@@ -2,7 +2,7 @@
 
 # Working with environments to connect to multiple Salesforce orgs
 
-You can use the Postman desktop app with environments to work with multiple Salesforce orgs in parallel.
+You can use Postman environments to work with multiple Salesforce orgs in parallel.
 
 > ⚠️ Using environments means that you will store Salesforce credentials in clear in Postman. Do this at your own risks.
 
