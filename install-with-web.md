@@ -30,7 +30,6 @@ Consider this installation option if you can’t install the Postman desktop app
 
     - `https://MyDomainName--SandboxName.sandbox.my.salesforce.com` for sandboxes or Scratch orgs.
     - `https://MyDomainName.my.salesforce.com` for production, Trailhead Playground and Developer Edition orgs.
-    - your custom My Domain URL.
 
 1. Click **Save**.
 
