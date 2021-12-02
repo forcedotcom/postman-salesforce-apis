@@ -45,7 +45,6 @@ Download and install the Postman app from [this link](https://www.postman.com/do
 
     - `https://MyDomainName--SandboxName.sandbox.my.salesforce.com` for sandboxes or Scratch orgs.
     - `https://MyDomainName.my.salesforce.com` for production, Trailhead Playground and Developer Edition orgs.
-    - your custom My Domain URL.
 
 1. Click **Save**.
 
