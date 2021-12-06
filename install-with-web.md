@@ -15,11 +15,15 @@ Consider this installation option if you can’t install the Postman desktop app
 
 ## Fork the Collection
 
-1. Using a browser, [sign up/in to Postman](https://identity.getpostman.com/login).
-2. Navigate to [this link](https://www.postman.com/salesforce-developers/workspace/salesforce-developers/collection/12721794-67cb9baa-e0da-4986-957e-88d8734647e2/fork) to create a fork of the collection.
-3. Enter a label for your fork (e.g.: “My fork”).
-4. Select a workspace (the default “My Workspace” workspace is fine).
-5. Click **Fork Collection**.
+1. Click this button:
+
+    [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/12721794-67cb9baa-e0da-4986-957e-88d8734647e2?action=collection%2Ffork&collection-url=entityId%3D12721794-67cb9baa-e0da-4986-957e-88d8734647e2%26entityType%3Dcollection%26workspaceId%3D34382471-0c97-40e5-a206-f947271665c4#?env%5BSalesforce%20APIs%20Template%20Environment%5D=W3sia2V5IjoidXJsIiwidmFsdWUiOiJodHRwczovL3Rlc3Quc2FsZXNmb3JjZS5jb20iLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InZlcnNpb24iLCJ2YWx1ZSI6IjUzLjAiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InVzZXJuYW1lIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InBhc3N3b3JkIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InNlY3JldFRva2VuIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6ImNsaWVudElkIiwidmFsdWUiOiIzTVZHOThfUHNnNWNwcHlZQ21rMWdaTkMyNW8wMFNYcGdwb2RsUzI5SVo2cFhpSGt0M3h1UGE1cUlqQlR0RWdkc2lNdUlXVk5fOEYwam53RXRiRGg0IiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJjbGllbnRTZWNyZXQiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoicmVkaXJlY3RVcmwiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiaW5pdEFjY2Vzc1Rva2VuIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InNpdGUiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9XQ==)
+
+1. Click **Fork Collection**.
+1. [Sign up/in to Postman](https://identity.getpostman.com/login).
+1. Enter a label for your fork (e.g.: “My fork”).
+1. Select a workspace (the default “My Workspace” workspace is fine).
+1. Click **Fork Collection**.
 
 
 ## Configure the Collection
