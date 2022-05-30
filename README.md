@@ -4,28 +4,7 @@
 
 A [Postman](https://www.postman.com) collection of 230+ requests for the following Salesforce APIs:
 
-<table>
-   <tr>
-      <td>
-         <ul>
-            <li>Async Query</li>
-            <li>Auth</li>
-            <li>Bulk (V1 & V2)</li>
-            <li>Chatter (Connect)</li>
-            <li>Composite</li>
-         </ul>
-      </td>
-      <td>
-         <ul>
-            <li>CPQ</li>
-            <li>Metadata</li>
-            <li>Rest</li>
-            <li>Tooling</li>
-            <li>UI</li>
-         </ul>
-      </td>
-   </tr>
-</table>
+<table><tbody><tr><td>Async Query<br>Auth<br>Bulk (v1 &amp; v2)<br>Composite<br>Connect (Chatter)<br>CPQ</td><td>Einstein Prediction ServiceGraphQL<br>Metadata<br>Rest<br>Tooling<br>UI<br><br></td></tr></tbody></table>
 
 ![Postman screenshot](doc-gfx/app/limits-status-200.png)
 
