@@ -27,8 +27,8 @@ Download and install the Postman app from [this link](https://www.postman.com/do
 
     ![Searching for Salesforce screenshot](doc-gfx/app/search-salesforce.png)
 
-1. Click the **Salesforce APIs** tile.
-1. Click **Fork**
+1. Under **Collections** click the **Salesforce Platform APIs** entry.
+1. Click **Fork** in the top right.
 
     ![Fork button screenshot](doc-gfx/app/fork-button.png)
 
